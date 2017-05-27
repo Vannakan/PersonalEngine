@@ -1,0 +1,394 @@
+\hypertarget{a00526}{}\section{Engine.\+Managers.\+Render.\+Render\+Manager Class Reference}
+\label{a00526}\index{Engine.\+Managers.\+Render.\+Render\+Manager@{Engine.\+Managers.\+Render.\+Render\+Manager}}
+
+
+C\+L\+A\+SS\+: The \hyperlink{a00271}{Render} manager is responsible for the drawing of content loaded by the various other managers  
+
+
+Inheritance diagram for Engine.\+Managers.\+Render.\+Render\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/d35/a00526}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00526_a0ecca32f070bd247added2b680fe390d}{Render\+Manager} ()
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR \end{DoxyCompactList}\item 
+void \hyperlink{a00526_abd794ae4c12392323e9afda73e459bef}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: An initialize method that is called every time a new screen is ready to be drawn \end{DoxyCompactList}\item 
+void \hyperlink{a00526_aeb436300e604d81ff837227e5dd11710}{get\+Entity\+List} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: gets the entity list from the Entity Manager \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a79fb84c735ca8b863eed41f51566f554}{get\+Cam\+Entity\+List} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: gets the entity list from the Entity Manager \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a6f4d9756fcf88b78263f0bc5538b1912}{add\+Drawable} (\hyperlink{a00454}{I\+Drawable\+Component} d)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: For items which dont wish to be drawn in regards to the cameras matrix translations (such as G\+UI) \end{DoxyCompactList}\item 
+void \hyperlink{a00526_abe4458f6b030cffba170149d1ee63bba}{add\+Cam\+Drawable} (\hyperlink{a00454}{I\+Drawable\+Component} d)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: For Scenery/\+Entities which wish to be drawn in regards to the cameras matrix translations \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a9b6bcc0390e87b334c36c1083e0af5f6}{add\+Cam\+Draw\+Entity} (\hyperlink{a00454}{I\+Drawable\+Component} d)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: For \hyperlink{a00269}{Entities} which wish to be drawn in regards to the cameras matrix translations \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a93c2cea1133bb38a01336b3d4c6b0321}{Draw\+Camera\+Related\+Artefacts} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws everything in the camera view \end{DoxyCompactList}\item 
+void \hyperlink{a00526_af77caeb94739b508306100cdedfcbd9b}{clear\+Temp\+Entity} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Clears the entities to be drawn in relation to the camera \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a0dfca7db5472741f87837e7f87e90129}{Draw\+Non\+Camera\+Related\+Artefacts} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws everything not related to the camera \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a9ce9959462da544f283ab3e531bd1edb}{add\+String} (\hyperlink{a00598}{Game\+Text} game\+Text)
+\item 
+void \hyperlink{a00526_a9d572b8cd8ba3c6cac622dee8d14f2a1}{add\+Shape} (\hyperlink{a00454}{I\+Drawable\+Component} shape)
+\item 
+void \hyperlink{a00526_a7b63b947d986ab05b66c4c9f78ee3c20}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop cycled through on each frame \end{DoxyCompactList}\item 
+void \hyperlink{a00526_ae9fd08da224435b71540e67f718eb7c4}{Draw} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws items \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a5e7f7ef9bf468db27267ee1e50a34af3}{Draw} (Texture2D texture, Rectangle rect, Color col)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws items \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a9eb548f058744b031b639810a16ba40d}{Draw\+Entities} ()
+\item 
+void \hyperlink{a00526_a0df839a3a677b7595e4535716e823809}{Draw\+Components} ()
+\item 
+void \hyperlink{a00526_af81e4faf42327afbf604c3bb4d09499a}{Draw\+Shapes} ()
+\item 
+void \hyperlink{a00526_aa957794d6537025fb2535517bcc691cc}{Draw\+Drawables} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws every Drawable object \end{DoxyCompactList}\item 
+void \hyperlink{a00526_adc520b6c317ed9e0d4e51fd34c22c511}{Draw\+Cam\+Drawables} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: D\+Raws everything in relation to the camera \end{DoxyCompactList}\item 
+void \hyperlink{a00526_a96510018c93924e8d5456891b28b51bb}{Draw\+Cam\+Draw\+Entities} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: draws entities in relation to the camera \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Sprite\+Batch \hyperlink{a00526_afd06d1ef067613ca63fe1302c4c41e3d}{sprite\+Batch}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{a00454}{I\+Drawable\+Component} $>$ \hyperlink{a00526_a954e0be8a74a97fd978b65edba1c0223}{getD}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \hyperlink{a00454}{I\+Drawable\+Component} $>$ \hyperlink{a00526_afb8e15ee3c1d4f62a0ed4b60f433199e}{get\+D1}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: The \hyperlink{a00271}{Render} manager is responsible for the drawing of content loaded by the various other managers 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00526_a0ecca32f070bd247added2b680fe390d}\label{a00526_a0ecca32f070bd247added2b680fe390d}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Render\+Manager@{Render\+Manager}}
+\index{Render\+Manager@{Render\+Manager}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Render\+Manager()}{RenderManager()}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Render.\+Render\+Manager.\+Render\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00526_abe4458f6b030cffba170149d1ee63bba}\label{a00526_abe4458f6b030cffba170149d1ee63bba}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!add\+Cam\+Drawable@{add\+Cam\+Drawable}}
+\index{add\+Cam\+Drawable@{add\+Cam\+Drawable}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{add\+Cam\+Drawable()}{addCamDrawable()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+add\+Cam\+Drawable (\begin{DoxyParamCaption}\item[{\hyperlink{a00454}{I\+Drawable\+Component}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: For Scenery/\+Entities which wish to be drawn in regards to the cameras matrix translations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & the object to be drawn\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00458_a85d74d22976a3d818b21cc856da85092}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a9b6bcc0390e87b334c36c1083e0af5f6}\label{a00526_a9b6bcc0390e87b334c36c1083e0af5f6}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!add\+Cam\+Draw\+Entity@{add\+Cam\+Draw\+Entity}}
+\index{add\+Cam\+Draw\+Entity@{add\+Cam\+Draw\+Entity}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{add\+Cam\+Draw\+Entity()}{addCamDrawEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+add\+Cam\+Draw\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{a00454}{I\+Drawable\+Component}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: For \hyperlink{a00269}{Entities} which wish to be drawn in regards to the cameras matrix translations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The object to be drawn\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00458_a5ce82555229026255b46d824edc679e8}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a6f4d9756fcf88b78263f0bc5538b1912}\label{a00526_a6f4d9756fcf88b78263f0bc5538b1912}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!add\+Drawable@{add\+Drawable}}
+\index{add\+Drawable@{add\+Drawable}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{add\+Drawable()}{addDrawable()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+add\+Drawable (\begin{DoxyParamCaption}\item[{\hyperlink{a00454}{I\+Drawable\+Component}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: For items which dont wish to be drawn in regards to the cameras matrix translations (such as G\+UI) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The object to be drawn\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00458_a3beadf9574678e62c968c8631b367348}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a9d572b8cd8ba3c6cac622dee8d14f2a1}\label{a00526_a9d572b8cd8ba3c6cac622dee8d14f2a1}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!add\+Shape@{add\+Shape}}
+\index{add\+Shape@{add\+Shape}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{add\+Shape()}{addShape()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+add\+Shape (\begin{DoxyParamCaption}\item[{\hyperlink{a00454}{I\+Drawable\+Component}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \hyperlink{a00458_a89bf09f0f2d6144e68cd045d39f13374}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a9ce9959462da544f283ab3e531bd1edb}\label{a00526_a9ce9959462da544f283ab3e531bd1edb}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!add\+String@{add\+String}}
+\index{add\+String@{add\+String}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{add\+String()}{addString()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+add\+String (\begin{DoxyParamCaption}\item[{\hyperlink{a00598}{Game\+Text}}]{game\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \hyperlink{a00458_ae3d8ed9fc1406b62e04ac8336e4e40b3}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_af77caeb94739b508306100cdedfcbd9b}\label{a00526_af77caeb94739b508306100cdedfcbd9b}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!clear\+Temp\+Entity@{clear\+Temp\+Entity}}
+\index{clear\+Temp\+Entity@{clear\+Temp\+Entity}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{clear\+Temp\+Entity()}{clearTempEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+clear\+Temp\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Clears the entities to be drawn in relation to the camera 
+
+
+
+Implements \hyperlink{a00458_a7879b28e310859cdebdc2c8aeaced6b3}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_ae9fd08da224435b71540e67f718eb7c4}\label{a00526_ae9fd08da224435b71540e67f718eb7c4}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws items 
+
+
+
+Implements \hyperlink{a00458_afac9eb0644db9971494332e7d179bbf9}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a5e7f7ef9bf468db27267ee1e50a34af3}\label{a00526_a5e7f7ef9bf468db27267ee1e50a34af3}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw (\begin{DoxyParamCaption}\item[{Texture2D}]{texture,  }\item[{Rectangle}]{rect,  }\item[{Color}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws items 
+
+
+
+Implements \hyperlink{a00458_ad9f875208c0f901d3e90facfea2acfc0}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_adc520b6c317ed9e0d4e51fd34c22c511}\label{a00526_adc520b6c317ed9e0d4e51fd34c22c511}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Cam\+Drawables@{Draw\+Cam\+Drawables}}
+\index{Draw\+Cam\+Drawables@{Draw\+Cam\+Drawables}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Cam\+Drawables()}{DrawCamDrawables()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Cam\+Drawables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: D\+Raws everything in relation to the camera 
+
+
+
+Implements \hyperlink{a00458_a9239479d4d4f220b334722e48acb5bc2}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a96510018c93924e8d5456891b28b51bb}\label{a00526_a96510018c93924e8d5456891b28b51bb}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Cam\+Draw\+Entities@{Draw\+Cam\+Draw\+Entities}}
+\index{Draw\+Cam\+Draw\+Entities@{Draw\+Cam\+Draw\+Entities}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Cam\+Draw\+Entities()}{DrawCamDrawEntities()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Cam\+Draw\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: draws entities in relation to the camera 
+
+
+
+Implements \hyperlink{a00458_a521ac08ccb20d1dbe58ff906fc7c42a4}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a93c2cea1133bb38a01336b3d4c6b0321}\label{a00526_a93c2cea1133bb38a01336b3d4c6b0321}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Camera\+Related\+Artefacts@{Draw\+Camera\+Related\+Artefacts}}
+\index{Draw\+Camera\+Related\+Artefacts@{Draw\+Camera\+Related\+Artefacts}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Camera\+Related\+Artefacts()}{DrawCameraRelatedArtefacts()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Camera\+Related\+Artefacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws everything in the camera view 
+
+Below method should be in noncamera 
+
+Implements \hyperlink{a00458_aee587a69646dc58e02ba4430f1368bf0}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a0df839a3a677b7595e4535716e823809}\label{a00526_a0df839a3a677b7595e4535716e823809}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Components@{Draw\+Components}}
+\index{Draw\+Components@{Draw\+Components}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Components()}{DrawComponents()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \hyperlink{a00458_a326852d43fb14fb872d856ff2c1d6fd9}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_aa957794d6537025fb2535517bcc691cc}\label{a00526_aa957794d6537025fb2535517bcc691cc}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Drawables@{Draw\+Drawables}}
+\index{Draw\+Drawables@{Draw\+Drawables}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Drawables()}{DrawDrawables()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Drawables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws every Drawable object 
+
+
+
+Implements \hyperlink{a00458_ace0e8fa7ce70c3437fce1298b22bf195}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a9eb548f058744b031b639810a16ba40d}\label{a00526_a9eb548f058744b031b639810a16ba40d}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Entities@{Draw\+Entities}}
+\index{Draw\+Entities@{Draw\+Entities}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Entities()}{DrawEntities()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \hyperlink{a00458_aa7c35d67893f29738baab63370d16b10}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a0dfca7db5472741f87837e7f87e90129}\label{a00526_a0dfca7db5472741f87837e7f87e90129}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Non\+Camera\+Related\+Artefacts@{Draw\+Non\+Camera\+Related\+Artefacts}}
+\index{Draw\+Non\+Camera\+Related\+Artefacts@{Draw\+Non\+Camera\+Related\+Artefacts}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Non\+Camera\+Related\+Artefacts()}{DrawNonCameraRelatedArtefacts()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Non\+Camera\+Related\+Artefacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws everything not related to the camera 
+
+
+
+Implements \hyperlink{a00458_a566b23b9d0b60e2fb06107e7a6c239cb}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_af81e4faf42327afbf604c3bb4d09499a}\label{a00526_af81e4faf42327afbf604c3bb4d09499a}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Draw\+Shapes@{Draw\+Shapes}}
+\index{Draw\+Shapes@{Draw\+Shapes}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Shapes()}{DrawShapes()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Draw\+Shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \hyperlink{a00458_af785d8e5292f1f8f89c47d300e2c7d67}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a79fb84c735ca8b863eed41f51566f554}\label{a00526_a79fb84c735ca8b863eed41f51566f554}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!get\+Cam\+Entity\+List@{get\+Cam\+Entity\+List}}
+\index{get\+Cam\+Entity\+List@{get\+Cam\+Entity\+List}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cam\+Entity\+List()}{getCamEntityList()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+get\+Cam\+Entity\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: gets the entity list from the Entity Manager 
+
+
+
+Implements \hyperlink{a00458_a37f1fdeb82edc4e414404d43d1c6bb51}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_aeb436300e604d81ff837227e5dd11710}\label{a00526_aeb436300e604d81ff837227e5dd11710}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!get\+Entity\+List@{get\+Entity\+List}}
+\index{get\+Entity\+List@{get\+Entity\+List}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{get\+Entity\+List()}{getEntityList()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+get\+Entity\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: gets the entity list from the Entity Manager 
+
+
+
+Implements \hyperlink{a00458_a48c8e64f7e597fdea8412057d24bcb3d}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_abd794ae4c12392323e9afda73e459bef}\label{a00526_abd794ae4c12392323e9afda73e459bef}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: An initialize method that is called every time a new screen is ready to be drawn 
+
+
+
+Implements \hyperlink{a00458_ab1282efae383e9024233a2fc1eb7577b}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+\mbox{\Hypertarget{a00526_a7b63b947d986ab05b66c4c9f78ee3c20}\label{a00526_a7b63b947d986ab05b66c4c9f78ee3c20}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Render.\+Render\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop cycled through on each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+Update lists 
+
+Implements \hyperlink{a00458_a99572d9e2280e1d7c21c002255ffe201}{Engine.\+Interfaces.\+Render.\+I\+Render\+Manager}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00526_a954e0be8a74a97fd978b65edba1c0223}\label{a00526_a954e0be8a74a97fd978b65edba1c0223}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!getD@{getD}}
+\index{getD@{getD}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{getD}{getD}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00454}{I\+Drawable\+Component}$>$ Engine.\+Managers.\+Render.\+Render\+Manager.\+getD\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{a00526_afb8e15ee3c1d4f62a0ed4b60f433199e}\label{a00526_afb8e15ee3c1d4f62a0ed4b60f433199e}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!get\+D1@{get\+D1}}
+\index{get\+D1@{get\+D1}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{get\+D1}{getD1}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00454}{I\+Drawable\+Component}$>$ Engine.\+Managers.\+Render.\+Render\+Manager.\+get\+D1\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{a00526_afd06d1ef067613ca63fe1302c4c41e3d}\label{a00526_afd06d1ef067613ca63fe1302c4c41e3d}} 
+\index{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}!sprite\+Batch@{sprite\+Batch}}
+\index{sprite\+Batch@{sprite\+Batch}!Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager@{Engine\+::\+Managers\+::\+Render\+::\+Render\+Manager}}
+\subsubsection{\texorpdfstring{sprite\+Batch}{spriteBatch}}
+{\footnotesize\ttfamily Sprite\+Batch Engine.\+Managers.\+Render.\+Render\+Manager.\+sprite\+Batch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00176}{Render\+Manager.\+cs}\end{DoxyCompactItemize}

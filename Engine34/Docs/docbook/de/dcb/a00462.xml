@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dcb/a00462">
+<title>Engine::Interfaces::Resource::IResourceLoader interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Texture2D <link linkend="de/dcb/a00462_1ad126b831364ad6219c3f25729c591597">GetTex</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Get a Texture from a string directory
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteFont <link linkend="de/dcb/a00462_1abe9339a97b29bce2ba8a77504495f27d">GetFont</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Get a font from a string directory
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Song <link linkend="de/dcb/a00462_1a6d962a64dc4f377bdb417598b17c53d0">GetSong</link> (
+string path)<para><emphasis>&lt;summary&gt;
+METHOD: Get an audio file from a string directory
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dcb/a00462_1ad861af436f861ea7d9c0966edfadac82">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises and Loads appropriate resources
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/dcb/a00462_1a08d51ffa3d65fd1122614e00a275cf48">CheckLibrary</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: checks if a music file in the current library is valid and returns a bool
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: Holds the implementation for the <link linkend="d9/d8d/a00262">Resource</link> Loader which is responsible for loading and storing any external resources such as textures and sounds. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file IResourceLoader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IResourceLoader.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="de/dcb/a00462_1ad126b831364ad6219c3f25729c591597">
+                <title>Texture2D Engine.Interfaces.Resource.IResourceLoader.GetTex (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Get a Texture from a string directory
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>the name of the texture file to be loaded</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a Texture2D file of the image at the name provided</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="de/dcb/a00462_1abe9339a97b29bce2ba8a77504495f27d">
+                <title>SpriteFont Engine.Interfaces.Resource.IResourceLoader.GetFont (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Get a font from a string directory
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the font file to be loaded</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a SpriteFont of the font at the name provided</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="de/dcb/a00462_1a6d962a64dc4f377bdb417598b17c53d0">
+                <title>Song Engine.Interfaces.Resource.IResourceLoader.GetSong (string path)</title> <emphasis>&lt;summary&gt;
+METHOD: Get an audio file from a string directory
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>path</entry>
+                                <entry>
+<para>The name of the audio file to be loaded</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A song of the audio at the name provided</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="de/dcb/a00462_1ad861af436f861ea7d9c0966edfadac82">
+                <title>void Engine.Interfaces.Resource.IResourceLoader.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises and Loads appropriate resources
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="de/dcb/a00462_1a08d51ffa3d65fd1122614e00a275cf48">
+                <title>bool Engine.Interfaces.Resource.IResourceLoader.CheckLibrary (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: checks if a music file in the current library is valid and returns a bool
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the audio file to look for</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a boolean if the audio file exists in the queue</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

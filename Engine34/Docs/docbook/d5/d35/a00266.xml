@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d35/a00266">
+<title>Engine::Managers::Behaviour</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/df1/a00486">Engine::Managers::Behaviour::BehaviourManager</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>A Manager that is responsible for the creation of the Mind for each entity and stores a list of all minds with unique IDs. /summary&gt; </para>
+    </simplesect>
+</section>

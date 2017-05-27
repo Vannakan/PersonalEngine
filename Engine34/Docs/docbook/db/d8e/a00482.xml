@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d8e/a00482">
+<title>Engine::Interfaces::Sound::ISoundManager interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1a02f14f3401f425a686a50e6b6a40aca7">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the Manager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1aec02346c5397b9b01b9d5d6baedc923e">Play</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Plays the song of the name provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1aa9e2fb77a5fe624ce65373f5ee8328ae">PlayEffect</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Plays the sound effect of the name provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1a5bcad4d517b37a12b17e59d0b927ca37">Mute</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Mutes all sound
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1a59c011a4cf667d6e967bddad50c7cb2f">unMute</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unmutes all sound
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1ada3f38d5c50655b55f146ccdaf7c5967">Volume</link> (
+float Volume)<para><emphasis>&lt;summary&gt;
+METHOD: changes the volume of sound played
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1ac47a91d3e28a8f7a1e5348fb6eff50e2">Stop</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Stops the current sound being played
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1af7ddcb52a6283aa2cf4392c75d2a0cff">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: the update loop cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1afe3eaaed21c8b64692bc338309ac4a4d">volUp</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Increases the volume slightly
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1a96629b32d608ca84fe1a3624bece7f05">volDown</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Decreases the volume slightly
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d8e/a00482_1a8aa47dcffde058c1146f7ebf5b0edb84">onScreenChanged</link> (
+<link linkend="de/de7/a00550">BaseScreen</link> screen)<para><emphasis>&lt;summary&gt;
+METHOD: Plays the sound of the screen that is being changed to
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: Holds the implementation for the sound manager which is responsible for the storage and playback of sound files. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file ISoundManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ISoundManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="db/d8e/a00482_1a02f14f3401f425a686a50e6b6a40aca7">
+                <title>void Engine.Interfaces.Sound.ISoundManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the Manager
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d8e/a00482_1aec02346c5397b9b01b9d5d6baedc923e">
+                <title>void Engine.Interfaces.Sound.ISoundManager.Play (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Plays the song of the name provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the song to be played</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d8e/a00482_1aa9e2fb77a5fe624ce65373f5ee8328ae">
+                <title>void Engine.Interfaces.Sound.ISoundManager.PlayEffect (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Plays the sound effect of the name provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the sound effect to be played</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d8e/a00482_1a5bcad4d517b37a12b17e59d0b927ca37">
+                <title>void Engine.Interfaces.Sound.ISoundManager.Mute ()</title> <emphasis>&lt;summary&gt;
+METHOD: Mutes all sound
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d8e/a00482_1a59c011a4cf667d6e967bddad50c7cb2f">
+                <title>void Engine.Interfaces.Sound.ISoundManager.unMute ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unmutes all sound
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d8e/a00482_1ada3f38d5c50655b55f146ccdaf7c5967">
+                <title>void Engine.Interfaces.Sound.ISoundManager.Volume (float Volume)</title> <emphasis>&lt;summary&gt;
+METHOD: changes the volume of sound played
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Volume</entry>
+                                <entry>
+<para>The volume to be changed to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d8e/a00482_1ac47a91d3e28a8f7a1e5348fb6eff50e2">
+                <title>void Engine.Interfaces.Sound.ISoundManager.Stop ()</title> <emphasis>&lt;summary&gt;
+METHOD: Stops the current sound being played
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d8e/a00482_1af7ddcb52a6283aa2cf4392c75d2a0cff">
+                <title>void Engine.Interfaces.Sound.ISoundManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: the update loop cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d8e/a00482_1afe3eaaed21c8b64692bc338309ac4a4d">
+                <title>void Engine.Interfaces.Sound.ISoundManager.volUp ()</title> <emphasis>&lt;summary&gt;
+METHOD: Increases the volume slightly
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d8e/a00482_1a96629b32d608ca84fe1a3624bece7f05">
+                <title>void Engine.Interfaces.Sound.ISoundManager.volDown ()</title> <emphasis>&lt;summary&gt;
+METHOD: Decreases the volume slightly
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d8e/a00482_1a8aa47dcffde058c1146f7ebf5b0edb84">
+                <title>void Engine.Interfaces.Sound.ISoundManager.onScreenChanged (BaseScreen screen)</title> <emphasis>&lt;summary&gt;
+METHOD: Plays the sound of the screen that is being changed to
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>screen</entry>
+                                <entry>
+<para>The screen being changed to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

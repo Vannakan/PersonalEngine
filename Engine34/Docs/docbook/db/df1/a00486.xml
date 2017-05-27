@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/df1/a00486">
+<title>Engine::Managers::Behaviour::BehaviourManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IMind &gt; minds<para><emphasis>List for all of the AI to update and check.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/def/a00446">IMind</link> <link linkend="db/df1/a00486_1a13eea511ff6d2cdeb8287b63034ce898">Create&lt; T &gt;</link> (
+<link linkend="dd/dfd/a00438">IEntity</link> ie)<para><emphasis>&lt;summary&gt;
+METHOD: Create a new IMind of type T
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/df1/a00486_1ae21fe19ea423236e26d4f022230a071e">clearList</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Clears the current list of all minds
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/df1/a00486_1a684853fb49121d19f4d5c635153b871a">removeMind</link> (
+int id)<para><emphasis>&lt;summary&gt;
+METHOD: Removes a specific mind from the list based on the id provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/def/a00446">IMind</link> <link linkend="db/df1/a00486_1a4391a84eadd13a812977cd51e177e00b">getMind</link> (
+int id)<para><emphasis>&lt;summary&gt;
+METHOD: Finds the mind in the list of the id provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/df1/a00486_1a729bf10d2469de0497d75dfadbf56506">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="db/df1/a00486_1a13eea511ff6d2cdeb8287b63034ce898">
+                <title>IMind Engine.Managers.Behaviour.BehaviourManager.Create&lt; T &gt; (IEntity ie)</title> <emphasis>&lt;summary&gt;
+METHOD: Create a new IMind of type T
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Generic type for the mind that will be created</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ie</entry>
+                                <entry>
+<para>the Entity the mind will be linked to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a brand new IMind</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/df1/a00486_1ae21fe19ea423236e26d4f022230a071e">
+                <title>void Engine.Managers.Behaviour.BehaviourManager.clearList ()</title> <emphasis>&lt;summary&gt;
+METHOD: Clears the current list of all minds
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/df1/a00486_1a684853fb49121d19f4d5c635153b871a">
+                <title>void Engine.Managers.Behaviour.BehaviourManager.removeMind (int id)</title> <emphasis>&lt;summary&gt;
+METHOD: Removes a specific mind from the list based on the id provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>id</entry>
+                                <entry>
+<para>the unique ID of the mind to be removed</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/df1/a00486_1a4391a84eadd13a812977cd51e177e00b">
+                <title>IMind Engine.Managers.Behaviour.BehaviourManager.getMind (int id)</title> <emphasis>&lt;summary&gt;
+METHOD: Finds the mind in the list of the id provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>id</entry>
+                                <entry>
+<para>the unique ID of the mind to be found</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>an IMind with the same unique ID</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/df1/a00486_1a729bf10d2469de0497d75dfadbf56506">
+                <title>void Engine.Managers.Behaviour.BehaviourManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>The MonoGame Gametime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

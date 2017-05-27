@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d57/a00498">
+<title>Engine::Managers::Collision::AABB class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="d8/d57/a00498_1a5f73a3280b6a0f0131c2eae8a5e137ba">Collision</link> (
+Rectangle a, Rectangle b)<para><emphasis>&lt;summary&gt;
+A method to check whether two Axis Aligned Rectangles are itnersecting or not. If they are, this method
+will return true.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8af">CollisionSide</link> <link linkend="d8/d57/a00498_1a90d6c453f48ab9793cc256f4e2f13ce9">getLeftOrRight</link> (
+Rectangle a, Rectangle b)<para><emphasis>&lt;summary&gt;
+This method finds out which side of the rectangles are intersecting
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8af">CollisionSide</link> <link linkend="d8/d57/a00498_1a43d0a89754f3a0fdd96aa40ca36219a3">getUpOrDown</link> (
+Rectangle a, Rectangle b)<para><emphasis>&lt;summary&gt;
+This method finds out whether the top or the bottom of the rectangle is colliding.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/d57/a00498_1a5f73a3280b6a0f0131c2eae8a5e137ba">
+                <title>static bool Engine.Managers.Collision.AABB.Collision (Rectangle a, Rectangle b)</title> <emphasis>&lt;summary&gt;
+A method to check whether two Axis Aligned Rectangles are itnersecting or not. If they are, this method
+will return true.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Object A to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Object B to be tested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>bool</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d8/d57/a00498_1a90d6c453f48ab9793cc256f4e2f13ce9">
+                <title>static CollisionSide Engine.Managers.Collision.AABB.getLeftOrRight (Rectangle a, Rectangle b)</title> <emphasis>&lt;summary&gt;
+This method finds out which side of the rectangles are intersecting
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Object A to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Object B to be tested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>enum CollisionSide</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d8/d57/a00498_1a43d0a89754f3a0fdd96aa40ca36219a3">
+                <title>static CollisionSide Engine.Managers.Collision.AABB.getUpOrDown (Rectangle a, Rectangle b)</title> <emphasis>&lt;summary&gt;
+This method finds out whether the top or the bottom of the rectangle is colliding.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Object A to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Object B to be tested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>enum CollisionSide</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

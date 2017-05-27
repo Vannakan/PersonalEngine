@@ -1,0 +1,236 @@
+\hypertarget{a00470}{}\section{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager Interface Reference}
+\label{a00470}\index{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager@{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: This interface holds the implementation for the \hyperlink{a00538}{Screen\+Manager} which is responsible for loading the content in each screen and displaying each screen. The \hyperlink{a00538}{Screen\+Manager} contains a stack of screens which allows for multiple screens to be prepared for loading whilst only one is an active screen  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/d29/a00470}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00470_ae37c13c038cdb202262013731985eb10}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialise the Manager and add the first screen to be loaded \end{DoxyCompactList}\item 
+void \hyperlink{a00470_a8d30874c7b1b2728a784de0c6e6f80e3}{Unlo\+Enginecreens} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unload any screens that need to be unloaded \end{DoxyCompactList}\item 
+void \hyperlink{a00470_afc42708b653397ca8a3a81dc8d244c61}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update the manager \end{DoxyCompactList}\item 
+void \hyperlink{a00470_a28a87245d63c8df1634598b3d20a14cf}{Draw} (Sprite\+Batch sprite\+Batch)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draw any objects that require drawing \end{DoxyCompactList}\item 
+void \hyperlink{a00470_aba0b8f29600dabc2a55dde4d5e00c7bc}{Add} (string screen\+Name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Add a new screen to the stack of screens to be loaded and displayed \end{DoxyCompactList}\item 
+void \hyperlink{a00470_aaa6bfa9a986729ada7dcea6ac40f078d}{Replace\+Screen} (string screen\+Name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Replace the current screen \end{DoxyCompactList}\item 
+void \hyperlink{a00470_a40fbf0a98c186ba93837f6279ad2f7dd}{Check\+Screens} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Check if any of the screens in the stack are the same as the current screen and makes them active if so \end{DoxyCompactList}\item 
+void \hyperlink{a00470_a833b8050119cd9a87efbfa23197457c9}{Check\+Screen\+Manager\+Input} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: check for input to select different options and move between different screens \end{DoxyCompactList}\item 
+void \hyperlink{a00470_a91b5204271edf5e137a85d3f8f3876d8}{Remove\+Top\+Screen} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unloads and removes the top screen from the stack, essentially going back one screen \end{DoxyCompactList}\item 
+void \hyperlink{a00470_aff4347b40d3fd6173e0c420adbf1146f}{Update\+Top\+Screen} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Call the update method of the top screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Content\+Manager \hyperlink{a00470_a6409574161f945f4b0bd089fcc7e1014}{content}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Monogame Content\+Manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: This interface holds the implementation for the \hyperlink{a00538}{Screen\+Manager} which is responsible for loading the content in each screen and displaying each screen. The \hyperlink{a00538}{Screen\+Manager} contains a stack of screens which allows for multiple screens to be prepared for loading whilst only one is an active screen 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00470_aba0b8f29600dabc2a55dde4d5e00c7bc}\label{a00470_aba0b8f29600dabc2a55dde4d5e00c7bc}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Add@{Add}}
+\index{Add@{Add}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Add (\begin{DoxyParamCaption}\item[{string}]{screen\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Add a new screen to the stack of screens to be loaded and displayed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Name} & The name of the screen to be added\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00538_ae459e146f1e05789c4d5828cca4dead7}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_a833b8050119cd9a87efbfa23197457c9}\label{a00470_a833b8050119cd9a87efbfa23197457c9}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Check\+Screen\+Manager\+Input@{Check\+Screen\+Manager\+Input}}
+\index{Check\+Screen\+Manager\+Input@{Check\+Screen\+Manager\+Input}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Screen\+Manager\+Input()}{CheckScreenManagerInput()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Check\+Screen\+Manager\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: check for input to select different options and move between different screens 
+
+
+
+Implemented in \hyperlink{a00538_aa8e3ecdc7ae78094b07af944c31f90a9}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_a40fbf0a98c186ba93837f6279ad2f7dd}\label{a00470_a40fbf0a98c186ba93837f6279ad2f7dd}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Check\+Screens@{Check\+Screens}}
+\index{Check\+Screens@{Check\+Screens}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Screens()}{CheckScreens()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Check\+Screens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Check if any of the screens in the stack are the same as the current screen and makes them active if so 
+
+
+
+Implemented in \hyperlink{a00538_abe1bf121b368a6d205706da54d949ace}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_a28a87245d63c8df1634598b3d20a14cf}\label{a00470_a28a87245d63c8df1634598b3d20a14cf}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Draw any objects that require drawing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Batch} & Monogame Sprite\+Batch property\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00538_a1177fbd3eb0a300167e4fa99930025e1}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_ae37c13c038cdb202262013731985eb10}\label{a00470_ae37c13c038cdb202262013731985eb10}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialise the Manager and add the first screen to be loaded 
+
+
+
+Implemented in \hyperlink{a00538_aaa2b6fe0b50cf126bbb0a9b39fac1b83}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_a91b5204271edf5e137a85d3f8f3876d8}\label{a00470_a91b5204271edf5e137a85d3f8f3876d8}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Remove\+Top\+Screen@{Remove\+Top\+Screen}}
+\index{Remove\+Top\+Screen@{Remove\+Top\+Screen}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Top\+Screen()}{RemoveTopScreen()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Remove\+Top\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Unloads and removes the top screen from the stack, essentially going back one screen 
+
+
+
+Implemented in \hyperlink{a00538_ab553bead481adc65547a323af9dab2d5}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_aaa6bfa9a986729ada7dcea6ac40f078d}\label{a00470_aaa6bfa9a986729ada7dcea6ac40f078d}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Replace\+Screen@{Replace\+Screen}}
+\index{Replace\+Screen@{Replace\+Screen}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Replace\+Screen()}{ReplaceScreen()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Replace\+Screen (\begin{DoxyParamCaption}\item[{string}]{screen\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Replace the current screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Name} & The name of the screen which will replace the screen\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00538_a28af5b838f4345834dc2351e06c3d654}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_a8d30874c7b1b2728a784de0c6e6f80e3}\label{a00470_a8d30874c7b1b2728a784de0c6e6f80e3}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Unlo\+Enginecreens@{Unlo\+Enginecreens}}
+\index{Unlo\+Enginecreens@{Unlo\+Enginecreens}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Unlo\+Enginecreens()}{UnloEnginecreens()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Unlo\+Enginecreens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Unload any screens that need to be unloaded 
+
+
+
+Implemented in \hyperlink{a00538_a1e85d6cc74fdb929f4729d1170886fb4}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_afc42708b653397ca8a3a81dc8d244c61}\label{a00470_afc42708b653397ca8a3a81dc8d244c61}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Update the manager 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00478_a387fce2a5440a4dc63f8d72772ecbdaa}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Upd\+Service}.
+
+
+
+Implemented in \hyperlink{a00538_a9abaa968b161ebb2b84c7a47ada52f90}{Engine.\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00470_aff4347b40d3fd6173e0c420adbf1146f}\label{a00470_aff4347b40d3fd6173e0c420adbf1146f}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!Update\+Top\+Screen@{Update\+Top\+Screen}}
+\index{Update\+Top\+Screen@{Update\+Top\+Screen}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Top\+Screen()}{UpdateTopScreen()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+Update\+Top\+Screen (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Call the update method of the top screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00538_a59b04e135a3b2a75a608752e2bfabc77}{Engine.\+Screen\+Manager}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00470_a6409574161f945f4b0bd089fcc7e1014}\label{a00470_a6409574161f945f4b0bd089fcc7e1014}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}!content@{content}}
+\index{content@{content}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily Content\+Manager Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager.\+content\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Monogame Content\+Manager 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00134}{I\+Screen\+Manager.\+cs}\end{DoxyCompactItemize}

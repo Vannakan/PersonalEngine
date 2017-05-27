@@ -1,0 +1,131 @@
+\hypertarget{a00574}{}\section{Engine.\+States.\+Menu.\+Main\+Menu Class Reference}
+\label{a00574}\index{Engine.\+States.\+Menu.\+Main\+Menu@{Engine.\+States.\+Menu.\+Main\+Menu}}
+
+
+C\+L\+A\+SS\+: \hyperlink{a00574}{Main\+Menu}, this is the class that is loaded straight after the splash screen is used to access the majority of other screens in the program  
+
+
+Inheritance diagram for Engine.\+States.\+Menu.\+Main\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d4/dbe/a00574}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00574_a90df30106a466b9da59ebda89c6172db}{Main\+Menu} ()
+\item 
+override void \hyperlink{a00574_a43b83f0941e721234fdceeb0b5587f1b}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises the logic of the screen \end{DoxyCompactList}\item 
+override void \hyperlink{a00574_a193970cc59914f538ae0bcd39fe1ef48}{Draw} (Sprite\+Batch sprite\+Batch)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws the content of the screen \end{DoxyCompactList}\item 
+override void \hyperlink{a00574_ad667a7ff9dea79bee26a4205418c7a61}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop which is cycled through each frame \end{DoxyCompactList}\item 
+void \hyperlink{a00574_a18a59c1bc70e322805c36a3ca5c7d107}{Check\+Limits} ()
+\item 
+void \hyperlink{a00574_acb1e589815e4a3897d061d69a17dd7d9}{On\+Key\+Down} (object sender, \hyperlink{a00362}{Key\+Event\+Args} e)
+\item 
+void \hyperlink{a00574_a3f150b2f6278d7267d54b38601534ed1}{Menu\+Selection} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: \hyperlink{a00574}{Main\+Menu}, this is the class that is loaded straight after the splash screen is used to access the majority of other screens in the program 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00574_a90df30106a466b9da59ebda89c6172db}\label{a00574_a90df30106a466b9da59ebda89c6172db}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!Main\+Menu@{Main\+Menu}}
+\index{Main\+Menu@{Main\+Menu}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Main\+Menu()}{MainMenu()}}
+{\footnotesize\ttfamily Engine.\+States.\+Menu.\+Main\+Menu.\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00574_a18a59c1bc70e322805c36a3ca5c7d107}\label{a00574_a18a59c1bc70e322805c36a3ca5c7d107}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!Check\+Limits@{Check\+Limits}}
+\index{Check\+Limits@{Check\+Limits}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Check\+Limits()}{CheckLimits()}}
+{\footnotesize\ttfamily void Engine.\+States.\+Menu.\+Main\+Menu.\+Check\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00574_a193970cc59914f538ae0bcd39fe1ef48}\label{a00574_a193970cc59914f538ae0bcd39fe1ef48}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void Engine.\+States.\+Menu.\+Main\+Menu.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws the content of the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Batch} & the Monogame Sprite\+Batch\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{a00550_a200c31954effe5fc060118607155fb16}{Engine.\+States.\+Engine.\+Base\+Screen}.
+
+\mbox{\Hypertarget{a00574_a43b83f0941e721234fdceeb0b5587f1b}\label{a00574_a43b83f0941e721234fdceeb0b5587f1b}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Engine.\+States.\+Menu.\+Main\+Menu.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises the logic of the screen 
+
+I\+N\+I\+T\+I\+A\+L\+I\+SE\+: The fader D\+E\+C\+L\+A\+R\+ED earlier
+
+S\+ET\+: Soundtrack
+
+E\+V\+E\+NT\+: Add Keydown event to the screen
+
+A\+DD\+: Different possible selections to the menu
+
+F\+OR\+: Each item in the Menu\+Names\+: Move down the screen and draw the strings 
+
+Reimplemented from \hyperlink{a00550_af8fd6890abf865641e190578ef2e054c}{Engine.\+States.\+Engine.\+Base\+Screen}.
+
+\mbox{\Hypertarget{a00574_a3f150b2f6278d7267d54b38601534ed1}\label{a00574_a3f150b2f6278d7267d54b38601534ed1}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!Menu\+Selection@{Menu\+Selection}}
+\index{Menu\+Selection@{Menu\+Selection}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Menu\+Selection()}{MenuSelection()}}
+{\footnotesize\ttfamily void Engine.\+States.\+Menu.\+Main\+Menu.\+Menu\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00574_acb1e589815e4a3897d061d69a17dd7d9}\label{a00574_acb1e589815e4a3897d061d69a17dd7d9}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!On\+Key\+Down@{On\+Key\+Down}}
+\index{On\+Key\+Down@{On\+Key\+Down}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{On\+Key\+Down()}{OnKeyDown()}}
+{\footnotesize\ttfamily void Engine.\+States.\+Menu.\+Main\+Menu.\+On\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\hyperlink{a00362}{Key\+Event\+Args}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00574_ad667a7ff9dea79bee26a4205418c7a61}\label{a00574_ad667a7ff9dea79bee26a4205418c7a61}} 
+\index{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+States\+::\+Menu\+::\+Main\+Menu@{Engine\+::\+States\+::\+Menu\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Engine.\+States.\+Menu.\+Main\+Menu.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop which is cycled through each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & the Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{a00550_a098ece7d1e112475f6e880c3a672af64}{Engine.\+States.\+Engine.\+Base\+Screen}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00212}{Main\+Menu.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/daa/a00490">
+<title>Engine::Managers::Cam::Camera class Reference</title>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CameraType cType<para><emphasis>Used to determine the cameras behaviour.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Matrix _transform<para><emphasis>Camera Zoom.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 _pos<para><emphasis>Matrix Transform.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool Follow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool Locked</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isPossessed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 Force<para><emphasis>Original position;.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IEntity p</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float _zoom<para><emphasis>Target Entity.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float _rotation<para><emphasis>Camera Position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 _oPos<para><emphasis>Camera Rotation.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/daa/a00490_1aa95d077fcb6779cf1d05dcd3924e47fd">Camera</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1aed786ac2b98679e90e3cc3fe5189f84e">Move</link> (
+Vector2 amount)<para><emphasis>&lt;summary&gt;
+METHOD: Move the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1a7ba71eb9f006ab215b884763111c64f0">setEntity</link> (
+<link linkend="dd/dfd/a00438">IEntity</link> e, string Type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Matrix <link linkend="d7/daa/a00490_1af3d0a20954c676fc8d14467fa6a3ed9f">get_transformation</link> (
+GraphicsDevice graphicsDevice)<para><emphasis>&lt;summary&gt;
+METHOD: Returns a matrix of the current transformation of the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1a40c128b7756087b2af6b3c3d62f83d08">Update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1a77490f1a670ff106e843a46a712c9929">checkPossession</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Used to check if the camera is posessed by an object so that any move requests can be completed
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1a93b217a61f0e87a0d184db27f7c0c1e7">setPos</link> (
+Vector2 pos)<para><emphasis>&lt;summary&gt;
+METHOD: Move the camera to a set position
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1ae78f05538144a4613e5a601509482eea">reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/daa/a00490_1a87b553b3288448c4d6fe055398faa363">checkInput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d7/daa/a00490_1aa95d077fcb6779cf1d05dcd3924e47fd">
+                <title>Engine.Managers.Cam.Camera.Camera ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d7/daa/a00490_1aed786ac2b98679e90e3cc3fe5189f84e">
+                <title>void Engine.Managers.Cam.Camera.Move (Vector2 amount)</title> <emphasis>&lt;summary&gt;
+METHOD: Move the camera
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>amount</entry>
+                                <entry>
+<para>Vector2 to move the camera by</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/daa/a00490_1a7ba71eb9f006ab215b884763111c64f0">
+                <title>void Engine.Managers.Cam.Camera.setEntity (IEntity e, string Type)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/daa/a00490_1af3d0a20954c676fc8d14467fa6a3ed9f">
+                <title>Matrix Engine.Managers.Cam.Camera.get_transformation (GraphicsDevice graphicsDevice)</title> <emphasis>&lt;summary&gt;
+METHOD: Returns a matrix of the current transformation of the camera
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>graphicsDevice</entry>
+                                <entry>
+<para>Monogame GraphicsDevice</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Matrix _transform</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d7/daa/a00490_1a40c128b7756087b2af6b3c3d62f83d08">
+                <title>void Engine.Managers.Cam.Camera.Update ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/daa/a00490_1a77490f1a670ff106e843a46a712c9929">
+                <title>void Engine.Managers.Cam.Camera.checkPossession ()</title> <emphasis>&lt;summary&gt;
+METHOD: Used to check if the camera is posessed by an object so that any move requests can be completed
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d7/daa/a00490_1a93b217a61f0e87a0d184db27f7c0c1e7">
+                <title>void Engine.Managers.Cam.Camera.setPos (Vector2 pos)</title> <emphasis>&lt;summary&gt;
+METHOD: Move the camera to a set position
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pos</entry>
+                                <entry>
+<para>Position to be set to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/daa/a00490_1ae78f05538144a4613e5a601509482eea">
+                <title>void Engine.Managers.Cam.Camera.reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/daa/a00490_1a87b553b3288448c4d6fe055398faa363">
+                <title>void Engine.Managers.Cam.Camera.checkInput ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

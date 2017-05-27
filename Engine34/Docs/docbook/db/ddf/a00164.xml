@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/ddf/a00164">
+    <title>SATcheck.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d52/a00510">Engine::Managers::Collision::SATcheck</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: This class runs all of the Separating Axis Theorem collision code. It calculates whether two shapes are currently
+intersecting or going to intersect by projecting shadows of both shapes onto an arbitrary axis perpendicular to the
+edges of the shape.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d12/a00268">Engine::Managers::Collision</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file SATcheck.cs</para>
+    </simplesect>
+</section>

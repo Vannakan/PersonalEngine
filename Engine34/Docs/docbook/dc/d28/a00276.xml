@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d28/a00276">
+<title>Engine::States::Engine</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/de7/a00550">Engine::States::Engine::BaseScreen</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/df9/a00554">Engine::States::Engine::SplashScreen</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The splash screen that is loaded upon running the program whilst the main menu loads
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="dc/d28/a00276_1a523ba47df707c4a9f45f2d7c7c6bf8ab">State</link> {
+<link linkend="dc/d28/a00276_1a523ba47df707c4a9f45f2d7c7c6bf8aba8509939e44cc05f7a4da43eaa87e45c4">Entering</link>,
+<link linkend="dc/d28/a00276_1a523ba47df707c4a9f45f2d7c7c6bf8aba5bda814c4aedb126839228f1a3d92f09">Running</link>,
+<link linkend="dc/d28/a00276_1a523ba47df707c4a9f45f2d7c7c6bf8aba0657d962b72e6f1f37dda8dad3684cb8">Exiting</link>
+}</literallayout>
+<para><emphasis>&lt;summary&gt;
+ABSTRACT CLASS: The base Screen which all levels and screens will extend from. This contains the properties and
+methods that all screens need
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

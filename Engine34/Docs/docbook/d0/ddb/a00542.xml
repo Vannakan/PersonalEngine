@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/ddb/a00542">
+<title>Engine::Managers::ServiceLocator::Locator class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; object, object &gt; _services<para><emphasis>DECLARE: Dictionary of all available services.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; object, object &gt; _updservices<para><emphasis>DECLARE: Dictionary of all services that need to be updated.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IUpdService &gt; updateList<para><emphasis>DECLARE: List of Managers needing Updating.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Locator instance<para><emphasis>DECLARE: Private instance.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/ddb/a00542_1a0497a9a7930b21fcc1c6ed1eda1229cd">Locator</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR:
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/ddb/a00542_1a34bc6f5d735512bae556d2ec65a7bda7">InitializeServices</link> (
+ContentManager c, SpriteBatch sb)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises each service for the program to run
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d0/ddb/a00542_1a2bb3c0174bd67904d148bc789c9faaba">getService&lt; T &gt;</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Gets and returns a service of the generic type input in the parameter
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/ddb/a00542_1a2a2ead2e1ed9a2d63b59ab34621b0812">registerService&lt; T &gt;</link> (
+T val)<para><emphasis>&lt;summary&gt;
+METHOD: Register the service and check whether it needs to be updated
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/ddb/a00542_1af5c3ce0526940dffc81919b2ef35d652">registerUPDService&lt; T &gt;</link> (
+T val)<para><emphasis>&lt;summary&gt;
+METHOD: Register Update service
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/ddb/a00542_1ab66a423db26d79e6fc655df699a64f0c">UpdateServices</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update all services that require it
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: A service locator that removes the need for each manager to be a singleton. This is now the only Singleton required in the whole program. It allows us to access each manager and call the method from each Manager as we require it </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 36 of file Locator.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Locator.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d0/ddb/a00542_1a0497a9a7930b21fcc1c6ed1eda1229cd">
+                <title>Engine.Managers.ServiceLocator.Locator.Locator ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR:
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/ddb/a00542_1a34bc6f5d735512bae556d2ec65a7bda7">
+                <title>void Engine.Managers.ServiceLocator.Locator.InitializeServices (ContentManager c, SpriteBatch sb)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises each service for the program to run
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>the monogame ContentManager to be used</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>sb</entry>
+                                <entry>
+<para>the monogame spriteBatch to be used</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/ddb/a00542_1a2bb3c0174bd67904d148bc789c9faaba">
+                <title>T Engine.Managers.ServiceLocator.Locator.getService&lt; T &gt; ()</title> <emphasis>&lt;summary&gt;
+METHOD: Gets and returns a service of the generic type input in the parameter
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Generic type T of the service to be requested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Service of Type T</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/ddb/a00542_1a2a2ead2e1ed9a2d63b59ab34621b0812">
+                <title>void Engine.Managers.ServiceLocator.Locator.registerService&lt; T &gt; (T val)</title> <emphasis>&lt;summary&gt;
+METHOD: Register the service and check whether it needs to be updated
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Generic service</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>Service of Type T</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/ddb/a00542_1af5c3ce0526940dffc81919b2ef35d652">
+                <title>void Engine.Managers.ServiceLocator.Locator.registerUPDService&lt; T &gt; (T val)</title> <emphasis>&lt;summary&gt;
+METHOD: Register Update service
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/ddb/a00542_1ab66a423db26d79e6fc655df699a64f0c">
+                <title>void Engine.Managers.ServiceLocator.Locator.UpdateServices (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update all services that require it
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

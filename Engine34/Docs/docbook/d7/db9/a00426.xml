@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/db9/a00426">
+<title>Engine::Interfaces::Collision::ICollidable interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/db9/a00426_1a000ca0336b06e3f2d658d442a83dbbbb">ApplyImpulse</link> (
+Vector2 cVelocity)<para><emphasis>&lt;summary&gt;
+ApplyImpulse is the response from collision. After the object has been moved by the minimum translation vector
+It will have a reactionary force applied to it in order to simulate physics.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: An interface used for objects that will need collision calculation during the game loop </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file ICollidable.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ICollidable.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d7/db9/a00426_1a000ca0336b06e3f2d658d442a83dbbbb">
+                <title>void Engine.Interfaces.Collision.ICollidable.ApplyImpulse (Vector2 cVelocity)</title> <emphasis>&lt;summary&gt;
+ApplyImpulse is the response from collision. After the object has been moved by the minimum translation vector
+It will have a reactionary force applied to it in order to simulate physics.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>cVelocity</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

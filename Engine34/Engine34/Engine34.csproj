@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{768A3852-0A5F-4D09-A1DD-4B642CAD971B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Engine34</RootNamespace>
+    <AssemblyName>Engine34</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AnimationManager.cs" />
+    <Compile Include="AStar\AstarPath.cs" />
+    <Compile Include="Entities\Action.cs" />
+    <Compile Include="Entities\Animation\AnimationEvent.cs" />
+    <Compile Include="Entities\Animation\AnimationSet.cs" />
+    <Compile Include="Entities\Animation\AnimationTable.cs" />
+    <Compile Include="Entities\Animation\Animator.cs" />
+    <Compile Include="Entities\Animation\Debug\Player.cs" />
+    <Compile Include="Entities\Animation\Debug\PlayerDown.cs" />
+    <Compile Include="Entities\Animation\Debug\PlayerLeft.cs" />
+    <Compile Include="Entities\Animation\Debug\PlayerRight.cs" />
+    <Compile Include="Entities\Animation\Debug\PlayerUp.cs" />
+    <Compile Include="Entities\Animation\IAnimationState.cs" />
+    <Compile Include="Entities\Animation\IAnimationTable.cs" />
+    <Compile Include="Entities\Animation\PlayerAnimationEvent.cs" />
+    <Compile Include="Entities\Animation\PlayerAnimationTable.cs" />
+    <Compile Include="Entities\Behaviour\Behaviour.cs" />
+    <Compile Include="Entities\Behaviour\BehaviourEvent.cs" />
+    <Compile Include="Entities\Behaviour\BehaviourSet.cs" />
+    <Compile Include="Entities\Behaviour\BehaviourTable.cs" />
+    <Compile Include="Entities\Behaviour\IBehaviourState.cs" />
+    <Compile Include="Entities\Behaviour\IBehaviourTable.cs" />
+    <Compile Include="Entities\IAction.cs" />
+    <Compile Include="Entities\IAnimation.cs" />
+    <Compile Include="Entities\Props\Dynamic\DynamicProp.cs" />
+    <Compile Include="Entities\Props\Shared\IProp.cs" />
+    <Compile Include="Entities\Props\Shared\Prop.cs" />
+    <Compile Include="Entities\Props\Static\StaticProp.cs" />
+    <Compile Include="Events\CollisionEvent\ICollisionHandler.cs" />
+    <Compile Include="Events\GameEvent\GameEventArgs.cs" />
+    <Compile Include="Events\GameEvent\GameEventListener.cs" />
+    <Compile Include="Events\GameEvent\GameHandler.cs" />
+    <Compile Include="Events\MouseEvent\IMouseHandler.cs" />
+    <Compile Include="Events\SoundEvent\ISoundHandler.cs" />
+    <Compile Include="Grid\CellularAutomata.cs" />
+    <Compile Include="Grid\CollisionNode.cs" />
+    <Compile Include="Interfaces\Animation\IAnimationManager.cs" />
+    <Compile Include="Interfaces\Collision\IHitbox.cs" />
+    <Compile Include="Interfaces\Render\IShader.cs" />
+    <Compile Include="Managers\Animation\AnimationManager.cs" />
+    <Compile Include="Managers\Behaviour\BehaviourManager.cs" />
+    <Compile Include="Interfaces\Behaviour\IBehaviourManager.cs" />
+    <Compile Include="Managers\Cam\Camera.cs" />
+    <Compile Include="Managers\Cam\CameraManager.cs" />
+    <Compile Include="Interfaces\Cam\ICameraManager.cs" />
+    <Compile Include="Managers\Cam\CameraState.cs" />
+    <Compile Include="Managers\Collision\AABB.cs" />
+    <Compile Include="Managers\Collision\DetectionManager.cs" />
+    <Compile Include="Interfaces\Collision\ICollidable.cs" />
+    <Compile Include="Interfaces\Collision\IDetectionManager.cs" />
+    <Compile Include="Managers\Collision\Hitbox.cs" />
+    <Compile Include="Managers\Collision\Quadtree.cs" />
+    <Compile Include="Managers\Collision\SATcheck.cs" />
+    <Compile Include="Managers\Collision\TranslationVector.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Interfaces\Entities\IEntity.cs" />
+    <Compile Include="Interfaces\Entities\IMind.cs" />
+    <Compile Include="Entities\Mind.cs" />
+    <Compile Include="Managers\Collision\TreeNode.cs" />
+    <Compile Include="Managers\Entities\EntityManager.cs" />
+    <Compile Include="Interfaces\Entities\IEntityManager.cs" />
+    <Compile Include="Events\ButtonEvent.cs" />
+    <Compile Include="Events\CollisionEvent\CollisionEventArgs.cs" />
+    <Compile Include="Events\CollisionEvent\CollisionHandler.cs" />
+    <Compile Include="Events\CollisionEvent\SATEventArgs.cs" />
+    <Compile Include="Events\KeyboardEvent\KeyEventArgs.cs" />
+    <Compile Include="Events\KeyboardEvent\KeyHandler.cs" />
+    <Compile Include="Events\KeyboardEvent\KeyListener.cs" />
+    <Compile Include="Events\MouseEvent\MouseEventArgs.cs" />
+    <Compile Include="Events\MouseEvent\MouseHandler.cs" />
+    <Compile Include="Events\MouseEvent\MouseListener.cs" />
+    <Compile Include="Grid\AStarGridSearch.cs" />
+    <Compile Include="Grid\AStarNode.cs" />
+    <Compile Include="Grid\Grid.cs" />
+    <Compile Include="Grid\IAStarNode.cs" />
+    <Compile Include="Grid\Node.cs" />
+    <Compile Include="Interfaces\InputManager\IInputManager.cs" />
+    <Compile Include="Managers\Input\InputManager.cs" />
+    <Compile Include="Managers\Prop_Scenery\PropManager.cs" />
+    <Compile Include="Managers\Render\ILightMask.cs" />
+    <Compile Include="Managers\Render\ILightMaskManager.cs" />
+    <Compile Include="Managers\Render\LightMask.cs" />
+    <Compile Include="Managers\Render\LightSourceType.cs" />
+    <Compile Include="Manager\IContainManager.cs" />
+    <Compile Include="Manager\IDrawManager.cs" />
+    <Compile Include="Manager\IUpdateManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\Render\IDrawableComponent.cs" />
+    <Compile Include="Interfaces\Render\IRenderManager.cs" />
+    <Compile Include="Managers\Render\RenderManager.cs" />
+    <Compile Include="Interfaces\Resource\IResourceLoader.cs" />
+    <Compile Include="Managers\Resource\ResourceLoader.cs" />
+    <Compile Include="Interfaces\ServiceLocator\IServiceLocator.cs" />
+    <Compile Include="Interfaces\ServiceLocator\IUpdService.cs" />
+    <Compile Include="Managers\ServiceLocator\Locator.cs" />
+    <Compile Include="Interfaces\Sound\ISoundManager.cs" />
+    <Compile Include="Events\SoundEvent\SoundEventArgs.cs" />
+    <Compile Include="Events\SoundEvent\SoundHandler.cs" />
+    <Compile Include="Managers\Sound\SoundManager.cs" />
+    <Compile Include="States\Engine\BaseScreen.cs" />
+    <Compile Include="Interfaces\Screen\IScreen.cs" />
+    <Compile Include="Managers\Screen\Fader.cs" />
+    <Compile Include="Interfaces\Screen\IScreenManager.cs" />
+    <Compile Include="Managers\Screen\ScreenManager.cs" />
+    <Compile Include="Events\ScreenEvent\sManagerArgs.cs" />
+    <Compile Include="States\Engine\PopupScreen.cs" />
+    <Compile Include="Utilities\Drawing\DrawLine.cs" />
+    <Compile Include="Utilities\Drawing\DrawPrimitives.cs" />
+    <Compile Include="Utilities\Drawing\DrawString.cs" />
+    <Compile Include="Utilities\Drawing\GameText.cs" />
+    <Compile Include="Utilities\Shapes\Circle.cs" />
+    <Compile Include="Utilities\Shapes\Line.cs" />
+    <Compile Include="Utilities\StateMachine\IState.cs" />
+    <Compile Include="Utilities\StateMachine\IStateEvent.cs" />
+    <Compile Include="Utilities\StateMachine\IStateObject.cs" />
+    <Compile Include="Utilities\StateMachine\IStateSet.cs" />
+    <Compile Include="Utilities\StateMachine\IStateTable.cs" />
+    <Compile Include="Utilities\StateMachine\State.cs" />
+    <Compile Include="Utilities\StateMachine\StateEvent.cs" />
+    <Compile Include="Utilities\StateMachine\StateMachineManager.cs" />
+    <Compile Include="Utilities\StateMachine\StateObject.cs" />
+    <Compile Include="Utilities\StateMachine\StateSet.cs" />
+    <Compile Include="Utilities\StateMachine\StateTable.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="Textures\terrainTile1.png" />
+    <Content Include="Textures\terrainTile2.png" />
+    <Content Include="Textures\terrainTile3.png" />
+    <Content Include="Textures\terrainTile4.png" />
+    <Content Include="Textures\terrainTile5.png" />
+    <Content Include="Textures\Tile1.png" />
+    <Content Include="Textures\Tile2.png" />
+    <Content Include="Textures\Tile3.png" />
+    <Content Include="Textures\UnTexturedTile.png" />
+    <Content Include="XmlLevels\CustomLevel.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DebugUtils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

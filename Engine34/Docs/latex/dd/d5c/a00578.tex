@@ -1,0 +1,92 @@
+\hypertarget{a00578}{}\section{Engine.\+Menu\+Item Class Reference}
+\label{a00578}\index{Engine.\+Menu\+Item@{Engine.\+Menu\+Item}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00578_af8c1e0084202dd6048beb56c3e8ea1eb}{Menu\+Item} (string \+\_\+name, float y\+Offset, Sprite\+Font \+\_\+sprite\+Font, int \+\_\+index, Texture2D b\+Tex)
+\item 
+\hyperlink{a00578_a79a905f74d6632e0c8cda3cd951072a2}{Menu\+Item} (string \+\_\+name, float y\+Offset, Sprite\+Font \+\_\+sprite\+Font, int \+\_\+index, Texture2D b\+Tex, float \hyperlink{a00578_a8f2bf7f4310e299f7ef8ff70729c3aff}{scale})
+\item 
+void \hyperlink{a00578_afdc8061ebe0db94ec3c73c3648f35c27}{Draw} (Sprite\+Batch sprite\+Batch)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{a00578_a45b562c09b4b905b48941cc5723265af}{position}
+\item 
+float \hyperlink{a00578_a8f2bf7f4310e299f7ef8ff70729c3aff}{scale} = 1.\+5f
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00578_a7455f6df46a7eb219f4c03c7f311fec2}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{a00578_abf3d8b83686d4378d2bb2d5cc2ccbf5a}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{a00578_a7bef8d2c1b94b0edf19a89cf76269442}{Index}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00578_af8c1e0084202dd6048beb56c3e8ea1eb}\label{a00578_af8c1e0084202dd6048beb56c3e8ea1eb}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!Menu\+Item@{Menu\+Item}}
+\index{Menu\+Item@{Menu\+Item}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{Menu\+Item()}{MenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Engine.\+Menu\+Item.\+Menu\+Item (\begin{DoxyParamCaption}\item[{string}]{\+\_\+name,  }\item[{float}]{y\+Offset,  }\item[{Sprite\+Font}]{\+\_\+sprite\+Font,  }\item[{int}]{\+\_\+index,  }\item[{Texture2D}]{b\+Tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00578_a79a905f74d6632e0c8cda3cd951072a2}\label{a00578_a79a905f74d6632e0c8cda3cd951072a2}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!Menu\+Item@{Menu\+Item}}
+\index{Menu\+Item@{Menu\+Item}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{Menu\+Item()}{MenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Engine.\+Menu\+Item.\+Menu\+Item (\begin{DoxyParamCaption}\item[{string}]{\+\_\+name,  }\item[{float}]{y\+Offset,  }\item[{Sprite\+Font}]{\+\_\+sprite\+Font,  }\item[{int}]{\+\_\+index,  }\item[{Texture2D}]{b\+Tex,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00578_afdc8061ebe0db94ec3c73c3648f35c27}\label{a00578_afdc8061ebe0db94ec3c73c3648f35c27}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Menu\+Item.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sprite\+Batch.\+Draw(button\+Texture, screen\+Center,null, Color.\+White,0f,texture\+Center,1f,Sprite\+Effects.\+None,0.\+5f); 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00578_a45b562c09b4b905b48941cc5723265af}\label{a00578_a45b562c09b4b905b48941cc5723265af}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!position@{position}}
+\index{position@{position}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Vector2 Engine.\+Menu\+Item.\+position}
+
+\mbox{\Hypertarget{a00578_a8f2bf7f4310e299f7ef8ff70729c3aff}\label{a00578_a8f2bf7f4310e299f7ef8ff70729c3aff}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!scale@{scale}}
+\index{scale@{scale}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float Engine.\+Menu\+Item.\+scale = 1.\+5f}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00578_a7bef8d2c1b94b0edf19a89cf76269442}\label{a00578_a7bef8d2c1b94b0edf19a89cf76269442}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!Index@{Index}}
+\index{Index@{Index}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{Index}{Index}}
+{\footnotesize\ttfamily int Engine.\+Menu\+Item.\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00578_a7455f6df46a7eb219f4c03c7f311fec2}\label{a00578_a7455f6df46a7eb219f4c03c7f311fec2}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Engine.\+Menu\+Item.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00578_abf3d8b83686d4378d2bb2d5cc2ccbf5a}\label{a00578_abf3d8b83686d4378d2bb2d5cc2ccbf5a}} 
+\index{Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}!Name@{Name}}
+\index{Name@{Name}!Engine\+::\+Menu\+Item@{Engine\+::\+Menu\+Item}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Engine.\+Menu\+Item.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00215}{Menu\+Item.\+cs}\end{DoxyCompactItemize}

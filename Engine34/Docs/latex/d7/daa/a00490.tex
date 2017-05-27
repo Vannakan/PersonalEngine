@@ -1,0 +1,265 @@
+\hypertarget{a00490}{}\section{Engine.\+Managers.\+Cam.\+Camera Class Reference}
+\label{a00490}\index{Engine.\+Managers.\+Cam.\+Camera@{Engine.\+Managers.\+Cam.\+Camera}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00490_aa95d077fcb6779cf1d05dcd3924e47fd}{Camera} ()
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR \end{DoxyCompactList}\item 
+void \hyperlink{a00490_aed786ac2b98679e90e3cc3fe5189f84e}{Move} (Vector2 amount)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Move the camera \end{DoxyCompactList}\item 
+void \hyperlink{a00490_a7ba71eb9f006ab215b884763111c64f0}{set\+Entity} (\hyperlink{a00438}{I\+Entity} e, string Type)
+\item 
+Matrix \hyperlink{a00490_af3d0a20954c676fc8d14467fa6a3ed9f}{get\+\_\+transformation} (Graphics\+Device graphics\+Device)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Returns a matrix of the current transformation of the camera \end{DoxyCompactList}\item 
+void \hyperlink{a00490_a40c128b7756087b2af6b3c3d62f83d08}{Update} ()
+\item 
+void \hyperlink{a00490_a77490f1a670ff106e843a46a712c9929}{check\+Possession} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Used to check if the camera is posessed by an object so that any move requests can be completed \end{DoxyCompactList}\item 
+void \hyperlink{a00490_a93b217a61f0e87a0d184db27f7c0c1e7}{set\+Pos} (Vector2 pos)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Move the camera to a set position \end{DoxyCompactList}\item 
+void \hyperlink{a00490_ae78f05538144a4613e5a601509482eea}{reset} ()
+\item 
+void \hyperlink{a00490_a87b553b3288448c4d6fe055398faa363}{check\+Input} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00267_aa40b88e1e953e36c54409ee9727c238b}{Camera\+Type} \hyperlink{a00490_a4394e674c32e8e3ca1b1fd25bc4277d4}{c\+Type}
+\begin{DoxyCompactList}\small\item\em Used to determine the cameras behaviour. \end{DoxyCompactList}\item 
+Matrix \hyperlink{a00490_a6760aa08917104a4c2937a9a7e05fe18}{\+\_\+transform}
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00490}{Camera} Zoom. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00490_a7b8a69cbcec7b5b8a463981970823b51}{\+\_\+pos}
+\begin{DoxyCompactList}\small\item\em Matrix Transform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00490_a2805d6ca57bb0d53772646539bb5fb71}{p}
+\item 
+float \hyperlink{a00490_a3909ab890f8c56d831d892bb6f6d4a20}{\+\_\+zoom}
+\begin{DoxyCompactList}\small\item\em Target Entity. \end{DoxyCompactList}\item 
+float \hyperlink{a00490_a34f440a1a9a332a065c4e022130d32dd}{\+\_\+rotation}
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00490}{Camera} Position. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00490_a44c44f9b99889984004062844ccbb23a}{\+\_\+o\+Pos}
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00490}{Camera} Rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{a00490_a625deed885e044306674bce674f7ad52}{Zoom}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Sets and gets zoom \end{DoxyCompactList}\item 
+float \hyperlink{a00490_a18059d9071fd75793ceeee742c10e6bf}{Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Rotation \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00490_acbd14e79831528efd53d6363f5a8a531}{Pos}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Position \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00490_aa95d077fcb6779cf1d05dcd3924e47fd}\label{a00490_aa95d077fcb6779cf1d05dcd3924e47fd}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Cam.\+Camera.\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR 
+
+Initalise the properties of the camera 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00490_a87b553b3288448c4d6fe055398faa363}\label{a00490_a87b553b3288448c4d6fe055398faa363}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!check\+Input@{check\+Input}}
+\index{check\+Input@{check\+Input}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{check\+Input()}{checkInput()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+check\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If the L key is pressed then the camera is moved to match the zoom
+
+If J is pressed then the camera is moved again
+
+If I is pressed the camera is moved on the Y axis to match the zoom
+
+Same as above but with K \mbox{\Hypertarget{a00490_a77490f1a670ff106e843a46a712c9929}\label{a00490_a77490f1a670ff106e843a46a712c9929}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!check\+Possession@{check\+Possession}}
+\index{check\+Possession@{check\+Possession}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{check\+Possession()}{checkPossession()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+check\+Possession (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Used to check if the camera is posessed by an object so that any move requests can be completed 
+
+If the camera is posessed
+
+Follow the object that posesses the camera, usually this will be the player. \mbox{\Hypertarget{a00490_af3d0a20954c676fc8d14467fa6a3ed9f}\label{a00490_af3d0a20954c676fc8d14467fa6a3ed9f}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!get\+\_\+transformation@{get\+\_\+transformation}}
+\index{get\+\_\+transformation@{get\+\_\+transformation}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{get\+\_\+transformation()}{get\_transformation()}}
+{\footnotesize\ttfamily Matrix Engine.\+Managers.\+Cam.\+Camera.\+get\+\_\+transformation (\begin{DoxyParamCaption}\item[{Graphics\+Device}]{graphics\+Device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Returns a matrix of the current transformation of the camera 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics\+Device} & Monogame Graphics\+Device\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix \+\_\+transform
+\end{DoxyReturn}
+Thanks to o KB o for this solution \mbox{\Hypertarget{a00490_aed786ac2b98679e90e3cc3fe5189f84e}\label{a00490_aed786ac2b98679e90e3cc3fe5189f84e}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!Move@{Move}}
+\index{Move@{Move}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+Move (\begin{DoxyParamCaption}\item[{Vector2}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Move the camera 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Vector2 to move the camera by\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00490_ae78f05538144a4613e5a601509482eea}\label{a00490_ae78f05538144a4613e5a601509482eea}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!reset@{reset}}
+\index{reset@{reset}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00490_a7ba71eb9f006ab215b884763111c64f0}\label{a00490_a7ba71eb9f006ab215b884763111c64f0}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!set\+Entity@{set\+Entity}}
+\index{set\+Entity@{set\+Entity}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{set\+Entity()}{setEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+set\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{a00438}{I\+Entity}}]{e,  }\item[{string}]{Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00490_a93b217a61f0e87a0d184db27f7c0c1e7}\label{a00490_a93b217a61f0e87a0d184db27f7c0c1e7}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{set\+Pos()}{setPos()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+set\+Pos (\begin{DoxyParamCaption}\item[{Vector2}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Move the camera to a set position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position to be set to\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00490_a40c128b7756087b2af6b3c3d62f83d08}\label{a00490_a40c128b7756087b2af6b3c3d62f83d08}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00490_a44c44f9b99889984004062844ccbb23a}\label{a00490_a44c44f9b99889984004062844ccbb23a}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!\+\_\+o\+Pos@{\+\_\+o\+Pos}}
+\index{\+\_\+o\+Pos@{\+\_\+o\+Pos}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{\+\_\+o\+Pos}{\_oPos}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Cam.\+Camera.\+\_\+o\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\hyperlink{a00490}{Camera} Rotation. 
+
+\mbox{\Hypertarget{a00490_a7b8a69cbcec7b5b8a463981970823b51}\label{a00490_a7b8a69cbcec7b5b8a463981970823b51}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!\+\_\+pos@{\+\_\+pos}}
+\index{\+\_\+pos@{\+\_\+pos}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{\+\_\+pos}{\_pos}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Cam.\+Camera.\+\_\+pos}
+
+
+
+Matrix Transform. 
+
+\mbox{\Hypertarget{a00490_a34f440a1a9a332a065c4e022130d32dd}\label{a00490_a34f440a1a9a332a065c4e022130d32dd}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!\+\_\+rotation@{\+\_\+rotation}}
+\index{\+\_\+rotation@{\+\_\+rotation}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{\+\_\+rotation}{\_rotation}}
+{\footnotesize\ttfamily float Engine.\+Managers.\+Cam.\+Camera.\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\hyperlink{a00490}{Camera} Position. 
+
+\mbox{\Hypertarget{a00490_a6760aa08917104a4c2937a9a7e05fe18}\label{a00490_a6760aa08917104a4c2937a9a7e05fe18}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!\+\_\+transform@{\+\_\+transform}}
+\index{\+\_\+transform@{\+\_\+transform}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{\+\_\+transform}{\_transform}}
+{\footnotesize\ttfamily Matrix Engine.\+Managers.\+Cam.\+Camera.\+\_\+transform}
+
+
+
+\hyperlink{a00490}{Camera} Zoom. 
+
+\mbox{\Hypertarget{a00490_a3909ab890f8c56d831d892bb6f6d4a20}\label{a00490_a3909ab890f8c56d831d892bb6f6d4a20}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!\+\_\+zoom@{\+\_\+zoom}}
+\index{\+\_\+zoom@{\+\_\+zoom}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{\+\_\+zoom}{\_zoom}}
+{\footnotesize\ttfamily float Engine.\+Managers.\+Cam.\+Camera.\+\_\+zoom\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Target Entity. 
+
+\mbox{\Hypertarget{a00490_a4394e674c32e8e3ca1b1fd25bc4277d4}\label{a00490_a4394e674c32e8e3ca1b1fd25bc4277d4}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!c\+Type@{c\+Type}}
+\index{c\+Type@{c\+Type}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{c\+Type}{cType}}
+{\footnotesize\ttfamily \hyperlink{a00267_aa40b88e1e953e36c54409ee9727c238b}{Camera\+Type} Engine.\+Managers.\+Cam.\+Camera.\+c\+Type}
+
+
+
+Used to determine the cameras behaviour. 
+
+\mbox{\Hypertarget{a00490_a2805d6ca57bb0d53772646539bb5fb71}\label{a00490_a2805d6ca57bb0d53772646539bb5fb71}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!p@{p}}
+\index{p@{p}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Managers.\+Cam.\+Camera.\+p\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00490_acbd14e79831528efd53d6363f5a8a531}\label{a00490_acbd14e79831528efd53d6363f5a8a531}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!Pos@{Pos}}
+\index{Pos@{Pos}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{Pos}{Pos}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Cam.\+Camera.\+Pos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Position 
+
+\mbox{\Hypertarget{a00490_a18059d9071fd75793ceeee742c10e6bf}\label{a00490_a18059d9071fd75793ceeee742c10e6bf}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily float Engine.\+Managers.\+Cam.\+Camera.\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Rotation 
+
+\mbox{\Hypertarget{a00490_a625deed885e044306674bce674f7ad52}\label{a00490_a625deed885e044306674bce674f7ad52}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!Engine\+::\+Managers\+::\+Cam\+::\+Camera@{Engine\+::\+Managers\+::\+Cam\+::\+Camera}}
+\subsubsection{\texorpdfstring{Zoom}{Zoom}}
+{\footnotesize\ttfamily float Engine.\+Managers.\+Cam.\+Camera.\+Zoom\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+M\+E\+T\+H\+OD\+: Sets and gets zoom 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00149}{Camera.\+cs}\end{DoxyCompactItemize}

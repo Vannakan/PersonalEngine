@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d08/a00244">
+<title>Engine::Entities::Steering</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d84/a00338">Engine::Entities::Steering::ISteeringBehaviour</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d45/a00342">Engine::Entities::Steering::SteeringEntity</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/daf/a00346">Engine::Entities::Steering::SteeringMind</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

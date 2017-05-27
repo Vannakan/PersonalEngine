@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dd1/a00398">
+<title>Engine::Grid::AStarGridSearch class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool found<para><emphasis>Has the goal been found.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Node start</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Node goal</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Node &gt; OpenList<para><emphasis>List containing nodes that we want to search.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Node &gt; ClosedList<para><emphasis>List containing nodes we have already searched.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Queue&lt; Node &gt; Waypoints<para><emphasis>A queue of waypoints that an entity will request for its pathfinding. The class does the work and just returns the open list to the entity. (for now)</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Node &gt; Path</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Node [,] searchSpace<para><emphasis>SearchSpace.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Texture2D check</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Grids grid</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/dd1/a00398_1a29a934525f624e8c6ee7693f04df61c0">AStarGridSearch</link> (
+<link linkend="d1/d8b/a00406">Grids</link> grid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dd1/a00398_1a9b15ad7367bb5421108a9232d4c4954c">Search</link> (
+<link linkend="d4/dbc/a00414">Node</link> pStart, <link linkend="d4/dbc/a00414">Node</link> pGoal, Texture2D pCheck)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dd1/a00398_1a1d4e74e3564bffa81262c73e2ecfcdfc">addBlocked</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dd1/a00398_1a0e6a0e9cbcdaccff905216da631fad56">resetWalls</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dd1/a00398_1a0376f68fb9f4d45d11be4855fece5e56">Show</link> (
+<link linkend="d4/dbc/a00414">Node</link> start, <link linkend="d4/dbc/a00414">Node</link> end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Queue&lt; <link linkend="d4/dbc/a00414">Node</link> &gt; <link linkend="d9/dd1/a00398_1a8d3cb5019defd8e526d0c1111bcf2986">getPath</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="d4/dbc/a00414">Node</link> &gt; <link linkend="d9/dd1/a00398_1a47ea78e4c6a2d333de9373b62543cbc7">getPathv</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dd1/a00398_1a6c06caf54f1fd4cd5444fb2a6a99590e">CheckNeighbours</link> (
+<link linkend="d4/dbc/a00414">Node</link> current, <link linkend="d4/dbc/a00414">Node</link> pGoal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dd1/a00398_1a8ca5fac27fe797ea204c7df3d0aa7925">FindFittest</link> (
+<link linkend="d4/dbc/a00414">Node</link> current)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d9/dd1/a00398_1a3e17bc98c2dbb2c46aa0045830857b31">getDistance</link> (
+<link linkend="d4/dbc/a00414">Node</link> curr, <link linkend="d4/dbc/a00414">Node</link> goal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/dd1/a00398_1a930b2b8436abaf5ddadffdac4ce22745">Closed</link> (
+<link linkend="d4/dbc/a00414">Node</link> node)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/dd1/a00398_1a0730d8ed55c098915b3f8e4607208f94">Opened</link> (
+<link linkend="d4/dbc/a00414">Node</link> node)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d9/dd1/a00398_1a29a934525f624e8c6ee7693f04df61c0">
+                <title>Engine.Grid.AStarGridSearch.AStarGridSearch (Grids grid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a9b15ad7367bb5421108a9232d4c4954c">
+                <title>void Engine.Grid.AStarGridSearch.Search (Node pStart, Node pGoal, Texture2D pCheck)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a1d4e74e3564bffa81262c73e2ecfcdfc">
+                <title>void Engine.Grid.AStarGridSearch.addBlocked (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a0e6a0e9cbcdaccff905216da631fad56">
+                <title>void Engine.Grid.AStarGridSearch.resetWalls ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a0376f68fb9f4d45d11be4855fece5e56">
+                <title>void Engine.Grid.AStarGridSearch.Show (Node start, Node end)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a8d3cb5019defd8e526d0c1111bcf2986">
+                <title>Queue&lt;Node&gt; Engine.Grid.AStarGridSearch.getPath ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a47ea78e4c6a2d333de9373b62543cbc7">
+                <title>List&lt;Node&gt; Engine.Grid.AStarGridSearch.getPathv ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a6c06caf54f1fd4cd5444fb2a6a99590e">
+                <title>void Engine.Grid.AStarGridSearch.CheckNeighbours (Node current, Node pGoal)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a8ca5fac27fe797ea204c7df3d0aa7925">
+                <title>void Engine.Grid.AStarGridSearch.FindFittest (Node current)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a3e17bc98c2dbb2c46aa0045830857b31">
+                <title>int Engine.Grid.AStarGridSearch.getDistance (Node curr, Node goal)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a930b2b8436abaf5ddadffdac4ce22745">
+                <title>bool Engine.Grid.AStarGridSearch.Closed (Node node)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd1/a00398_1a0730d8ed55c098915b3f8e4607208f94">
+                <title>bool Engine.Grid.AStarGridSearch.Opened (Node node)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

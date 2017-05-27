@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d04/a00255">
+<title>Engine::Interfaces::Collision</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/db9/a00426">Engine::Interfaces::Collision::ICollidable</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An interface used for objects that will need collision calculation during the game loop
+ &lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d0c/a00430">Engine::Interfaces::Collision::IDetectionManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An interface for the collision detection manager
+ &lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

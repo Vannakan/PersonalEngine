@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d52/a00510">
+<title>Engine::Managers::Collision::SATcheck class Reference</title>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 MinimumTranslationVector</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d6/d52/a00510_1a466b04bf6d509f7a713b7aec38391e51">SATCollision</link> (
+<link linkend="d1/d7e/a00434">IHitbox</link> shape1, <link linkend="d1/d7e/a00434">IHitbox</link> shape2, Vector2 velocity, Vector2 velocity2)<para><emphasis>&lt;summary&gt;
+METHOD: The calculation for if two objects are colliding or going to collide
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d52/a00510_1a566a1183f83e123c710bd3cc1d240aef">Projection</link> (
+Vector2 axis, <link linkend="d1/d7e/a00434">IHitbox</link> myEnt, ref float min, ref float max)<para><emphasis>&lt;summary&gt;
+METHOD: Projects an Object onto an arbitrary axis
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d6/d52/a00510_1a5e692998d63a129d3fed2163bcbf8a55">IntervalDistance</link> (
+float minA, float maxA, float minB, float maxB)<para><emphasis>&lt;summary&gt;
+METHOD: Finds the distance between two values
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d6/d52/a00510_1a4aa620a587dc54dd480fd0a9fd29d817">mtvRet</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: returns the minimum distance needed to move an object to prevent them from being in a collision
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: This class runs all of the Separating Axis Theorem collision code. It calculates whether two shapes are currently intersecting or going to intersect by projecting shadows of both shapes onto an arbitrary axis perpendicular to the edges of the shape. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file SATcheck.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SATcheck.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d6/d52/a00510_1a466b04bf6d509f7a713b7aec38391e51">
+                <title>bool Engine.Managers.Collision.SATcheck.SATCollision (IHitbox shape1, IHitbox shape2, Vector2 velocity, Vector2 velocity2)</title> <emphasis>&lt;summary&gt;
+METHOD: The calculation for if two objects are colliding or going to collide
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>shape1</entry>
+                                <entry>
+<para>The first object in the calculation</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>shape2</entry>
+                                <entry>
+<para>The second object in the calculation</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>velocity</entry>
+                                <entry>
+<para>The velocity of the first object</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>velocity2</entry>
+                                <entry>
+<para>The velocity of the second object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A bool of whether the shapes are about to collide or are already colliding</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/d52/a00510_1a566a1183f83e123c710bd3cc1d240aef">
+                <title>void Engine.Managers.Collision.SATcheck.Projection (Vector2 axis, IHitbox myEnt, ref float min, ref float max)</title> <emphasis>&lt;summary&gt;
+METHOD: Projects an Object onto an arbitrary axis
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>axis</entry>
+                                <entry>
+<para>The axis to be projected on to</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>myEnt</entry>
+                                <entry>
+<para>The object to be projected</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>min</entry>
+                                <entry>
+<para>The minimum value of the object on the axis</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>max</entry>
+                                <entry>
+<para>The maximum value of the object on the axis</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/d52/a00510_1a5e692998d63a129d3fed2163bcbf8a55">
+                <title>float Engine.Managers.Collision.SATcheck.IntervalDistance (float minA, float maxA, float minB, float maxB)</title> <emphasis>&lt;summary&gt;
+METHOD: Finds the distance between two values
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>minA</entry>
+                                <entry>
+<para>the minimum value of the first object on an axis</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxA</entry>
+                                <entry>
+<para>The maximum value of the first object on an axis</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>minB</entry>
+                                <entry>
+<para>The minimum value of the second object on an axis</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxB</entry>
+                                <entry>
+<para>The maximum value of the second object on an axis</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A float of the distance between two values</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/d52/a00510_1a4aa620a587dc54dd480fd0a9fd29d817">
+                <title>Vector2 Engine.Managers.Collision.SATcheck.mtvRet ()</title> <emphasis>&lt;summary&gt;
+METHOD: returns the minimum distance needed to move an object to prevent them from being in a collision
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>A vector2 Of the minimum translation vector</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

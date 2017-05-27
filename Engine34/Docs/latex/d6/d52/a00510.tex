@@ -1,0 +1,199 @@
+\hypertarget{a00510}{}\section{Engine.\+Managers.\+Collision.\+S\+A\+Tcheck Class Reference}
+\label{a00510}\index{Engine.\+Managers.\+Collision.\+S\+A\+Tcheck@{Engine.\+Managers.\+Collision.\+S\+A\+Tcheck}}
+
+
+C\+L\+A\+SS\+: This class runs all of the Separating Axis Theorem collision code. It calculates whether two shapes are currently intersecting or going to intersect by projecting shadows of both shapes onto an arbitrary axis perpendicular to the edges of the shape.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00510_a466b04bf6d509f7a713b7aec38391e51}{S\+A\+T\+Collision} (\hyperlink{a00434}{I\+Hitbox} shape1, \hyperlink{a00434}{I\+Hitbox} shape2, Vector2 velocity, Vector2 velocity2)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The calculation for if two objects are colliding or going to collide \end{DoxyCompactList}\item 
+void \hyperlink{a00510_a566a1183f83e123c710bd3cc1d240aef}{Projection} (Vector2 axis, \hyperlink{a00434}{I\+Hitbox} my\+Ent, ref float min, ref float max)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Projects an Object onto an arbitrary axis \end{DoxyCompactList}\item 
+float \hyperlink{a00510_a5e692998d63a129d3fed2163bcbf8a55}{Interval\+Distance} (float minA, float maxA, float minB, float maxB)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Finds the distance between two values \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00510_a4aa620a587dc54dd480fd0a9fd29d817}{mtv\+Ret} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns the minimum distance needed to move an object to prevent them from being in a collision \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{a00510_a307c7f32a47949b280ac2a9d7b174899}{Minimum\+Translation\+Vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: This class runs all of the Separating Axis Theorem collision code. It calculates whether two shapes are currently intersecting or going to intersect by projecting shadows of both shapes onto an arbitrary axis perpendicular to the edges of the shape. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00510_a5e692998d63a129d3fed2163bcbf8a55}\label{a00510_a5e692998d63a129d3fed2163bcbf8a55}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}!Interval\+Distance@{Interval\+Distance}}
+\index{Interval\+Distance@{Interval\+Distance}!Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}}
+\subsubsection{\texorpdfstring{Interval\+Distance()}{IntervalDistance()}}
+{\footnotesize\ttfamily float Engine.\+Managers.\+Collision.\+S\+A\+Tcheck.\+Interval\+Distance (\begin{DoxyParamCaption}\item[{float}]{minA,  }\item[{float}]{maxA,  }\item[{float}]{minB,  }\item[{float}]{maxB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Finds the distance between two values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minA} & the minimum value of the first object on an axis\\
+\hline
+{\em maxA} & The maximum value of the first object on an axis\\
+\hline
+{\em minB} & The minimum value of the second object on an axis\\
+\hline
+{\em maxB} & The maximum value of the second object on an axis\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float of the distance between two values
+\end{DoxyReturn}
+whichever is lower on the axis
+
+Return the one on the right minus the other
+
+Return the one on the right minus the other \mbox{\Hypertarget{a00510_a4aa620a587dc54dd480fd0a9fd29d817}\label{a00510_a4aa620a587dc54dd480fd0a9fd29d817}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}!mtv\+Ret@{mtv\+Ret}}
+\index{mtv\+Ret@{mtv\+Ret}!Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}}
+\subsubsection{\texorpdfstring{mtv\+Ret()}{mtvRet()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+S\+A\+Tcheck.\+mtv\+Ret (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: returns the minimum distance needed to move an object to prevent them from being in a collision 
+
+\begin{DoxyReturn}{Returns}
+A vector2 Of the minimum translation vector
+\end{DoxyReturn}
+Return the minimum distance required to prevent shapes from intersecting \mbox{\Hypertarget{a00510_a566a1183f83e123c710bd3cc1d240aef}\label{a00510_a566a1183f83e123c710bd3cc1d240aef}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}!Projection@{Projection}}
+\index{Projection@{Projection}!Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}}
+\subsubsection{\texorpdfstring{Projection()}{Projection()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+S\+A\+Tcheck.\+Projection (\begin{DoxyParamCaption}\item[{Vector2}]{axis,  }\item[{\hyperlink{a00434}{I\+Hitbox}}]{my\+Ent,  }\item[{ref float}]{min,  }\item[{ref float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Projects an Object onto an arbitrary axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to be projected on to\\
+\hline
+{\em my\+Ent} & The object to be projected\\
+\hline
+{\em min} & The minimum value of the object on the axis\\
+\hline
+{\em max} & The maximum value of the object on the axis\\
+\hline
+\end{DoxyParams}
+To project a point on an axis use the dot product
+
+Find the minimum point along the axis that the shape can be found. Set the min and max accordingly \mbox{\Hypertarget{a00510_a466b04bf6d509f7a713b7aec38391e51}\label{a00510_a466b04bf6d509f7a713b7aec38391e51}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}!S\+A\+T\+Collision@{S\+A\+T\+Collision}}
+\index{S\+A\+T\+Collision@{S\+A\+T\+Collision}!Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}}
+\subsubsection{\texorpdfstring{S\+A\+T\+Collision()}{SATCollision()}}
+{\footnotesize\ttfamily bool Engine.\+Managers.\+Collision.\+S\+A\+Tcheck.\+S\+A\+T\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{a00434}{I\+Hitbox}}]{shape1,  }\item[{\hyperlink{a00434}{I\+Hitbox}}]{shape2,  }\item[{Vector2}]{velocity,  }\item[{Vector2}]{velocity2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: The calculation for if two objects are colliding or going to collide 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape1} & The first object in the calculation\\
+\hline
+{\em shape2} & The second object in the calculation\\
+\hline
+{\em velocity} & The velocity of the first object\\
+\hline
+{\em velocity2} & The velocity of the second object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool of whether the shapes are about to collide or are already colliding
+\end{DoxyReturn}
+assume the shape is intersecting until calculated
+
+Assume the shape will intersect until calculated
+
+C\+R\+E\+A\+TE\+: an integer of how many edges are in shape 1
+
+C\+R\+E\+A\+TE\+: an integer of how many edges are in shape 2
+
+S\+ET\+: Minimum translation vector is set to infinity
+
+I\+N\+I\+T\+I\+A\+L\+I\+SE\+: The axis that we will push the shape along if its colliding
+
+D\+E\+C\+L\+A\+RE\+: The current edge we are checking
+
+F\+OR\+: all the edges of both polygons
+
+IF e is less than the first integer, we are checking each edge of the first shape
+
+Same for shape 2
+
+S\+ET\+: the axis perpendicular to the current edge to project on
+
+Keeping the vector pointing the same direction, adjust it so it\textquotesingle{}s length is 1
+
+S\+ET\+: the projection of the polygon on the current axis
+
+These are initialised to 0 and adjusted in the method below
+
+Project polygon onto axis
+
+Project polygon 2 onto axis
+
+IF\+: the polygon projections are currently N\+OT intersecting
+
+This if statement will only run if the first condition of the method is met, therefore we know they aren\textquotesingle{}t intersecting
+
+S\+ET\+: the velocity projection on the current axis by using the dot product.
+
+IF\+: the Projection of polygon A is less than 0
+
+S\+ET\+: The Min variable accordingly.
+
+E\+L\+SE S\+ET\+: the max variable accordingly
+
+Do the same test as above for the new projection
+
+Same as above but this time using a hypothetical movement
+
+IF\+: the polygons are not intersecting and won\textquotesingle{}t intersect, exit the loop
+
+Check if the current interval distance is the minimum one. If so store the interval distance and the current distance. This will be used to calculate the minimum translation vector
+
+Find how far from 0 the distance is
+
+If the minimum translation vector is not the smallest possible movement
+
+Set the vector to the smallest distance!
+
+We need to move the object on the axis we projected
+
+We need to find which object is on the left hand side of the other
+
+The minimum translation vector can be used to push the polygons apart.
+
+If the objects are colliding
+
+Set the property to be the translation axis multiplied by the mtv 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00510_a307c7f32a47949b280ac2a9d7b174899}\label{a00510_a307c7f32a47949b280ac2a9d7b174899}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}!Minimum\+Translation\+Vector@{Minimum\+Translation\+Vector}}
+\index{Minimum\+Translation\+Vector@{Minimum\+Translation\+Vector}!Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck@{Engine\+::\+Managers\+::\+Collision\+::\+S\+A\+Tcheck}}
+\subsubsection{\texorpdfstring{Minimum\+Translation\+Vector}{MinimumTranslationVector}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+S\+A\+Tcheck.\+Minimum\+Translation\+Vector}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00164}{S\+A\+Tcheck.\+cs}\end{DoxyCompactItemize}

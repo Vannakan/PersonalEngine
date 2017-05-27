@@ -1,0 +1,159 @@
+\hypertarget{a00462}{}\section{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader Interface Reference}
+\label{a00462}\index{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader@{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: Holds the implementation for the \hyperlink{a00262}{Resource} Loader which is responsible for loading and storing any external resources such as textures and sounds.  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/dcb/a00462}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \hyperlink{a00462_ad126b831364ad6219c3f25729c591597}{Get\+Tex} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get a Texture from a string directory \end{DoxyCompactList}\item 
+Sprite\+Font \hyperlink{a00462_abe9339a97b29bce2ba8a77504495f27d}{Get\+Font} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get a font from a string directory \end{DoxyCompactList}\item 
+Song \hyperlink{a00462_a6d962a64dc4f377bdb417598b17c53d0}{Get\+Song} (string path)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get an audio file from a string directory \end{DoxyCompactList}\item 
+void \hyperlink{a00462_ad861af436f861ea7d9c0966edfadac82}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises and Loads appropriate resources \end{DoxyCompactList}\item 
+bool \hyperlink{a00462_a08d51ffa3d65fd1122614e00a275cf48}{Check\+Library} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: checks if a music file in the current library is valid and returns a bool \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Content\+Manager \hyperlink{a00462_a03b81447dfab7f3391b8f265dfd231c8}{Content}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The Monogame Content\+Manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: Holds the implementation for the \hyperlink{a00262}{Resource} Loader which is responsible for loading and storing any external resources such as textures and sounds. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00462_a08d51ffa3d65fd1122614e00a275cf48}\label{a00462_a08d51ffa3d65fd1122614e00a275cf48}} 
+\index{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}!Check\+Library@{Check\+Library}}
+\index{Check\+Library@{Check\+Library}!Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Check\+Library()}{CheckLibrary()}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader.\+Check\+Library (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: checks if a music file in the current library is valid and returns a bool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the audio file to look for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean if the audio file exists in the queue
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00530_a939824a1d16e96b4322225a18f7a47d6}{Engine.\+Managers.\+Resource.\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00462_abe9339a97b29bce2ba8a77504495f27d}\label{a00462_abe9339a97b29bce2ba8a77504495f27d}} 
+\index{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}!Get\+Font@{Get\+Font}}
+\index{Get\+Font@{Get\+Font}!Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Get\+Font()}{GetFont()}}
+{\footnotesize\ttfamily Sprite\+Font Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader.\+Get\+Font (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Get a font from a string directory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the font file to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Sprite\+Font of the font at the name provided
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00530_a160f06963928da598da9f9431ba65f73}{Engine.\+Managers.\+Resource.\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00462_a6d962a64dc4f377bdb417598b17c53d0}\label{a00462_a6d962a64dc4f377bdb417598b17c53d0}} 
+\index{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}!Get\+Song@{Get\+Song}}
+\index{Get\+Song@{Get\+Song}!Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Get\+Song()}{GetSong()}}
+{\footnotesize\ttfamily Song Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader.\+Get\+Song (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Get an audio file from a string directory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The name of the audio file to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A song of the audio at the name provided
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00530_a6587452c5637a132330fb0e2f6dc4e7a}{Engine.\+Managers.\+Resource.\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00462_ad126b831364ad6219c3f25729c591597}\label{a00462_ad126b831364ad6219c3f25729c591597}} 
+\index{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}!Get\+Tex@{Get\+Tex}}
+\index{Get\+Tex@{Get\+Tex}!Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Get\+Tex()}{GetTex()}}
+{\footnotesize\ttfamily Texture2D Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader.\+Get\+Tex (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Get a Texture from a string directory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the texture file to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Texture2D file of the image at the name provided
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00530_a841de899c3601b3d35496ee798a6e894}{Engine.\+Managers.\+Resource.\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00462_ad861af436f861ea7d9c0966edfadac82}\label{a00462_ad861af436f861ea7d9c0966edfadac82}} 
+\index{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises and Loads appropriate resources 
+
+
+
+Implemented in \hyperlink{a00530_a77b00bda1dc37c9cabe2dbaf90655714}{Engine.\+Managers.\+Resource.\+Resource\+Loader}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00462_a03b81447dfab7f3391b8f265dfd231c8}\label{a00462_a03b81447dfab7f3391b8f265dfd231c8}} 
+\index{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}!Content@{Content}}
+\index{Content@{Content}!Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader@{Engine\+::\+Interfaces\+::\+Resource\+::\+I\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Content}{Content}}
+{\footnotesize\ttfamily Content\+Manager Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader.\+Content\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The Monogame Content\+Manager 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00128}{I\+Resource\+Loader.\+cs}\end{DoxyCompactItemize}

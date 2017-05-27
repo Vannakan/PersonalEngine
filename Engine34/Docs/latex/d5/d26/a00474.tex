@@ -1,0 +1,97 @@
+\hypertarget{a00474}{}\section{Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator Interface Reference}
+\label{a00474}\index{Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator@{Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: An Interface holding the implementation for the Service Locator which removes the need for singletons throughout the engine  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/d26/a00474}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{a00474_a39ce84b8fb97655fd7039be3c4fa5f1c}{get\+Service$<$ T $>$} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Return a service, T is a generic type of Manager \end{DoxyCompactList}\item 
+void \hyperlink{a00474_a4bf9f6979adf99eda26320a420262991}{Initialize\+Services} (Content\+Manager c, Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises the services upon the running of the program so that they all exist and can be accessed \end{DoxyCompactList}\item 
+void \hyperlink{a00474_a5bf3aab2adcf14c813a348325003ddcc}{Update\+Services} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Loops through and updates each service in turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: An Interface holding the implementation for the Service Locator which removes the need for singletons throughout the engine 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00474_a39ce84b8fb97655fd7039be3c4fa5f1c}\label{a00474_a39ce84b8fb97655fd7039be3c4fa5f1c}} 
+\index{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator@{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator}!get\+Service$<$ T $>$@{get\+Service$<$ T $>$}}
+\index{get\+Service$<$ T $>$@{get\+Service$<$ T $>$}!Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator@{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator}}
+\subsubsection{\texorpdfstring{get\+Service$<$ T $>$()}{getService< T >()}}
+{\footnotesize\ttfamily T Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator.\+get\+Service$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Return a service, T is a generic type of Manager 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic Manager\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Manager of type T
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00542_a2bb3c0174bd67904d148bc789c9faaba}{Engine.\+Managers.\+Service\+Locator.\+Locator}.
+
+\mbox{\Hypertarget{a00474_a4bf9f6979adf99eda26320a420262991}\label{a00474_a4bf9f6979adf99eda26320a420262991}} 
+\index{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator@{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator}!Initialize\+Services@{Initialize\+Services}}
+\index{Initialize\+Services@{Initialize\+Services}!Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator@{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator}}
+\subsubsection{\texorpdfstring{Initialize\+Services()}{InitializeServices()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator.\+Initialize\+Services (\begin{DoxyParamCaption}\item[{Content\+Manager}]{c,  }\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises the services upon the running of the program so that they all exist and can be accessed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Monogame Content\+Manager\\
+\hline
+{\em sb} & Monogame Spritebatch for any drawing\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00542_a34bc6f5d735512bae556d2ec65a7bda7}{Engine.\+Managers.\+Service\+Locator.\+Locator}.
+
+\mbox{\Hypertarget{a00474_a5bf3aab2adcf14c813a348325003ddcc}\label{a00474_a5bf3aab2adcf14c813a348325003ddcc}} 
+\index{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator@{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator}!Update\+Services@{Update\+Services}}
+\index{Update\+Services@{Update\+Services}!Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator@{Engine\+::\+Interfaces\+::\+Service\+Locator\+::\+I\+Service\+Locator}}
+\subsubsection{\texorpdfstring{Update\+Services()}{UpdateServices()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator.\+Update\+Services (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+Loops through and updates each service in turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00542_ab66a423db26d79e6fc655df699a64f0c}{Engine.\+Managers.\+Service\+Locator.\+Locator}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00137}{I\+Service\+Locator.\+cs}\end{DoxyCompactItemize}

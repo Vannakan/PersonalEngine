@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d0a/a00602">
+<title>Engine::Utilities::Utility class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int [][] <link linkend="d5/d0a/a00602_1a98f7b0965674bd8e19626b0a6a4ea0e6">convertToJaggedArray</link> (
+int mArray, int Colums, int Rows)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int [,] <link linkend="d5/d0a/a00602_1aafb1bee83e83cd6dd6dc02c2b23ca350">convertTo2DArray</link> (
+int jaggedArray, int Colums, int Rows)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d5/d0a/a00602_1a98f7b0965674bd8e19626b0a6a4ea0e6">
+                <title>static int [][] Engine.Utilities.Utility.convertToJaggedArray (int[,] mArray, int Colums, int Rows)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d0a/a00602_1aafb1bee83e83cd6dd6dc02c2b23ca350">
+                <title>static int [,] Engine.Utilities.Utility.convertTo2DArray (int[][] jaggedArray, int Colums, int Rows)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

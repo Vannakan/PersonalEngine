@@ -1,0 +1,244 @@
+\hypertarget{a00546}{}\section{Engine.\+Managers.\+Sound.\+Sound\+Manager Class Reference}
+\label{a00546}\index{Engine.\+Managers.\+Sound.\+Sound\+Manager@{Engine.\+Managers.\+Sound.\+Sound\+Manager}}
+
+
+C\+L\+A\+SS\+: The sound manager is responsible for the storage and playback of sound files  
+
+
+Inheritance diagram for Engine.\+Managers.\+Sound.\+Sound\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dc/d2b/a00546}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00546_a06224065983b6fe162de98b8dcc944c2}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialise the Monogame Media\+Player and \hyperlink{a00538}{Screen\+Manager} \end{DoxyCompactList}\item 
+void \hyperlink{a00546_aabfeb911d8bd573065e9c02d3f81e582}{Play} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Play a song that is located within the resource loaders song library \end{DoxyCompactList}\item 
+void \hyperlink{a00546_a6613813ccd38703484e80ca8775ecdf8}{Play\+Effect} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Plays the sound effect of the name provided \end{DoxyCompactList}\item 
+void \hyperlink{a00546_a5a3a9b96e6708deedf2c4939b3259011}{Mute} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Mutes all sound \end{DoxyCompactList}\item 
+void \hyperlink{a00546_ad62eb34a308bfe457bc7229045a66af0}{un\+Mute} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unmutes all sound \end{DoxyCompactList}\item 
+void \hyperlink{a00546_ae1be3ecb76007fdc47843305df49604b}{Volume} (float Volume)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Adjust the volume of sound playback \end{DoxyCompactList}\item 
+void \hyperlink{a00546_a0d3222475855f63b0c8f9dbe9b52e7f7}{Stop} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Stop playback \end{DoxyCompactList}\item 
+void \hyperlink{a00546_a43e47a47daa91f3b1d0f38b3dcb0323e}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: the update loop cycled through each frame \end{DoxyCompactList}\item 
+void \hyperlink{a00546_af9d82c533dfd90077b275f2b09ee90b0}{vol\+Up} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Increases the volume slightly \end{DoxyCompactList}\item 
+void \hyperlink{a00546_a888a7942f63cc582f7b73d61b69ebbac}{vol\+Down} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Decreases the volume slightly \end{DoxyCompactList}\item 
+void \hyperlink{a00546_a8dfbb15525871b87e6cdcf744b070139}{on\+Screen\+Changed} (\hyperlink{a00550}{Base\+Screen} screen)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Plays the sound of the screen that is being changed to \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00546_a2a4a319a1d395e58c2b10f393475a0c9}{is\+Muted}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: The sound manager is responsible for the storage and playback of sound files 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00546_a06224065983b6fe162de98b8dcc944c2}\label{a00546_a06224065983b6fe162de98b8dcc944c2}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialise the Monogame Media\+Player and \hyperlink{a00538}{Screen\+Manager} 
+
+
+
+Implements \hyperlink{a00482_a02f14f3401f425a686a50e6b6a40aca7}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_a5a3a9b96e6708deedf2c4939b3259011}\label{a00546_a5a3a9b96e6708deedf2c4939b3259011}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Mute@{Mute}}
+\index{Mute@{Mute}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Mute()}{Mute()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Mute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Mutes all sound 
+
+
+
+Implements \hyperlink{a00482_a5bcad4d517b37a12b17e59d0b927ca37}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_a8dfbb15525871b87e6cdcf744b070139}\label{a00546_a8dfbb15525871b87e6cdcf744b070139}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!on\+Screen\+Changed@{on\+Screen\+Changed}}
+\index{on\+Screen\+Changed@{on\+Screen\+Changed}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{on\+Screen\+Changed()}{onScreenChanged()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+on\+Screen\+Changed (\begin{DoxyParamCaption}\item[{\hyperlink{a00550}{Base\+Screen}}]{screen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Plays the sound of the screen that is being changed to 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & The screen being changed to\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00482_a8aa47dcffde058c1146f7ebf5b0edb84}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_aabfeb911d8bd573065e9c02d3f81e582}\label{a00546_aabfeb911d8bd573065e9c02d3f81e582}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Play@{Play}}
+\index{Play@{Play}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Play (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Play a song that is located within the resource loaders song library 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the sound file to be played\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00482_aec02346c5397b9b01b9d5d6baedc923e}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_a6613813ccd38703484e80ca8775ecdf8}\label{a00546_a6613813ccd38703484e80ca8775ecdf8}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Play\+Effect@{Play\+Effect}}
+\index{Play\+Effect@{Play\+Effect}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Play\+Effect()}{PlayEffect()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Play\+Effect (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Plays the sound effect of the name provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound effect to be played\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00482_aa9e2fb77a5fe624ce65373f5ee8328ae}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_a0d3222475855f63b0c8f9dbe9b52e7f7}\label{a00546_a0d3222475855f63b0c8f9dbe9b52e7f7}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Stop@{Stop}}
+\index{Stop@{Stop}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Stop playback 
+
+
+
+Implements \hyperlink{a00482_ac47a91d3e28a8f7a1e5348fb6eff50e2}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_ad62eb34a308bfe457bc7229045a66af0}\label{a00546_ad62eb34a308bfe457bc7229045a66af0}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!un\+Mute@{un\+Mute}}
+\index{un\+Mute@{un\+Mute}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{un\+Mute()}{unMute()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+un\+Mute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Unmutes all sound 
+
+
+
+Implements \hyperlink{a00482_a59c011a4cf667d6e967bddad50c7cb2f}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_a43e47a47daa91f3b1d0f38b3dcb0323e}\label{a00546_a43e47a47daa91f3b1d0f38b3dcb0323e}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: the update loop cycled through each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00482_af7ddcb52a6283aa2cf4392c75d2a0cff}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_a888a7942f63cc582f7b73d61b69ebbac}\label{a00546_a888a7942f63cc582f7b73d61b69ebbac}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!vol\+Down@{vol\+Down}}
+\index{vol\+Down@{vol\+Down}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{vol\+Down()}{volDown()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+vol\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Decreases the volume slightly 
+
+
+
+Implements \hyperlink{a00482_a96629b32d608ca84fe1a3624bece7f05}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_ae1be3ecb76007fdc47843305df49604b}\label{a00546_ae1be3ecb76007fdc47843305df49604b}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!Volume@{Volume}}
+\index{Volume@{Volume}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{Volume()}{Volume()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+Volume (\begin{DoxyParamCaption}\item[{float}]{Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Adjust the volume of sound playback 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Volume} & The volume the playback will be set to play at\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00482_ada3f38d5c50655b55f146ccdaf7c5967}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+\mbox{\Hypertarget{a00546_af9d82c533dfd90077b275f2b09ee90b0}\label{a00546_af9d82c533dfd90077b275f2b09ee90b0}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!vol\+Up@{vol\+Up}}
+\index{vol\+Up@{vol\+Up}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{vol\+Up()}{volUp()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Sound.\+Sound\+Manager.\+vol\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Increases the volume slightly 
+
+
+
+Implements \hyperlink{a00482_afe3eaaed21c8b64692bc338309ac4a4d}{Engine.\+Interfaces.\+Sound.\+I\+Sound\+Manager}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00546_a2a4a319a1d395e58c2b10f393475a0c9}\label{a00546_a2a4a319a1d395e58c2b10f393475a0c9}} 
+\index{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}!is\+Muted@{is\+Muted}}
+\index{is\+Muted@{is\+Muted}!Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager@{Engine\+::\+Managers\+::\+Sound\+::\+Sound\+Manager}}
+\subsubsection{\texorpdfstring{is\+Muted}{isMuted}}
+{\footnotesize\ttfamily bool Engine.\+Managers.\+Sound.\+Sound\+Manager.\+is\+Muted\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00191}{Sound\+Manager.\+cs}\end{DoxyCompactItemize}

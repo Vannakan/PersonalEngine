@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d39/a00314">
+<title>Engine::Entities::Entity class Reference</title>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IMind mind<para><emphasis>DECLARE: The mind that controls the entity.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string name<para><emphasis>&lt;summary&gt;
+GET: SET: The name of the entity
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d39/a00314_1a5a3cc22ef87965c27e86f8b0867550cf">Entity</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties for the entity.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d39/a00314_1aa1425aeeac379c5141e7560b84850b3d">Initialize</link> (
+Vector2 Pos)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of this entity, such as the mind
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d39/a00314_1a5c795930028c5672b54f95369b25019f">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draw the entitity
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>ABSTRACT CLASS: The Base entity class. All entities extend this class. It contains the basic setup and properties of each entity. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file Entity.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Entity.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>string Engine.Entities.Entity.name</title>                
+                <para>Definition at line 49 of file Entity.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Entity.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d0/d39/a00314_1a5a3cc22ef87965c27e86f8b0867550cf">
+                <title>Engine.Entities.Entity.Entity ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties for the entity.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d39/a00314_1aa1425aeeac379c5141e7560b84850b3d">
+                <title>virtual void Engine.Entities.Entity.Initialize (Vector2 Pos)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of this entity, such as the mind
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Pos</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d39/a00314_1a5c795930028c5672b54f95369b25019f">
+                <title>void Engine.Entities.Entity.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draw the entitity
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

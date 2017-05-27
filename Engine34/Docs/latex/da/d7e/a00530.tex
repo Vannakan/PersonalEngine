@@ -1,0 +1,335 @@
+\hypertarget{a00530}{}\section{Engine.\+Managers.\+Resource.\+Resource\+Loader Class Reference}
+\label{a00530}\index{Engine.\+Managers.\+Resource.\+Resource\+Loader@{Engine.\+Managers.\+Resource.\+Resource\+Loader}}
+
+
+C\+L\+A\+SS\+: The \hyperlink{a00272}{Resource} loader is responsible for loading and storage of external resources such as textures and sounds  
+
+
+Inheritance diagram for Engine.\+Managers.\+Resource.\+Resource\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d7e/a00530}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00530_a77b00bda1dc37c9cabe2dbaf90655714}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises and Loads appropriate resources \end{DoxyCompactList}\item 
+void \hyperlink{a00530_aa767792c046f7e3e21c512de046dac81}{Load\+Texture} (string path)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Takes a string parameter and attempts to load a texture pointed to from the string. \end{DoxyCompactList}\item 
+void \hyperlink{a00530_aed066679a7bd0ff5549d13323c88d4b4}{Load\+Texture} (string start, string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Takes two strings, one as the directory, if not the same as the Content pipeline, and one as the file name and attempts to load the texture \end{DoxyCompactList}\item 
+Texture2D \hyperlink{a00530_a841de899c3601b3d35496ee798a6e894}{Get\+Tex} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns a Texture from the string provided \end{DoxyCompactList}\item 
+void \hyperlink{a00530_ab0e1965354b92f0fc2920c74b48a7f0d}{Load\+Font} (string start, string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load a Sprite\+Font from the content pipeline via a string and add it into the dictionary \end{DoxyCompactList}\item 
+Sprite\+Font \hyperlink{a00530_a160f06963928da598da9f9431ba65f73}{Get\+Font} (string Name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get a font from a string directory \end{DoxyCompactList}\item 
+bool \hyperlink{a00530_a939824a1d16e96b4322225a18f7a47d6}{Check\+Library} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Checks the current song library for an audio file with the name provided in parameters \end{DoxyCompactList}\item 
+void \hyperlink{a00530_aa8ac4f03379c9dd95e96ca38b6da344b}{Lo\+Engineong} (string start, string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load a song if it is not already in the queue \end{DoxyCompactList}\item 
+Song \hyperlink{a00530_a6587452c5637a132330fb0e2f6dc4e7a}{Get\+Song} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Return a song based on the string given in parameters \end{DoxyCompactList}\item 
+void \hyperlink{a00530_a3c054651a1f23dd6a968336f2079f1b2}{Load\+Tiles} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load the textures for any tiles to be used. \end{DoxyCompactList}\item 
+void \hyperlink{a00530_a557cc78880f9acf324eb77d9be245c98}{Lo\+Engineound} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load any sound files to be used \end{DoxyCompactList}\item 
+void \hyperlink{a00530_a8ed087cf44b8c303edb0d8b59efb3a9b}{Load\+Entity} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load any entity textures to be used \end{DoxyCompactList}\item 
+void \hyperlink{a00530_a19d917cb5f5580c6c4a4fa00c3f63daa}{Load\+Misc} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load any miscellaneous Objects to be used \end{DoxyCompactList}\item 
+void \hyperlink{a00530_ab4c5158cd1df0416f5abdc9d82eccf9f}{Load\+G\+UI} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Load any G\+UI Assets \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, Sprite\+Font $>$ \hyperlink{a00530_a00c311d64cae0ba6d592ea37dafffdc8}{Fonts} = new Dictionary$<$string, Sprite\+Font$>$()
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: Dictionary for Spritefonts. \end{DoxyCompactList}\item 
+Dictionary$<$ string, Texture2D $>$ \hyperlink{a00530_a0a1c5385822e9334a2747b4dac701ec9}{Textures} = new Dictionary$<$string, Texture2D$>$()
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: Dictionary for the type of Texture2D. \end{DoxyCompactList}\item 
+Dictionary$<$ string, Song $>$ \hyperlink{a00530_a2b471bcf803817288914773957bc3e4e}{Music} = new Dictionary$<$string, Song$>$()
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: Dictionray for the type of Song. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Content\+Manager \hyperlink{a00530_a4d635d8ea6e09eb1e403da947ac92bc2}{Content}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Monogame Content\+Manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: The \hyperlink{a00272}{Resource} loader is responsible for loading and storage of external resources such as textures and sounds 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00530_a939824a1d16e96b4322225a18f7a47d6}\label{a00530_a939824a1d16e96b4322225a18f7a47d6}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Check\+Library@{Check\+Library}}
+\index{Check\+Library@{Check\+Library}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Check\+Library()}{CheckLibrary()}}
+{\footnotesize\ttfamily bool Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Check\+Library (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Checks the current song library for an audio file with the name provided in parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the audio file requested\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean for if the audio file is in the library or queue
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00462_a08d51ffa3d65fd1122614e00a275cf48}{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00530_a160f06963928da598da9f9431ba65f73}\label{a00530_a160f06963928da598da9f9431ba65f73}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Get\+Font@{Get\+Font}}
+\index{Get\+Font@{Get\+Font}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Get\+Font()}{GetFont()}}
+{\footnotesize\ttfamily Sprite\+Font Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Get\+Font (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Get a font from a string directory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the font file to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Sprite\+Font of the font at the name provided
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00462_abe9339a97b29bce2ba8a77504495f27d}{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00530_a6587452c5637a132330fb0e2f6dc4e7a}\label{a00530_a6587452c5637a132330fb0e2f6dc4e7a}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Get\+Song@{Get\+Song}}
+\index{Get\+Song@{Get\+Song}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Get\+Song()}{GetSong()}}
+{\footnotesize\ttfamily Song Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Get\+Song (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Return a song based on the string given in parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the file to be searched for in the music library\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A song of the same name
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00462_a6d962a64dc4f377bdb417598b17c53d0}{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00530_a841de899c3601b3d35496ee798a6e894}\label{a00530_a841de899c3601b3d35496ee798a6e894}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Get\+Tex@{Get\+Tex}}
+\index{Get\+Tex@{Get\+Tex}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Get\+Tex()}{GetTex()}}
+{\footnotesize\ttfamily Texture2D Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Get\+Tex (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: returns a Texture from the string provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A texture2D of the same name
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00462_ad126b831364ad6219c3f25729c591597}{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00530_a77b00bda1dc37c9cabe2dbaf90655714}\label{a00530_a77b00bda1dc37c9cabe2dbaf90655714}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises and Loads appropriate resources 
+
+
+
+Implements \hyperlink{a00462_ad861af436f861ea7d9c0966edfadac82}{Engine.\+Interfaces.\+Resource.\+I\+Resource\+Loader}.
+
+\mbox{\Hypertarget{a00530_a8ed087cf44b8c303edb0d8b59efb3a9b}\label{a00530_a8ed087cf44b8c303edb0d8b59efb3a9b}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+Entity@{Load\+Entity}}
+\index{Load\+Entity@{Load\+Entity}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+Entity()}{LoadEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load any entity textures to be used 
+
+\mbox{\Hypertarget{a00530_ab0e1965354b92f0fc2920c74b48a7f0d}\label{a00530_ab0e1965354b92f0fc2920c74b48a7f0d}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+Font@{Load\+Font}}
+\index{Load\+Font@{Load\+Font}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+Font()}{LoadFont()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+Font (\begin{DoxyParamCaption}\item[{string}]{start,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load a Sprite\+Font from the content pipeline via a string and add it into the dictionary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The folder of the file\\
+\hline
+{\em name} & The name of the file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00530_ab4c5158cd1df0416f5abdc9d82eccf9f}\label{a00530_ab4c5158cd1df0416f5abdc9d82eccf9f}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+G\+UI@{Load\+G\+UI}}
+\index{Load\+G\+UI@{Load\+G\+UI}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+G\+U\+I()}{LoadGUI()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load any G\+UI Assets 
+
+\mbox{\Hypertarget{a00530_a19d917cb5f5580c6c4a4fa00c3f63daa}\label{a00530_a19d917cb5f5580c6c4a4fa00c3f63daa}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+Misc@{Load\+Misc}}
+\index{Load\+Misc@{Load\+Misc}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+Misc()}{LoadMisc()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+Misc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load any miscellaneous Objects to be used 
+
+\mbox{\Hypertarget{a00530_aa767792c046f7e3e21c512de046dac81}\label{a00530_aa767792c046f7e3e21c512de046dac81}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+Texture@{Load\+Texture}}
+\index{Load\+Texture@{Load\+Texture}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+Texture()}{LoadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+Texture (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Takes a string parameter and attempts to load a texture pointed to from the string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the texture to be loaded\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00530_aed066679a7bd0ff5549d13323c88d4b4}\label{a00530_aed066679a7bd0ff5549d13323c88d4b4}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+Texture@{Load\+Texture}}
+\index{Load\+Texture@{Load\+Texture}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+Texture()}{LoadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+Texture (\begin{DoxyParamCaption}\item[{string}]{start,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Takes two strings, one as the directory, if not the same as the Content pipeline, and one as the file name and attempts to load the texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The folder of the file\\
+\hline
+{\em name} & The name of the file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00530_a3c054651a1f23dd6a968336f2079f1b2}\label{a00530_a3c054651a1f23dd6a968336f2079f1b2}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Load\+Tiles@{Load\+Tiles}}
+\index{Load\+Tiles@{Load\+Tiles}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Load\+Tiles()}{LoadTiles()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Load\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load the textures for any tiles to be used. 
+
+\mbox{\Hypertarget{a00530_aa8ac4f03379c9dd95e96ca38b6da344b}\label{a00530_aa8ac4f03379c9dd95e96ca38b6da344b}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Lo\+Engineong@{Lo\+Engineong}}
+\index{Lo\+Engineong@{Lo\+Engineong}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Lo\+Engineong()}{LoEngineong()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Lo\+Engineong (\begin{DoxyParamCaption}\item[{string}]{start,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load a song if it is not already in the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & the folder of the song\\
+\hline
+{\em name} & the name of the song\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00530_a557cc78880f9acf324eb77d9be245c98}\label{a00530_a557cc78880f9acf324eb77d9be245c98}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Lo\+Engineound@{Lo\+Engineound}}
+\index{Lo\+Engineound@{Lo\+Engineound}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Lo\+Engineound()}{LoEngineound()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Lo\+Engineound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Load any sound files to be used 
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00530_a00c311d64cae0ba6d592ea37dafffdc8}\label{a00530_a00c311d64cae0ba6d592ea37dafffdc8}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Fonts@{Fonts}}
+\index{Fonts@{Fonts}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Fonts}{Fonts}}
+{\footnotesize\ttfamily Dictionary$<$string, Sprite\+Font$>$ Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Fonts = new Dictionary$<$string, Sprite\+Font$>$()}
+
+
+
+D\+E\+C\+L\+A\+RE\+: Dictionary for Spritefonts. 
+
+\mbox{\Hypertarget{a00530_a2b471bcf803817288914773957bc3e4e}\label{a00530_a2b471bcf803817288914773957bc3e4e}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Music@{Music}}
+\index{Music@{Music}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Music}{Music}}
+{\footnotesize\ttfamily Dictionary$<$string, Song$>$ Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Music = new Dictionary$<$string, Song$>$()}
+
+
+
+D\+E\+C\+L\+A\+RE\+: Dictionray for the type of Song. 
+
+\mbox{\Hypertarget{a00530_a0a1c5385822e9334a2747b4dac701ec9}\label{a00530_a0a1c5385822e9334a2747b4dac701ec9}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Textures@{Textures}}
+\index{Textures@{Textures}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Textures}{Textures}}
+{\footnotesize\ttfamily Dictionary$<$string, Texture2D$>$ Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Textures = new Dictionary$<$string, Texture2D$>$()}
+
+
+
+D\+E\+C\+L\+A\+RE\+: Dictionary for the type of Texture2D. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00530_a4d635d8ea6e09eb1e403da947ac92bc2}\label{a00530_a4d635d8ea6e09eb1e403da947ac92bc2}} 
+\index{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}!Content@{Content}}
+\index{Content@{Content}!Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader@{Engine\+::\+Managers\+::\+Resource\+::\+Resource\+Loader}}
+\subsubsection{\texorpdfstring{Content}{Content}}
+{\footnotesize\ttfamily Content\+Manager Engine.\+Managers.\+Resource.\+Resource\+Loader.\+Content\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Monogame Content\+Manager. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00179}{Resource\+Loader.\+cs}\end{DoxyCompactItemize}

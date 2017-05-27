@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d8d/a00262">
+<title>Engine::Interfaces::Resource</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dcb/a00462">Engine::Interfaces::Resource::IResourceLoader</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: Holds the implementation for the Resource Loader which is responsible for loading and storing any
+external resources such as textures and sounds.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

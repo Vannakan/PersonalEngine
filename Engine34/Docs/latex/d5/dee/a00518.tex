@@ -1,0 +1,365 @@
+\hypertarget{a00518}{}\section{Engine.\+Managers.\+Entities.\+Entity\+Manager Class Reference}
+\label{a00518}\index{Engine.\+Managers.\+Entities.\+Entity\+Manager@{Engine.\+Managers.\+Entities.\+Entity\+Manager}}
+
+
+C\+L\+A\+SS\+: Entity Manager is responsible for the creation and storage of all entities in the game scene. It is able to return a list, a specific entity, or create and remove entities from the scene  
+
+
+Inheritance diagram for Engine.\+Managers.\+Entities.\+Entity\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.978799cm]{d5/dee/a00518}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00518_a0fd18e00f80a32046831041574e8a6a8}{Entity\+Manager} ()
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR \end{DoxyCompactList}\item 
+List$<$ \hyperlink{a00438}{I\+Entity} $>$ \hyperlink{a00518_a704e3c8fb916a8bb668ffd30654b4e18}{get\+List} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns a list of entities \end{DoxyCompactList}\item 
+List$<$ \hyperlink{a00438}{I\+Entity} $>$ \hyperlink{a00518_a13ec76267682ed1ce3ace63c561ec6c5}{get\+Cam\+List} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Returns a list of entities requiring a camera \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a33cf4a636f70486e8a13c52bb4395cd6}{add\+Entity} (\hyperlink{a00438}{I\+Entity} e)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Add an entity to the list of entities \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a5b84d299c11d42065f55048dd14fdd4c}{add\+Cam\+Entity} (\hyperlink{a00438}{I\+Entity} e)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Add an entity requiring a camera to the list of entities \end{DoxyCompactList}\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00518_a228280a4515648318fb5528936249a8b}{create\+Entity$<$ T $>$} (Vector2 Position)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Create a new entity and add it to the entity List \end{DoxyCompactList}\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00518_a89ca1b1834aff0dc1d2c6ec95dcd0793}{create\+Entity\+Cam\+Drawable$<$ T $>$} (Vector2 Position)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Create a new Camera entity and add it to the camera entity list \end{DoxyCompactList}\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00518_a787212a79eb20bd2c695783b5f802347}{create\+Entity\+Drawable$<$ T $>$} (Vector2 Position)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Create a new Drawable entity and add it to the Camera list \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a960c2ec6b45bbbd4f0030b04f90dc407}{temp\+Cam\+Clear} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Clear all camera entities \end{DoxyCompactList}\item 
+void \hyperlink{a00518_abeffd88412f79249f333944b45486dff}{get\+Entity} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get an entity by it\textquotesingle{}s name \end{DoxyCompactList}\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00518_ab3ff805a060af38748444e520995d8fa}{get\+Cam\+Entity} (string name)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get a Camera I\+Entity by it;s name \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a4eff29b463061f602be758bd3d36ef25}{clear\+List} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Clear the list of all I\+Entities \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a1d9ffc3b80cc8633265fe1f7e51c6122}{remove\+Entity} (int entity\+ID)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Remove a specific I\+Entity from the manager and list of Ientities \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a5f4c775a02bbb9057577780643a7b068}{remove\+Cam\+Entity} (int entity\+ID)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Remove a specific Camera entity by it;s ID \end{DoxyCompactList}\item 
+void \hyperlink{a00518_a386e96f9edb12689118de624c559de0f}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The Update loop that is called every frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: Entity Manager is responsible for the creation and storage of all entities in the game scene. It is able to return a list, a specific entity, or create and remove entities from the scene 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00518_a0fd18e00f80a32046831041574e8a6a8}\label{a00518_a0fd18e00f80a32046831041574e8a6a8}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!Entity\+Manager@{Entity\+Manager}}
+\index{Entity\+Manager@{Entity\+Manager}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{Entity\+Manager()}{EntityManager()}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Entities.\+Entity\+Manager.\+Entity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00518_a5b84d299c11d42065f55048dd14fdd4c}\label{a00518_a5b84d299c11d42065f55048dd14fdd4c}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!add\+Cam\+Entity@{add\+Cam\+Entity}}
+\index{add\+Cam\+Entity@{add\+Cam\+Entity}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{add\+Cam\+Entity()}{addCamEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+add\+Cam\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{a00438}{I\+Entity}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Add an entity requiring a camera to the list of entities 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The entity to be added to the camera entity list\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00442_a37055c1d97dd8da61a53a2b0683df54d}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a33cf4a636f70486e8a13c52bb4395cd6}\label{a00518_a33cf4a636f70486e8a13c52bb4395cd6}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!add\+Entity@{add\+Entity}}
+\index{add\+Entity@{add\+Entity}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{add\+Entity()}{addEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+add\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{a00438}{I\+Entity}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Add an entity to the list of entities 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The entity to be added to the list\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00442_af229fa3936a8483383bb7ddd5b4184b0}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a4eff29b463061f602be758bd3d36ef25}\label{a00518_a4eff29b463061f602be758bd3d36ef25}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!clear\+List@{clear\+List}}
+\index{clear\+List@{clear\+List}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{clear\+List()}{clearList()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+clear\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Clear the list of all I\+Entities 
+
+
+
+Implements \hyperlink{a00442_acccc889cc99843899ce0652a9959e907}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a228280a4515648318fb5528936249a8b}\label{a00518_a228280a4515648318fb5528936249a8b}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!create\+Entity$<$ T $>$@{create\+Entity$<$ T $>$}}
+\index{create\+Entity$<$ T $>$@{create\+Entity$<$ T $>$}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{create\+Entity$<$ T $>$()}{createEntity< T >()}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Managers.\+Entities.\+Entity\+Manager.\+create\+Entity$<$ T $>$ (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Create a new entity and add it to the entity List 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The generic I\+Entity object to be created\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position to create the object at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00442_a8f746b319d35a76cb4cdb1853f3069ed}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em I\+Entity}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{a00518_a89ca1b1834aff0dc1d2c6ec95dcd0793}\label{a00518_a89ca1b1834aff0dc1d2c6ec95dcd0793}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!create\+Entity\+Cam\+Drawable$<$ T $>$@{create\+Entity\+Cam\+Drawable$<$ T $>$}}
+\index{create\+Entity\+Cam\+Drawable$<$ T $>$@{create\+Entity\+Cam\+Drawable$<$ T $>$}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{create\+Entity\+Cam\+Drawable$<$ T $>$()}{createEntityCamDrawable< T >()}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Managers.\+Entities.\+Entity\+Manager.\+create\+Entity\+Cam\+Drawable$<$ T $>$ (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Create a new Camera entity and add it to the camera entity list 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The generic I\+Entity object to be created\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position to create the object at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00442_aad35a164d944dcb7af20470bac0d3351}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em I\+Entity}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{a00518_a787212a79eb20bd2c695783b5f802347}\label{a00518_a787212a79eb20bd2c695783b5f802347}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!create\+Entity\+Drawable$<$ T $>$@{create\+Entity\+Drawable$<$ T $>$}}
+\index{create\+Entity\+Drawable$<$ T $>$@{create\+Entity\+Drawable$<$ T $>$}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{create\+Entity\+Drawable$<$ T $>$()}{createEntityDrawable< T >()}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Managers.\+Entities.\+Entity\+Manager.\+create\+Entity\+Drawable$<$ T $>$ (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Create a new Drawable entity and add it to the Camera list 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The generic I\+Entity object to be created\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position to create the object at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00442_a36f4ce84282acb366896ebec20677cce}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em I\+Entity}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{a00518_ab3ff805a060af38748444e520995d8fa}\label{a00518_ab3ff805a060af38748444e520995d8fa}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!get\+Cam\+Entity@{get\+Cam\+Entity}}
+\index{get\+Cam\+Entity@{get\+Cam\+Entity}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cam\+Entity()}{getCamEntity()}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Managers.\+Entities.\+Entity\+Manager.\+get\+Cam\+Entity (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Get a Camera I\+Entity by it;s name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the entity to be returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+Entity
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00442_aa1098871f43bbd775954aea10a958c0b}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a13ec76267682ed1ce3ace63c561ec6c5}\label{a00518_a13ec76267682ed1ce3ace63c561ec6c5}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!get\+Cam\+List@{get\+Cam\+List}}
+\index{get\+Cam\+List@{get\+Cam\+List}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cam\+List()}{getCamList()}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00438}{I\+Entity}$>$ Engine.\+Managers.\+Entities.\+Entity\+Manager.\+get\+Cam\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Returns a list of entities requiring a camera 
+
+\begin{DoxyReturn}{Returns}
+List of I\+Entity
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00442_a6a6229acffece1f804ba440cf847820d}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_abeffd88412f79249f333944b45486dff}\label{a00518_abeffd88412f79249f333944b45486dff}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!get\+Entity@{get\+Entity}}
+\index{get\+Entity@{get\+Entity}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{get\+Entity()}{getEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+get\+Entity (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Get an entity by it\textquotesingle{}s name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the entity to be retrieved\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00442_adff1edf326874f25e8a90bf45f020120}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a704e3c8fb916a8bb668ffd30654b4e18}\label{a00518_a704e3c8fb916a8bb668ffd30654b4e18}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!get\+List@{get\+List}}
+\index{get\+List@{get\+List}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{get\+List()}{getList()}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00438}{I\+Entity}$>$ Engine.\+Managers.\+Entities.\+Entity\+Manager.\+get\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: returns a list of entities 
+
+\begin{DoxyReturn}{Returns}
+List$<$\+I\+Entity$>$
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00442_a8f71921098ae85f7f504f61a399a1bd8}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a5f4c775a02bbb9057577780643a7b068}\label{a00518_a5f4c775a02bbb9057577780643a7b068}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!remove\+Cam\+Entity@{remove\+Cam\+Entity}}
+\index{remove\+Cam\+Entity@{remove\+Cam\+Entity}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{remove\+Cam\+Entity()}{removeCamEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+remove\+Cam\+Entity (\begin{DoxyParamCaption}\item[{int}]{entity\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Remove a specific Camera entity by it;s ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+ID} & the unique ID of the entity to be removed\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00442_aa341696fc31e28c71448cef613bf7f30}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a1d9ffc3b80cc8633265fe1f7e51c6122}\label{a00518_a1d9ffc3b80cc8633265fe1f7e51c6122}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!remove\+Entity@{remove\+Entity}}
+\index{remove\+Entity@{remove\+Entity}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{remove\+Entity()}{removeEntity()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+remove\+Entity (\begin{DoxyParamCaption}\item[{int}]{entity\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Remove a specific I\+Entity from the manager and list of Ientities 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+ID} & The ID of the entity to be removed\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00442_a13b425137cec67f2df4e65e8d08c531b}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a960c2ec6b45bbbd4f0030b04f90dc407}\label{a00518_a960c2ec6b45bbbd4f0030b04f90dc407}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!temp\+Cam\+Clear@{temp\+Cam\+Clear}}
+\index{temp\+Cam\+Clear@{temp\+Cam\+Clear}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{temp\+Cam\+Clear()}{tempCamClear()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+temp\+Cam\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Clear all camera entities 
+
+
+
+Implements \hyperlink{a00442_a04101871e7eef6b222a0cbd6225d0a7a}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+\mbox{\Hypertarget{a00518_a386e96f9edb12689118de624c559de0f}\label{a00518_a386e96f9edb12689118de624c559de0f}} 
+\index{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager@{Engine\+::\+Managers\+::\+Entities\+::\+Entity\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Entities.\+Entity\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: The Update loop that is called every frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & the monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+IF\+: An entity goes wildly off screen
+
+Remove the entity 
+
+Implements \hyperlink{a00442_a1b5aeaf8f2f6ad4a0c93aec1c331c1b2}{Engine.\+Interfaces.\+Entities.\+I\+Entity\+Manager}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00170}{Entity\+Manager.\+cs}\end{DoxyCompactItemize}

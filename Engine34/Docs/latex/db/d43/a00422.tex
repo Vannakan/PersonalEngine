@@ -1,0 +1,113 @@
+\hypertarget{a00422}{}\section{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager Interface Reference}
+\label{a00422}\index{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager@{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+:The interface for the Camera manager. This controls the implementation for the manager of the camera.  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{db/d43/a00422}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00422_a21e0ce6b0ada068546161ecf02559912}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Contains initialisation logic \end{DoxyCompactList}\item 
+\hyperlink{a00490}{Camera} \hyperlink{a00422_a91fc1dab51b36fd8955451ac00fd2819}{get\+Cam} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Returns the camera \end{DoxyCompactList}\item 
+void \hyperlink{a00422_a78a46559249e70181100daff38ef5d6a}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop which is cycled through every frame \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00422_a7d9fc1d792ddc3495bff23daac2a8d2a}{get\+World\+Position} (Vector2 Position)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns the current world position in relation to the Vector2 provided \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+:The interface for the Camera manager. This controls the implementation for the manager of the camera. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00422_a91fc1dab51b36fd8955451ac00fd2819}\label{a00422_a91fc1dab51b36fd8955451ac00fd2819}} 
+\index{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}!get\+Cam@{get\+Cam}}
+\index{get\+Cam@{get\+Cam}!Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cam()}{getCam()}}
+{\footnotesize\ttfamily \hyperlink{a00490}{Camera} Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager.\+get\+Cam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Returns the camera 
+
+\begin{DoxyReturn}{Returns}
+the current Camera
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00494_a949b09e5c57971945c3ccb638f73765d}{Engine.\+Managers.\+Cam.\+Camera\+Manager}.
+
+\mbox{\Hypertarget{a00422_a7d9fc1d792ddc3495bff23daac2a8d2a}\label{a00422_a7d9fc1d792ddc3495bff23daac2a8d2a}} 
+\index{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}!get\+World\+Position@{get\+World\+Position}}
+\index{get\+World\+Position@{get\+World\+Position}!Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{get\+World\+Position()}{getWorldPosition()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager.\+get\+World\+Position (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: returns the current world position in relation to the Vector2 provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position to be compared to the world position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The world position in relation to the Vector2 provided
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00494_a538af3b5745f1f51e3da217d5c971791}{Engine.\+Managers.\+Cam.\+Camera\+Manager}.
+
+\mbox{\Hypertarget{a00422_a21e0ce6b0ada068546161ecf02559912}\label{a00422_a21e0ce6b0ada068546161ecf02559912}} 
+\index{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Contains initialisation logic 
+
+
+
+Implemented in \hyperlink{a00494_a6244a0582982e64f49df0a6862768a21}{Engine.\+Managers.\+Cam.\+Camera\+Manager}.
+
+\mbox{\Hypertarget{a00422_a78a46559249e70181100daff38ef5d6a}\label{a00422_a78a46559249e70181100daff38ef5d6a}} 
+\index{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager@{Engine\+::\+Interfaces\+::\+Cam\+::\+I\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop which is cycled through every frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00478_a387fce2a5440a4dc63f8d72772ecbdaa}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Upd\+Service}.
+
+
+
+Implemented in \hyperlink{a00494_a43e367859b47354445da2a304eff7ec4}{Engine.\+Managers.\+Cam.\+Camera\+Manager}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00098}{I\+Camera\+Manager.\+cs}\end{DoxyCompactItemize}

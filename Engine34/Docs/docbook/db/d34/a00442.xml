@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d34/a00442">
+<title>Engine::Interfaces::Entities::IEntityManager interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="dd/dfd/a00438">IEntity</link> &gt; <link linkend="db/d34/a00442_1a8f71921098ae85f7f504f61a399a1bd8">getList</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: returns a list of entities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="dd/dfd/a00438">IEntity</link> &gt; <link linkend="db/d34/a00442_1a6a6229acffece1f804ba440cf847820d">getCamList</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Returns a list of entities requiring a camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1af229fa3936a8483383bb7ddd5b4184b0">addEntity</link> (
+<link linkend="dd/dfd/a00438">IEntity</link> e)<para><emphasis>&lt;summary&gt;
+METHOD: Add an entity to the list of entities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1a37055c1d97dd8da61a53a2b0683df54d">addCamEntity</link> (
+<link linkend="dd/dfd/a00438">IEntity</link> e)<para><emphasis>&lt;summary&gt;
+METHOD: Add an entity requiring a camera to the list of entities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/dfd/a00438">IEntity</link> <link linkend="db/d34/a00442_1a8f746b319d35a76cb4cdb1853f3069ed">createEntity&lt; T &gt;</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Create a new IEntity and add it to the list of IEntities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/dfd/a00438">IEntity</link> <link linkend="db/d34/a00442_1aad35a164d944dcb7af20470bac0d3351">createEntityCamDrawable&lt; T &gt;</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Create a new IEntity requiring a Camera and add it to the list of IEntites
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/dfd/a00438">IEntity</link> <link linkend="db/d34/a00442_1a36f4ce84282acb366896ebec20677cce">createEntityDrawable&lt; T &gt;</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Create a new Drawable IEntity and add it to the list of IEntities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1a04101871e7eef6b222a0cbd6225d0a7a">tempCamClear</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Clear all Camera entities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1adff1edf326874f25e8a90bf45f020120">getEntity</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Get an entity by it&apos;s name
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/dfd/a00438">IEntity</link> <link linkend="db/d34/a00442_1aa1098871f43bbd775954aea10a958c0b">getCamEntity</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Get a Camera IEntity by it;s name
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1acccc889cc99843899ce0652a9959e907">clearList</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Clear the list of all IEntities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1a13b425137cec67f2df4e65e8d08c531b">removeEntity</link> (
+int entityID)<para><emphasis>&lt;summary&gt;
+METHOD: Remove a specific IEntity from the manager and list of Ientities
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1aa341696fc31e28c71448cef613bf7f30">removeCamEntity</link> (
+int entityID)<para><emphasis>&lt;summary&gt;
+METHOD: Remove a specific Camera entity by it;s ID
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d34/a00442_1a1b5aeaf8f2f6ad4a0c93aec1c331c1b2">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The Update loop that is called every frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: REsponsible for the implementation found in EntityManager which is responsible for adding and removing entities from the game scene </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file IEntityManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IEntityManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="db/d34/a00442_1a8f71921098ae85f7f504f61a399a1bd8">
+                <title>List&lt;IEntity&gt; Engine.Interfaces.Entities.IEntityManager.getList ()</title> <emphasis>&lt;summary&gt;
+METHOD: returns a list of entities
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>List&lt;IEntity&gt;</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1a6a6229acffece1f804ba440cf847820d">
+                <title>List&lt;IEntity&gt; Engine.Interfaces.Entities.IEntityManager.getCamList ()</title> <emphasis>&lt;summary&gt;
+METHOD: Returns a list of entities requiring a camera
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>List of <link linkend="dd/dfd/a00438">IEntity</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1af229fa3936a8483383bb7ddd5b4184b0">
+                <title>void Engine.Interfaces.Entities.IEntityManager.addEntity (IEntity e)</title> <emphasis>&lt;summary&gt;
+METHOD: Add an entity to the list of entities
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>The entity to be added to the list</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1a37055c1d97dd8da61a53a2b0683df54d">
+                <title>void Engine.Interfaces.Entities.IEntityManager.addCamEntity (IEntity e)</title> <emphasis>&lt;summary&gt;
+METHOD: Add an entity requiring a camera to the list of entities
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>The entity to be added to the camera entity list</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1a8f746b319d35a76cb4cdb1853f3069ed">
+                <title>IEntity Engine.Interfaces.Entities.IEntityManager.createEntity&lt; T &gt; (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Create a new IEntity and add it to the list of IEntities
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>A generic type of entity to be created</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>the position this entity will be initialised at</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1aad35a164d944dcb7af20470bac0d3351">
+                <title>IEntity Engine.Interfaces.Entities.IEntityManager.createEntityCamDrawable&lt; T &gt; (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Create a new IEntity requiring a Camera and add it to the list of IEntites
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The generic type of entity to be created</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>the position the entity will be initialised at</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1a36f4ce84282acb366896ebec20677cce">
+                <title>IEntity Engine.Interfaces.Entities.IEntityManager.createEntityDrawable&lt; T &gt; (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Create a new Drawable IEntity and add it to the list of IEntities
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The generic type of entity to be created</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>the position the entity will be initialised at</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1a04101871e7eef6b222a0cbd6225d0a7a">
+                <title>void Engine.Interfaces.Entities.IEntityManager.tempCamClear ()</title> <emphasis>&lt;summary&gt;
+METHOD: Clear all Camera entities
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d34/a00442_1adff1edf326874f25e8a90bf45f020120">
+                <title>void Engine.Interfaces.Entities.IEntityManager.getEntity (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Get an entity by it&apos;s name
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the entity to be retrieved</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1aa1098871f43bbd775954aea10a958c0b">
+                <title>IEntity Engine.Interfaces.Entities.IEntityManager.getCamEntity (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Get a Camera IEntity by it;s name
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the entity to be returned</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para><link linkend="dd/dfd/a00438">IEntity</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1acccc889cc99843899ce0652a9959e907">
+                <title>void Engine.Interfaces.Entities.IEntityManager.clearList ()</title> <emphasis>&lt;summary&gt;
+METHOD: Clear the list of all IEntities
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d34/a00442_1a13b425137cec67f2df4e65e8d08c531b">
+                <title>void Engine.Interfaces.Entities.IEntityManager.removeEntity (int entityID)</title> <emphasis>&lt;summary&gt;
+METHOD: Remove a specific IEntity from the manager and list of Ientities
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>entityID</entry>
+                                <entry>
+<para>The ID of the entity to be removed</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1aa341696fc31e28c71448cef613bf7f30">
+                <title>void Engine.Interfaces.Entities.IEntityManager.removeCamEntity (int entityID)</title> <emphasis>&lt;summary&gt;
+METHOD: Remove a specific Camera entity by it;s ID
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>entityID</entry>
+                                <entry>
+<para>the unique ID of the entity to be removed</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d34/a00442_1a1b5aeaf8f2f6ad4a0c93aec1c331c1b2">
+                <title>void Engine.Interfaces.Entities.IEntityManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The Update loop that is called every frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

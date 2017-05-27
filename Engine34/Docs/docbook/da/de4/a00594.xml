@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/de4/a00594">
+<title>Engine::Utility::DrawString class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="da/de4/a00594_1a9543d66736e4cac71fb74b2d22af678a">Draw</link> (
+string str, SpriteBatch spr, Vector2 pos, Color color, float size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="da/de4/a00594_1a5e703963c4eb97c3aa92930b85594b83">Draw</link> (
+string str, string font, SpriteBatch spr, Vector2 pos, Color color, float size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/de4/a00594_1a9543d66736e4cac71fb74b2d22af678a">
+                <title>static void Engine.Utility.DrawString.Draw (string str, SpriteBatch spr, Vector2 pos, Color color, float size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/de4/a00594_1a5e703963c4eb97c3aa92930b85594b83">
+                <title>static void Engine.Utility.DrawString.Draw (string str, string font, SpriteBatch spr, Vector2 pos, Color color, float size)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

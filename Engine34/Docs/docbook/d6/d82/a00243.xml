@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d82/a00243">
+<title>Engine::Entities::Platformer</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dbb/a00330">Engine::Entities::Platformer::TestEntity</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: A Test Entity used for various demos.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d75/a00334">Engine::Entities::Platformer::TestMind</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: A test mind to control a test entity for demos.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

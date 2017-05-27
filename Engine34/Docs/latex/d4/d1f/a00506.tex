@@ -1,0 +1,305 @@
+\hypertarget{a00506}{}\section{Engine.\+Managers.\+Collision.\+Hitbox Class Reference}
+\label{a00506}\index{Engine.\+Managers.\+Collision.\+Hitbox@{Engine.\+Managers.\+Collision.\+Hitbox}}
+
+
+C\+L\+A\+SS\+: Hitboxes that make up the boundaries for each entity to allow for S\+AT collision to work. Each hitbox covers a portion of the texture of an entity and is stored in a List of Hitboxes inside the entity class.  
+
+
+Inheritance diagram for Engine.\+Managers.\+Collision.\+Hitbox\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/d1f/a00506}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00506_a0dd1189ee2d37a3401501ca1f10b9cfa}{Hitbox} (Vector2 \+\_\+pos, float p\+Width, float p\+Height, float p\+Rot, \hyperlink{a00318}{Mind} parent)
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Takes 5 parameters used to create the List of points and edges and then a rotation used for rotating the shape as necessary to allow for advanced S\+AT \hyperlink{a00268}{Collision} \end{DoxyCompactList}\item 
+void \hyperlink{a00506_ab91473c67469cf0be5069c1ca9a2d6fb}{create\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: A method used to rotate the 4 corners of the shape so that our S\+AT is not just limited to two axes. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00506_ae78ae27deafc11bf87c1396c504ce621}{create\+Rotation} (Vector2 \+\_\+point)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Rotates a Vector2 around a centre point. The parameter is the point being rotated. In order to rotate the co-\/ordinates around the centre of the shape we must subtract the origin of the rotation from the co-\/ordinate and then add it back on, essentially \char`\"{}moving the object and moving it back\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{a00506_a6bc6facadaf82a8c49979e35f0c8b132}{Create\+Edges} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Creates edges of the shape by subtracting the previous point if one were to trace the outline of the shape \end{DoxyCompactList}\item 
+void \hyperlink{a00506_ab5cba73c16189f63616a91cf19f00562}{Update\+Point} (Vector2 \hyperlink{a00506_a4bfe4a9151e1af19d18f92b4cfba46b6}{velocity})
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: This is used to move the hitboxes with their parent entities. If this is not done then the collision will not work because the hitbox hasn\textquotesingle{}t moved. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00506_ad129f58518e4fedffc47433af729b3bf}{centre\+Point} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The centre point of the shape. Used for the rotation and for calculating the Minimum Translation Vector When colliding with another \hyperlink{a00506}{Hitbox}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00506_a987b7fd544e03a9e43e38cc2df785d1d}{Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Vector2 $>$ \hyperlink{a00506_ad49c6d92bbdffabb12c2a7a4c7fa3840}{points}
+\item 
+List$<$ Vector2 $>$ \hyperlink{a00506_a4128afb1364d3a25e1091055ef46dda2}{edges}
+\item 
+Vector2 \hyperlink{a00506_a4bfe4a9151e1af19d18f92b4cfba46b6}{velocity}
+\begin{DoxyCompactList}\small\item\em R\+E\+T\+U\+RN\+: A Vector2 co-\/ordinate of the Velocity of the shape and set the local variable to this property. \end{DoxyCompactList}\item 
+\hyperlink{a00446}{I\+Mind} \hyperlink{a00506_a46b5b73419f520327a67808cd768a666}{\+\_\+mind}
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: A reference to the mind. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Vector2 $>$ \hyperlink{a00506_ab706c341cd6e2ba930e2ffe437b6d9c7}{Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em R\+E\+T\+U\+RN\+: A list of a Vector2 co-\/ordinates of the corners of the shape and set the local variable to this property. \end{DoxyCompactList}\item 
+List$<$ Vector2 $>$ \hyperlink{a00506_a32ea07f46a9cd6213e965f837758e674}{Edges}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em R\+E\+T\+U\+RN\+: A list of a Vector2 co-\/ordinates of the edges of the shape and set the local variable to this property. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00506_a1f0b9781e3ca7fb87c8f9d03080e9f16}{Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{a00446}{I\+Mind} \hyperlink{a00506_a375df917b377e1511e6accd4018a2c30}{Mind}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \hyperlink{a00506_aea24a643fe9a06c65064bf091427c2fc}{Centre}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: Hitboxes that make up the boundaries for each entity to allow for S\+AT collision to work. Each hitbox covers a portion of the texture of an entity and is stored in a List of Hitboxes inside the entity class. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00506_a0dd1189ee2d37a3401501ca1f10b9cfa}\label{a00506_a0dd1189ee2d37a3401501ca1f10b9cfa}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Hitbox@{Hitbox}}
+\index{Hitbox@{Hitbox}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Hitbox()}{Hitbox()}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Collision.\+Hitbox.\+Hitbox (\begin{DoxyParamCaption}\item[{Vector2}]{\+\_\+pos,  }\item[{float}]{p\+Width,  }\item[{float}]{p\+Height,  }\item[{float}]{p\+Rot,  }\item[{\hyperlink{a00318}{Mind}}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Takes 5 parameters used to create the List of points and edges and then a rotation used for rotating the shape as necessary to allow for advanced S\+AT \hyperlink{a00268}{Collision} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos} & The position of the first point\\
+\hline
+{\em p\+Width} & The width of the shape\\
+\hline
+{\em p\+Height} & The height of the shape\\
+\hline
+{\em p\+Rot} & The rotation in degrees of the shape\\
+\hline
+{\em parent} & The mind that this hitox is linked to\\
+\hline
+\end{DoxyParams}
+S\+ET\+: The dimensions of the shape
+
+I\+N\+I\+T\+I\+A\+L\+I\+SE\+: The lists of Vector2 used for the creation of the shape
+
+A\+DD\+: 4 Vector2 co-\/ordinates to the list of points based on the dimensions of the shape and the position
+
+I\+N\+I\+T\+I\+A\+L\+I\+SE\+: The centre point using the method \hyperlink{a00506_ad129f58518e4fedffc47433af729b3bf}{centre\+Point()}
+
+R\+O\+T\+A\+TE\+: Rotate the vector2 for the centre of the shape
+
+R\+O\+T\+A\+TE\+: Call the method to rotate each corner of the shape around the Centre of the shape
+
+C\+R\+E\+A\+TE\+: The edges of the shape by subtracting Corners from each other
+
+S\+ET\+: The mind that controls this hitbox, used for the movement of the Hitboxes. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00506_ad129f58518e4fedffc47433af729b3bf}\label{a00506_ad129f58518e4fedffc47433af729b3bf}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!centre\+Point@{centre\+Point}}
+\index{centre\+Point@{centre\+Point}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{centre\+Point()}{centrePoint()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+Hitbox.\+centre\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: The centre point of the shape. Used for the rotation and for calculating the Minimum Translation Vector When colliding with another \hyperlink{a00506}{Hitbox}. 
+
+\begin{DoxyReturn}{Returns}
+A Vector2 of the Central co-\/ordinate between all of the points.
+\end{DoxyReturn}
+x coordinate for the first entity
+
+y coordinate for the first entity
+
+making coordinates into a new vector for the first entity 
+
+Implements \hyperlink{a00434_a5028f79a4e2537e578c528c932dee948}{Engine34.\+Interfaces.\+Collision.\+I\+Hitbox}.
+
+\mbox{\Hypertarget{a00506_a6bc6facadaf82a8c49979e35f0c8b132}\label{a00506_a6bc6facadaf82a8c49979e35f0c8b132}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Create\+Edges@{Create\+Edges}}
+\index{Create\+Edges@{Create\+Edges}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Create\+Edges()}{CreateEdges()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+Hitbox.\+Create\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Creates edges of the shape by subtracting the previous point if one were to trace the outline of the shape 
+
+D\+E\+C\+L\+A\+RE\+: Two Vector2 co-\/ordinates
+
+For each point the shape currently has
+
+S\+ET\+: the first point to be the point currently being iterated through in the list.
+
+IF\+: the next point would give an Index\+Out\+Of\+Range Exception
+
+S\+ET\+: the next point to be equal to the first point in the list.
+
+E\+L\+SE\+: The next point is equal to the next one in the list.
+
+C\+R\+E\+A\+TE\+: an Edge by subtracting the second point from the first. This gives us a Vector2 of the translation Between two points. 
+
+Implements \hyperlink{a00434_a94297321cbc20a7cb6a98cf38b735a5b}{Engine34.\+Interfaces.\+Collision.\+I\+Hitbox}.
+
+\mbox{\Hypertarget{a00506_ab91473c67469cf0be5069c1ca9a2d6fb}\label{a00506_ab91473c67469cf0be5069c1ca9a2d6fb}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!create\+Matrix@{create\+Matrix}}
+\index{create\+Matrix@{create\+Matrix}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{create\+Matrix()}{createMatrix()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+Hitbox.\+create\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: A method used to rotate the 4 corners of the shape so that our S\+AT is not just limited to two axes. 
+
+F\+OR\+: Each point in the shape
+
+C\+A\+LL\+: The rotation method used for the Vector2s. 
+
+Implements \hyperlink{a00434_acd7cc791467a53026ad0657a13265f1e}{Engine34.\+Interfaces.\+Collision.\+I\+Hitbox}.
+
+\mbox{\Hypertarget{a00506_ae78ae27deafc11bf87c1396c504ce621}\label{a00506_ae78ae27deafc11bf87c1396c504ce621}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!create\+Rotation@{create\+Rotation}}
+\index{create\+Rotation@{create\+Rotation}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{create\+Rotation()}{createRotation()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+Hitbox.\+create\+Rotation (\begin{DoxyParamCaption}\item[{Vector2}]{\+\_\+point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Rotates a Vector2 around a centre point. The parameter is the point being rotated. In order to rotate the co-\/ordinates around the centre of the shape we must subtract the origin of the rotation from the co-\/ordinate and then add it back on, essentially \char`\"{}moving the object and moving it back\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+point} & The point to be rotated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector2 of the new location of the co-\/ordinate
+\end{DoxyReturn}
+Move the point by subtracting the origin of rotation, in this case the centre, and use a Matrix to rotate the Vector2 upon the Z axis by the rotation set in the constructor converted to radians.
+
+Move the point back to it\textquotesingle{}s new location in relation to the origin
+
+R\+E\+T\+U\+RN\+: the new location of the point. 
+
+Implements \hyperlink{a00434_a88740a6f4bc38fab5c8a58ca80f70aa7}{Engine34.\+Interfaces.\+Collision.\+I\+Hitbox}.
+
+\mbox{\Hypertarget{a00506_a987b7fd544e03a9e43e38cc2df785d1d}\label{a00506_a987b7fd544e03a9e43e38cc2df785d1d}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Engine.\+Managers.\+Collision.\+Hitbox.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00434_a50eba986052aa1f6ac4b49426ab31042}{Engine34.\+Interfaces.\+Collision.\+I\+Hitbox}.
+
+\mbox{\Hypertarget{a00506_ab5cba73c16189f63616a91cf19f00562}\label{a00506_ab5cba73c16189f63616a91cf19f00562}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Update\+Point@{Update\+Point}}
+\index{Update\+Point@{Update\+Point}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Update\+Point()}{UpdatePoint()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+Hitbox.\+Update\+Point (\begin{DoxyParamCaption}\item[{Vector2}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: This is used to move the hitboxes with their parent entities. If this is not done then the collision will not work because the hitbox hasn\textquotesingle{}t moved. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em velocity} & The velocity to move the point by\\
+\hline
+\end{DoxyParams}
+F\+OR\+: each point in the shape.
+
+Move the position of the point by the velocity provided in the parameters. 
+
+Implements \hyperlink{a00434_ae50d408a05951b1e4db24bb468860103}{Engine34.\+Interfaces.\+Collision.\+I\+Hitbox}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00506_a46b5b73419f520327a67808cd768a666}\label{a00506_a46b5b73419f520327a67808cd768a666}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!\+\_\+mind@{\+\_\+mind}}
+\index{\+\_\+mind@{\+\_\+mind}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{\+\_\+mind}{\_mind}}
+{\footnotesize\ttfamily \hyperlink{a00446}{I\+Mind} Engine.\+Managers.\+Collision.\+Hitbox.\+\_\+mind\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+D\+E\+C\+L\+A\+RE\+: A reference to the mind. 
+
+\mbox{\Hypertarget{a00506_a4128afb1364d3a25e1091055ef46dda2}\label{a00506_a4128afb1364d3a25e1091055ef46dda2}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!edges@{edges}}
+\index{edges@{edges}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Engine.\+Managers.\+Collision.\+Hitbox.\+edges\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{a00506_ad49c6d92bbdffabb12c2a7a4c7fa3840}\label{a00506_ad49c6d92bbdffabb12c2a7a4c7fa3840}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!points@{points}}
+\index{points@{points}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Engine.\+Managers.\+Collision.\+Hitbox.\+points\hspace{0.3cm}{\ttfamily [protected]}}
+
+D\+E\+C\+L\+A\+RE\+: A List of each corner and edge of the shape 
+
+points are not the same as the Monogame object Point. This was just the name given to them\mbox{\Hypertarget{a00506_a4bfe4a9151e1af19d18f92b4cfba46b6}\label{a00506_a4bfe4a9151e1af19d18f92b4cfba46b6}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!velocity@{velocity}}
+\index{velocity@{velocity}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+Hitbox.\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+R\+E\+T\+U\+RN\+: A Vector2 co-\/ordinate of the Velocity of the shape and set the local variable to this property. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00506_aea24a643fe9a06c65064bf091427c2fc}\label{a00506_aea24a643fe9a06c65064bf091427c2fc}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Centre@{Centre}}
+\index{Centre@{Centre}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Centre}{Centre}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+Hitbox.\+Centre\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00506_a32ea07f46a9cd6213e965f837758e674}\label{a00506_a32ea07f46a9cd6213e965f837758e674}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Edges@{Edges}}
+\index{Edges@{Edges}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Edges}{Edges}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Engine.\+Managers.\+Collision.\+Hitbox.\+Edges\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+R\+E\+T\+U\+RN\+: A list of a Vector2 co-\/ordinates of the edges of the shape and set the local variable to this property. 
+
+\mbox{\Hypertarget{a00506_a375df917b377e1511e6accd4018a2c30}\label{a00506_a375df917b377e1511e6accd4018a2c30}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Mind@{Mind}}
+\index{Mind@{Mind}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Mind}{Mind}}
+{\footnotesize\ttfamily \hyperlink{a00446}{I\+Mind} Engine.\+Managers.\+Collision.\+Hitbox.\+Mind\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00506_ab706c341cd6e2ba930e2ffe437b6d9c7}\label{a00506_ab706c341cd6e2ba930e2ffe437b6d9c7}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Points@{Points}}
+\index{Points@{Points}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Engine.\+Managers.\+Collision.\+Hitbox.\+Points\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+R\+E\+T\+U\+RN\+: A list of a Vector2 co-\/ordinates of the corners of the shape and set the local variable to this property. 
+
+\mbox{\Hypertarget{a00506_a1f0b9781e3ca7fb87c8f9d03080e9f16}\label{a00506_a1f0b9781e3ca7fb87c8f9d03080e9f16}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!Engine\+::\+Managers\+::\+Collision\+::\+Hitbox@{Engine\+::\+Managers\+::\+Collision\+::\+Hitbox}}
+\subsubsection{\texorpdfstring{Velocity}{Velocity}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+Hitbox.\+Velocity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00161}{Hitbox.\+cs}\end{DoxyCompactItemize}

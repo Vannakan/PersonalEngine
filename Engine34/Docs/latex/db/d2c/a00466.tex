@@ -1,0 +1,119 @@
+\hypertarget{a00466}{}\section{Engine.\+Interfaces.\+Screen.\+I\+Screen Interface Reference}
+\label{a00466}\index{Engine.\+Interfaces.\+Screen.\+I\+Screen@{Engine.\+Interfaces.\+Screen.\+I\+Screen}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: all screens subscribe to this interface which contains the implementation for what each screen needs To do  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Screen.\+I\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.098039cm]{db/d2c/a00466}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00466_aeba867b4e4bd2f0a918b837d93a4e45a}{Unload\+Content} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unloads the content of the screen \end{DoxyCompactList}\item 
+void \hyperlink{a00466_ad251ad712685a0f329ad2b29bde78981}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises the logic of the screen \end{DoxyCompactList}\item 
+void \hyperlink{a00466_a5f59b9b12c1bf29b1db612ed52d1cfd6}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop which is cycled through each frame \end{DoxyCompactList}\item 
+void \hyperlink{a00466_a0c61f739fb252fcc90b91b1358511d05}{Draw} (Sprite\+Batch sprite\+Batch)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws the content of the screen \end{DoxyCompactList}\item 
+void \hyperlink{a00466_a67f1b5deb3604a417d7452fc8873de37}{Unload} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unloads the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: all screens subscribe to this interface which contains the implementation for what each screen needs To do 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00466_a0c61f739fb252fcc90b91b1358511d05}\label{a00466_a0c61f739fb252fcc90b91b1358511d05}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Draws the content of the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Batch} & the Monogame Sprite\+Batch\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00562_ad5b2061652982cb94e7c01c39f59a984}{Engine.\+States.\+Levels.\+A\+Star\+Demo}, \hyperlink{a00574_a193970cc59914f538ae0bcd39fe1ef48}{Engine.\+States.\+Menu.\+Main\+Menu}, \hyperlink{a00550_a200c31954effe5fc060118607155fb16}{Engine.\+States.\+Engine.\+Base\+Screen}, \hyperlink{a00570_a32c772a646fe78f26a4e9f83ae327156}{Engine.\+States.\+Levels.\+Steering\+Demo}, and \hyperlink{a00554_ae50fb213e5c1efc8d3908340b236e927}{Engine.\+States.\+Engine.\+Splash\+Screen}.
+
+\mbox{\Hypertarget{a00466_ad251ad712685a0f329ad2b29bde78981}\label{a00466_ad251ad712685a0f329ad2b29bde78981}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises the logic of the screen 
+
+
+
+Implemented in \hyperlink{a00558_a1547a699546baa41aa39a2e2b4412787}{Engine.\+States.\+Game\+Options.\+Game\+Options}, \hyperlink{a00574_a43b83f0941e721234fdceeb0b5587f1b}{Engine.\+States.\+Menu.\+Main\+Menu}, \hyperlink{a00550_af8fd6890abf865641e190578ef2e054c}{Engine.\+States.\+Engine.\+Base\+Screen}, \hyperlink{a00554_a321c34cdc158a49cf76f31e3cdd0863e}{Engine.\+States.\+Engine.\+Splash\+Screen}, \hyperlink{a00562_a143dfe5c81e8cd31fe6439aad1de00c6}{Engine.\+States.\+Levels.\+A\+Star\+Demo}, \hyperlink{a00570_a3ae8b73b4618e8c2635d3b8c24d70bcb}{Engine.\+States.\+Levels.\+Steering\+Demo}, and \hyperlink{a00566_a051d8aea070a4c7a93f0cf494e4fac6a}{Engine.\+S\+A\+T\+Demo}.
+
+\mbox{\Hypertarget{a00466_a67f1b5deb3604a417d7452fc8873de37}\label{a00466_a67f1b5deb3604a417d7452fc8873de37}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}!Unload@{Unload}}
+\index{Unload@{Unload}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen.\+Unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Unloads the screen 
+
+
+
+Implemented in \hyperlink{a00558_aedf1c1415b77bf7c8ce37d754039de7b}{Engine.\+States.\+Game\+Options.\+Game\+Options}, \hyperlink{a00550_a861ab6364e68e3e3b6b9718e34ba18a2}{Engine.\+States.\+Engine.\+Base\+Screen}, and \hyperlink{a00562_a25e822fbb0f806e84f05a26852c05593}{Engine.\+States.\+Levels.\+A\+Star\+Demo}.
+
+\mbox{\Hypertarget{a00466_aeba867b4e4bd2f0a918b837d93a4e45a}\label{a00466_aeba867b4e4bd2f0a918b837d93a4e45a}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}!Unload\+Content@{Unload\+Content}}
+\index{Unload\+Content@{Unload\+Content}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}}
+\subsubsection{\texorpdfstring{Unload\+Content()}{UnloadContent()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen.\+Unload\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Unloads the content of the screen 
+
+
+
+Implemented in \hyperlink{a00550_abd2118fc928f9057ddacbe758b80fe68}{Engine.\+States.\+Engine.\+Base\+Screen}.
+
+\mbox{\Hypertarget{a00466_a5f59b9b12c1bf29b1db612ed52d1cfd6}\label{a00466_a5f59b9b12c1bf29b1db612ed52d1cfd6}} 
+\index{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen@{Engine\+::\+Interfaces\+::\+Screen\+::\+I\+Screen}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Screen.\+I\+Screen.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop which is cycled through each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & the Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00558_a629d2a00abd6bfcc21524911e74fee3a}{Engine.\+States.\+Game\+Options.\+Game\+Options}, \hyperlink{a00574_ad667a7ff9dea79bee26a4205418c7a61}{Engine.\+States.\+Menu.\+Main\+Menu}, \hyperlink{a00562_aaa91f362f279bd5d226f49fb150f98e3}{Engine.\+States.\+Levels.\+A\+Star\+Demo}, \hyperlink{a00554_af245506899484c6784a44550b1364b6c}{Engine.\+States.\+Engine.\+Splash\+Screen}, \hyperlink{a00550_a098ece7d1e112475f6e880c3a672af64}{Engine.\+States.\+Engine.\+Base\+Screen}, and \hyperlink{a00570_a4210cc45e9038a007132fbafde08fa71}{Engine.\+States.\+Levels.\+Steering\+Demo}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00131}{I\+Screen.\+cs}\end{DoxyCompactItemize}

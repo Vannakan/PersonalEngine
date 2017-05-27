@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/da5/a00570">
+<title>Engine::States::Levels::SteeringDemo class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool flock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d8/da5/a00570_1a3ae8b73b4618e8c2635d3b8c24d70bcb">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da5/a00570_1addcf72bee8c2ebbf4a7170c21fb49275">OnKeyPressed</link> (
+object source, <link linkend="de/dd7/a00362">KeyEventArgs</link> e)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d8/da5/a00570_1a32c772a646fe78f26a4e9f83ae327156">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d8/da5/a00570_1a4210cc45e9038a007132fbafde08fa71">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d8/da5/a00570_1a3ae8b73b4618e8c2635d3b8c24d70bcb">
+                <title>override void Engine.States.Levels.SteeringDemo.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d8/da5/a00570_1addcf72bee8c2ebbf4a7170c21fb49275">
+                <title>void Engine.States.Levels.SteeringDemo.OnKeyPressed (object source, KeyEventArgs e)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da5/a00570_1a32c772a646fe78f26a4e9f83ae327156">
+                <title>override void Engine.States.Levels.SteeringDemo.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>the Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/da5/a00570_1a4210cc45e9038a007132fbafde08fa71">
+                <title>override void Engine.States.Levels.SteeringDemo.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

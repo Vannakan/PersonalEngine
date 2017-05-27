@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dcb/a00170">
+    <title>EntityManager.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/dee/a00518">Engine::Managers::Entities::EntityManager</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: Entity Manager is responsible for the creation and storage of all entities in the game scene. It is able to
+return a list, a specific entity, or create and remove entities from the scene
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d42/a00269">Engine::Managers::Entities</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file EntityManager.cs</para>
+    </simplesect>
+</section>

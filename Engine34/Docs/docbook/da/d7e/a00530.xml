@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d7e/a00530">
+<title>Engine::Managers::Resource::ResourceLoader class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, SpriteFont &gt; Fonts<para><emphasis>DECLARE: Dictionary for Spritefonts.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Texture2D &gt; Textures<para><emphasis>DECLARE: Dictionary for the type of Texture2D.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Song &gt; Music<para><emphasis>DECLARE: Dictionray for the type of Song.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1a77b00bda1dc37c9cabe2dbaf90655714">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises and Loads appropriate resources
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1aa767792c046f7e3e21c512de046dac81">LoadTexture</link> (
+string path)<para><emphasis>&lt;summary&gt;
+METHOD: Takes a string parameter and attempts to load a texture pointed to from the string.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1aed066679a7bd0ff5549d13323c88d4b4">LoadTexture</link> (
+string start, string name)<para><emphasis>&lt;summary&gt;
+METHOD: Takes two strings, one as the directory, if not the same as the Content pipeline, and one as the file name
+and attempts to load the texture
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Texture2D <link linkend="da/d7e/a00530_1a841de899c3601b3d35496ee798a6e894">GetTex</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: returns a Texture from the string provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1ab0e1965354b92f0fc2920c74b48a7f0d">LoadFont</link> (
+string start, string name)<para><emphasis>&lt;summary&gt;
+METHOD: Load a SpriteFont from the content pipeline via a string and add it into the dictionary
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteFont <link linkend="da/d7e/a00530_1a160f06963928da598da9f9431ba65f73">GetFont</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Get a font from a string directory
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="da/d7e/a00530_1a939824a1d16e96b4322225a18f7a47d6">CheckLibrary</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Checks the current song library for an audio file with the name provided in parameters
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1aa8ac4f03379c9dd95e96ca38b6da344b">LoEngineong</link> (
+string start, string name)<para><emphasis>&lt;summary&gt;
+METHOD: Load a song if it is not already in the queue
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Song <link linkend="da/d7e/a00530_1a6587452c5637a132330fb0e2f6dc4e7a">GetSong</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Return a song based on the string given in parameters
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1a3c054651a1f23dd6a968336f2079f1b2">LoadTiles</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Load the textures for any tiles to be used.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1a557cc78880f9acf324eb77d9be245c98">LoEngineound</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Load any sound files to be used
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1a8ed087cf44b8c303edb0d8b59efb3a9b">LoadEntity</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Load any entity textures to be used
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1a19d917cb5f5580c6c4a4fa00c3f63daa">LoadMisc</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Load any miscellaneous Objects to be used 
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d7e/a00530_1ab4c5158cd1df0416f5abdc9d82eccf9f">LoadGUI</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Load any GUI Assets
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The <link linkend="d9/dd6/a00272">Resource</link> loader is responsible for loading and storage of external resources such as textures and sounds </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 14 of file ResourceLoader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ResourceLoader.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="da/d7e/a00530_1a77b00bda1dc37c9cabe2dbaf90655714">
+                <title>void Engine.Managers.Resource.ResourceLoader.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises and Loads appropriate resources
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="da/d7e/a00530_1aa767792c046f7e3e21c512de046dac81">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadTexture (string path)</title> <emphasis>&lt;summary&gt;
+METHOD: Takes a string parameter and attempts to load a texture pointed to from the string.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>path</entry>
+                                <entry>
+<para>The path of the texture to be loaded</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1aed066679a7bd0ff5549d13323c88d4b4">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadTexture (string start, string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Takes two strings, one as the directory, if not the same as the Content pipeline, and one as the file name
+and attempts to load the texture
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>start</entry>
+                                <entry>
+<para>The folder of the file</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1a841de899c3601b3d35496ee798a6e894">
+                <title>Texture2D Engine.Managers.Resource.ResourceLoader.GetTex (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: returns a Texture from the string provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A texture2D of the same name</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1ab0e1965354b92f0fc2920c74b48a7f0d">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadFont (string start, string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Load a SpriteFont from the content pipeline via a string and add it into the dictionary
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>start</entry>
+                                <entry>
+<para>The folder of the file</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1a160f06963928da598da9f9431ba65f73">
+                <title>SpriteFont Engine.Managers.Resource.ResourceLoader.GetFont (string Name)</title> <emphasis>&lt;summary&gt;
+METHOD: Get a font from a string directory
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the font file to be loaded</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a SpriteFont of the font at the name provided</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1a939824a1d16e96b4322225a18f7a47d6">
+                <title>bool Engine.Managers.Resource.ResourceLoader.CheckLibrary (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Checks the current song library for an audio file with the name provided in parameters
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the audio file requested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a boolean for if the audio file is in the library or queue</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1aa8ac4f03379c9dd95e96ca38b6da344b">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoEngineong (string start, string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Load a song if it is not already in the queue
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>start</entry>
+                                <entry>
+<para>the folder of the song</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>the name of the song</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1a6587452c5637a132330fb0e2f6dc4e7a">
+                <title>Song Engine.Managers.Resource.ResourceLoader.GetSong (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Return a song based on the string given in parameters
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the file to be searched for in the music library</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A song of the same name</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="da/d7e/a00530_1a3c054651a1f23dd6a968336f2079f1b2">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadTiles ()</title> <emphasis>&lt;summary&gt;
+METHOD: Load the textures for any tiles to be used.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="da/d7e/a00530_1a557cc78880f9acf324eb77d9be245c98">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoEngineound ()</title> <emphasis>&lt;summary&gt;
+METHOD: Load any sound files to be used
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="da/d7e/a00530_1a8ed087cf44b8c303edb0d8b59efb3a9b">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadEntity ()</title> <emphasis>&lt;summary&gt;
+METHOD: Load any entity textures to be used
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="da/d7e/a00530_1a19d917cb5f5580c6c4a4fa00c3f63daa">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadMisc ()</title> <emphasis>&lt;summary&gt;
+METHOD: Load any miscellaneous Objects to be used 
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="da/d7e/a00530_1ab4c5158cd1df0416f5abdc9d82eccf9f">
+                <title>void Engine.Managers.Resource.ResourceLoader.LoadGUI ()</title> <emphasis>&lt;summary&gt;
+METHOD: Load any GUI Assets
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/db8/a00158">
+    <title>DetectionManger.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/da2/a00502">Engine::Managers::Collision::IDetectionManger</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The Detection Manager is used for all collision calculations. Once two objects are colliding a Collision event is
+fired with the necessary information for two objects to react properly.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d12/a00268">Engine::Managers::Collision</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file DetectionManger.cs</para>
+    </simplesect>
+</section>

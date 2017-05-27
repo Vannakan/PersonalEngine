@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d19/a00273">
+<title>Engine::Managers::Screen</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d20/a00534">Engine::Managers::Screen::Fader</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d0/d19/a00273_1a5ba0395c15683984f73feffe79799042">Transition</link> {
+<link linkend="d0/d19/a00273_1a5ba0395c15683984f73feffe79799042aefeb369cccbd560588a756610865664c">In</link>,
+<link linkend="d0/d19/a00273_1a5ba0395c15683984f73feffe79799042a7c147cda9e49590f6abe83d118b7353b">Out</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/da2/a00502">
+<title>Engine::Managers::Collision::IDetectionManger class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SATcheck satTest<para><emphasis>INITIALISE: The object used for SAT Calculations.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; ICollidable &gt; collision<para><emphasis>INITIALISE: a List of collidable entities.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="d0/da2/a00502_1a7a0a94d84fd7588d01218d607e7b1d27">CollisionEventHandler</link> (
+object sender, <link linkend="db/d10/a00350">CollisionEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+EVENT: a reference to the CollisionEventHandler which will be used when two objects collide
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da2/a00502_1ae4daf9d957c8b30e779a7ed89237b370">addCollidable</link> (
+<link linkend="d7/db9/a00426">ICollidable</link> obj)<para><emphasis>&lt;summary&gt;
+METHOD: Adds an ICOllidable to the list of objects to check
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da2/a00502_1ac032340610657f865bdd3b7a82e316c3">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Called every frame of the game loop and contains all of the necessary code for the manager to calculate
+Whether each object is colliding or not
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da2/a00502_1a6785a08302cfe7d6fb08a7042691a3a8">doCollision</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Checks AABB Collision for two objects
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da2/a00502_1a31a209d98a58cac4f6abd47711bf545c">OnACollision</link> (
+<link linkend="d7/db9/a00426">ICollidable</link> A, <link linkend="d7/db9/a00426">ICollidable</link> B)<para><emphasis>&lt;summary&gt;
+METHOD: When two objects are colliding via AABB collision, this method is called
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da2/a00502_1a272b97e8ab5caf3dcceb455849deb6ed">CallSAT</link> (
+<link linkend="d7/db9/a00426">ICollidable</link> A, <link linkend="d7/db9/a00426">ICollidable</link> B, Vector2 mtv)<para><emphasis>&lt;summary&gt;
+METHOD: Call to fire an Event when SAT Calculates two shapes about to collide.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da2/a00502_1a18f0056903776f291a462fb4bbbfc224">CheckSAT</link> (
+<link linkend="d7/db9/a00426">ICollidable</link> a, <link linkend="d7/db9/a00426">ICollidable</link> b)<para><emphasis>&lt;summary&gt;
+METHOD: Runs the SAT Calculations on two ICollidable objects and calls the event fire method when true.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d0/da2/a00502_1a47c9b58bdaf1f773ea3932f8c574ae0b">ImpulseApplication</link> (
+<link linkend="d1/d7e/a00434">IHitbox</link> a, <link linkend="d1/d7e/a00434">IHitbox</link> b)<para><emphasis>&lt;summary&gt;
+METHOD: Applies the impulse to the two objects to simulate physics.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The Detection Manager is used for all collision calculations. Once two objects are colliding a <link linkend="db/d12/a00268">Collision</link> event is fired with the necessary information for two objects to react properly. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 14 of file DetectionManger.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>DetectionManger.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d0/da2/a00502_1a7a0a94d84fd7588d01218d607e7b1d27">
+                <title>delegate void Engine.Managers.Collision.IDetectionManger.CollisionEventHandler (object sender, CollisionEventArgs e)</title> <emphasis>&lt;summary&gt;
+EVENT: a reference to the CollisionEventHandler which will be used when two objects collide
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/da2/a00502_1ae4daf9d957c8b30e779a7ed89237b370">
+                <title>void Engine.Managers.Collision.IDetectionManger.addCollidable (ICollidable obj)</title> <emphasis>&lt;summary&gt;
+METHOD: Adds an ICOllidable to the list of objects to check
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>obj</entry>
+                                <entry>
+<para>The object to add to the list</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/da2/a00502_1ac032340610657f865bdd3b7a82e316c3">
+                <title>void Engine.Managers.Collision.IDetectionManger.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Called every frame of the game loop and contains all of the necessary code for the manager to calculate
+Whether each object is colliding or not
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/da2/a00502_1a6785a08302cfe7d6fb08a7042691a3a8">
+                <title>void Engine.Managers.Collision.IDetectionManger.doCollision ()</title> <emphasis>&lt;summary&gt;
+METHOD: Checks AABB Collision for two objects
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/da2/a00502_1a31a209d98a58cac4f6abd47711bf545c">
+                <title>void Engine.Managers.Collision.IDetectionManger.OnACollision (ICollidable A, ICollidable B)</title> <emphasis>&lt;summary&gt;
+METHOD: When two objects are colliding via AABB collision, this method is called
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>A</entry>
+                                <entry>
+<para>The first object that&apos;s colliding</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>B</entry>
+                                <entry>
+<para>The second object that&apos;s colliding</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/da2/a00502_1a272b97e8ab5caf3dcceb455849deb6ed">
+                <title>void Engine.Managers.Collision.IDetectionManger.CallSAT (ICollidable A, ICollidable B, Vector2 mtv)</title> <emphasis>&lt;summary&gt;
+METHOD: Call to fire an Event when SAT Calculates two shapes about to collide.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Object A to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Object B to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mtv</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/da2/a00502_1a18f0056903776f291a462fb4bbbfc224">
+                <title>void Engine.Managers.Collision.IDetectionManger.CheckSAT (ICollidable a, ICollidable b)</title> <emphasis>&lt;summary&gt;
+METHOD: Runs the SAT Calculations on two ICollidable objects and calls the event fire method when true.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Object A to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Object B to be tested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/da2/a00502_1a47c9b58bdaf1f773ea3932f8c574ae0b">
+                <title>Vector2 Engine.Managers.Collision.IDetectionManger.ImpulseApplication (IHitbox a, IHitbox b)</title> <emphasis>&lt;summary&gt;
+METHOD: Applies the impulse to the two objects to simulate physics.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Object A to be tested</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Object B to be tested</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A Vector2 which will be applied to the object</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

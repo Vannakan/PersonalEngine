@@ -1,0 +1,223 @@
+\hypertarget{a00446}{}\section{Engine.\+Interfaces.\+Entities.\+I\+Mind Interface Reference}
+\label{a00446}\index{Engine.\+Interfaces.\+Entities.\+I\+Mind@{Engine.\+Interfaces.\+Entities.\+I\+Mind}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface that provides Implementation for any object that is a mind which controls the behaviour of an entity.  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Entities.\+I\+Mind\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.403433cm]{d3/def/a00446}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00446_a21a0486019d7c7b665fdf483626323f3}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update, is run every frame and is the main loop for any mind. \end{DoxyCompactList}\item 
+void \hyperlink{a00446_a6f51a819769ba43f5f1702563293aacd}{Initialize} (Vector2 \hyperlink{a00446_ad1af5071b566a62b9e64aad821da9f21}{Position}, string t)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialise the position and texture \end{DoxyCompactList}\item 
+void \hyperlink{a00446_a421d8eb0a0accda3320144fbfe33ea8c}{Initialize} (Vector2 \hyperlink{a00446_ad1af5071b566a62b9e64aad821da9f21}{Position})
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialise just the position in case a texture has already been set. \end{DoxyCompactList}\item 
+void \hyperlink{a00446_a142493645e36a3e14c7d3c59793c4d3c}{Unload} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unload the mind and send it to the garbage collector. \end{DoxyCompactList}\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00446_af7c7cac5148930a12a85ec64412ac6f2}{get\+Entity} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get the entity which a mind controls. \end{DoxyCompactList}\item 
+\hyperlink{a00426}{I\+Collidable} \hyperlink{a00446_a3cbff0e85b710a4c8737254ed9ca7b30}{get\+Collidable} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Return an object that will be calculated for collision \end{DoxyCompactList}\item 
+void \hyperlink{a00446_a9d8370ad6e1b2a07760d3554b1e179fd}{Link} (\hyperlink{a00438}{I\+Entity} e)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Link the mind to an entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00446_a50008fc232397651429a06699310ef6f}{Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: A bool for whether the mind is currently attached to an Entity \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00446_a662544c982afdebf739a9a0eaa9b7a80}{Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The velocity of the mind \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00446_ad1af5071b566a62b9e64aad821da9f21}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The position of the mind. \end{DoxyCompactList}\item 
+int \hyperlink{a00446_a33ec6f3f0e9f14bdcab38fd0f28148d1}{Unique\+ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: The unique ID for the mind \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface that provides Implementation for any object that is a mind which controls the behaviour of an entity. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00446_a3cbff0e85b710a4c8737254ed9ca7b30}\label{a00446_a3cbff0e85b710a4c8737254ed9ca7b30}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!get\+Collidable@{get\+Collidable}}
+\index{get\+Collidable@{get\+Collidable}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{get\+Collidable()}{getCollidable()}}
+{\footnotesize\ttfamily \hyperlink{a00426}{I\+Collidable} Engine.\+Interfaces.\+Entities.\+I\+Mind.\+get\+Collidable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Return an object that will be calculated for collision 
+
+\begin{DoxyReturn}{Returns}
+An I\+Collidable of the current object
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00318_aa36d6fcb8d80f1398855cea671ce1078}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00446_af7c7cac5148930a12a85ec64412ac6f2}\label{a00446_af7c7cac5148930a12a85ec64412ac6f2}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!get\+Entity@{get\+Entity}}
+\index{get\+Entity@{get\+Entity}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{get\+Entity()}{getEntity()}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Interfaces.\+Entities.\+I\+Mind.\+get\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Get the entity which a mind controls. 
+
+\begin{DoxyReturn}{Returns}
+The I\+E\+Ntity this mind controls
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00318_a9585d4438e12299a42aaed4ee6fb88b6}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00446_a6f51a819769ba43f5f1702563293aacd}\label{a00446_a6f51a819769ba43f5f1702563293aacd}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Initialize (\begin{DoxyParamCaption}\item[{Vector2}]{Position,  }\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialise the position and texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position the mind will be initialised at\\
+\hline
+{\em t} & The string that the texture will be created from\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00318_a386406a6250e4f7e59d0a048545ecc46}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00446_a421d8eb0a0accda3320144fbfe33ea8c}\label{a00446_a421d8eb0a0accda3320144fbfe33ea8c}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Initialize (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialise just the position in case a texture has already been set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position the mind will be iniitalised at\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00318_a353d7d2bb1035aefebf0ae3e3f1d1488}{Engine.\+Entities.\+Mind}, \hyperlink{a00346_a72922ee865087d504b1bca3fec35fb6e}{Engine.\+Entities.\+Steering.\+Steering\+Mind}, \hyperlink{a00326_a44a3007533c5d73810c4636fcfef5988}{Engine.\+Entities.\+Player\+Mind}, and \hyperlink{a00334_ae94a647a0b9c6f1d99abb61e36612ba7}{Engine.\+Entities.\+Platformer.\+Test\+Mind}.
+
+\mbox{\Hypertarget{a00446_a9d8370ad6e1b2a07760d3554b1e179fd}\label{a00446_a9d8370ad6e1b2a07760d3554b1e179fd}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Link@{Link}}
+\index{Link@{Link}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Link()}{Link()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Link (\begin{DoxyParamCaption}\item[{\hyperlink{a00438}{I\+Entity}}]{e }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Link the mind to an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The entity to be linked to this mind\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00318_a3f2db3b7d2b8b68a02b56472467ffd12}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00446_a142493645e36a3e14c7d3c59793c4d3c}\label{a00446_a142493645e36a3e14c7d3c59793c4d3c}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Unload@{Unload}}
+\index{Unload@{Unload}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Unload the mind and send it to the garbage collector. 
+
+
+
+Implemented in \hyperlink{a00318_a15bf25a4a74706ef37592689f43c0598}{Engine.\+Entities.\+Mind}, and \hyperlink{a00326_a80bacdc33e51129afed33f9e8bd5cd0f}{Engine.\+Entities.\+Player\+Mind}.
+
+\mbox{\Hypertarget{a00446_a21a0486019d7c7b665fdf483626323f3}\label{a00446_a21a0486019d7c7b665fdf483626323f3}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Update, is run every frame and is the main loop for any mind. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & the Monogame Game\+Time Property\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00318_adec6999d87accf7371de1536eac2541b}{Engine.\+Entities.\+Mind}, \hyperlink{a00346_a2e1f7ec281cfe2b7e8268a93bec59d4a}{Engine.\+Entities.\+Steering.\+Steering\+Mind}, \hyperlink{a00326_a172dca0ea26dfd821b413f7592a98084}{Engine.\+Entities.\+Player\+Mind}, and \hyperlink{a00334_a1817f5df935d637c737d510e39fd251f}{Engine.\+Entities.\+Platformer.\+Test\+Mind}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00446_a50008fc232397651429a06699310ef6f}\label{a00446_a50008fc232397651429a06699310ef6f}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Active@{Active}}
+\index{Active@{Active}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Active}{Active}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Active\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: A bool for whether the mind is currently attached to an Entity 
+
+\mbox{\Hypertarget{a00446_ad1af5071b566a62b9e64aad821da9f21}\label{a00446_ad1af5071b566a62b9e64aad821da9f21}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Position@{Position}}
+\index{Position@{Position}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The position of the mind. 
+
+\mbox{\Hypertarget{a00446_a33ec6f3f0e9f14bdcab38fd0f28148d1}\label{a00446_a33ec6f3f0e9f14bdcab38fd0f28148d1}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Unique\+ID@{Unique\+ID}}
+\index{Unique\+ID@{Unique\+ID}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Unique\+ID}{UniqueID}}
+{\footnotesize\ttfamily int Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Unique\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+G\+ET\+: The unique ID for the mind 
+
+\mbox{\Hypertarget{a00446_a662544c982afdebf739a9a0eaa9b7a80}\label{a00446_a662544c982afdebf739a9a0eaa9b7a80}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Mind}}
+\subsubsection{\texorpdfstring{Velocity}{Velocity}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Entities.\+I\+Mind.\+Velocity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The velocity of the mind 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00116}{I\+Mind.\+cs}\end{DoxyCompactItemize}

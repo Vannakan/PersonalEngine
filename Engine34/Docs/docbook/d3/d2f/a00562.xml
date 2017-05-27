@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d2f/a00562">
+<title>Engine::States::Levels::AStarDemo class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Grids grid</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AstarPath search1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AStarGridSearch a</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Random random</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int max</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d3/d2f/a00562_1a143dfe5c81e8cd31fe6439aad1de00c6">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d3/d2f/a00562_1a25e822fbb0f806e84f05a26852c05593">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: When the screen is to be unloaded, clear any entities from the screen,
+remove the entities from the detection manager as well
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d3/d2f/a00562_1aaa91f362f279bd5d226f49fb150f98e3">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d3/d2f/a00562_1ad5b2061652982cb94e7c01c39f59a984">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d2f/a00562_1a40ea5a718ab98eaddbfd933b214d2c9d">OnKeyDown</link> (
+object sender, <link linkend="de/dd7/a00362">KeyEventArgs</link> e)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d2f/a00562_1a6aa66e56a0b74b4e888c82e645037641">doSearch</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d2f/a00562_1a27fd283970c64cb8b080d7135ca9aa1b">OnMouseClick</link> (
+object sender, <link linkend="d5/db5/a00374">MouseEventArgs</link> e)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d3/d2f/a00562_1a143dfe5c81e8cd31fe6439aad1de00c6">
+                <title>override void Engine.States.Levels.AStarDemo.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d3/d2f/a00562_1a25e822fbb0f806e84f05a26852c05593">
+                <title>override void Engine.States.Levels.AStarDemo.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: When the screen is to be unloaded, clear any entities from the screen,
+remove the entities from the detection manager as well
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d3/d2f/a00562_1aaa91f362f279bd5d226f49fb150f98e3">
+                <title>override void Engine.States.Levels.AStarDemo.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d2f/a00562_1ad5b2061652982cb94e7c01c39f59a984">
+                <title>override void Engine.States.Levels.AStarDemo.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>the Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d2f/a00562_1a40ea5a718ab98eaddbfd933b214d2c9d">
+                <title>void Engine.States.Levels.AStarDemo.OnKeyDown (object sender, KeyEventArgs e)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d2f/a00562_1a6aa66e56a0b74b4e888c82e645037641">
+                <title>void Engine.States.Levels.AStarDemo.doSearch ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d2f/a00562_1a27fd283970c64cb8b080d7135ca9aa1b">
+                <title>void Engine.States.Levels.AStarDemo.OnMouseClick (object sender, MouseEventArgs e)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

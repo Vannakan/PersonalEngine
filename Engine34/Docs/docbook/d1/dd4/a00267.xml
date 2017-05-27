@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dd4/a00267">
+<title>Engine::Managers::Cam</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/daa/a00490">Engine::Managers::Cam::Camera</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d0f/a00494">Engine::Managers::Cam::CameraManager</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: A Manager for the camera, this is responsible for the creation of a Camera object and updating it in relation to
+the world position
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d1/dd4/a00267_1aa40b88e1e953e36c54409ee9727c238b">CameraType</link> {
+<link linkend="d1/dd4/a00267_1aa40b88e1e953e36c54409ee9727c238ba84a8921b25f505d0d2077aeb5db4bc16">Static</link>,
+<link linkend="d1/dd4/a00267_1aa40b88e1e953e36c54409ee9727c238bad0f2e5376298c880665077b565ffd7dd">Locked</link>,
+<link linkend="d1/dd4/a00267_1aa40b88e1e953e36c54409ee9727c238ba31cdf8a7c73745646adfa4b58fbfcecf">fPlayer</link>,
+<link linkend="d1/dd4/a00267_1aa40b88e1e953e36c54409ee9727c238ba63066f67ab8fc99b91bcaeb6559739af">fMouse</link>
+}</literallayout>
+<para><emphasis>&lt;summary&gt;
+CLASS: The camera that is used and manipulated to display the viewport
+The camera can have 4 different states each affecting it&apos;s behaviour
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

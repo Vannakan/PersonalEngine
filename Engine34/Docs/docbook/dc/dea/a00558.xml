@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dea/a00558">
+<title>Engine::States::GameOptions::GameOptions class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ICameraManager c<para><emphasis>&lt;summary&gt;
+GET: A reference to the CameraManager
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteFont sf<para><emphasis>&lt;summary&gt;
+GET: A reference to a Spritefont
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string audio<para><emphasis>&lt;summary&gt;
+DECLARE: Audio string
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string volume</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int selected<para><emphasis>&lt;summary&gt;
+DECLARE: The currently selected option to change
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; menuNames<para><emphasis>&lt;summary&gt;
+DECLARE: A List of what options can be changed
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; MenuItem &gt; menuItems</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dea/a00558_1aeea264989e80b36956d21eb8ecd53d07">GameOptions</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/dea/a00558_1a1547a699546baa41aa39a2e2b4412787">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialisation Logic here
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/dea/a00558_1aedf1c1415b77bf7c8ce37d754039de7b">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unload the content of this screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/dea/a00558_1a7668c0681e2f3bd52cb65b3abda014bd">Draw</link> (
+Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draw the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dea/a00558_1a595552ae004bb6c7d5d42605c1c5d239">OnKeyDown</link> (
+object sender, <link linkend="de/dd7/a00362">KeyEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+EVENT: When a key is pressed this event fires
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/dea/a00558_1a629d2a00abd6bfcc21524911e74fee3a">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update is cycled through every frame and contains the logic for updating the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The <link linkend="dc/dea/a00558">GameOptions</link> screen allows the user to adjust settings for the game such as the volume for the game </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 21 of file GameOptions.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameOptions.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>ICameraManager Engine.States.GameOptions.GameOptions.c</title>                
+                <para>Definition at line 25 of file GameOptions.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameOptions.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>SpriteFont Engine.States.GameOptions.GameOptions.sf</title>                
+                <para>Definition at line 30 of file GameOptions.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameOptions.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>string Engine.States.GameOptions.GameOptions.audio</title>                
+                <para>Definition at line 35 of file GameOptions.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameOptions.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Engine.States.GameOptions.GameOptions.selected</title>                
+                <para>Definition at line 41 of file GameOptions.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameOptions.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>List&lt;string&gt; Engine.States.GameOptions.GameOptions.menuNames</title>                
+                <para>Definition at line 46 of file GameOptions.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameOptions.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="dc/dea/a00558_1aeea264989e80b36956d21eb8ecd53d07">
+                <title>Engine.States.GameOptions.GameOptions.GameOptions ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/dea/a00558_1a1547a699546baa41aa39a2e2b4412787">
+                <title>override void Engine.States.GameOptions.GameOptions.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialisation Logic here
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/dea/a00558_1aedf1c1415b77bf7c8ce37d754039de7b">
+                <title>override void Engine.States.GameOptions.GameOptions.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unload the content of this screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/dea/a00558_1a7668c0681e2f3bd52cb65b3abda014bd">
+                <title>override void Engine.States.GameOptions.GameOptions.Draw (Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draw the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>MonoGame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/dea/a00558_1a595552ae004bb6c7d5d42605c1c5d239">
+                <title>void Engine.States.GameOptions.GameOptions.OnKeyDown (object sender, KeyEventArgs e)</title> <emphasis>&lt;summary&gt;
+EVENT: When a key is pressed this event fires
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/dea/a00558_1a629d2a00abd6bfcc21524911e74fee3a">
+                <title>override void Engine.States.GameOptions.GameOptions.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update is cycled through every frame and contains the logic for updating the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

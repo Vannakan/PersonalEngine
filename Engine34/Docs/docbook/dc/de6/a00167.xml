@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/de6/a00167">
+    <title>TranslationVector.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d90/a00514">Engine::Managers::Collision::TranslationVector</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The vector that an object will need to be moved along once it is colliding in order to no longer be colliding.
+This vector needs to be the smallest possible amount an object can be moved by.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d12/a00268">Engine::Managers::Collision</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file TranslationVector.cs</para>
+    </simplesect>
+</section>

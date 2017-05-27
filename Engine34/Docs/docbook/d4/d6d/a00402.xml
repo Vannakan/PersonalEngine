@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d6d/a00402">
+<title>Engine::Grid::AStarNode class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int g</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int h</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d6d/a00402_1a7a3c8e3fd948f9d8cc3b54785ee158fd">AStarNode</link> (
+int element, string tex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d6d/a00402_1aa1178655cad381caac040bf8da0a31e0">AStarNode</link> (
+int element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d6d/a00402_1a466f4f5a7adfb5bfcacc1289c777c477">Draw</link> (
+SpriteBatch sp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d4/d6d/a00402_1a7a3c8e3fd948f9d8cc3b54785ee158fd">
+                <title>Engine.Grid.AStarNode.AStarNode (int element, string tex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d6d/a00402_1aa1178655cad381caac040bf8da0a31e0">
+                <title>Engine.Grid.AStarNode.AStarNode (int element)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d6d/a00402_1a466f4f5a7adfb5bfcacc1289c777c477">
+                <title>void Engine.Grid.AStarNode.Draw (SpriteBatch sp)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d75/a00334">
+<title>Engine::Entities::Platformer::TestMind class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="da/d75/a00334_1ae94a647a0b9c6f1d99abb61e36612ba7">Initialize</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of this mind.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="da/d75/a00334_1a1817f5df935d637c737d510e39fd251f">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update method which is called and ran through every frame.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: A test mind to control a test entity for demos. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 10 of file TestMind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TestMind.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="da/d75/a00334_1ae94a647a0b9c6f1d99abb61e36612ba7">
+                <title>override void Engine.Entities.Platformer.TestMind.Initialize (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of this mind.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d75/a00334_1a1817f5df935d637c737d510e39fd251f">
+                <title>override void Engine.Entities.Platformer.TestMind.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update method which is called and ran through every frame.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

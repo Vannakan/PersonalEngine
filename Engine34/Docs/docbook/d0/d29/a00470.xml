@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d29/a00470">
+<title>Engine::Interfaces::Screen::IScreenManager interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1ae37c13c038cdb202262013731985eb10">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise the Manager and add the first screen to be loaded
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1a8d30874c7b1b2728a784de0c6e6f80e3">UnloEnginecreens</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unload any screens that need to be unloaded
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1afc42708b653397ca8a3a81dc8d244c61">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update the manager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1a28a87245d63c8df1634598b3d20a14cf">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draw any objects that require drawing
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1aba0b8f29600dabc2a55dde4d5e00c7bc">Add</link> (
+string screenName)<para><emphasis>&lt;summary&gt;
+METHOD: Add a new screen to the stack of screens to be loaded and displayed
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1aaa6bfa9a986729ada7dcea6ac40f078d">ReplaceScreen</link> (
+string screenName)<para><emphasis>&lt;summary&gt;
+METHOD: Replace the current screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1a40fbf0a98c186ba93837f6279ad2f7dd">CheckScreens</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Check if any of the screens in the stack are the same as the current screen and makes them active if so
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1a833b8050119cd9a87efbfa23197457c9">CheckScreenManagerInput</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: check for input to select different options and move between different screens
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1a91b5204271edf5e137a85d3f8f3876d8">RemoveTopScreen</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unloads and removes the top screen from the stack, essentially going back one screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d29/a00470_1aff4347b40d3fd6173e0c420adbf1146f">UpdateTopScreen</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Call the update method of the top screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: This interface holds the implementation for the <link linkend="dd/d5a/a00538">ScreenManager</link> which is responsible for loading the content in each screen and displaying each screen. The <link linkend="dd/d5a/a00538">ScreenManager</link> contains a stack of screens which allows for multiple screens to be prepared for loading whilst only one is an active screen </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 14 of file IScreenManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IScreenManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d0/d29/a00470_1ae37c13c038cdb202262013731985eb10">
+                <title>void Engine.Interfaces.Screen.IScreenManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise the Manager and add the first screen to be loaded
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d29/a00470_1a8d30874c7b1b2728a784de0c6e6f80e3">
+                <title>void Engine.Interfaces.Screen.IScreenManager.UnloEnginecreens ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unload any screens that need to be unloaded
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d29/a00470_1afc42708b653397ca8a3a81dc8d244c61">
+                <title>void Engine.Interfaces.Screen.IScreenManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update the manager
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d29/a00470_1a28a87245d63c8df1634598b3d20a14cf">
+                <title>void Engine.Interfaces.Screen.IScreenManager.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draw any objects that require drawing
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>Monogame SpriteBatch property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d29/a00470_1aba0b8f29600dabc2a55dde4d5e00c7bc">
+                <title>void Engine.Interfaces.Screen.IScreenManager.Add (string screenName)</title> <emphasis>&lt;summary&gt;
+METHOD: Add a new screen to the stack of screens to be loaded and displayed
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>screenName</entry>
+                                <entry>
+<para>The name of the screen to be added</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d29/a00470_1aaa6bfa9a986729ada7dcea6ac40f078d">
+                <title>void Engine.Interfaces.Screen.IScreenManager.ReplaceScreen (string screenName)</title> <emphasis>&lt;summary&gt;
+METHOD: Replace the current screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>screenName</entry>
+                                <entry>
+<para>The name of the screen which will replace the screen</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d29/a00470_1a40fbf0a98c186ba93837f6279ad2f7dd">
+                <title>void Engine.Interfaces.Screen.IScreenManager.CheckScreens ()</title> <emphasis>&lt;summary&gt;
+METHOD: Check if any of the screens in the stack are the same as the current screen and makes them active if so
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d29/a00470_1a833b8050119cd9a87efbfa23197457c9">
+                <title>void Engine.Interfaces.Screen.IScreenManager.CheckScreenManagerInput ()</title> <emphasis>&lt;summary&gt;
+METHOD: check for input to select different options and move between different screens
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d29/a00470_1a91b5204271edf5e137a85d3f8f3876d8">
+                <title>void Engine.Interfaces.Screen.IScreenManager.RemoveTopScreen ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unloads and removes the top screen from the stack, essentially going back one screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d29/a00470_1aff4347b40d3fd6173e0c420adbf1146f">
+                <title>void Engine.Interfaces.Screen.IScreenManager.UpdateTopScreen (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Call the update method of the top screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

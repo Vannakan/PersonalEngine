@@ -1,0 +1,148 @@
+\hypertarget{a00534}{}\section{Engine.\+Managers.\+Screen.\+Fader Class Reference}
+\label{a00534}\index{Engine.\+Managers.\+Screen.\+Fader@{Engine.\+Managers.\+Screen.\+Fader}}
+Inheritance diagram for Engine.\+Managers.\+Screen.\+Fader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d20/a00534}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00534_a6dd5b212e90e0c0db26e280c723dcd4f}{Fader} (Vector2 Size)
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Sets the basic properties of the fader transition \end{DoxyCompactList}\item 
+\hyperlink{a00534_ac33d2bf58aea98d5739f2bb94540be63}{Fader} (Vector2 Size, Vector2 p)
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Sets the basic properties of the fader transition \end{DoxyCompactList}\item 
+\hyperlink{a00534_ad75a8b6e54b0557b7b463051858524bc}{Fader} (Vector2 Size, Vector2 p, float speed)
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Sets the basic properties of the fader transition \end{DoxyCompactList}\item 
+void \hyperlink{a00534_a8a40165cf8a910849e01fb35b9567ee2}{Draw} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draw the transition \end{DoxyCompactList}\item 
+void \hyperlink{a00534_a25631a1ada84786c23242b896dc62692}{Update} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update of the transition which is called every frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00534_aa2cfb68abbeb910ec086ddb3fc5a06c8}{ready} = false
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: bool for when the screen is ready to transition \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00534_a6dd5b212e90e0c0db26e280c723dcd4f}\label{a00534_a6dd5b212e90e0c0db26e280c723dcd4f}} 
+\index{Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}!Fader@{Fader}}
+\index{Fader@{Fader}!Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}}
+\subsubsection{\texorpdfstring{Fader()}{Fader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Screen.\+Fader.\+Fader (\begin{DoxyParamCaption}\item[{Vector2}]{Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Sets the basic properties of the fader transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Size} & Size, the dimensions of the screen to be covered in the transition\\
+\hline
+\end{DoxyParams}
+S\+ET\+: the texture to a constant black
+
+S\+ET\+: the bounds of the transition screen \mbox{\Hypertarget{a00534_ac33d2bf58aea98d5739f2bb94540be63}\label{a00534_ac33d2bf58aea98d5739f2bb94540be63}} 
+\index{Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}!Fader@{Fader}}
+\index{Fader@{Fader}!Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}}
+\subsubsection{\texorpdfstring{Fader()}{Fader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Screen.\+Fader.\+Fader (\begin{DoxyParamCaption}\item[{Vector2}]{Size,  }\item[{Vector2}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Sets the basic properties of the fader transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Size} & Size, the dimensions of the screen to be covered in the transition\\
+\hline
+{\em p} & p, the top left corner of the fade transition\\
+\hline
+\end{DoxyParams}
+S\+ET\+: the texture to a constant black
+
+S\+ET\+: the bounds of the transition screen \mbox{\Hypertarget{a00534_ad75a8b6e54b0557b7b463051858524bc}\label{a00534_ad75a8b6e54b0557b7b463051858524bc}} 
+\index{Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}!Fader@{Fader}}
+\index{Fader@{Fader}!Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}}
+\subsubsection{\texorpdfstring{Fader()}{Fader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Engine.\+Managers.\+Screen.\+Fader.\+Fader (\begin{DoxyParamCaption}\item[{Vector2}]{Size,  }\item[{Vector2}]{p,  }\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: Sets the basic properties of the fader transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Size} & Size, the dimensions of the screen to be covered in the transition\\
+\hline
+{\em p} & p, the top left corner of the fade transition\\
+\hline
+{\em speed} & speed, how quickly the screen will fade to and from black\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00534_a8a40165cf8a910849e01fb35b9567ee2}\label{a00534_a8a40165cf8a910849e01fb35b9567ee2}} 
+\index{Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Screen.\+Fader.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draw the transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & Monogame Sprite\+Batch\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00454_a13aad31e3e179532915dbb93e91afaa3}{Engine.\+Interfaces.\+Render.\+I\+Drawable\+Component}.
+
+\mbox{\Hypertarget{a00534_a25631a1ada84786c23242b896dc62692}\label{a00534_a25631a1ada84786c23242b896dc62692}} 
+\index{Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Screen.\+Fader.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: The update of the transition which is called every frame 
+
+I\+N\+C\+R\+E\+M\+E\+NT\+: the timer
+
+IF\+: Transitioning in to the fade, increase the alpha making the black box more opaque
+
+E\+L\+SE\+: Transitioning out of the fade, decrease the alpha making the black box less opaque
+
+IF\+: Fully transparent
+
+S\+ET\+: Alpha 0 and ready true
+
+IF\+: Fully Opaque
+
+S\+ET\+: Alpha 1 and transition to Out
+
+Adjust texture 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00534_aa2cfb68abbeb910ec086ddb3fc5a06c8}\label{a00534_aa2cfb68abbeb910ec086ddb3fc5a06c8}} 
+\index{Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}!ready@{ready}}
+\index{ready@{ready}!Engine\+::\+Managers\+::\+Screen\+::\+Fader@{Engine\+::\+Managers\+::\+Screen\+::\+Fader}}
+\subsubsection{\texorpdfstring{ready}{ready}}
+{\footnotesize\ttfamily bool Engine.\+Managers.\+Screen.\+Fader.\+ready = false}
+
+
+
+D\+E\+C\+L\+A\+RE\+: bool for when the screen is ready to transition 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00182}{Fader.\+cs}\end{DoxyCompactItemize}

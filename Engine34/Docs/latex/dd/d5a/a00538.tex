@@ -1,0 +1,261 @@
+\hypertarget{a00538}{}\section{Engine.\+Screen\+Manager Class Reference}
+\label{a00538}\index{Engine.\+Screen\+Manager@{Engine.\+Screen\+Manager}}
+Inheritance diagram for Engine.\+Screen\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dd/d5a/a00538}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \hyperlink{a00538_ad442d9999cb6f335509f21ddb533bd76}{s\+Manager\+Event} (\hyperlink{a00550}{Base\+Screen} screen)
+\item 
+void \hyperlink{a00538_aaa2b6fe0b50cf126bbb0a9b39fac1b83}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialize the screenmanager and add the menu to the stack to start the game off. Soon this will be replaced with a splashscreen which will transition to the menu \end{DoxyCompactList}\item 
+void \hyperlink{a00538_a1e85d6cc74fdb929f4729d1170886fb4}{Unlo\+Enginecreens} ()
+\begin{DoxyCompactList}\small\item\em Unload any screens which need to be unloaded \end{DoxyCompactList}\item 
+void \hyperlink{a00538_a9abaa968b161ebb2b84c7a47ada52f90}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update the manager \end{DoxyCompactList}\item 
+void \hyperlink{a00538_a1177fbd3eb0a300167e4fa99930025e1}{Draw} (Sprite\+Batch sprite\+Batch)
+\begin{DoxyCompactList}\small\item\em Currently draws the topmost screen, needs to be improved to support things such as pop ups It\textquotesingle{}ll be a simple fix to check to see which screens are requesting to be drawn and draw them in the order of the stack. \end{DoxyCompactList}\item 
+void \hyperlink{a00538_ae459e146f1e05789c4d5828cca4dead7}{Add} (string screen\+Name)
+\begin{DoxyCompactList}\small\item\em This method is self explanitory, it asks for the class name you wish to add to the screenstack and pushes it onto the top. \end{DoxyCompactList}\item 
+void \hyperlink{a00538_a28af5b838f4345834dc2351e06c3d654}{Replace\+Screen} (string screen\+Name)
+\begin{DoxyCompactList}\small\item\em This method is similar to the add method, but rather than just removing the screen to go back to the previous screen, this method replaces a screen (If you wanted to replace level1 with level2 \end{DoxyCompactList}\item 
+void \hyperlink{a00538_abe1bf121b368a6d205706da54d949ace}{Check\+Screens} ()
+\begin{DoxyCompactList}\small\item\em Checks each of the screens in the screenstack and checks if its the same screen as the current screen if so then declare the screen active, ready for drawing and updating. \end{DoxyCompactList}\item 
+void \hyperlink{a00538_aa8e3ecdc7ae78094b07af944c31f90a9}{Check\+Screen\+Manager\+Input} ()
+\begin{DoxyCompactList}\small\item\em Checks for input, more specifically if the E\+S\+C\+A\+PE key has been pressed and if the screen count is more than 1, go back a screen. Otherwise there will be no screens present and the screenmanager will be broken. \end{DoxyCompactList}\item 
+void \hyperlink{a00538_ab553bead481adc65547a323af9dab2d5}{Remove\+Top\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Removes the top screen from the stack. Should be used in situations such as if the er has lost all of his lives and the state should be reverted back to the menu screen this will be your god. It basically goes back one screen \+:) \end{DoxyCompactList}\item 
+void \hyperlink{a00538_a59b04e135a3b2a75a608752e2bfabc77}{Update\+Top\+Screen} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em This is probably the worst way of going about it but this method checks the top screen and updates it Although this will not be relevant soon since screen updates will be decided through E\+N\+U\+MS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{a00538_a973c15b5fff9fb873ed988ea69ccbfd1}{on\+Screen\+Change} (\hyperlink{a00550}{Base\+Screen} screen)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Content\+Manager \hyperlink{a00538_aab6681c2803637c394081f3132dd2846}{content}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{a00438}{I\+Entity} $>$ \hyperlink{a00538_a8fb99d85abd848bad9d850b742398801}{Entity\+List}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00538_ad442d9999cb6f335509f21ddb533bd76}{s\+Manager\+Event} \hyperlink{a00538_ab29ea82cff043c98756eaa9f538a72e7}{Screen\+Change}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00538_ae459e146f1e05789c4d5828cca4dead7}\label{a00538_ae459e146f1e05789c4d5828cca4dead7}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Add@{Add}}
+\index{Add@{Add}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Add (\begin{DoxyParamCaption}\item[{string}]{screen\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is self explanitory, it asks for the class name you wish to add to the screenstack and pushes it onto the top. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00470_aba0b8f29600dabc2a55dde4d5e00c7bc}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_aa8e3ecdc7ae78094b07af944c31f90a9}\label{a00538_aa8e3ecdc7ae78094b07af944c31f90a9}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Check\+Screen\+Manager\+Input@{Check\+Screen\+Manager\+Input}}
+\index{Check\+Screen\+Manager\+Input@{Check\+Screen\+Manager\+Input}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Screen\+Manager\+Input()}{CheckScreenManagerInput()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Check\+Screen\+Manager\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks for input, more specifically if the E\+S\+C\+A\+PE key has been pressed and if the screen count is more than 1, go back a screen. Otherwise there will be no screens present and the screenmanager will be broken. 
+
+
+
+Implements \hyperlink{a00470_a833b8050119cd9a87efbfa23197457c9}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_abe1bf121b368a6d205706da54d949ace}\label{a00538_abe1bf121b368a6d205706da54d949ace}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Check\+Screens@{Check\+Screens}}
+\index{Check\+Screens@{Check\+Screens}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Screens()}{CheckScreens()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Check\+Screens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks each of the screens in the screenstack and checks if its the same screen as the current screen if so then declare the screen active, ready for drawing and updating. 
+
+TO DO
+
+Give screens individual I\+Ds just like entities. 
+
+Implements \hyperlink{a00470_a40fbf0a98c186ba93837f6279ad2f7dd}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_a1177fbd3eb0a300167e4fa99930025e1}\label{a00538_a1177fbd3eb0a300167e4fa99930025e1}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Currently draws the topmost screen, needs to be improved to support things such as pop ups It\textquotesingle{}ll be a simple fix to check to see which screens are requesting to be drawn and draw them in the order of the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00470_a28a87245d63c8df1634598b3d20a14cf}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_aaa2b6fe0b50cf126bbb0a9b39fac1b83}\label{a00538_aaa2b6fe0b50cf126bbb0a9b39fac1b83}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize the screenmanager and add the menu to the stack to start the game off. Soon this will be replaced with a splashscreen which will transition to the menu 
+
+
+
+Implements \hyperlink{a00470_ae37c13c038cdb202262013731985eb10}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_a973c15b5fff9fb873ed988ea69ccbfd1}\label{a00538_a973c15b5fff9fb873ed988ea69ccbfd1}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!on\+Screen\+Change@{on\+Screen\+Change}}
+\index{on\+Screen\+Change@{on\+Screen\+Change}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{on\+Screen\+Change()}{onScreenChange()}}
+{\footnotesize\ttfamily virtual void Engine.\+Screen\+Manager.\+on\+Screen\+Change (\begin{DoxyParamCaption}\item[{\hyperlink{a00550}{Base\+Screen}}]{screen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{a00538_ab553bead481adc65547a323af9dab2d5}\label{a00538_ab553bead481adc65547a323af9dab2d5}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Remove\+Top\+Screen@{Remove\+Top\+Screen}}
+\index{Remove\+Top\+Screen@{Remove\+Top\+Screen}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Top\+Screen()}{RemoveTopScreen()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Remove\+Top\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the top screen from the stack. Should be used in situations such as if the er has lost all of his lives and the state should be reverted back to the menu screen this will be your god. It basically goes back one screen \+:) 
+
+
+
+Implements \hyperlink{a00470_a91b5204271edf5e137a85d3f8f3876d8}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_a28af5b838f4345834dc2351e06c3d654}\label{a00538_a28af5b838f4345834dc2351e06c3d654}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Replace\+Screen@{Replace\+Screen}}
+\index{Replace\+Screen@{Replace\+Screen}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Replace\+Screen()}{ReplaceScreen()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Replace\+Screen (\begin{DoxyParamCaption}\item[{string}]{screen\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is similar to the add method, but rather than just removing the screen to go back to the previous screen, this method replaces a screen (If you wanted to replace level1 with level2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00470_aaa6bfa9a986729ada7dcea6ac40f078d}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_ad442d9999cb6f335509f21ddb533bd76}\label{a00538_ad442d9999cb6f335509f21ddb533bd76}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!s\+Manager\+Event@{s\+Manager\+Event}}
+\index{s\+Manager\+Event@{s\+Manager\+Event}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{s\+Manager\+Event()}{sManagerEvent()}}
+{\footnotesize\ttfamily delegate void Engine.\+Screen\+Manager.\+s\+Manager\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{a00550}{Base\+Screen}}]{screen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00538_a1e85d6cc74fdb929f4729d1170886fb4}\label{a00538_a1e85d6cc74fdb929f4729d1170886fb4}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Unlo\+Enginecreens@{Unlo\+Enginecreens}}
+\index{Unlo\+Enginecreens@{Unlo\+Enginecreens}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Unlo\+Enginecreens()}{UnloEnginecreens()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Unlo\+Enginecreens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unload any screens which need to be unloaded 
+
+
+
+Implements \hyperlink{a00470_a8d30874c7b1b2728a784de0c6e6f80e3}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_a9abaa968b161ebb2b84c7a47ada52f90}\label{a00538_a9abaa968b161ebb2b84c7a47ada52f90}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Update the manager 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00470_afc42708b653397ca8a3a81dc8d244c61}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+\mbox{\Hypertarget{a00538_a59b04e135a3b2a75a608752e2bfabc77}\label{a00538_a59b04e135a3b2a75a608752e2bfabc77}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Update\+Top\+Screen@{Update\+Top\+Screen}}
+\index{Update\+Top\+Screen@{Update\+Top\+Screen}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Top\+Screen()}{UpdateTopScreen()}}
+{\footnotesize\ttfamily void Engine.\+Screen\+Manager.\+Update\+Top\+Screen (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is probably the worst way of going about it but this method checks the top screen and updates it Although this will not be relevant soon since screen updates will be decided through E\+N\+U\+MS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00470_aff4347b40d3fd6173e0c420adbf1146f}{Engine.\+Interfaces.\+Screen.\+I\+Screen\+Manager}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00538_aab6681c2803637c394081f3132dd2846}\label{a00538_aab6681c2803637c394081f3132dd2846}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!content@{content}}
+\index{content@{content}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily Content\+Manager Engine.\+Screen\+Manager.\+content\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00538_a8fb99d85abd848bad9d850b742398801}\label{a00538_a8fb99d85abd848bad9d850b742398801}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Entity\+List@{Entity\+List}}
+\index{Entity\+List@{Entity\+List}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Entity\+List}{EntityList}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00438}{I\+Entity}$>$ Engine.\+Screen\+Manager.\+Entity\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{a00538_ab29ea82cff043c98756eaa9f538a72e7}\label{a00538_ab29ea82cff043c98756eaa9f538a72e7}} 
+\index{Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}!Screen\+Change@{Screen\+Change}}
+\index{Screen\+Change@{Screen\+Change}!Engine\+::\+Screen\+Manager@{Engine\+::\+Screen\+Manager}}
+\subsubsection{\texorpdfstring{Screen\+Change}{ScreenChange}}
+{\footnotesize\ttfamily \hyperlink{a00538_ad442d9999cb6f335509f21ddb533bd76}{s\+Manager\+Event} Engine.\+Screen\+Manager.\+Screen\+Change}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00185}{Screen\+Manager.\+cs}\end{DoxyCompactItemize}

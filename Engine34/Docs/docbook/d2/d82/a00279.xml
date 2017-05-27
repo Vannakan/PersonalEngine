@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d82/a00279">
+<title>Engine::States::Levels</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d2f/a00562">Engine::States::Levels::AStarDemo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/da5/a00570">Engine::States::Levels::SteeringDemo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d2/d82/a00279_1a6ec33a1c7bddde5743b33ce8f3d41fcc">DemoState</link> {
+<link linkend="d2/d82/a00279_1a6ec33a1c7bddde5743b33ce8f3d41fccaed7ecb1dbb9be8c65f909819dac7aa54">Seek</link>,
+<link linkend="d2/d82/a00279_1a6ec33a1c7bddde5743b33ce8f3d41fcca20a8b1e6e473f9f1b219973fb365af44">Flee</link>,
+<link linkend="d2/d82/a00279_1a6ec33a1c7bddde5743b33ce8f3d41fcca885b3c534ec909cf87987897bfba2235">Arrival</link>,
+<link linkend="d2/d82/a00279_1a6ec33a1c7bddde5743b33ce8f3d41fcca09a6ef77969b3d19389bf96746c485d9">Persuit</link>,
+<link linkend="d2/d82/a00279_1a6ec33a1c7bddde5743b33ce8f3d41fccafcebb8bec493a6678a2758580bee43f9">Evade</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

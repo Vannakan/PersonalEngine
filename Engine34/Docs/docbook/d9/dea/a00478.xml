@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dea/a00478">
+<title>Engine::Interfaces::ServiceLocator::IUpdService interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dea/a00478_1a387fce2a5440a4dc63f8d72772ecbdaa">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: All <link linkend="d0/d27/a00239">Managers</link> that need to be updated every frame subscribe to this interface </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file IUpdService.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IUpdService.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d9/dea/a00478_1a387fce2a5440a4dc63f8d72772ecbdaa">
+                <title>void Engine.Interfaces.ServiceLocator.IUpdService.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>The MonoGame Gametime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d12/a00268">
+<title>Engine::Managers::Collision</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d57/a00498">Engine::Managers::Collision::AABB</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d1f/a00506">Engine::Managers::Collision::Hitbox</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: Hitboxes that make up the boundaries for each entity to allow for SAT collision to work. Each hitbox
+covers a portion
+of the texture of an entity and is stored in a List of Hitboxes inside the entity class.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/da2/a00502">Engine::Managers::Collision::IDetectionManger</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The Detection Manager is used for all collision calculations. Once two objects are colliding a Collision event is
+fired with the necessary information for two objects to react properly.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d52/a00510">Engine::Managers::Collision::SATcheck</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: This class runs all of the Separating Axis Theorem collision code. It calculates whether two shapes are currently
+intersecting or going to intersect by projecting shadows of both shapes onto an arbitrary axis perpendicular to the
+edges of the shape.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d90/a00514">Engine::Managers::Collision::TranslationVector</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The vector that an object will need to be moved along once it is colliding in order to no longer be colliding.
+This vector needs to be the smallest possible amount an object can be moved by.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8af">CollisionSide</link> {
+<link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8afa811882fecd5c7618d7099ebbd39ea254">left</link>,
+<link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8afa7c4f29407893c334a6cb7a87bf045c0d">right</link>,
+<link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8afab28354b543375bfa94dabaeda722927f">top</link>,
+<link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8afa71f262d796bed1ab30e8a2d5a8ddee6f">bottom</link>,
+<link linkend="db/d12/a00268_1addb954cde1b34937cfd0a187a154c8afa334c4a4c42fdb79d7ebc3e73b517e6f8">none</link>
+}</literallayout>
+<para><emphasis>&lt;summary&gt;
+CLASS: A collision class used to calculate whether two axis aligned bounding boxes are intersecting or not.
+If they are intersecting this class can return true and state which side is intersecting and by how much.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

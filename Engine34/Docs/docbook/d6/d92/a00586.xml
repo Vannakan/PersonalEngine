@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d92/a00586">
+<title>Engine::Utilities::DrawLine class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d8/d00/a00606">Line</link> <link linkend="d6/d92/a00586_1ad09c5ad500586e3af11e7f6161474e1f">newLine</link> (
+Vector2 start, Vector2 end, Color color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d6/d92/a00586_1ad09c5ad500586e3af11e7f6161474e1f">
+                <title>static Line Engine.Utilities.DrawLine.newLine (Vector2 start, Vector2 end, Color color)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

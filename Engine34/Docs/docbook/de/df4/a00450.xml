@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/df4/a00450">
+<title>Engine::Interfaces::InputManager::IInputManager interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/df4/a00450_1a43c99a0052fd196583700113cd0bdf9f">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update loop which is cycled through every frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/df4/a00450_1ab31bc2c7a5da56dc4a46ac378fde0590">CheckKeyPressed</link> (
+Keys k)<para><emphasis>&lt;summary&gt;
+METHOD: returns true if when a key is pressed
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/df4/a00450_1a661496081120efdcd653693977f36fd9">CheckHeldDown</link> (
+Keys k)<para><emphasis>&lt;summary&gt;
+METHOD: returns true when a key is held down
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: An interface which declares the implementation that the input manager must contain. The input manager is used to check for what keys are pressed and held on a keyboard. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file IInputManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IInputManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="de/df4/a00450_1a43c99a0052fd196583700113cd0bdf9f">
+                <title>void Engine.Interfaces.InputManager.IInputManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update loop which is cycled through every frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/df4/a00450_1ab31bc2c7a5da56dc4a46ac378fde0590">
+                <title>bool Engine.Interfaces.InputManager.IInputManager.CheckKeyPressed (Keys k)</title> <emphasis>&lt;summary&gt;
+METHOD: returns true if when a key is pressed
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>k</entry>
+                                <entry>
+<para>A key to be checked</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a bool whether the key is pressed or not</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="de/df4/a00450_1a661496081120efdcd653693977f36fd9">
+                <title>bool Engine.Interfaces.InputManager.IInputManager.CheckHeldDown (Keys k)</title> <emphasis>&lt;summary&gt;
+METHOD: returns true when a key is held down
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>k</entry>
+                                <entry>
+<para>the key to be checked</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a bool on whether the key has been held down for more than one frame</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

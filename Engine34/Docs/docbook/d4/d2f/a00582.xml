@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d2f/a00582">
+<title>Engine::States::Menu::MenuOption class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 position<para><emphasis>&lt;summary&gt;
+DECLARE: The position, texture and centre of the screen
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 _texCenter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 _screenCenter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool selected<para><emphasis>&lt;summary&gt;
+GET: SET: If this option is currently selected
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string name<para><emphasis>&lt;summary&gt;
+GET: SET: The name of this option
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int index<para><emphasis>&lt;summary&gt;
+GET: SET: The index of this option in the current list of options
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float scale<para><emphasis>&lt;summary&gt;
+SET: The scale of the option
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteFont sf<para><emphasis>&lt;summary&gt;
+GET: The spritefont for this option
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int width<para><emphasis>&lt;summary&gt;
+SET: The width and height of the space the Menu option takes
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int height</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d2f/a00582_1a4a2c68f6b84495780f1cd0b716458204">MenuOption</link> (
+string _name, float offset, int _index)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d2f/a00582_1a824068f71d00483a40dd293049e2a10f">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the menu Option
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: <link linkend="d4/d2f/a00582">MenuOption</link> contains the data and logic for creating new options to be highlighted on a menu </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 14 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>Vector2 Engine.States.Menu.MenuOption.position</title>                
+                <para>Definition at line 18 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool Engine.States.Menu.MenuOption.selected</title>                
+                <para>Definition at line 25 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>string Engine.States.Menu.MenuOption.name</title>                
+                <para>Definition at line 41 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Engine.States.Menu.MenuOption.index</title>                
+                <para>Definition at line 57 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>float Engine.States.Menu.MenuOption.scale</title>                
+                <para>Definition at line 73 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>SpriteFont Engine.States.Menu.MenuOption.sf</title>                
+                <para>Definition at line 78 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Engine.States.Menu.MenuOption.width</title>                
+                <para>Definition at line 83 of file MenuOption.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuOption.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d4/d2f/a00582_1a4a2c68f6b84495780f1cd0b716458204">
+                <title>Engine.States.Menu.MenuOption.MenuOption (string _name, float offset, int _index)</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_name</entry>
+                                <entry>
+<para>The name of the options</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>offset</entry>
+                                <entry>
+<para>The offset of the option from the previous option when this is created</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_index</entry>
+                                <entry>
+<para>The index of this option in the list of options when this is created</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d2f/a00582_1a824068f71d00483a40dd293049e2a10f">
+                <title>void Engine.States.Menu.MenuOption.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the menu Option
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

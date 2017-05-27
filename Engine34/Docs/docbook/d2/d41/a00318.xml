@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d41/a00318">
+<title>Engine::Entities::Mind class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IEntity e<para><emphasis>DECLARE: The entity this mind will control.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 velocity<para><emphasis>&lt;summary&gt;
+GET: SET: The velocity of the mind 
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 acceleration<para><emphasis>&lt;summary&gt;
+GET: SET: The acceleration of the mind
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float iMass<para><emphasis>&lt;summary&gt;
+GET: SET: The inverted Mass of the mind
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float restitution<para><emphasis>&lt;summary&gt;
+GET: SET: The restitution of the mind
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float damping<para><emphasis>&lt;summary&gt;
+GET: SET: the damping acting on the mind
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IHitbox &gt; hits<para><emphasis>&lt;summary&gt;
+GET: SET: The list of hitboxes
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 _pos<para><emphasis>&lt;summary&gt;
+GET: SET: The position of the mind
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string texPath<para><emphasis>&lt;summary&gt;
+DECLARE: The Texture path
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d41/a00318_1aa352dcc92860d1304d4b1c71a0fe5d96">Mind</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR:
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/dfd/a00438">IEntity</link> <link linkend="d2/d41/a00318_1a9585d4438e12299a42aaed4ee6fb88b6">getEntity</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Get the entity which a mind controls.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/db9/a00426">ICollidable</link> <link linkend="d2/d41/a00318_1aa36d6fcb8d80f1398855cea671ce1078">getCollidable</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Return an object that will be calculated for collision
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d41/a00318_1a386406a6250e4f7e59d0a048545ecc46">Initialize</link> (
+Vector2 Position, string t)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise the basic properties of the Mind
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d41/a00318_1a353d7d2bb1035aefebf0ae3e3f1d1488">Initialize</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of the mind when a texture has already been set
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d41/a00318_1ac278d4358d794426251d1b87b6aa7b82">OnSATCollision</link> (
+object sender, <link linkend="db/d10/a00350">CollisionEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+EVENT: When SAT Collision returns true.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d41/a00318_1a15bf25a4a74706ef37592689f43c0598">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Responsible for unloading anything added to this mind and sending it to the garbage collector
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d41/a00318_1a08db67e6cb8d5ff8015afa4fb780c5e8">setTexture</link> (
+string t)<para><emphasis>&lt;summary&gt;
+METHOD: Set the texture of the entity this mind controls
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d41/a00318_1adec6999d87accf7371de1536eac2541b">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update is called every frame and controls the main behaviour of the Mind.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d41/a00318_1a3f2db3b7d2b8b68a02b56472467ffd12">Link</link> (
+<link linkend="dd/dfd/a00438">IEntity</link> e)<para><emphasis>&lt;summary&gt;
+METHOD: Link the mind to an entity
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d41/a00318_1a4a05ceb8a5b1eb7f04e3111dd165b4b5">ApplyForce</link> (
+Vector2 force)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d41/a00318_1afc6609503e3a531416f5080b2114e24a">UpdatePhysics</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Simulates movement obeying the laws of physics
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d41/a00318_1a378218df0a8c27a981e98167197d9c16">ApplyImpulse</link> (
+Vector2 cVelocity)<para><emphasis>&lt;summary&gt;
+METHOD: Apply an impulse to an object once it has collided in order to simulate physics
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>ABSTRACT CLASS: <link linkend="d2/d41/a00318">Mind</link> controls the behaviour for a specific entity. The entity is simply the sprite that is drawn whilst <link linkend="d2/d41/a00318">Mind</link> controls how it acts. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 18 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>Vector2 Engine.Entities.Mind.velocity</title>                
+                <para>Definition at line 43 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Vector2 Engine.Entities.Mind.acceleration</title>                
+                <para>Definition at line 59 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>float Engine.Entities.Mind.iMass</title>                
+                <para>Definition at line 75 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>float Engine.Entities.Mind.restitution</title>                
+                <para>Definition at line 91 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>float Engine.Entities.Mind.damping</title>                
+                <para>Definition at line 107 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>List&lt;IHitbox&gt; Engine.Entities.Mind.hits</title>                
+                <para>Definition at line 123 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Vector2 Engine.Entities.Mind._pos</title>                
+                <para>Definition at line 148 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>string Engine.Entities.Mind.texPath</title>                
+                <para>Definition at line 164 of file Mind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Mind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d2/d41/a00318_1aa352dcc92860d1304d4b1c71a0fe5d96">
+                <title>Engine.Entities.Mind.Mind ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR:
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d2/d41/a00318_1a9585d4438e12299a42aaed4ee6fb88b6">
+                <title>IEntity Engine.Entities.Mind.getEntity ()</title> <emphasis>&lt;summary&gt;
+METHOD: Get the entity which a mind controls.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The IENtity this mind controls</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1aa36d6fcb8d80f1398855cea671ce1078">
+                <title>ICollidable Engine.Entities.Mind.getCollidable ()</title> <emphasis>&lt;summary&gt;
+METHOD: Return an object that will be calculated for collision
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>An ICollidable of the current object</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1a386406a6250e4f7e59d0a048545ecc46">
+                <title>virtual void Engine.Entities.Mind.Initialize (Vector2 Position, string t)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise the basic properties of the Mind
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>t</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1a353d7d2bb1035aefebf0ae3e3f1d1488">
+                <title>virtual void Engine.Entities.Mind.Initialize (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of the mind when a texture has already been set
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1ac278d4358d794426251d1b87b6aa7b82">
+                <title>virtual void Engine.Entities.Mind.OnSATCollision (object sender, CollisionEventArgs e)</title> <emphasis>&lt;summary&gt;
+EVENT: When SAT Collision returns true.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1a15bf25a4a74706ef37592689f43c0598">
+                <title>virtual void Engine.Entities.Mind.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: Responsible for unloading anything added to this mind and sending it to the garbage collector
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d2/d41/a00318_1a08db67e6cb8d5ff8015afa4fb780c5e8">
+                <title>void Engine.Entities.Mind.setTexture (string t)</title> <emphasis>&lt;summary&gt;
+METHOD: Set the texture of the entity this mind controls
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>t</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1adec6999d87accf7371de1536eac2541b">
+                <title>virtual void Engine.Entities.Mind.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update is called every frame and controls the main behaviour of the Mind.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1a3f2db3b7d2b8b68a02b56472467ffd12">
+                <title>void Engine.Entities.Mind.Link (IEntity e)</title> <emphasis>&lt;summary&gt;
+METHOD: Link the mind to an entity
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d41/a00318_1a4a05ceb8a5b1eb7f04e3111dd165b4b5">
+                <title>void Engine.Entities.Mind.ApplyForce (Vector2 force)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d41/a00318_1afc6609503e3a531416f5080b2114e24a">
+                <title>void Engine.Entities.Mind.UpdatePhysics ()</title> <emphasis>&lt;summary&gt;
+METHOD: Simulates movement obeying the laws of physics
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d2/d41/a00318_1a378218df0a8c27a981e98167197d9c16">
+                <title>void Engine.Entities.Mind.ApplyImpulse (Vector2 cVelocity)</title> <emphasis>&lt;summary&gt;
+METHOD: Apply an impulse to an object once it has collided in order to simulate physics
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>cVelocity</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

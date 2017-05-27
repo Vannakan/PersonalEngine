@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/df5/a00137">
+    <title>IServiceLocator.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d26/a00474">Engine::Interfaces::ServiceLocator::IServiceLocator</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An Interface holding the implementation for the Service Locator which removes the need for singletons
+throughout the engine
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/dcc/a00264">Engine::Interfaces::ServiceLocator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file IServiceLocator.cs</para>
+    </simplesect>
+</section>

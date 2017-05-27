@@ -1,0 +1,152 @@
+\hypertarget{a00486}{}\section{Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager Class Reference}
+\label{a00486}\index{Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager@{Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager}}
+Inheritance diagram for Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{db/df1/a00486}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00446}{I\+Mind} \hyperlink{a00486_a13eea511ff6d2cdeb8287b63034ce898}{Create$<$ T $>$} (\hyperlink{a00438}{I\+Entity} ie)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Create a new I\+Mind of type T \end{DoxyCompactList}\item 
+void \hyperlink{a00486_ae21fe19ea423236e26d4f022230a071e}{clear\+List} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Clears the current list of all minds \end{DoxyCompactList}\item 
+void \hyperlink{a00486_a684853fb49121d19f4d5c635153b871a}{remove\+Mind} (int id)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Removes a specific mind from the list based on the id provided \end{DoxyCompactList}\item 
+\hyperlink{a00446}{I\+Mind} \hyperlink{a00486_a4391a84eadd13a812977cd51e177e00b}{get\+Mind} (int id)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Finds the mind in the list of the id provided \end{DoxyCompactList}\item 
+void \hyperlink{a00486_a729bf10d2469de0497d75dfadbf56506}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop which is cycled through ever frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00486_ae21fe19ea423236e26d4f022230a071e}\label{a00486_ae21fe19ea423236e26d4f022230a071e}} 
+\index{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}!clear\+List@{clear\+List}}
+\index{clear\+List@{clear\+List}!Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}}
+\subsubsection{\texorpdfstring{clear\+List()}{clearList()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager.\+clear\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Clears the current list of all minds 
+
+For every mind in the list
+
+Remove each mind
+
+Clear the list to ensure the garbage collector gets everything 
+
+Implements \hyperlink{a00418_ae944227a75ab665c4140628279296580}{Engine.\+Interfaces.\+Behaviour.\+I\+Behaviour\+Manager}.
+
+\mbox{\Hypertarget{a00486_a13eea511ff6d2cdeb8287b63034ce898}\label{a00486_a13eea511ff6d2cdeb8287b63034ce898}} 
+\index{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}!Create$<$ T $>$@{Create$<$ T $>$}}
+\index{Create$<$ T $>$@{Create$<$ T $>$}!Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}}
+\subsubsection{\texorpdfstring{Create$<$ T $>$()}{Create< T >()}}
+{\footnotesize\ttfamily \hyperlink{a00446}{I\+Mind} Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager.\+Create$<$ T $>$ (\begin{DoxyParamCaption}\item[{\hyperlink{a00438}{I\+Entity}}]{ie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Create a new I\+Mind of type T 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic type for the mind that will be created\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ie} & the Entity the mind will be linked to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a brand new I\+Mind
+\end{DoxyReturn}
+Create a new mind
+
+Link the mind to the entity it controls
+
+Add the mind to the collision List in the \hyperlink{a00268}{Collision} manager.
+
+Add the mind to the list of minds.
+
+Return the mind 
+
+Implements \hyperlink{a00418_ad821620edeb0239197446bf1c3c32ee3}{Engine.\+Interfaces.\+Behaviour.\+I\+Behaviour\+Manager}.
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em I\+Mind}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{a00486_a4391a84eadd13a812977cd51e177e00b}\label{a00486_a4391a84eadd13a812977cd51e177e00b}} 
+\index{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}!get\+Mind@{get\+Mind}}
+\index{get\+Mind@{get\+Mind}!Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}}
+\subsubsection{\texorpdfstring{get\+Mind()}{getMind()}}
+{\footnotesize\ttfamily \hyperlink{a00446}{I\+Mind} Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager.\+get\+Mind (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Finds the mind in the list of the id provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the unique ID of the mind to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an I\+Mind with the same unique ID
+\end{DoxyReturn}
+Every mind in the list of minds
+
+If the id of this mind matches the parameter
+
+Return this mind
+
+If no mind has an ID matching we can return null 
+
+Implements \hyperlink{a00418_ac1d24fb690a665ce8c70671b7c27b9ad}{Engine.\+Interfaces.\+Behaviour.\+I\+Behaviour\+Manager}.
+
+\mbox{\Hypertarget{a00486_a684853fb49121d19f4d5c635153b871a}\label{a00486_a684853fb49121d19f4d5c635153b871a}} 
+\index{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}!remove\+Mind@{remove\+Mind}}
+\index{remove\+Mind@{remove\+Mind}!Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}}
+\subsubsection{\texorpdfstring{remove\+Mind()}{removeMind()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager.\+remove\+Mind (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Removes a specific mind from the list based on the id provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the unique ID of the mind to be removed\\
+\hline
+\end{DoxyParams}
+If the mind is out of the boundaries set remove it Temporary \hyperlink{a00266}{Behaviour} response. 
+
+Implements \hyperlink{a00418_a6f89adf3a1d8286a73b534855847c414}{Engine.\+Interfaces.\+Behaviour.\+I\+Behaviour\+Manager}.
+
+\mbox{\Hypertarget{a00486_a729bf10d2469de0497d75dfadbf56506}\label{a00486_a729bf10d2469de0497d75dfadbf56506}} 
+\index{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager@{Engine\+::\+Managers\+::\+Behaviour\+::\+Behaviour\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Behaviour.\+Behaviour\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop which is cycled through ever frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & The Mono\+Game Gametime property\\
+\hline
+\end{DoxyParams}
+For every mind in the list, run the Update method of each mind 
+
+Implements \hyperlink{a00418_af161090c055167e2ca3901ed13d3d128}{Engine.\+Interfaces.\+Behaviour.\+I\+Behaviour\+Manager}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00146}{Behaviour\+Manager.\+cs}\end{DoxyCompactItemize}

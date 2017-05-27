@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/db1/a00590">
+<title>Engine::Utility::DrawPrimitives class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d7/db1/a00590_1a36a433b73eb78e9b73d44c5fea1a6641">DrawRect</link> (
+SpriteBatch spriteBatch, Rectangle Bounds, Color color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d7/db1/a00590_1a36a433b73eb78e9b73d44c5fea1a6641">
+                <title>static void Engine.Utility.DrawPrimitives.DrawRect (SpriteBatch spriteBatch, Rectangle Bounds, Color color)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

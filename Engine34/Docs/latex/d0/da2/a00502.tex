@@ -1,0 +1,265 @@
+\hypertarget{a00502}{}\section{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger Class Reference}
+\label{a00502}\index{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger@{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}}
+
+
+C\+L\+A\+SS\+: The Detection Manager is used for all collision calculations. Once two objects are colliding a \hyperlink{a00268}{Collision} event is fired with the necessary information for two objects to react properly.  
+
+
+Inheritance diagram for Engine.\+Managers.\+Collision.\+I\+Detection\+Manger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/da2/a00502}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \hyperlink{a00502_a7a0a94d84fd7588d01218d607e7b1d27}{Collision\+Event\+Handler} (object sender, \hyperlink{a00350}{Collision\+Event\+Args} e)
+\begin{DoxyCompactList}\small\item\em E\+V\+E\+NT\+: a reference to the Collision\+Event\+Handler which will be used when two objects collide \end{DoxyCompactList}\item 
+void \hyperlink{a00502_ae4daf9d957c8b30e779a7ed89237b370}{add\+Collidable} (\hyperlink{a00426}{I\+Collidable} obj)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Adds an I\+C\+Ollidable to the list of objects to check \end{DoxyCompactList}\item 
+void \hyperlink{a00502_ac032340610657f865bdd3b7a82e316c3}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Called every frame of the game loop and contains all of the necessary code for the manager to calculate Whether each object is colliding or not \end{DoxyCompactList}\item 
+void \hyperlink{a00502_a6785a08302cfe7d6fb08a7042691a3a8}{do\+Collision} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Checks A\+A\+BB \hyperlink{a00268}{Collision} for two objects \end{DoxyCompactList}\item 
+void \hyperlink{a00502_a31a209d98a58cac4f6abd47711bf545c}{On\+A\+Collision} (\hyperlink{a00426}{I\+Collidable} A, \hyperlink{a00426}{I\+Collidable} B)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: When two objects are colliding via A\+A\+BB collision, this method is called \end{DoxyCompactList}\item 
+void \hyperlink{a00502_a272b97e8ab5caf3dcceb455849deb6ed}{Call\+S\+AT} (\hyperlink{a00426}{I\+Collidable} A, \hyperlink{a00426}{I\+Collidable} B, Vector2 mtv)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Call to fire an Event when S\+AT Calculates two shapes about to collide. \end{DoxyCompactList}\item 
+void \hyperlink{a00502_a18f0056903776f291a462fb4bbbfc224}{Check\+S\+AT} (\hyperlink{a00426}{I\+Collidable} a, \hyperlink{a00426}{I\+Collidable} b)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Runs the S\+AT Calculations on two I\+Collidable objects and calls the event fire method when true. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00502_a47c9b58bdaf1f773ea3932f8c574ae0b}{Impulse\+Application} (\hyperlink{a00434}{I\+Hitbox} a, \hyperlink{a00434}{I\+Hitbox} b)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Applies the impulse to the two objects to simulate physics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00502_a7a0a94d84fd7588d01218d607e7b1d27}{Collision\+Event\+Handler} \hyperlink{a00502_a030c2301f7a7ec14a4d852f3f039b22a}{On\+Collision}
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: The event that will be fired once two objects collide \end{DoxyCompactList}\item 
+\hyperlink{a00502_a7a0a94d84fd7588d01218d607e7b1d27}{Collision\+Event\+Handler} \hyperlink{a00502_a4eb9637ff1544210696df98bae59b07e}{On\+S\+A\+T\+Collision}
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: The event that will be fired once two objects are calculated to collide or about to collide using the S\+AT method \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: The Detection Manager is used for all collision calculations. Once two objects are colliding a \hyperlink{a00268}{Collision} event is fired with the necessary information for two objects to react properly. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00502_ae4daf9d957c8b30e779a7ed89237b370}\label{a00502_ae4daf9d957c8b30e779a7ed89237b370}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!add\+Collidable@{add\+Collidable}}
+\index{add\+Collidable@{add\+Collidable}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{add\+Collidable()}{addCollidable()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+add\+Collidable (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Adds an I\+C\+Ollidable to the list of objects to check 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to add to the list\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00430_a11808ec009ee682fa73e3c4ea6570139}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+\mbox{\Hypertarget{a00502_a272b97e8ab5caf3dcceb455849deb6ed}\label{a00502_a272b97e8ab5caf3dcceb455849deb6ed}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!Call\+S\+AT@{Call\+S\+AT}}
+\index{Call\+S\+AT@{Call\+S\+AT}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{Call\+S\+A\+T()}{CallSAT()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+Call\+S\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{A,  }\item[{\hyperlink{a00426}{I\+Collidable}}]{B,  }\item[{Vector2}]{mtv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Call to fire an Event when S\+AT Calculates two shapes about to collide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Object A to be tested\\
+\hline
+{\em b} & Object B to be tested\\
+\hline
+{\em mtv} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00430_ad87743faa9c3c212879716d7306c4fb3}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+\mbox{\Hypertarget{a00502_a18f0056903776f291a462fb4bbbfc224}\label{a00502_a18f0056903776f291a462fb4bbbfc224}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!Check\+S\+AT@{Check\+S\+AT}}
+\index{Check\+S\+AT@{Check\+S\+AT}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{Check\+S\+A\+T()}{CheckSAT()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+Check\+S\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{a,  }\item[{\hyperlink{a00426}{I\+Collidable}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Runs the S\+AT Calculations on two I\+Collidable objects and calls the event fire method when true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Object A to be tested\\
+\hline
+{\em b} & Object B to be tested\\
+\hline
+\end{DoxyParams}
+F\+OR\+: each hitbox on the first object
+
+F\+OR\+: Each hitbox on the second object
+
+IF\+: the S\+AT Calculation returns true
+
+C\+A\+LL\+: Call\+S\+AT method which fires an Event and moves the objects out of each other
+
+C\+A\+LL\+: Call\+S\+AT Method which fires an Event and applies an impule to each shape to simulate physics 
+
+Implements \hyperlink{a00430_a1acd238daa104a8f4dcf36536e1ac9f9}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+\mbox{\Hypertarget{a00502_a7a0a94d84fd7588d01218d607e7b1d27}\label{a00502_a7a0a94d84fd7588d01218d607e7b1d27}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!Collision\+Event\+Handler@{Collision\+Event\+Handler}}
+\index{Collision\+Event\+Handler@{Collision\+Event\+Handler}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{Collision\+Event\+Handler()}{CollisionEventHandler()}}
+{\footnotesize\ttfamily delegate void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+Collision\+Event\+Handler (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\hyperlink{a00350}{Collision\+Event\+Args}}]{e }\end{DoxyParamCaption})}
+
+
+
+E\+V\+E\+NT\+: a reference to the Collision\+Event\+Handler which will be used when two objects collide 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00502_a6785a08302cfe7d6fb08a7042691a3a8}\label{a00502_a6785a08302cfe7d6fb08a7042691a3a8}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!do\+Collision@{do\+Collision}}
+\index{do\+Collision@{do\+Collision}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{do\+Collision()}{doCollision()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+do\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Checks A\+A\+BB \hyperlink{a00268}{Collision} for two objects 
+
+I\+T\+E\+R\+A\+TE\+: through the list twice, counting one object above the first each time
+
+IF\+: they\textquotesingle{}re not equal objects
+
+S\+ET\+: the distance between the two objects
+
+IF\+: there\textquotesingle{}s a collision, but also checks if A is a controller character, if so then it will move A around, otherwise tiles may have problems
+
+S\+ET\+: Minimum Translation Vector
+
+A\+DD minimum translation Vector to object. 
+
+Implements \hyperlink{a00430_a139cca7ebb8b37ceba1bb1439cde83bf}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+\mbox{\Hypertarget{a00502_a47c9b58bdaf1f773ea3932f8c574ae0b}\label{a00502_a47c9b58bdaf1f773ea3932f8c574ae0b}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!Impulse\+Application@{Impulse\+Application}}
+\index{Impulse\+Application@{Impulse\+Application}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{Impulse\+Application()}{ImpulseApplication()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+Impulse\+Application (\begin{DoxyParamCaption}\item[{\hyperlink{a00434}{I\+Hitbox}}]{a,  }\item[{\hyperlink{a00434}{I\+Hitbox}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Applies the impulse to the two objects to simulate physics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Object A to be tested\\
+\hline
+{\em b} & Object B to be tested\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector2 which will be applied to the object
+\end{DoxyReturn}
+D\+E\+C\+L\+A\+RE\+: The Combined velocity of the two objects
+
+D\+E\+C\+L\+A\+RE\+: The closing normal which is the combined velocities proportionally adjusted so the Vector has a length of 1
+
+D\+E\+C\+L\+A\+RE\+: T\+He dot product of the combined velocity and the \hyperlink{a00268}{Collision} Normal to get a Closing Velocity
+
+M\+U\+L\+T\+I\+P\+LY\+: The collision normal by the closing velocity
+
+R\+E\+T\+U\+RN\+: the collision normal. 
+
+Implements \hyperlink{a00430_a853912077b127d7e6779accc914df3cf}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+\mbox{\Hypertarget{a00502_a31a209d98a58cac4f6abd47711bf545c}\label{a00502_a31a209d98a58cac4f6abd47711bf545c}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!On\+A\+Collision@{On\+A\+Collision}}
+\index{On\+A\+Collision@{On\+A\+Collision}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{On\+A\+Collision()}{OnACollision()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+On\+A\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{A,  }\item[{\hyperlink{a00426}{I\+Collidable}}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: When two objects are colliding via A\+A\+BB collision, this method is called 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The first object that\textquotesingle{}s colliding\\
+\hline
+{\em B} & The second object that\textquotesingle{}s colliding\\
+\hline
+\end{DoxyParams}
+E\+V\+E\+NT\+: \hyperlink{a00268}{Collision} event with each shape. 
+
+Implements \hyperlink{a00430_ac0f8278b5b5a1c103da46f154ad088dc}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+\mbox{\Hypertarget{a00502_ac032340610657f865bdd3b7a82e316c3}\label{a00502_ac032340610657f865bdd3b7a82e316c3}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Called every frame of the game loop and contains all of the necessary code for the manager to calculate Whether each object is colliding or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time\\
+\hline
+\end{DoxyParams}
+F\+OR\+: each I\+Collidable in the collision list
+
+F\+OR\+: Each I\+Collidable in the collision list
+
+IF\+: The two objects are not the same thing
+
+Run the S\+AT Calculation between the two objects. 
+
+Implements \hyperlink{a00430_aeaa36b46e3ecd301b2fce9197fb0a35c}{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{a00502_a030c2301f7a7ec14a4d852f3f039b22a}\label{a00502_a030c2301f7a7ec14a4d852f3f039b22a}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!On\+Collision@{On\+Collision}}
+\index{On\+Collision@{On\+Collision}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{On\+Collision}{OnCollision}}
+{\footnotesize\ttfamily \hyperlink{a00502_a7a0a94d84fd7588d01218d607e7b1d27}{Collision\+Event\+Handler} Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+On\+Collision}
+
+
+
+D\+E\+C\+L\+A\+RE\+: The event that will be fired once two objects collide 
+
+\mbox{\Hypertarget{a00502_a4eb9637ff1544210696df98bae59b07e}\label{a00502_a4eb9637ff1544210696df98bae59b07e}} 
+\index{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}!On\+S\+A\+T\+Collision@{On\+S\+A\+T\+Collision}}
+\index{On\+S\+A\+T\+Collision@{On\+S\+A\+T\+Collision}!Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger@{Engine\+::\+Managers\+::\+Collision\+::\+I\+Detection\+Manger}}
+\subsubsection{\texorpdfstring{On\+S\+A\+T\+Collision}{OnSATCollision}}
+{\footnotesize\ttfamily \hyperlink{a00502_a7a0a94d84fd7588d01218d607e7b1d27}{Collision\+Event\+Handler} Engine.\+Managers.\+Collision.\+I\+Detection\+Manger.\+On\+S\+A\+T\+Collision}
+
+
+
+D\+E\+C\+L\+A\+RE\+: The event that will be fired once two objects are calculated to collide or about to collide using the S\+AT method 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00158}{Detection\+Manger.\+cs}\end{DoxyCompactItemize}

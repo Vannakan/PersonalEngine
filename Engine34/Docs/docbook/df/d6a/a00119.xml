@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d6a/a00119">
+    <title>IInputManager.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/df4/a00450">Engine::Interfaces::InputManager::IInputManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An interface which declares the implementation that the input manager must contain. The input manager 
+is used to check for what keys are pressed and held on a keyboard.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dd7/a00260">Engine::Interfaces::InputManager</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file IInputManager.cs</para>
+    </simplesect>
+</section>

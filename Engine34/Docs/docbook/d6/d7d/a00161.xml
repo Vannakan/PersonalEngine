@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d7d/a00161">
+    <title>Hitbox.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d1f/a00506">Engine::Managers::Collision::Hitbox</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: Hitboxes that make up the boundaries for each entity to allow for SAT collision to work. Each hitbox
+covers a portion
+of the texture of an entity and is stored in a List of Hitboxes inside the entity class.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d12/a00268">Engine::Managers::Collision</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file Hitbox.cs</para>
+    </simplesect>
+</section>

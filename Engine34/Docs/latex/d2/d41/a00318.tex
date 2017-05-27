@@ -1,0 +1,553 @@
+\hypertarget{a00318}{}\section{Engine.\+Entities.\+Mind Class Reference}
+\label{a00318}\index{Engine.\+Entities.\+Mind@{Engine.\+Entities.\+Mind}}
+
+
+A\+B\+S\+T\+R\+A\+CT C\+L\+A\+SS\+: \hyperlink{a00318}{Mind} controls the behaviour for a specific entity. The entity is simply the sprite that is drawn whilst \hyperlink{a00318}{Mind} controls how it acts.  
+
+
+Inheritance diagram for Engine.\+Entities.\+Mind\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.393162cm]{d2/d41/a00318}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00318_aa352dcc92860d1304d4b1c71a0fe5d96}{Mind} ()
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: \end{DoxyCompactList}\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00318_a9585d4438e12299a42aaed4ee6fb88b6}{get\+Entity} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Get the entity which a mind controls. \end{DoxyCompactList}\item 
+\hyperlink{a00426}{I\+Collidable} \hyperlink{a00318_aa36d6fcb8d80f1398855cea671ce1078}{get\+Collidable} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Return an object that will be calculated for collision \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00318_a386406a6250e4f7e59d0a048545ecc46}{Initialize} (Vector2 \hyperlink{a00318_ad94b3975c0873fee06b5bd5a75bd38cd}{Position}, string t)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialise the basic properties of the \hyperlink{a00318}{Mind} \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00318_a353d7d2bb1035aefebf0ae3e3f1d1488}{Initialize} (Vector2 \hyperlink{a00318_ad94b3975c0873fee06b5bd5a75bd38cd}{Position})
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises the basic properties of the mind when a texture has already been set \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00318_ac278d4358d794426251d1b87b6aa7b82}{On\+S\+A\+T\+Collision} (object sender, \hyperlink{a00350}{Collision\+Event\+Args} \hyperlink{a00318_ad89c9691d6b32053fe8ffcdeb68bdacf}{e})
+\begin{DoxyCompactList}\small\item\em E\+V\+E\+NT\+: When S\+AT Collision returns true. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00318_a15bf25a4a74706ef37592689f43c0598}{Unload} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Responsible for unloading anything added to this mind and sending it to the garbage collector \end{DoxyCompactList}\item 
+void \hyperlink{a00318_a08db67e6cb8d5ff8015afa4fb780c5e8}{set\+Texture} (string t)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Set the texture of the entity this mind controls \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00318_adec6999d87accf7371de1536eac2541b}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update is called every frame and controls the main behaviour of the \hyperlink{a00318}{Mind}. \end{DoxyCompactList}\item 
+void \hyperlink{a00318_a3f2db3b7d2b8b68a02b56472467ffd12}{Link} (\hyperlink{a00438}{I\+Entity} \hyperlink{a00318_ad89c9691d6b32053fe8ffcdeb68bdacf}{e})
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Link the mind to an entity \end{DoxyCompactList}\item 
+void \hyperlink{a00318_a4a05ceb8a5b1eb7f04e3111dd165b4b5}{Apply\+Force} (Vector2 force)
+\item 
+void \hyperlink{a00318_afc6609503e3a531416f5080b2114e24a}{Update\+Physics} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Simulates movement obeying the laws of physics \end{DoxyCompactList}\item 
+void \hyperlink{a00318_a378218df0a8c27a981e98167197d9c16}{Apply\+Impulse} (Vector2 c\+Velocity)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Apply an impulse to an object once it has collided in order to simulate physics \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00318_ad89c9691d6b32053fe8ffcdeb68bdacf}{e}
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: The entity this mind will control. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00318_af56c17f56ba8133e32671318a6cc2c84}{velocity}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The velocity of the mind \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00318_a97534caf477680d0dcbe7021cc2b5a92}{acceleration} = new Vector2(0, 0)
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The acceleration of the mind \end{DoxyCompactList}\item 
+float \hyperlink{a00318_a42f275657bd506946d9d7ec518cd4a22}{i\+Mass}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The inverted Mass of the mind \end{DoxyCompactList}\item 
+float \hyperlink{a00318_aca8c0c2865fe81c9bdabebcf7689c391}{restitution}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The restitution of the mind \end{DoxyCompactList}\item 
+float \hyperlink{a00318_aff4d26cdb8cbfeb96adfce9d92ddf5a0}{damping}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: the damping acting on the mind \end{DoxyCompactList}\item 
+List$<$ \hyperlink{a00434}{I\+Hitbox} $>$ \hyperlink{a00318_a814329a8392c9a1f2d440c599dee3f91}{hits} = new List$<$\hyperlink{a00434}{I\+Hitbox}$>$()
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The list of hitboxes \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00318_a5804486ad9da9f6220f390e94eb08ab7}{\+\_\+pos} = new Vector2()
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The position of the mind \end{DoxyCompactList}\item 
+string \hyperlink{a00318_a0a20643f397ebed81d1b09965e0b6e3c}{tex\+Path} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em D\+E\+C\+L\+A\+RE\+: The Texture path \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{a00318_ab109f6638be56427f557f69b11beb995}{Unique\+ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The unique ID for the mind \end{DoxyCompactList}\item 
+bool \hyperlink{a00318_add1498255352d92a5c96223a4d3cd657}{Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Whether the mind is active and in use or not. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00318_a5e95a120aad31ed943ae34b70083af85}{Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \hyperlink{a00318_ae117e7b4888d0d83ff72a586e9950b1e}{Acceleration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{a00318_a7369f95c6d11a97fcf38873430b9d9a6}{Mass}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{a00318_a5d7175d3d87a533671551699c8bb93d0}{Restitution}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{a00318_a9e29defb461be7a43ce274f721fb1225}{Damping}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{a00434}{I\+Hitbox} $>$ \hyperlink{a00318_a09090a0316ecac49619a01a56a9a30b1}{Hits}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{a00318_ab39c2af5a8338a67744d42891a2dc3ce}{is\+Colliding}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: a bool to tell whether the mind is currently colliding \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00318_ad94b3975c0873fee06b5bd5a75bd38cd}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Rectangle \hyperlink{a00318_aa5a4c4b1e6b8373a14ee5e1a57a8ad54}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The Axis aligned bounds for the mind and entity \end{DoxyCompactList}\item 
+bool \hyperlink{a00318_a4bf63dff33c53406b5342eb45e9627c4}{is\+Collidable}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Whether the object should be included in collision calculations \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+B\+S\+T\+R\+A\+CT C\+L\+A\+SS\+: \hyperlink{a00318}{Mind} controls the behaviour for a specific entity. The entity is simply the sprite that is drawn whilst \hyperlink{a00318}{Mind} controls how it acts. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00318_aa352dcc92860d1304d4b1c71a0fe5d96}\label{a00318_aa352dcc92860d1304d4b1c71a0fe5d96}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Mind@{Mind}}
+\index{Mind@{Mind}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Mind()}{Mind()}}
+{\footnotesize\ttfamily Engine.\+Entities.\+Mind.\+Mind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00318_a4a05ceb8a5b1eb7f04e3111dd165b4b5}\label{a00318_a4a05ceb8a5b1eb7f04e3111dd165b4b5}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Apply\+Force@{Apply\+Force}}
+\index{Apply\+Force@{Apply\+Force}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Apply\+Force()}{ApplyForce()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Mind.\+Apply\+Force (\begin{DoxyParamCaption}\item[{Vector2}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+F = ma Therefore a = F/m but we are using inverse mass because multiplication is quicker than division, thus m is set to be equal to 1/m so we can do a = F $\ast$ m \mbox{\Hypertarget{a00318_a378218df0a8c27a981e98167197d9c16}\label{a00318_a378218df0a8c27a981e98167197d9c16}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Apply\+Impulse@{Apply\+Impulse}}
+\index{Apply\+Impulse@{Apply\+Impulse}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Apply\+Impulse()}{ApplyImpulse()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Mind.\+Apply\+Impulse (\begin{DoxyParamCaption}\item[{Vector2}]{c\+Velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Apply an impulse to an object once it has collided in order to simulate physics 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+Velocity} & \\
+\hline
+\end{DoxyParams}
+M\+U\+L\+T\+I\+P\+LY\+: The parameter closing velocity by the restitution
+
+C\+A\+LL\+: Apply force with the closing velocity 
+
+Implements \hyperlink{a00426_a000ca0336b06e3f2d658d442a83dbbbb}{Engine.\+Interfaces.\+Collision.\+I\+Collidable}.
+
+\mbox{\Hypertarget{a00318_aa36d6fcb8d80f1398855cea671ce1078}\label{a00318_aa36d6fcb8d80f1398855cea671ce1078}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!get\+Collidable@{get\+Collidable}}
+\index{get\+Collidable@{get\+Collidable}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{get\+Collidable()}{getCollidable()}}
+{\footnotesize\ttfamily \hyperlink{a00426}{I\+Collidable} Engine.\+Entities.\+Mind.\+get\+Collidable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Return an object that will be calculated for collision 
+
+\begin{DoxyReturn}{Returns}
+An I\+Collidable of the current object
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00446_a3cbff0e85b710a4c8737254ed9ca7b30}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+\mbox{\Hypertarget{a00318_a9585d4438e12299a42aaed4ee6fb88b6}\label{a00318_a9585d4438e12299a42aaed4ee6fb88b6}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!get\+Entity@{get\+Entity}}
+\index{get\+Entity@{get\+Entity}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{get\+Entity()}{getEntity()}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Entities.\+Mind.\+get\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Get the entity which a mind controls. 
+
+\begin{DoxyReturn}{Returns}
+The I\+E\+Ntity this mind controls
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00446_af7c7cac5148930a12a85ec64412ac6f2}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+\mbox{\Hypertarget{a00318_a386406a6250e4f7e59d0a048545ecc46}\label{a00318_a386406a6250e4f7e59d0a048545ecc46}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Engine.\+Entities.\+Mind.\+Initialize (\begin{DoxyParamCaption}\item[{Vector2}]{Position,  }\item[{string}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialise the basic properties of the \hyperlink{a00318}{Mind} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+{\em t} & \\
+\hline
+\end{DoxyParams}
+S\+ET\+: T\+He unique ID
+
+C\+A\+LL\+: Set texture to set the texture
+
+S\+ET\+: The position of the entity and whether the entity is visible
+
+S\+ET\+: This mind to active 
+
+Implements \hyperlink{a00446_a6f51a819769ba43f5f1702563293aacd}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+\mbox{\Hypertarget{a00318_a353d7d2bb1035aefebf0ae3e3f1d1488}\label{a00318_a353d7d2bb1035aefebf0ae3e3f1d1488}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Engine.\+Entities.\+Mind.\+Initialize (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises the basic properties of the mind when a texture has already been set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+\end{DoxyParams}
+H\+A\+N\+D\+L\+ER\+: Add handler for S\+AT collision
+
+S\+ET\+: T\+He unique ID for this mind
+
+IF\+: Texture path is not null
+
+C\+A\+LL\+: Set texture
+
+S\+ET\+: position and visibility of \hyperlink{a00314}{Entity} controlled by this mind.
+
+S\+ET\+: The position of this mind and whether it is active. 
+
+Implements \hyperlink{a00446_a421d8eb0a0accda3320144fbfe33ea8c}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+
+
+Reimplemented in \hyperlink{a00346_a72922ee865087d504b1bca3fec35fb6e}{Engine.\+Entities.\+Steering.\+Steering\+Mind}, \hyperlink{a00326_a44a3007533c5d73810c4636fcfef5988}{Engine.\+Entities.\+Player\+Mind}, and \hyperlink{a00334_ae94a647a0b9c6f1d99abb61e36612ba7}{Engine.\+Entities.\+Platformer.\+Test\+Mind}.
+
+\mbox{\Hypertarget{a00318_a3f2db3b7d2b8b68a02b56472467ffd12}\label{a00318_a3f2db3b7d2b8b68a02b56472467ffd12}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Link@{Link}}
+\index{Link@{Link}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Link()}{Link()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Mind.\+Link (\begin{DoxyParamCaption}\item[{\hyperlink{a00438}{I\+Entity}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Link the mind to an entity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00446_a9d8370ad6e1b2a07760d3554b1e179fd}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+\mbox{\Hypertarget{a00318_ac278d4358d794426251d1b87b6aa7b82}\label{a00318_ac278d4358d794426251d1b87b6aa7b82}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!On\+S\+A\+T\+Collision@{On\+S\+A\+T\+Collision}}
+\index{On\+S\+A\+T\+Collision@{On\+S\+A\+T\+Collision}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{On\+S\+A\+T\+Collision()}{OnSATCollision()}}
+{\footnotesize\ttfamily virtual void Engine.\+Entities.\+Mind.\+On\+S\+A\+T\+Collision (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\hyperlink{a00350}{Collision\+Event\+Args}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+E\+V\+E\+NT\+: When S\+AT Collision returns true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+IF\+: This mind is object A, Apply Impulse to simulate physics
+
+E\+L\+SE IF\+: this mind is object B, apply impulse in opposite direction 
+
+Reimplemented in \hyperlink{a00346_a4834c17e78fd0bf82940ca0a4e8966f9}{Engine.\+Entities.\+Steering.\+Steering\+Mind}.
+
+\mbox{\Hypertarget{a00318_a08db67e6cb8d5ff8015afa4fb780c5e8}\label{a00318_a08db67e6cb8d5ff8015afa4fb780c5e8}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Mind.\+set\+Texture (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Set the texture of the entity this mind controls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00318_a15bf25a4a74706ef37592689f43c0598}\label{a00318_a15bf25a4a74706ef37592689f43c0598}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Unload@{Unload}}
+\index{Unload@{Unload}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily virtual void Engine.\+Entities.\+Mind.\+Unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Responsible for unloading anything added to this mind and sending it to the garbage collector 
+
+
+
+Implements \hyperlink{a00446_a142493645e36a3e14c7d3c59793c4d3c}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+
+
+Reimplemented in \hyperlink{a00326_a80bacdc33e51129afed33f9e8bd5cd0f}{Engine.\+Entities.\+Player\+Mind}.
+
+\mbox{\Hypertarget{a00318_adec6999d87accf7371de1536eac2541b}\label{a00318_adec6999d87accf7371de1536eac2541b}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Engine.\+Entities.\+Mind.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Update is called every frame and controls the main behaviour of the \hyperlink{a00318}{Mind}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+S\+ET\+: Position of controlled entity
+
+IF\+: \hyperlink{a00318}{Mind} is no longer active
+
+S\+ET\+: entity to not be drawn
+
+C\+A\+LL\+: Method to simulate physical movement 
+
+Implements \hyperlink{a00446_a21a0486019d7c7b665fdf483626323f3}{Engine.\+Interfaces.\+Entities.\+I\+Mind}.
+
+
+
+Reimplemented in \hyperlink{a00346_a2e1f7ec281cfe2b7e8268a93bec59d4a}{Engine.\+Entities.\+Steering.\+Steering\+Mind}, \hyperlink{a00326_a172dca0ea26dfd821b413f7592a98084}{Engine.\+Entities.\+Player\+Mind}, and \hyperlink{a00334_a1817f5df935d637c737d510e39fd251f}{Engine.\+Entities.\+Platformer.\+Test\+Mind}.
+
+\mbox{\Hypertarget{a00318_afc6609503e3a531416f5080b2114e24a}\label{a00318_afc6609503e3a531416f5080b2114e24a}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Update\+Physics@{Update\+Physics}}
+\index{Update\+Physics@{Update\+Physics}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Update\+Physics()}{UpdatePhysics()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Mind.\+Update\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Simulates movement obeying the laws of physics 
+
+M\+U\+L\+T\+I\+P\+LY\+: the velocity by the damping force
+
+A\+DD\+: The acceleration onto the velocity
+
+A\+DD\+: The velocity onto the position
+
+F\+OR\+: Each hitbox this mind controls
+
+S\+ET\+: the velocity of the hitbox to this velocity
+
+F\+OR\+: Each hitbox this mind controls
+
+S\+ET\+: the points on each hitbox relative to the entity
+
+S\+ET\+: acceleration to 0 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00318_a5804486ad9da9f6220f390e94eb08ab7}\label{a00318_a5804486ad9da9f6220f390e94eb08ab7}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!\+\_\+pos@{\+\_\+pos}}
+\index{\+\_\+pos@{\+\_\+pos}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{\+\_\+pos}{\_pos}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Mind.\+\_\+pos = new Vector2()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: The position of the mind 
+
+\mbox{\Hypertarget{a00318_a97534caf477680d0dcbe7021cc2b5a92}\label{a00318_a97534caf477680d0dcbe7021cc2b5a92}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!acceleration@{acceleration}}
+\index{acceleration@{acceleration}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{acceleration}{acceleration}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Mind.\+acceleration = new Vector2(0, 0)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: The acceleration of the mind 
+
+\mbox{\Hypertarget{a00318_aff4d26cdb8cbfeb96adfce9d92ddf5a0}\label{a00318_aff4d26cdb8cbfeb96adfce9d92ddf5a0}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!damping@{damping}}
+\index{damping@{damping}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{damping}{damping}}
+{\footnotesize\ttfamily float Engine.\+Entities.\+Mind.\+damping\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: the damping acting on the mind 
+
+\mbox{\Hypertarget{a00318_ad89c9691d6b32053fe8ffcdeb68bdacf}\label{a00318_ad89c9691d6b32053fe8ffcdeb68bdacf}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!e@{e}}
+\index{e@{e}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Entities.\+Mind.\+e\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+D\+E\+C\+L\+A\+RE\+: The entity this mind will control. 
+
+\mbox{\Hypertarget{a00318_a814329a8392c9a1f2d440c599dee3f91}\label{a00318_a814329a8392c9a1f2d440c599dee3f91}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!hits@{hits}}
+\index{hits@{hits}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{hits}{hits}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00434}{I\+Hitbox}$>$ Engine.\+Entities.\+Mind.\+hits = new List$<$\hyperlink{a00434}{I\+Hitbox}$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: The list of hitboxes 
+
+\mbox{\Hypertarget{a00318_a42f275657bd506946d9d7ec518cd4a22}\label{a00318_a42f275657bd506946d9d7ec518cd4a22}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!i\+Mass@{i\+Mass}}
+\index{i\+Mass@{i\+Mass}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{i\+Mass}{iMass}}
+{\footnotesize\ttfamily float Engine.\+Entities.\+Mind.\+i\+Mass\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: The inverted Mass of the mind 
+
+\mbox{\Hypertarget{a00318_aca8c0c2865fe81c9bdabebcf7689c391}\label{a00318_aca8c0c2865fe81c9bdabebcf7689c391}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!restitution@{restitution}}
+\index{restitution@{restitution}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{restitution}{restitution}}
+{\footnotesize\ttfamily float Engine.\+Entities.\+Mind.\+restitution\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: The restitution of the mind 
+
+\mbox{\Hypertarget{a00318_a0a20643f397ebed81d1b09965e0b6e3c}\label{a00318_a0a20643f397ebed81d1b09965e0b6e3c}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!tex\+Path@{tex\+Path}}
+\index{tex\+Path@{tex\+Path}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{tex\+Path}{texPath}}
+{\footnotesize\ttfamily string Engine.\+Entities.\+Mind.\+tex\+Path = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+D\+E\+C\+L\+A\+RE\+: The Texture path 
+
+\mbox{\Hypertarget{a00318_af56c17f56ba8133e32671318a6cc2c84}\label{a00318_af56c17f56ba8133e32671318a6cc2c84}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!velocity@{velocity}}
+\index{velocity@{velocity}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Mind.\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+G\+ET\+: S\+ET\+: The velocity of the mind 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00318_ae117e7b4888d0d83ff72a586e9950b1e}\label{a00318_ae117e7b4888d0d83ff72a586e9950b1e}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Acceleration@{Acceleration}}
+\index{Acceleration@{Acceleration}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Acceleration}{Acceleration}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Mind.\+Acceleration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00318_add1498255352d92a5c96223a4d3cd657}\label{a00318_add1498255352d92a5c96223a4d3cd657}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Active@{Active}}
+\index{Active@{Active}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Active}{Active}}
+{\footnotesize\ttfamily bool Engine.\+Entities.\+Mind.\+Active\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Whether the mind is active and in use or not. 
+
+\mbox{\Hypertarget{a00318_aa5a4c4b1e6b8373a14ee5e1a57a8ad54}\label{a00318_aa5a4c4b1e6b8373a14ee5e1a57a8ad54}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Bounds}{Bounds}}
+{\footnotesize\ttfamily Rectangle Engine.\+Entities.\+Mind.\+Bounds\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+G\+ET\+: S\+ET\+: The Axis aligned bounds for the mind and entity 
+
+\mbox{\Hypertarget{a00318_a9e29defb461be7a43ce274f721fb1225}\label{a00318_a9e29defb461be7a43ce274f721fb1225}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Damping@{Damping}}
+\index{Damping@{Damping}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Damping}{Damping}}
+{\footnotesize\ttfamily float Engine.\+Entities.\+Mind.\+Damping\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00318_a09090a0316ecac49619a01a56a9a30b1}\label{a00318_a09090a0316ecac49619a01a56a9a30b1}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Hits@{Hits}}
+\index{Hits@{Hits}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Hits}{Hits}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00434}{I\+Hitbox}$>$ Engine.\+Entities.\+Mind.\+Hits\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00318_a4bf63dff33c53406b5342eb45e9627c4}\label{a00318_a4bf63dff33c53406b5342eb45e9627c4}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!is\+Collidable@{is\+Collidable}}
+\index{is\+Collidable@{is\+Collidable}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{is\+Collidable}{isCollidable}}
+{\footnotesize\ttfamily bool Engine.\+Entities.\+Mind.\+is\+Collidable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Whether the object should be included in collision calculations 
+
+\mbox{\Hypertarget{a00318_ab39c2af5a8338a67744d42891a2dc3ce}\label{a00318_ab39c2af5a8338a67744d42891a2dc3ce}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!is\+Colliding@{is\+Colliding}}
+\index{is\+Colliding@{is\+Colliding}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{is\+Colliding}{isColliding}}
+{\footnotesize\ttfamily bool Engine.\+Entities.\+Mind.\+is\+Colliding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: a bool to tell whether the mind is currently colliding 
+
+\mbox{\Hypertarget{a00318_a7369f95c6d11a97fcf38873430b9d9a6}\label{a00318_a7369f95c6d11a97fcf38873430b9d9a6}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Mass@{Mass}}
+\index{Mass@{Mass}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Mass}{Mass}}
+{\footnotesize\ttfamily float Engine.\+Entities.\+Mind.\+Mass\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00318_ad94b3975c0873fee06b5bd5a75bd38cd}\label{a00318_ad94b3975c0873fee06b5bd5a75bd38cd}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Position@{Position}}
+\index{Position@{Position}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Mind.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00318_a5d7175d3d87a533671551699c8bb93d0}\label{a00318_a5d7175d3d87a533671551699c8bb93d0}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Restitution@{Restitution}}
+\index{Restitution@{Restitution}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Restitution}{Restitution}}
+{\footnotesize\ttfamily float Engine.\+Entities.\+Mind.\+Restitution\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00318_ab109f6638be56427f557f69b11beb995}\label{a00318_ab109f6638be56427f557f69b11beb995}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Unique\+ID@{Unique\+ID}}
+\index{Unique\+ID@{Unique\+ID}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Unique\+ID}{UniqueID}}
+{\footnotesize\ttfamily int Engine.\+Entities.\+Mind.\+Unique\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The unique ID for the mind 
+
+\mbox{\Hypertarget{a00318_a5e95a120aad31ed943ae34b70083af85}\label{a00318_a5e95a120aad31ed943ae34b70083af85}} 
+\index{Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!Engine\+::\+Entities\+::\+Mind@{Engine\+::\+Entities\+::\+Mind}}
+\subsubsection{\texorpdfstring{Velocity}{Velocity}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Mind.\+Velocity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00020}{Mind.\+cs}\end{DoxyCompactItemize}

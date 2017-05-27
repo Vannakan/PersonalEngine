@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/df9/a00554">
+<title>Engine::States::Engine::SplashScreen class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ICameraManager cam<para><emphasis>&lt;summary&gt;
+GET: The Camera Manager from the service locator;
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float alpha<para><emphasis>&lt;summary&gt;
+DECLARE: The transition variables for this screen
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool hasEnded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool transIn</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool transOut</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/df9/a00554_1a7f6973cb8b6b8fa31aace32fdd2dc260">SplashScreen</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/df9/a00554_1a321c34cdc158a49cf76f31e3cdd0863e">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic for the splash screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/df9/a00554_1ae50fb213e5c1efc8d3908340b236e927">Draw</link> (
+SpriteBatch sb)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the screen content
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dc/df9/a00554_1af245506899484c6784a44550b1364b6c">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update which is cycled through each frame and contains the logic for the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The splash screen that is loaded upon running the program whilst the main menu loads </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 17 of file SplashScreen.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SplashScreen.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>ICameraManager Engine.States.Engine.SplashScreen.cam</title>                
+                <para>Definition at line 21 of file SplashScreen.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SplashScreen.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>float Engine.States.Engine.SplashScreen.alpha</title>                
+                <para>Definition at line 26 of file SplashScreen.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SplashScreen.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="dc/df9/a00554_1a7f6973cb8b6b8fa31aace32fdd2dc260">
+                <title>Engine.States.Engine.SplashScreen.SplashScreen ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/df9/a00554_1a321c34cdc158a49cf76f31e3cdd0863e">
+                <title>override void Engine.States.Engine.SplashScreen.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic for the splash screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/df9/a00554_1ae50fb213e5c1efc8d3908340b236e927">
+                <title>override void Engine.States.Engine.SplashScreen.Draw (SpriteBatch sb)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the screen content
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sb</entry>
+                                <entry>
+<para>Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/df9/a00554_1af245506899484c6784a44550b1364b6c">
+                <title>override void Engine.States.Engine.SplashScreen.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update which is cycled through each frame and contains the logic for the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/da9/a00263">
+<title>Engine::Interfaces::Screen</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d2c/a00466">Engine::Interfaces::Screen::IScreen</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: all screens subscribe to this interface which contains the implementation for what each screen needs
+To do
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d29/a00470">Engine::Interfaces::Screen::IScreenManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: This interface holds the implementation for the ScreenManager which is responsible for loading the content
+in each screen and displaying each screen. The ScreenManager contains a stack of screens which allows for multiple 
+screens to be prepared for loading whilst only one is an active screen
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

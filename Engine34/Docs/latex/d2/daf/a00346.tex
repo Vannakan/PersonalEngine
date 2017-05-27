@@ -1,0 +1,388 @@
+\hypertarget{a00346}{}\section{Engine.\+Entities.\+Steering.\+Steering\+Mind Class Reference}
+\label{a00346}\index{Engine.\+Entities.\+Steering.\+Steering\+Mind@{Engine.\+Entities.\+Steering.\+Steering\+Mind}}
+Inheritance diagram for Engine.\+Entities.\+Steering.\+Steering\+Mind\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/daf/a00346}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{a00346_a72922ee865087d504b1bca3fec35fb6e}{Initialize} (Vector2 \hyperlink{a00318_ad94b3975c0873fee06b5bd5a75bd38cd}{Position})
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises the basic properties of the mind when a texture has already been set \end{DoxyCompactList}\item 
+void \hyperlink{a00346_a953d98dcd5ed2452a71e3658ecd5cf98}{Wander} ()
+\item 
+void \hyperlink{a00346_a232fba946737dac94731aff851985745}{flock} ()
+\item 
+void \hyperlink{a00346_a000c9f424dfdaedfb3ab00f8771ef859}{set\+Path} (List$<$ \hyperlink{a00414}{Node} $>$ path)
+\item 
+void \hyperlink{a00346_ab5caa6343f2e5d5d1854534ed919d018}{follow\+Way\+Points} ()
+\item 
+void \hyperlink{a00346_a593b91907bcd8d144942dd156ce7fc7e}{On\+Mouse\+Moved} (object sender, \hyperlink{a00374}{Mouse\+Event\+Args} k)
+\item 
+override void \hyperlink{a00346_a2e1f7ec281cfe2b7e8268a93bec59d4a}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update is called every frame and controls the main behaviour of the \hyperlink{a00318}{Mind}. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00346_a7c7017d89a91f07f479af5cc0ecc5eab}{flock\+Behaviour} (Vector2 v)
+\item 
+void \hyperlink{a00346_afb0d53f8cb93f437b89dbdc5ac0f71a2}{Seek} (Vector2 Target)
+\item 
+void \hyperlink{a00346_a882738a351da9a030468a018c69ee216}{Flee} (Vector2 Target)
+\item 
+void \hyperlink{a00346_a14fb4afcb6260502a8c545279ed6c8dc}{Pursue} (Vector2 Target, Vector2 Targets\+Velocity)
+\item 
+void \hyperlink{a00346_ac10a724f1df5a665fa88adbe97969d9c}{Evade} (Vector2 Target, Vector2 Targets\+Velocity)
+\item 
+void \hyperlink{a00346_a9e29641a665b426ba24b22282b5a4afb}{Arrival} (Vector2 Target, float radius)
+\item 
+Vector2 \hyperlink{a00346_a49d9a3d4beda2bfaffac447989b9c7b8}{calc\+Seperation} ()
+\item 
+Vector2 \hyperlink{a00346_a249ef5693985389b6c3e36bbc6a5b905}{calc\+Cohesion} ()
+\item 
+Vector2 \hyperlink{a00346_aeb7e79e42213d164fbf46bff97dc3b26}{calc\+Alignment} ()
+\item 
+void \hyperlink{a00346_ac9f9147dba78c35e082b00463696e846}{set\+Neighbourhood} (List$<$ \hyperlink{a00346}{Steering\+Mind} $>$ list)
+\item 
+Vector2 \hyperlink{a00346_a3006887440eba9edfd5e97bc56febca1}{Check\+Max} (Vector2 v, float max\+Value)
+\item 
+override void \hyperlink{a00346_a4834c17e78fd0bf82940ca0a4e8966f9}{On\+S\+A\+T\+Collision} (object sender, \hyperlink{a00350}{Collision\+Event\+Args} \hyperlink{a00318_ad89c9691d6b32053fe8ffcdeb68bdacf}{e})
+\begin{DoxyCompactList}\small\item\em E\+V\+E\+NT\+: When S\+AT Collision returns true. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00346_a38152ad6c1dd536187718723061311e4}{get\+Velocity} ()
+\item 
+Vector2 \hyperlink{a00346_a5ba51a02c0ff7cebadee5c7b18eba5a7}{get\+Position} ()
+\item 
+Vector2 \hyperlink{a00346_a70f1b35eccd31d3efe3ec7266c77d7c5}{get\+Normal\+Pos} ()
+\item 
+Vector2 \hyperlink{a00346_a3193d5ceb8a7f78b21d4ff24977e442e}{get\+Normal\+Vel} ()
+\item 
+Vector2 \hyperlink{a00346_a7828d8105c471ce2e6e134344ad2e379}{get\+Normal\+Des\+Vel} ()
+\item 
+Vector2 \hyperlink{a00346_a32beb8852d356c29b1d1bf91cce908e5}{get\+Normal\+Steering} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{a00346_a204d03e4db979c7fd987cd17c09cc15c}{steering\+Force}
+\item 
+\hyperlink{a00438}{I\+Entity} \hyperlink{a00346_ab7696a602bd19d445ee35f6df2572fcb}{current}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{a00414}{Node} $>$ \hyperlink{a00346_a4b20dbb0da7a1f8b2f54c8141051f87f}{Pathway}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00346_a9e29641a665b426ba24b22282b5a4afb}\label{a00346_a9e29641a665b426ba24b22282b5a4afb}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Arrival@{Arrival}}
+\index{Arrival@{Arrival}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Arrival()}{Arrival()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Arrival (\begin{DoxyParamCaption}\item[{Vector2}]{Target,  }\item[{float}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_aeb7e79e42213d164fbf46bff97dc3b26}\label{a00346_aeb7e79e42213d164fbf46bff97dc3b26}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!calc\+Alignment@{calc\+Alignment}}
+\index{calc\+Alignment@{calc\+Alignment}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{calc\+Alignment()}{calcAlignment()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+calc\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00346_a249ef5693985389b6c3e36bbc6a5b905}\label{a00346_a249ef5693985389b6c3e36bbc6a5b905}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!calc\+Cohesion@{calc\+Cohesion}}
+\index{calc\+Cohesion@{calc\+Cohesion}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{calc\+Cohesion()}{calcCohesion()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+calc\+Cohesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00346_a49d9a3d4beda2bfaffac447989b9c7b8}\label{a00346_a49d9a3d4beda2bfaffac447989b9c7b8}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!calc\+Seperation@{calc\+Seperation}}
+\index{calc\+Seperation@{calc\+Seperation}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{calc\+Seperation()}{calcSeperation()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+calc\+Seperation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00346_a3006887440eba9edfd5e97bc56febca1}\label{a00346_a3006887440eba9edfd5e97bc56febca1}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Check\+Max@{Check\+Max}}
+\index{Check\+Max@{Check\+Max}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Check\+Max()}{CheckMax()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Check\+Max (\begin{DoxyParamCaption}\item[{Vector2}]{v,  }\item[{float}]{max\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_ac10a724f1df5a665fa88adbe97969d9c}\label{a00346_ac10a724f1df5a665fa88adbe97969d9c}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Evade@{Evade}}
+\index{Evade@{Evade}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Evade()}{Evade()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Evade (\begin{DoxyParamCaption}\item[{Vector2}]{Target,  }\item[{Vector2}]{Targets\+Velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target} & \\
+\hline
+{\em Targets\+Velocity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00346_a882738a351da9a030468a018c69ee216}\label{a00346_a882738a351da9a030468a018c69ee216}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Flee@{Flee}}
+\index{Flee@{Flee}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Flee()}{Flee()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Flee (\begin{DoxyParamCaption}\item[{Vector2}]{Target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00346_a232fba946737dac94731aff851985745}\label{a00346_a232fba946737dac94731aff851985745}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!flock@{flock}}
+\index{flock@{flock}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{flock()}{flock()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+flock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a7c7017d89a91f07f479af5cc0ecc5eab}\label{a00346_a7c7017d89a91f07f479af5cc0ecc5eab}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!flock\+Behaviour@{flock\+Behaviour}}
+\index{flock\+Behaviour@{flock\+Behaviour}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{flock\+Behaviour()}{flockBehaviour()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+flock\+Behaviour (\begin{DoxyParamCaption}\item[{Vector2}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00346_ab5caa6343f2e5d5d1854534ed919d018}\label{a00346_ab5caa6343f2e5d5d1854534ed919d018}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!follow\+Way\+Points@{follow\+Way\+Points}}
+\index{follow\+Way\+Points@{follow\+Way\+Points}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{follow\+Way\+Points()}{followWayPoints()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+follow\+Way\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a7828d8105c471ce2e6e134344ad2e379}\label{a00346_a7828d8105c471ce2e6e134344ad2e379}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!get\+Normal\+Des\+Vel@{get\+Normal\+Des\+Vel}}
+\index{get\+Normal\+Des\+Vel@{get\+Normal\+Des\+Vel}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{get\+Normal\+Des\+Vel()}{getNormalDesVel()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+get\+Normal\+Des\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a70f1b35eccd31d3efe3ec7266c77d7c5}\label{a00346_a70f1b35eccd31d3efe3ec7266c77d7c5}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!get\+Normal\+Pos@{get\+Normal\+Pos}}
+\index{get\+Normal\+Pos@{get\+Normal\+Pos}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{get\+Normal\+Pos()}{getNormalPos()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+get\+Normal\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a32beb8852d356c29b1d1bf91cce908e5}\label{a00346_a32beb8852d356c29b1d1bf91cce908e5}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!get\+Normal\+Steering@{get\+Normal\+Steering}}
+\index{get\+Normal\+Steering@{get\+Normal\+Steering}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{get\+Normal\+Steering()}{getNormalSteering()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+get\+Normal\+Steering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a3193d5ceb8a7f78b21d4ff24977e442e}\label{a00346_a3193d5ceb8a7f78b21d4ff24977e442e}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!get\+Normal\+Vel@{get\+Normal\+Vel}}
+\index{get\+Normal\+Vel@{get\+Normal\+Vel}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{get\+Normal\+Vel()}{getNormalVel()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+get\+Normal\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a5ba51a02c0ff7cebadee5c7b18eba5a7}\label{a00346_a5ba51a02c0ff7cebadee5c7b18eba5a7}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a38152ad6c1dd536187718723061311e4}\label{a00346_a38152ad6c1dd536187718723061311e4}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a72922ee865087d504b1bca3fec35fb6e}\label{a00346_a72922ee865087d504b1bca3fec35fb6e}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Initialize (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises the basic properties of the mind when a texture has already been set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+\end{DoxyParams}
+H\+A\+N\+D\+L\+ER\+: Add handler for S\+AT collision
+
+S\+ET\+: T\+He unique ID for this mind
+
+IF\+: Texture path is not null
+
+C\+A\+LL\+: Set texture
+
+S\+ET\+: position and visibility of \hyperlink{a00314}{Entity} controlled by this mind.
+
+S\+ET\+: The position of this mind and whether it is active. 
+
+Reimplemented from \hyperlink{a00318_a353d7d2bb1035aefebf0ae3e3f1d1488}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00346_a593b91907bcd8d144942dd156ce7fc7e}\label{a00346_a593b91907bcd8d144942dd156ce7fc7e}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!On\+Mouse\+Moved@{On\+Mouse\+Moved}}
+\index{On\+Mouse\+Moved@{On\+Mouse\+Moved}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{On\+Mouse\+Moved()}{OnMouseMoved()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+On\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\hyperlink{a00374}{Mouse\+Event\+Args}}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a4834c17e78fd0bf82940ca0a4e8966f9}\label{a00346_a4834c17e78fd0bf82940ca0a4e8966f9}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!On\+S\+A\+T\+Collision@{On\+S\+A\+T\+Collision}}
+\index{On\+S\+A\+T\+Collision@{On\+S\+A\+T\+Collision}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{On\+S\+A\+T\+Collision()}{OnSATCollision()}}
+{\footnotesize\ttfamily override void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+On\+S\+A\+T\+Collision (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\hyperlink{a00350}{Collision\+Event\+Args}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+E\+V\+E\+NT\+: When S\+AT Collision returns true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+IF\+: This mind is object A, Apply Impulse to simulate physics
+
+E\+L\+SE IF\+: this mind is object B, apply impulse in opposite direction 
+
+Reimplemented from \hyperlink{a00318_ac278d4358d794426251d1b87b6aa7b82}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00346_a14fb4afcb6260502a8c545279ed6c8dc}\label{a00346_a14fb4afcb6260502a8c545279ed6c8dc}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Pursue@{Pursue}}
+\index{Pursue@{Pursue}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Pursue()}{Pursue()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Pursue (\begin{DoxyParamCaption}\item[{Vector2}]{Target,  }\item[{Vector2}]{Targets\+Velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target} & \\
+\hline
+{\em Targets\+Velocity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00346_afb0d53f8cb93f437b89dbdc5ac0f71a2}\label{a00346_afb0d53f8cb93f437b89dbdc5ac0f71a2}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Seek@{Seek}}
+\index{Seek@{Seek}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Seek (\begin{DoxyParamCaption}\item[{Vector2}]{Target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00346_ac9f9147dba78c35e082b00463696e846}\label{a00346_ac9f9147dba78c35e082b00463696e846}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!set\+Neighbourhood@{set\+Neighbourhood}}
+\index{set\+Neighbourhood@{set\+Neighbourhood}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{set\+Neighbourhood()}{setNeighbourhood()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+set\+Neighbourhood (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{a00346}{Steering\+Mind} $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a000c9f424dfdaedfb3ab00f8771ef859}\label{a00346_a000c9f424dfdaedfb3ab00f8771ef859}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!set\+Path@{set\+Path}}
+\index{set\+Path@{set\+Path}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{set\+Path()}{setPath()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+set\+Path (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{a00414}{Node} $>$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00346_a2e1f7ec281cfe2b7e8268a93bec59d4a}\label{a00346_a2e1f7ec281cfe2b7e8268a93bec59d4a}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Update is called every frame and controls the main behaviour of the \hyperlink{a00318}{Mind}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+S\+ET\+: Position of controlled entity
+
+IF\+: \hyperlink{a00318}{Mind} is no longer active
+
+S\+ET\+: entity to not be drawn
+
+C\+A\+LL\+: Method to simulate physical movement 
+
+Reimplemented from \hyperlink{a00318_adec6999d87accf7371de1536eac2541b}{Engine.\+Entities.\+Mind}.
+
+\mbox{\Hypertarget{a00346_a953d98dcd5ed2452a71e3658ecd5cf98}\label{a00346_a953d98dcd5ed2452a71e3658ecd5cf98}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Wander@{Wander}}
+\index{Wander@{Wander}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Wander()}{Wander()}}
+{\footnotesize\ttfamily void Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Wander (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00346_ab7696a602bd19d445ee35f6df2572fcb}\label{a00346_ab7696a602bd19d445ee35f6df2572fcb}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!current@{current}}
+\index{current@{current}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \hyperlink{a00438}{I\+Entity} Engine.\+Entities.\+Steering.\+Steering\+Mind.\+current}
+
+\mbox{\Hypertarget{a00346_a204d03e4db979c7fd987cd17c09cc15c}\label{a00346_a204d03e4db979c7fd987cd17c09cc15c}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!steering\+Force@{steering\+Force}}
+\index{steering\+Force@{steering\+Force}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{steering\+Force}{steeringForce}}
+{\footnotesize\ttfamily Vector2 Engine.\+Entities.\+Steering.\+Steering\+Mind.\+steering\+Force}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00346_a4b20dbb0da7a1f8b2f54c8141051f87f}\label{a00346_a4b20dbb0da7a1f8b2f54c8141051f87f}} 
+\index{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}!Pathway@{Pathway}}
+\index{Pathway@{Pathway}!Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind@{Engine\+::\+Entities\+::\+Steering\+::\+Steering\+Mind}}
+\subsubsection{\texorpdfstring{Pathway}{Pathway}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00414}{Node}$>$ Engine.\+Entities.\+Steering.\+Steering\+Mind.\+Pathway\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00041}{Steering\+Mind.\+cs}\end{DoxyCompactItemize}

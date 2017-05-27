@@ -1,0 +1,738 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/daf/a00346">
+<title>Engine::Entities::Steering::SteeringMind class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float alignmentWeight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float cohesionWeight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float seperationWeight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Texture2D tex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 direction</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 DesiredVelocity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteBatch sb</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float rotationAngle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 origin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float MaxVelocity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float MaxForce</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float mass</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int counter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int neighbourCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 vel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 mousPos</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 wonderTarget</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool wonderSet</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int wanderRange</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool flockset</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 flockGoal</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 steeringForce</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IEntity current</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; SteeringMind &gt; neighbours<para><emphasis>&lt;summary&gt;
+A list of all
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d2/daf/a00346_1a72922ee865087d504b1bca3fec35fb6e">Initialize</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of the mind when a texture has already been set
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a953d98dcd5ed2452a71e3658ecd5cf98">Wander</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a232fba946737dac94731aff851985745">flock</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a000c9f424dfdaedfb3ab00f8771ef859">setPath</link> (
+List&lt; <link linkend="d4/dbc/a00414">Node</link> &gt; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1ab5caa6343f2e5d5d1854534ed919d018">followWayPoints</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a593b91907bcd8d144942dd156ce7fc7e">OnMouseMoved</link> (
+object sender, <link linkend="d5/db5/a00374">MouseEventArgs</link> k)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d2/daf/a00346_1a2e1f7ec281cfe2b7e8268a93bec59d4a">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update is called every frame and controls the main behaviour of the Mind.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a7c7017d89a91f07f479af5cc0ecc5eab">flockBehaviour</link> (
+Vector2 v)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1afb0d53f8cb93f437b89dbdc5ac0f71a2">Seek</link> (
+Vector2 Target)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a882738a351da9a030468a018c69ee216">Flee</link> (
+Vector2 Target)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a14fb4afcb6260502a8c545279ed6c8dc">Pursue</link> (
+Vector2 Target, Vector2 TargetsVelocity)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1ac10a724f1df5a665fa88adbe97969d9c">Evade</link> (
+Vector2 Target, Vector2 TargetsVelocity)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1a9e29641a665b426ba24b22282b5a4afb">Arrival</link> (
+Vector2 Target, float radius)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a49d9a3d4beda2bfaffac447989b9c7b8">calcSeperation</link> (
+)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a249ef5693985389b6c3e36bbc6a5b905">calcCohesion</link> (
+)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1aeb7e79e42213d164fbf46bff97dc3b26">calcAlignment</link> (
+)<para><emphasis>&lt;summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/daf/a00346_1ac9f9147dba78c35e082b00463696e846">setNeighbourhood</link> (
+List&lt; <link linkend="d2/daf/a00346">SteeringMind</link> &gt; list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a3006887440eba9edfd5e97bc56febca1">CheckMax</link> (
+Vector2 v, float maxValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d2/daf/a00346_1a4834c17e78fd0bf82940ca0a4e8966f9">OnSATCollision</link> (
+object sender, <link linkend="db/d10/a00350">CollisionEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+EVENT: When SAT Collision returns true.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a38152ad6c1dd536187718723061311e4">getVelocity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a5ba51a02c0ff7cebadee5c7b18eba5a7">getPosition</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a70f1b35eccd31d3efe3ec7266c77d7c5">getNormalPos</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a3193d5ceb8a7f78b21d4ff24977e442e">getNormalVel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a7828d8105c471ce2e6e134344ad2e379">getNormalDesVel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a32beb8852d356c29b1d1bf91cce908e5">getNormalSteering</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d2/daf/a00346_1a4a488837f9b6315edf5259b18bfee92c">Truncate</link> (
+Vector2 A, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <simplesect>
+                <title>List&lt;SteeringMind&gt; Engine.Entities.Steering.SteeringMind.neighbours</title>                
+                <para>Definition at line 52 of file SteeringMind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SteeringMind.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <section xml:id="d2/daf/a00346_1a72922ee865087d504b1bca3fec35fb6e">
+                <title>override void Engine.Entities.Steering.SteeringMind.Initialize (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of the mind when a texture has already been set
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a953d98dcd5ed2452a71e3658ecd5cf98">
+                <title>void Engine.Entities.Steering.SteeringMind.Wander ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a232fba946737dac94731aff851985745">
+                <title>void Engine.Entities.Steering.SteeringMind.flock ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a000c9f424dfdaedfb3ab00f8771ef859">
+                <title>void Engine.Entities.Steering.SteeringMind.setPath (List&lt; Node &gt; path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1ab5caa6343f2e5d5d1854534ed919d018">
+                <title>void Engine.Entities.Steering.SteeringMind.followWayPoints ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a593b91907bcd8d144942dd156ce7fc7e">
+                <title>void Engine.Entities.Steering.SteeringMind.OnMouseMoved (object sender, MouseEventArgs k)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a2e1f7ec281cfe2b7e8268a93bec59d4a">
+                <title>override void Engine.Entities.Steering.SteeringMind.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update is called every frame and controls the main behaviour of the Mind.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a7c7017d89a91f07f479af5cc0ecc5eab">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.flockBehaviour (Vector2 v)</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1afb0d53f8cb93f437b89dbdc5ac0f71a2">
+                <title>void Engine.Entities.Steering.SteeringMind.Seek (Vector2 Target)</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Target</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a882738a351da9a030468a018c69ee216">
+                <title>void Engine.Entities.Steering.SteeringMind.Flee (Vector2 Target)</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Target</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a14fb4afcb6260502a8c545279ed6c8dc">
+                <title>void Engine.Entities.Steering.SteeringMind.Pursue (Vector2 Target, Vector2 TargetsVelocity)</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Target</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>TargetsVelocity</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1ac10a724f1df5a665fa88adbe97969d9c">
+                <title>void Engine.Entities.Steering.SteeringMind.Evade (Vector2 Target, Vector2 TargetsVelocity)</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Target</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>TargetsVelocity</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a9e29641a665b426ba24b22282b5a4afb">
+                <title>void Engine.Entities.Steering.SteeringMind.Arrival (Vector2 Target, float radius)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a49d9a3d4beda2bfaffac447989b9c7b8">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.calcSeperation ()</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a249ef5693985389b6c3e36bbc6a5b905">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.calcCohesion ()</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1aeb7e79e42213d164fbf46bff97dc3b26">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.calcAlignment ()</title> <emphasis>&lt;summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1ac9f9147dba78c35e082b00463696e846">
+                <title>void Engine.Entities.Steering.SteeringMind.setNeighbourhood (List&lt; SteeringMind &gt; list)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a3006887440eba9edfd5e97bc56febca1">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.CheckMax (Vector2 v, float maxValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a4834c17e78fd0bf82940ca0a4e8966f9">
+                <title>override void Engine.Entities.Steering.SteeringMind.OnSATCollision (object sender, CollisionEventArgs e)</title> <emphasis>&lt;summary&gt;
+EVENT: When SAT Collision returns true.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/daf/a00346_1a38152ad6c1dd536187718723061311e4">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.getVelocity ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a5ba51a02c0ff7cebadee5c7b18eba5a7">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.getPosition ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a70f1b35eccd31d3efe3ec7266c77d7c5">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.getNormalPos ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a3193d5ceb8a7f78b21d4ff24977e442e">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.getNormalVel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a7828d8105c471ce2e6e134344ad2e379">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.getNormalDesVel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a32beb8852d356c29b1d1bf91cce908e5">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.getNormalSteering ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/daf/a00346_1a4a488837f9b6315edf5259b18bfee92c">
+                <title>Vector2 Engine.Entities.Steering.SteeringMind.Truncate (Vector2 A, float scale)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

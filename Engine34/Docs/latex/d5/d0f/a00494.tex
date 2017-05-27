@@ -1,0 +1,109 @@
+\hypertarget{a00494}{}\section{Engine.\+Managers.\+Cam.\+Camera\+Manager Class Reference}
+\label{a00494}\index{Engine.\+Managers.\+Cam.\+Camera\+Manager@{Engine.\+Managers.\+Cam.\+Camera\+Manager}}
+
+
+C\+L\+A\+SS\+: A Manager for the camera, this is responsible for the creation of a \hyperlink{a00490}{Camera} object and updating it in relation to the world position  
+
+
+Inheritance diagram for Engine.\+Managers.\+Cam.\+Camera\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/d0f/a00494}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00494_a6244a0582982e64f49df0a6862768a21}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Creates a new camera \end{DoxyCompactList}\item 
+\hyperlink{a00490}{Camera} \hyperlink{a00494_a949b09e5c57971945c3ccb638f73765d}{get\+Cam} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Returns the current \hyperlink{a00490}{Camera} \end{DoxyCompactList}\item 
+void \hyperlink{a00494_a43e367859b47354445da2a304eff7ec4}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Calls the update method of the \hyperlink{a00490}{Camera} that is being managed \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00494_a538af3b5745f1f51e3da217d5c971791}{get\+World\+Position} (Vector2 Position)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns the current world position in relation to the Vector2 provided \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: A Manager for the camera, this is responsible for the creation of a \hyperlink{a00490}{Camera} object and updating it in relation to the world position 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00494_a949b09e5c57971945c3ccb638f73765d}\label{a00494_a949b09e5c57971945c3ccb638f73765d}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}!get\+Cam@{get\+Cam}}
+\index{get\+Cam@{get\+Cam}!Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cam()}{getCam()}}
+{\footnotesize\ttfamily \hyperlink{a00490}{Camera} Engine.\+Managers.\+Cam.\+Camera\+Manager.\+get\+Cam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Returns the current \hyperlink{a00490}{Camera} 
+
+\begin{DoxyReturn}{Returns}
+The current \hyperlink{a00490}{Camera}
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00422_a91fc1dab51b36fd8955451ac00fd2819}{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager}.
+
+\mbox{\Hypertarget{a00494_a538af3b5745f1f51e3da217d5c971791}\label{a00494_a538af3b5745f1f51e3da217d5c971791}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}!get\+World\+Position@{get\+World\+Position}}
+\index{get\+World\+Position@{get\+World\+Position}!Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{get\+World\+Position()}{getWorldPosition()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Managers.\+Cam.\+Camera\+Manager.\+get\+World\+Position (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: returns the current world position in relation to the Vector2 provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & The position to be compared to the world position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The world position in relation to the Vector2 provided
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00422_a7d9fc1d792ddc3495bff23daac2a8d2a}{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager}.
+
+\mbox{\Hypertarget{a00494_a6244a0582982e64f49df0a6862768a21}\label{a00494_a6244a0582982e64f49df0a6862768a21}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera\+Manager.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Creates a new camera 
+
+
+
+Implements \hyperlink{a00422_a21e0ce6b0ada068546161ecf02559912}{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager}.
+
+\mbox{\Hypertarget{a00494_a43e367859b47354445da2a304eff7ec4}\label{a00494_a43e367859b47354445da2a304eff7ec4}} 
+\index{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager@{Engine\+::\+Managers\+::\+Cam\+::\+Camera\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Cam.\+Camera\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Calls the update method of the \hyperlink{a00490}{Camera} that is being managed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00422_a78a46559249e70181100daff38ef5d6a}{Engine.\+Interfaces.\+Cam.\+I\+Camera\+Manager}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00152}{Camera\+Manager.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{a00450}{}\section{Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager Interface Reference}
+\label{a00450}\index{Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager@{Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface which declares the implementation that the input manager must contain. The input manager is used to check for what keys are pressed and held on a keyboard.  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{de/df4/a00450}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00450_a43c99a0052fd196583700113cd0bdf9f}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update loop which is cycled through every frame \end{DoxyCompactList}\item 
+bool \hyperlink{a00450_ab31bc2c7a5da56dc4a46ac378fde0590}{Check\+Key\+Pressed} (Keys k)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns true if when a key is pressed \end{DoxyCompactList}\item 
+bool \hyperlink{a00450_a661496081120efdcd653693977f36fd9}{Check\+Held\+Down} (Keys k)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: returns true when a key is held down \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface which declares the implementation that the input manager must contain. The input manager is used to check for what keys are pressed and held on a keyboard. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00450_a661496081120efdcd653693977f36fd9}\label{a00450_a661496081120efdcd653693977f36fd9}} 
+\index{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager@{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager}!Check\+Held\+Down@{Check\+Held\+Down}}
+\index{Check\+Held\+Down@{Check\+Held\+Down}!Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager@{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Held\+Down()}{CheckHeldDown()}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager.\+Check\+Held\+Down (\begin{DoxyParamCaption}\item[{Keys}]{k }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: returns true when a key is held down 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & the key to be checked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool on whether the key has been held down for more than one frame
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00522_a40428e54a6265c8e18c51489321b1d4c}{Engine.\+Managers.\+Input.\+Input\+Manager}.
+
+\mbox{\Hypertarget{a00450_ab31bc2c7a5da56dc4a46ac378fde0590}\label{a00450_ab31bc2c7a5da56dc4a46ac378fde0590}} 
+\index{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager@{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager}!Check\+Key\+Pressed@{Check\+Key\+Pressed}}
+\index{Check\+Key\+Pressed@{Check\+Key\+Pressed}!Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager@{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Key\+Pressed()}{CheckKeyPressed()}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager.\+Check\+Key\+Pressed (\begin{DoxyParamCaption}\item[{Keys}]{k }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: returns true if when a key is pressed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & A key to be checked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool whether the key is pressed or not
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00522_aeb5c9f3f44ec0f9468cf3ec6801b9b24}{Engine.\+Managers.\+Input.\+Input\+Manager}.
+
+\mbox{\Hypertarget{a00450_a43c99a0052fd196583700113cd0bdf9f}\label{a00450_a43c99a0052fd196583700113cd0bdf9f}} 
+\index{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager@{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager@{Engine\+::\+Interfaces\+::\+Input\+Manager\+::\+I\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Input\+Manager.\+I\+Input\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Update loop which is cycled through every frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & the Monogame Game\+Time\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00478_a387fce2a5440a4dc63f8d72772ecbdaa}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Upd\+Service}.
+
+
+
+Implemented in \hyperlink{a00522_a7b0666f02640f9234e290938c4474e26}{Engine.\+Managers.\+Input.\+Input\+Manager}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00119}{I\+Input\+Manager.\+cs}\end{DoxyCompactItemize}

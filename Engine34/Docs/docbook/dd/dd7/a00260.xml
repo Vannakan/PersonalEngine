@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dd7/a00260">
+<title>Engine::Interfaces::InputManager</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/df4/a00450">Engine::Interfaces::InputManager::IInputManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An interface which declares the implementation that the input manager must contain. The input manager 
+is used to check for what keys are pressed and held on a keyboard.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d2b/a00546">
+<title>Engine::Managers::Sound::SoundManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsMuted<para><emphasis>DECALRE: bool for if playback is muted.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float defaultVolume<para><emphasis>DECLARE: Volume sound plays at by default.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a06224065983b6fe162de98b8dcc944c2">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise the Monogame MediaPlayer and ScreenManager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1aabfeb911d8bd573065e9c02d3f81e582">Play</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Play a song that is located within the resource loaders song library
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a6613813ccd38703484e80ca8775ecdf8">PlayEffect</link> (
+string name)<para><emphasis>&lt;summary&gt;
+METHOD: Plays the sound effect of the name provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a5a3a9b96e6708deedf2c4939b3259011">Mute</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Mutes all sound
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1ad62eb34a308bfe457bc7229045a66af0">unMute</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unmutes all sound
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1ae1be3ecb76007fdc47843305df49604b">Volume</link> (
+float Volume)<para><emphasis>&lt;summary&gt;
+METHOD: Adjust the volume of sound playback
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a0d3222475855f63b0c8f9dbe9b52e7f7">Stop</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Stop playback
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a43e47a47daa91f3b1d0f38b3dcb0323e">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: the update loop cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1af9d82c533dfd90077b275f2b09ee90b0">volUp</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Increases the volume slightly
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a888a7942f63cc582f7b73d61b69ebbac">volDown</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Decreases the volume slightly
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d2b/a00546_1a8dfbb15525871b87e6cdcf744b070139">onScreenChanged</link> (
+<link linkend="de/de7/a00550">BaseScreen</link> screen)<para><emphasis>&lt;summary&gt;
+METHOD: Plays the sound of the screen that is being changed to
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The sound manager is responsible for the storage and playback of sound files </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 17 of file SoundManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SoundManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="dc/d2b/a00546_1a06224065983b6fe162de98b8dcc944c2">
+                <title>void Engine.Managers.Sound.SoundManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise the Monogame MediaPlayer and ScreenManager
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/d2b/a00546_1aabfeb911d8bd573065e9c02d3f81e582">
+                <title>void Engine.Managers.Sound.SoundManager.Play (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Play a song that is located within the resource loaders song library
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>Name of the sound file to be played</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d2b/a00546_1a6613813ccd38703484e80ca8775ecdf8">
+                <title>void Engine.Managers.Sound.SoundManager.PlayEffect (string name)</title> <emphasis>&lt;summary&gt;
+METHOD: Plays the sound effect of the name provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>The name of the sound effect to be played</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d2b/a00546_1a5a3a9b96e6708deedf2c4939b3259011">
+                <title>void Engine.Managers.Sound.SoundManager.Mute ()</title> <emphasis>&lt;summary&gt;
+METHOD: Mutes all sound
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/d2b/a00546_1ad62eb34a308bfe457bc7229045a66af0">
+                <title>void Engine.Managers.Sound.SoundManager.unMute ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unmutes all sound
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/d2b/a00546_1ae1be3ecb76007fdc47843305df49604b">
+                <title>void Engine.Managers.Sound.SoundManager.Volume (float Volume)</title> <emphasis>&lt;summary&gt;
+METHOD: Adjust the volume of sound playback
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Volume</entry>
+                                <entry>
+<para>The volume the playback will be set to play at</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d2b/a00546_1a0d3222475855f63b0c8f9dbe9b52e7f7">
+                <title>void Engine.Managers.Sound.SoundManager.Stop ()</title> <emphasis>&lt;summary&gt;
+METHOD: Stop playback
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/d2b/a00546_1a43e47a47daa91f3b1d0f38b3dcb0323e">
+                <title>void Engine.Managers.Sound.SoundManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: the update loop cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d2b/a00546_1af9d82c533dfd90077b275f2b09ee90b0">
+                <title>void Engine.Managers.Sound.SoundManager.volUp ()</title> <emphasis>&lt;summary&gt;
+METHOD: Increases the volume slightly
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/d2b/a00546_1a888a7942f63cc582f7b73d61b69ebbac">
+                <title>void Engine.Managers.Sound.SoundManager.volDown ()</title> <emphasis>&lt;summary&gt;
+METHOD: Decreases the volume slightly
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dc/d2b/a00546_1a8dfbb15525871b87e6cdcf744b070139">
+                <title>void Engine.Managers.Sound.SoundManager.onScreenChanged (BaseScreen screen)</title> <emphasis>&lt;summary&gt;
+METHOD: Plays the sound of the screen that is being changed to
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>screen</entry>
+                                <entry>
+<para>The screen being changed to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d23/a00326">
+<title>Engine::Entities::PlayerMind class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int bulletTimer<para><emphasis>DECLARE: The timer that will be used for the shooting mechanic.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d23/a00326_1a67a26082f1d70a5c4495cb0ece0cce33">PlayerMind</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR: Initialises the basic properties of this object.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d8/d23/a00326_1a44a3007533c5d73810c4636fcfef5988">Initialize</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise the object and sets properties accordingly.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d8/d23/a00326_1a172dca0ea26dfd821b413f7592a98084">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update, controls the behaviour of this object and is looped through every frame.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d8/d23/a00326_1a80bacdc33e51129afed33f9e8bd5cd0f">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Responsible for unloading everything and sending it to the garbage collector to ensure no memory leaks.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d23/a00326_1a2c9b5d3a4834dc7446584a802460837f">OnKeyDown</link> (
+object sender, <link linkend="de/dd7/a00362">KeyEventArgs</link> m)<para><emphasis>&lt;summary&gt;
+EVENT: When a key is pressed
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d23/a00326_1ab3295433000f4defc2a420d9758c218e">OnKeyHeld</link> (
+object sender, <link linkend="de/dd7/a00362">KeyEventArgs</link> m)<para><emphasis>&lt;summary&gt;
+EVENT: When a key is held down
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d23/a00326_1a25869d97c0416cc348d589fb423b9d05">OnMouseDown</link> (
+object sender, <link linkend="d5/db5/a00374">MouseEventArgs</link> m)<para><emphasis>&lt;summary&gt;
+EVENT: When the mouse is clicked
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d23/a00326_1a008321c6a6ec30ed7ef82f13f6dc6d4e">OnCollision</link> (
+object sender, <link linkend="db/d10/a00350">CollisionEventArgs</link> cae)<para><emphasis>&lt;summary&gt;
+EVENT: When colliding with another object (AABB Collision).
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The mind that controls the player <link linkend="d0/d39/a00314">Entity</link>. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 15 of file PlayerMind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>PlayerMind.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d8/d23/a00326_1a67a26082f1d70a5c4495cb0ece0cce33">
+                <title>Engine.Entities.PlayerMind.PlayerMind ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR: Initialises the basic properties of this object.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d8/d23/a00326_1a44a3007533c5d73810c4636fcfef5988">
+                <title>override void Engine.Entities.PlayerMind.Initialize (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise the object and sets properties accordingly.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d23/a00326_1a172dca0ea26dfd821b413f7592a98084">
+                <title>override void Engine.Entities.PlayerMind.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update, controls the behaviour of this object and is looped through every frame.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d23/a00326_1a80bacdc33e51129afed33f9e8bd5cd0f">
+                <title>override void Engine.Entities.PlayerMind.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: Responsible for unloading everything and sending it to the garbage collector to ensure no memory leaks.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d8/d23/a00326_1a2c9b5d3a4834dc7446584a802460837f">
+                <title>void Engine.Entities.PlayerMind.OnKeyDown (object sender, KeyEventArgs m)</title> <emphasis>&lt;summary&gt;
+EVENT: When a key is pressed
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>m</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d23/a00326_1ab3295433000f4defc2a420d9758c218e">
+                <title>void Engine.Entities.PlayerMind.OnKeyHeld (object sender, KeyEventArgs m)</title> <emphasis>&lt;summary&gt;
+EVENT: When a key is held down
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>m</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d23/a00326_1a25869d97c0416cc348d589fb423b9d05">
+                <title>void Engine.Entities.PlayerMind.OnMouseDown (object sender, MouseEventArgs m)</title> <emphasis>&lt;summary&gt;
+EVENT: When the mouse is clicked
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>m</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d23/a00326_1a008321c6a6ec30ed7ef82f13f6dc6d4e">
+                <title>void Engine.Entities.PlayerMind.OnCollision (object sender, CollisionEventArgs cae)</title> <emphasis>&lt;summary&gt;
+EVENT: When colliding with another object (AABB Collision).
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>cae</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dbb/a00330">
+<title>Engine::Entities::Platformer::TestEntity class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/dbb/a00330_1ad4122c4f38d98746a67532d0a6836da5">Initialize</link> (
+Vector2 Pos)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise the basic properties of the entity.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: A Test <link linkend="d0/d39/a00314">Entity</link> used for various demos. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file TestEntity.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TestEntity.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="dd/dbb/a00330_1ad4122c4f38d98746a67532d0a6836da5">
+                <title>override void Engine.Entities.Platformer.TestEntity.Initialize (Vector2 Pos)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise the basic properties of the entity.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Pos</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

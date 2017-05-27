@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/de7/a00550">
+<title>Engine::States::Engine::BaseScreen class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/de7/a00550_1af66e62ec831d9ac03c231265b808417f">BaseScreen</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR:
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/de7/a00550_1af8fd6890abf865641e190578ef2e054c">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/de7/a00550_1abd2118fc928f9057ddacbe758b80fe68">UnloadContent</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unload the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/de7/a00550_1a098ece7d1e112475f6e880c3a672af64">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/de7/a00550_1a200c31954effe5fc060118607155fb16">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/de7/a00550_1a861ab6364e68e3e3b6b9718e34ba18a2">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: When the screen is to be unloaded, clear any entities from the screen,
+remove the entities from the detection manager as well
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="de/de7/a00550_1af66e62ec831d9ac03c231265b808417f">
+                <title>Engine.States.Engine.BaseScreen.BaseScreen ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR:
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="de/de7/a00550_1af8fd6890abf865641e190578ef2e054c">
+                <title>virtual void Engine.States.Engine.BaseScreen.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="de/de7/a00550_1abd2118fc928f9057ddacbe758b80fe68">
+                <title>virtual void Engine.States.Engine.BaseScreen.UnloadContent ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unload the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="de/de7/a00550_1a098ece7d1e112475f6e880c3a672af64">
+                <title>virtual void Engine.States.Engine.BaseScreen.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/de7/a00550_1a200c31954effe5fc060118607155fb16">
+                <title>virtual void Engine.States.Engine.BaseScreen.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>the Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/de7/a00550_1a861ab6364e68e3e3b6b9718e34ba18a2">
+                <title>virtual void Engine.States.Engine.BaseScreen.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: When the screen is to be unloaded, clear any entities from the screen,
+remove the entities from the detection manager as well
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

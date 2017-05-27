@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d2f/a00259">
+<title>Engine::Interfaces::Entities</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dfd/a00438">Engine::Interfaces::Entities::IEntity</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An Interface that all entities must subscribe to and handles the implementation and properties for them.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d34/a00442">Engine::Interfaces::Entities::IEntityManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: REsponsible for the implementation found in EntityManager which is responsible for adding and removing
+entities from the game scene
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/def/a00446">Engine::Interfaces::Entities::IMind</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An interface that provides Implementation for any object that is a mind which controls the behaviour
+of an entity.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

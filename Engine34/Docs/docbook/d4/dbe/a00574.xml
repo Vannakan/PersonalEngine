@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dbe/a00574">
+<title>Engine::States::Menu::MainMenu class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int timer<para><emphasis>&lt;summary&gt;
+DECLARE: Timer for the transition of the screen
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int Selected<para><emphasis>DECLARE: An index integer for the menus.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; menuNames<para><emphasis>DECLARE: A list of the menu item names.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float yOffset<para><emphasis>DECLARE: Offset that is added to the Y position of the menu item when it is drawn.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; MenuItem &gt; MenuItems<para><emphasis>DECLARE: List of the menu items.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Fader f<para><emphasis>DECLARE: Fader.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dbe/a00574_1a90df30106a466b9da59ebda89c6172db">MainMenu</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d4/dbe/a00574_1a43b83f0941e721234fdceeb0b5587f1b">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d4/dbe/a00574_1a193970cc59914f538ae0bcd39fe1ef48">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d4/dbe/a00574_1ad667a7ff9dea79bee26a4205418c7a61">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dbe/a00574_1a18a59c1bc70e322805c36a3ca5c7d107">CheckLimits</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dbe/a00574_1acb1e589815e4a3897d061d69a17dd7d9">OnKeyDown</link> (
+object sender, <link linkend="de/dd7/a00362">KeyEventArgs</link> e)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dbe/a00574_1a3f150b2f6278d7267d54b38601534ed1">MenuSelection</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: <link linkend="d4/dbe/a00574">MainMenu</link>, this is the class that is loaded straight after the splash screen is used to access the majority of other screens in the program </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 21 of file MainMenu.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MainMenu.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>int Engine.States.Menu.MainMenu.timer</title>                
+                <para>Definition at line 25 of file MainMenu.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MainMenu.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d4/dbe/a00574_1a90df30106a466b9da59ebda89c6172db">
+                <title>Engine.States.Menu.MainMenu.MainMenu ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dbe/a00574_1a43b83f0941e721234fdceeb0b5587f1b">
+                <title>override void Engine.States.Menu.MainMenu.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d4/dbe/a00574_1a193970cc59914f538ae0bcd39fe1ef48">
+                <title>override void Engine.States.Menu.MainMenu.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>the Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dbe/a00574_1ad667a7ff9dea79bee26a4205418c7a61">
+                <title>override void Engine.States.Menu.MainMenu.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dbe/a00574_1a18a59c1bc70e322805c36a3ca5c7d107">
+                <title>void Engine.States.Menu.MainMenu.CheckLimits ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dbe/a00574_1acb1e589815e4a3897d061d69a17dd7d9">
+                <title>void Engine.States.Menu.MainMenu.OnKeyDown (object sender, KeyEventArgs e)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dbe/a00574_1a3f150b2f6278d7267d54b38601534ed1">
+                <title>void Engine.States.Menu.MainMenu.MenuSelection ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

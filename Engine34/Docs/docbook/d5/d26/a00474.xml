@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d26/a00474">
+<title>Engine::Interfaces::ServiceLocator::IServiceLocator interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d5/d26/a00474_1a39ce84b8fb97655fd7039be3c4fa5f1c">getService&lt; T &gt;</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Return a service, T is a generic type of Manager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d26/a00474_1a4bf9f6979adf99eda26320a420262991">InitializeServices</link> (
+ContentManager c, SpriteBatch sb)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the services upon the running of the program so that they all exist and can be accessed
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d26/a00474_1a5bf3aab2adcf14c813a348325003ddcc">UpdateServices</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+Loops through and updates each service in turn.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: An Interface holding the implementation for the Service Locator which removes the need for singletons throughout the engine </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file IServiceLocator.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IServiceLocator.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d5/d26/a00474_1a39ce84b8fb97655fd7039be3c4fa5f1c">
+                <title>T Engine.Interfaces.ServiceLocator.IServiceLocator.getService&lt; T &gt; ()</title> <emphasis>&lt;summary&gt;
+METHOD: Return a service, T is a generic type of Manager
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Generic Manager</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Manager of type T</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d5/d26/a00474_1a4bf9f6979adf99eda26320a420262991">
+                <title>void Engine.Interfaces.ServiceLocator.IServiceLocator.InitializeServices (ContentManager c, SpriteBatch sb)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the services upon the running of the program so that they all exist and can be accessed
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>Monogame ContentManager</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>sb</entry>
+                                <entry>
+<para>Monogame Spritebatch for any drawing</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d26/a00474_1a5bf3aab2adcf14c813a348325003ddcc">
+                <title>void Engine.Interfaces.ServiceLocator.IServiceLocator.UpdateServices (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+Loops through and updates each service in turn.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

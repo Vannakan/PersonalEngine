@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d00/a00606">
+<title>Engine::Utilities::Shapes::Line class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BasicEffect basicEffect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>VertexPositionColor [] vertices</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 Start</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 End</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d00/a00606_1a1697428d93616e1ee1b704f411cc375d">Line</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d00/a00606_1a2f3c4a6adefdb08ed78ead11908b2fcb">newLine</link> (
+Vector2 start, Vector2 end, Color color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d00/a00606_1a4703c332038f44a1456db6882b6c2b33">changePos</link> (
+Vector2 start, Vector2 end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d00/a00606_1a8500392559da764797cdb92eb850a2ba">Draw</link> (
+SpriteBatch spr)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d8/d00/a00606_1a1697428d93616e1ee1b704f411cc375d">
+                <title>Engine.Utilities.Shapes.Line.Line ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d00/a00606_1a2f3c4a6adefdb08ed78ead11908b2fcb">
+                <title>void Engine.Utilities.Shapes.Line.newLine (Vector2 start, Vector2 end, Color color)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d00/a00606_1a4703c332038f44a1456db6882b6c2b33">
+                <title>void Engine.Utilities.Shapes.Line.changePos (Vector2 start, Vector2 end)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d00/a00606_1a8500392559da764797cdb92eb850a2ba">
+                <title>void Engine.Utilities.Shapes.Line.Draw (SpriteBatch spr)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/ded/a00252">
+<title>Engine::Interfaces::Behaviour</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/df7/a00418">Engine::Interfaces::Behaviour::IBehaviourManager</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: The interface for the <link linkend="dc/ded/a00252">Behaviour</link> Manager responsible for all Mind&apos;s controlling behaviour of entities /summary&gt; </para>
+    </simplesect>
+</section>

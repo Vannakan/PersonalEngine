@@ -1,0 +1,120 @@
+\hypertarget{a00406}{}\section{Engine.\+Grid.\+Grids Class Reference}
+\label{a00406}\index{Engine.\+Grid.\+Grids@{Engine.\+Grid.\+Grids}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00406_a93c6400681153abcf5bf341f72e77277}{Grids} (Texture2D tex)
+\item 
+void \hyperlink{a00406_a42a73fb81510d705071435c621d12c72}{create} (int X, int Y)
+\item 
+void \hyperlink{a00406_abaa6e136966cf7c17141a042c5ac1d71}{do\+Stuff} ()
+\item 
+void \hyperlink{a00406_aec9a6ddb83a21aa1e3ef16dc8cae4808}{setup\+Visual} ()
+\item 
+void \hyperlink{a00406_a036d69651829420e4494004d9cf73b71}{reset\+Visual} ()
+\item 
+void \hyperlink{a00406_ab0cc24116dc6df9c8d0acdc6b0d51b0d}{set\+Node\+Positions} (int width, int height)
+\item 
+void \hyperlink{a00406_ab8bebc68904ff66b2a10832f2540e188}{Draw} (Sprite\+Batch sb)
+\item 
+List$<$ \hyperlink{a00414}{Node} $>$ \hyperlink{a00406_a3380ff062497543fe12b24a0e3ddfc46}{get\+Neighbours} (\hyperlink{a00414}{Node} check)
+\item 
+bool \hyperlink{a00406_a0f0825c55c7d8a17b163f74fc8baa9de}{check\+Map} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{a00414}{Node} $>$ \hyperlink{a00406_ad9776283305f0c420d4a544d418a7c40}{path} = new List$<$\hyperlink{a00414}{Node}$>$()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00414}{Node} \mbox{[},\mbox{]} \hyperlink{a00406_a272de0996ab650f3dde958644d26b032}{get\+Grid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00406_a93c6400681153abcf5bf341f72e77277}\label{a00406_a93c6400681153abcf5bf341f72e77277}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!Grids@{Grids}}
+\index{Grids@{Grids}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{Grids()}{Grids()}}
+{\footnotesize\ttfamily Engine.\+Grid.\+Grids.\+Grids (\begin{DoxyParamCaption}\item[{Texture2D}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00406_a0f0825c55c7d8a17b163f74fc8baa9de}\label{a00406_a0f0825c55c7d8a17b163f74fc8baa9de}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!check\+Map@{check\+Map}}
+\index{check\+Map@{check\+Map}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{check\+Map()}{checkMap()}}
+{\footnotesize\ttfamily bool Engine.\+Grid.\+Grids.\+check\+Map (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00406_a42a73fb81510d705071435c621d12c72}\label{a00406_a42a73fb81510d705071435c621d12c72}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!create@{create}}
+\index{create@{create}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Grids.\+create (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00406_abaa6e136966cf7c17141a042c5ac1d71}\label{a00406_abaa6e136966cf7c17141a042c5ac1d71}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!do\+Stuff@{do\+Stuff}}
+\index{do\+Stuff@{do\+Stuff}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{do\+Stuff()}{doStuff()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Grids.\+do\+Stuff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Console.\+Write\+Line(\char`\"{}neighbour X \char`\"{} + neigh\mbox{[}i\mbox{]}.get\+Grid.\+X + \char`\"{} \char`\"{} + \char`\"{} Neighbour Y\char`\"{} + neigh\mbox{[}i\mbox{]}.get\+Grid.\+Y); \mbox{\Hypertarget{a00406_ab8bebc68904ff66b2a10832f2540e188}\label{a00406_ab8bebc68904ff66b2a10832f2540e188}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Grids.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00406_a3380ff062497543fe12b24a0e3ddfc46}\label{a00406_a3380ff062497543fe12b24a0e3ddfc46}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!get\+Neighbours@{get\+Neighbours}}
+\index{get\+Neighbours@{get\+Neighbours}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{get\+Neighbours()}{getNeighbours()}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00414}{Node}$>$ Engine.\+Grid.\+Grids.\+get\+Neighbours (\begin{DoxyParamCaption}\item[{\hyperlink{a00414}{Node}}]{check }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00406_a036d69651829420e4494004d9cf73b71}\label{a00406_a036d69651829420e4494004d9cf73b71}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!reset\+Visual@{reset\+Visual}}
+\index{reset\+Visual@{reset\+Visual}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{reset\+Visual()}{resetVisual()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Grids.\+reset\+Visual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00406_ab0cc24116dc6df9c8d0acdc6b0d51b0d}\label{a00406_ab0cc24116dc6df9c8d0acdc6b0d51b0d}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!set\+Node\+Positions@{set\+Node\+Positions}}
+\index{set\+Node\+Positions@{set\+Node\+Positions}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{set\+Node\+Positions()}{setNodePositions()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Grids.\+set\+Node\+Positions (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00406_aec9a6ddb83a21aa1e3ef16dc8cae4808}\label{a00406_aec9a6ddb83a21aa1e3ef16dc8cae4808}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!setup\+Visual@{setup\+Visual}}
+\index{setup\+Visual@{setup\+Visual}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{setup\+Visual()}{setupVisual()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Grids.\+setup\+Visual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increase next X pos by texture width
+
+set x\+Var to 0 because we are done setting x positions
+
+Same for Y 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{a00406_ad9776283305f0c420d4a544d418a7c40}\label{a00406_ad9776283305f0c420d4a544d418a7c40}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!path@{path}}
+\index{path@{path}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00414}{Node}$>$ Engine.\+Grid.\+Grids.\+path = new List$<$\hyperlink{a00414}{Node}$>$()}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00406_a272de0996ab650f3dde958644d26b032}\label{a00406_a272de0996ab650f3dde958644d26b032}} 
+\index{Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}!get\+Grid@{get\+Grid}}
+\index{get\+Grid@{get\+Grid}!Engine\+::\+Grid\+::\+Grids@{Engine\+::\+Grid\+::\+Grids}}
+\subsubsection{\texorpdfstring{get\+Grid}{getGrid}}
+{\footnotesize\ttfamily \hyperlink{a00414}{Node} \mbox{[},\mbox{]} Engine.\+Grid.\+Grids.\+get\+Grid\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00086}{Grid.\+cs}\end{DoxyCompactItemize}

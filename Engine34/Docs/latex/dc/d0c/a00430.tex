@@ -1,0 +1,188 @@
+\hypertarget{a00430}{}\section{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager Interface Reference}
+\label{a00430}\index{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager@{Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface for the collision detection manager  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dc/d0c/a00430}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00430_a11808ec009ee682fa73e3c4ea6570139}{add\+Collidable} (\hyperlink{a00426}{I\+Collidable} obj)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Adds an I\+C\+Ollidable to the list of objects to check \end{DoxyCompactList}\item 
+void \hyperlink{a00430_aeaa36b46e3ecd301b2fce9197fb0a35c}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop which is cycled through every frame \end{DoxyCompactList}\item 
+void \hyperlink{a00430_a139cca7ebb8b37ceba1bb1439cde83bf}{do\+Collision} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Checks A\+A\+BB \hyperlink{a00255}{Collision} for two objects \end{DoxyCompactList}\item 
+void \hyperlink{a00430_ac0f8278b5b5a1c103da46f154ad088dc}{On\+A\+Collision} (\hyperlink{a00426}{I\+Collidable} A, \hyperlink{a00426}{I\+Collidable} B)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: When two objects are colliding via A\+A\+BB collision, this method is called \end{DoxyCompactList}\item 
+void \hyperlink{a00430_ad87743faa9c3c212879716d7306c4fb3}{Call\+S\+AT} (\hyperlink{a00426}{I\+Collidable} A, \hyperlink{a00426}{I\+Collidable} B, Vector2 mtv)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: When two objects are calculated to be colliding with the S\+AT logic, this method is called and moves them apart \end{DoxyCompactList}\item 
+void \hyperlink{a00430_a1acd238daa104a8f4dcf36536e1ac9f9}{Check\+S\+AT} (\hyperlink{a00426}{I\+Collidable} a, \hyperlink{a00426}{I\+Collidable} b)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Checks for whether or not two objects are colliding according to the S\+AT Logic \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00430_a853912077b127d7e6779accc914df3cf}{Impulse\+Application} (\hyperlink{a00434}{I\+Hitbox} a, \hyperlink{a00434}{I\+Hitbox} b)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Creates the impulse to be applied to an entity when it is colliding allowing it to simulate physics when it reacts \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface for the collision detection manager 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00430_a11808ec009ee682fa73e3c4ea6570139}\label{a00430_a11808ec009ee682fa73e3c4ea6570139}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!add\+Collidable@{add\+Collidable}}
+\index{add\+Collidable@{add\+Collidable}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{add\+Collidable()}{addCollidable()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+add\+Collidable (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{obj }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Adds an I\+C\+Ollidable to the list of objects to check 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to add to the list\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00502_ae4daf9d957c8b30e779a7ed89237b370}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+\mbox{\Hypertarget{a00430_ad87743faa9c3c212879716d7306c4fb3}\label{a00430_ad87743faa9c3c212879716d7306c4fb3}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!Call\+S\+AT@{Call\+S\+AT}}
+\index{Call\+S\+AT@{Call\+S\+AT}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{Call\+S\+A\+T()}{CallSAT()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+Call\+S\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{A,  }\item[{\hyperlink{a00426}{I\+Collidable}}]{B,  }\item[{Vector2}]{mtv }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: When two objects are calculated to be colliding with the S\+AT logic, this method is called and moves them apart 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The first object that\textquotesingle{}s colliding\\
+\hline
+{\em B} & The second object that\textquotesingle{}s colliding\\
+\hline
+{\em mtv} & The minimum translation vector calculated in the S\+AT Loop\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00502_a272b97e8ab5caf3dcceb455849deb6ed}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+\mbox{\Hypertarget{a00430_a1acd238daa104a8f4dcf36536e1ac9f9}\label{a00430_a1acd238daa104a8f4dcf36536e1ac9f9}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!Check\+S\+AT@{Check\+S\+AT}}
+\index{Check\+S\+AT@{Check\+S\+AT}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{Check\+S\+A\+T()}{CheckSAT()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+Check\+S\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{a,  }\item[{\hyperlink{a00426}{I\+Collidable}}]{b }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Checks for whether or not two objects are colliding according to the S\+AT Logic 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first object that\textquotesingle{}s colliding\\
+\hline
+{\em b} & The second object that\textquotesingle{}s colliding\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00502_a18f0056903776f291a462fb4bbbfc224}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+\mbox{\Hypertarget{a00430_a139cca7ebb8b37ceba1bb1439cde83bf}\label{a00430_a139cca7ebb8b37ceba1bb1439cde83bf}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!do\+Collision@{do\+Collision}}
+\index{do\+Collision@{do\+Collision}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{do\+Collision()}{doCollision()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+do\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Checks A\+A\+BB \hyperlink{a00255}{Collision} for two objects 
+
+
+
+Implemented in \hyperlink{a00502_a6785a08302cfe7d6fb08a7042691a3a8}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+\mbox{\Hypertarget{a00430_a853912077b127d7e6779accc914df3cf}\label{a00430_a853912077b127d7e6779accc914df3cf}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!Impulse\+Application@{Impulse\+Application}}
+\index{Impulse\+Application@{Impulse\+Application}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{Impulse\+Application()}{ImpulseApplication()}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+Impulse\+Application (\begin{DoxyParamCaption}\item[{\hyperlink{a00434}{I\+Hitbox}}]{a,  }\item[{\hyperlink{a00434}{I\+Hitbox}}]{b }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Creates the impulse to be applied to an entity when it is colliding allowing it to simulate physics when it reacts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first object that\textquotesingle{}s colliding\\
+\hline
+{\em b} & The second object that\textquotesingle{}s colliding\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector2 which is applied to the objects
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00502_a47c9b58bdaf1f773ea3932f8c574ae0b}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+\mbox{\Hypertarget{a00430_ac0f8278b5b5a1c103da46f154ad088dc}\label{a00430_ac0f8278b5b5a1c103da46f154ad088dc}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!On\+A\+Collision@{On\+A\+Collision}}
+\index{On\+A\+Collision@{On\+A\+Collision}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{On\+A\+Collision()}{OnACollision()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+On\+A\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{a00426}{I\+Collidable}}]{A,  }\item[{\hyperlink{a00426}{I\+Collidable}}]{B }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: When two objects are colliding via A\+A\+BB collision, this method is called 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The first object that\textquotesingle{}s colliding\\
+\hline
+{\em B} & The second object that\textquotesingle{}s colliding\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00502_a31a209d98a58cac4f6abd47711bf545c}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+\mbox{\Hypertarget{a00430_aeaa36b46e3ecd301b2fce9197fb0a35c}\label{a00430_aeaa36b46e3ecd301b2fce9197fb0a35c}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Detection\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Detection\+Manager.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop which is cycled through every frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00478_a387fce2a5440a4dc63f8d72772ecbdaa}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Upd\+Service}.
+
+
+
+Implemented in \hyperlink{a00502_ac032340610657f865bdd3b7a82e316c3}{Engine.\+Managers.\+Collision.\+I\+Detection\+Manger}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00104}{I\+Detection\+Manager.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dd2/a00598">
+<title>Engine::Utilities::GameText class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string text</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string font</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 pos</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Color color</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dd2/a00598_1adcd7d2f1e49ae060840835d804958686">GameText</link> (
+string text, string font, Vector2 pos, Color color, float size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd2/a00598_1aa89cba517208148817587ad1bf6a4855">Draw</link> (
+SpriteBatch spr)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d7/dd2/a00598_1adcd7d2f1e49ae060840835d804958686">
+                <title>Engine.Utilities.GameText.GameText (string text, string font, Vector2 pos, Color color, float size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dd2/a00598_1aa89cba517208148817587ad1bf6a4855">
+                <title>void Engine.Utilities.GameText.Draw (SpriteBatch spr)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

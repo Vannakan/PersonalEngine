@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d08/a00378">
+<title>Engine::Events::MouseEvent::MouseHandler class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MouseState prev</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MouseState current</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="d7/d08/a00378_1a932e0a6ed83094bb6fa33a6ae64be38a">MouseEventHandler</link> (
+object sender, <link linkend="d5/db5/a00374">MouseEventArgs</link> e)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d08/a00378_1ad6c588c046d6a350498fd7875416a151">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d08/a00378_1a6e2564dfdc8136f81013f97c594ab217">OnMouseDown</link> (
+MouseState m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d08/a00378_1af7d850a3b88a8367991f3ac957f1e482">OnMouseScrollUp</link> (
+MouseState m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d08/a00378_1a20e5fe1f5e747900bdc0f389aae9b935">OnMouseScrollDown</link> (
+MouseState m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d08/a00378_1a7337e5e2c83fe6946a93d6f1a57bcdd4">OnMouseReleased</link> (
+MouseState m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d08/a00378_1a69716c4b0f065d5939ce73f39999e497">OnMouseMoved</link> (
+MouseState m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d7/d08/a00378_1a932e0a6ed83094bb6fa33a6ae64be38a">
+                <title>delegate void Engine.Events.MouseEvent.MouseHandler.MouseEventHandler (object sender, MouseEventArgs e)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d08/a00378_1ad6c588c046d6a350498fd7875416a151">
+                <title>void Engine.Events.MouseEvent.MouseHandler.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>The MonoGame Gametime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d08/a00378_1a6e2564dfdc8136f81013f97c594ab217">
+                <title>virtual void Engine.Events.MouseEvent.MouseHandler.OnMouseDown (MouseState m)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d08/a00378_1af7d850a3b88a8367991f3ac957f1e482">
+                <title>virtual void Engine.Events.MouseEvent.MouseHandler.OnMouseScrollUp (MouseState m)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d08/a00378_1a20e5fe1f5e747900bdc0f389aae9b935">
+                <title>virtual void Engine.Events.MouseEvent.MouseHandler.OnMouseScrollDown (MouseState m)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d08/a00378_1a7337e5e2c83fe6946a93d6f1a57bcdd4">
+                <title>virtual void Engine.Events.MouseEvent.MouseHandler.OnMouseReleased (MouseState m)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d08/a00378_1a69716c4b0f065d5939ce73f39999e497">
+                <title>virtual void Engine.Events.MouseEvent.MouseHandler.OnMouseMoved (MouseState m)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

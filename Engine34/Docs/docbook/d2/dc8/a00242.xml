@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dc8/a00242">
+<title>Engine::Entities</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d39/a00314">Engine::Entities::Entity</link></para>
+<para><emphasis>&lt;summary&gt;
+ABSTRACT CLASS: The Base entity class. All entities extend this class. It contains the basic setup and properties
+of each entity.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d41/a00318">Engine::Entities::Mind</link></para>
+<para><emphasis>&lt;summary&gt;
+ABSTRACT CLASS: Mind controls the behaviour for a specific entity. The entity is simply the sprite that is drawn
+whilst Mind controls how it acts.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/de9/a00322">Engine::Entities::pEntity</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The player Entity class
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d23/a00326">Engine::Entities::PlayerMind</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: The mind that controls the player Entity.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d82/a00243">Engine::Entities::Platformer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d08/a00244">Engine::Entities::Steering</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

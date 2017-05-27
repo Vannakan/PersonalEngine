@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dbc/a00249">
+<title>Engine::Events::ScreenEvent</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/df5/a00386">Engine::Events::ScreenEvent::sManagerArgs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

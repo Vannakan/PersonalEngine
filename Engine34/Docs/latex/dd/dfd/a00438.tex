@@ -1,0 +1,173 @@
+\hypertarget{a00438}{}\section{Engine.\+Interfaces.\+Entities.\+I\+Entity Interface Reference}
+\label{a00438}\index{Engine.\+Interfaces.\+Entities.\+I\+Entity@{Engine.\+Interfaces.\+Entities.\+I\+Entity}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: An Interface that all entities must subscribe to and handles the implementation and properties for them.  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Entities.\+I\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.372881cm]{dd/dfd/a00438}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00438_a845918af6647460d2c47a3853a30f95f}{Draw} (Sprite\+Batch sprite\+Batch)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draw \end{DoxyCompactList}\item 
+void \hyperlink{a00438_a0c80525509aaeaa0d78eef908f7f7553}{Initialize} (Vector2 \hyperlink{a00438_a33bef4197ad7b1bf344ca31f0c1bed5b}{Position})
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialise, give the Entity a position and texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \hyperlink{a00438_a57d9471e7a098f07743eb215f7e7d07c}{Texture}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The Texture of the Entity \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00438_a33bef4197ad7b1bf344ca31f0c1bed5b}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The Position of the Entity \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00438_a6569977576ff585b7a883f11fc073a6d}{Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: The velocity of the Entity \end{DoxyCompactList}\item 
+int \hyperlink{a00438_af60396008872673e4a81baab29ad91b1}{Unique\+ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: The unique ID for the Entity \end{DoxyCompactList}\item 
+Rectangle \hyperlink{a00438_a0c45df802f74c4910b8e7a0842cfbcd2}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: An Axis aligned bounding box for the bounds of the Entity. \end{DoxyCompactList}\item 
+bool \hyperlink{a00438_a5f3ad8367eed3ba92165cea56d62eaf8}{is\+Collidable}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: A boolean to state whether the entity needs to be included in any calculations for collision \end{DoxyCompactList}\item 
+bool \hyperlink{a00438_a6aa73f86c947c5c215b45f8f0cadb234}{is\+Visible}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: A Boolean for whether the entity needs to be drawn. \end{DoxyCompactList}\item 
+string \hyperlink{a00438_a7a3927fc2320652f20b86e68544bc571}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The name of the Entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: An Interface that all entities must subscribe to and handles the implementation and properties for them. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00438_a845918af6647460d2c47a3853a30f95f}\label{a00438_a845918af6647460d2c47a3853a30f95f}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Draw 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Batch} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00314_a5c795930028c5672b54f95369b25019f}{Engine.\+Entities.\+Entity}.
+
+\mbox{\Hypertarget{a00438_a0c80525509aaeaa0d78eef908f7f7553}\label{a00438_a0c80525509aaeaa0d78eef908f7f7553}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Initialize (\begin{DoxyParamCaption}\item[{Vector2}]{Position }\end{DoxyParamCaption})}
+
+
+
+M\+E\+T\+H\+OD\+: Initialise, give the Entity a position and texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00314_aa1425aeeac379c5141e7560b84850b3d}{Engine.\+Entities.\+Entity}, \hyperlink{a00322_aad953baa984c0f958d3e96efbfc3bca9}{Engine.\+Entities.\+p\+Entity}, \hyperlink{a00330_ad4122c4f38d98746a67532d0a6836da5}{Engine.\+Entities.\+Platformer.\+Test\+Entity}, and \hyperlink{a00342_a7b1e3df5320c999d2cf1cc3b97994401}{Engine.\+Entities.\+Steering.\+Steering\+Entity}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00438_a0c45df802f74c4910b8e7a0842cfbcd2}\label{a00438_a0c45df802f74c4910b8e7a0842cfbcd2}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Bounds}{Bounds}}
+{\footnotesize\ttfamily Rectangle Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Bounds\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+G\+ET\+: An Axis aligned bounding box for the bounds of the Entity. 
+
+\mbox{\Hypertarget{a00438_a5f3ad8367eed3ba92165cea56d62eaf8}\label{a00438_a5f3ad8367eed3ba92165cea56d62eaf8}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!is\+Collidable@{is\+Collidable}}
+\index{is\+Collidable@{is\+Collidable}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{is\+Collidable}{isCollidable}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Entities.\+I\+Entity.\+is\+Collidable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: A boolean to state whether the entity needs to be included in any calculations for collision 
+
+\mbox{\Hypertarget{a00438_a6aa73f86c947c5c215b45f8f0cadb234}\label{a00438_a6aa73f86c947c5c215b45f8f0cadb234}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{is\+Visible}{isVisible}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Entities.\+I\+Entity.\+is\+Visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: A Boolean for whether the entity needs to be drawn. 
+
+\mbox{\Hypertarget{a00438_a7a3927fc2320652f20b86e68544bc571}\label{a00438_a7a3927fc2320652f20b86e68544bc571}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Name@{Name}}
+\index{Name@{Name}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The name of the Entity. 
+
+\mbox{\Hypertarget{a00438_a33bef4197ad7b1bf344ca31f0c1bed5b}\label{a00438_a33bef4197ad7b1bf344ca31f0c1bed5b}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Position@{Position}}
+\index{Position@{Position}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The Position of the Entity 
+
+\mbox{\Hypertarget{a00438_a57d9471e7a098f07743eb215f7e7d07c}\label{a00438_a57d9471e7a098f07743eb215f7e7d07c}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Texture@{Texture}}
+\index{Texture@{Texture}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Texture}{Texture}}
+{\footnotesize\ttfamily Texture2D Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Texture\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The Texture of the Entity 
+
+\mbox{\Hypertarget{a00438_af60396008872673e4a81baab29ad91b1}\label{a00438_af60396008872673e4a81baab29ad91b1}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Unique\+ID@{Unique\+ID}}
+\index{Unique\+ID@{Unique\+ID}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Unique\+ID}{UniqueID}}
+{\footnotesize\ttfamily int Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Unique\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+G\+ET\+: The unique ID for the Entity 
+
+\mbox{\Hypertarget{a00438_a6569977576ff585b7a883f11fc073a6d}\label{a00438_a6569977576ff585b7a883f11fc073a6d}} 
+\index{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity@{Engine\+::\+Interfaces\+::\+Entities\+::\+I\+Entity}}
+\subsubsection{\texorpdfstring{Velocity}{Velocity}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Entities.\+I\+Entity.\+Velocity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+G\+ET\+: The velocity of the Entity 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00110}{I\+Entity.\+cs}\end{DoxyCompactItemize}

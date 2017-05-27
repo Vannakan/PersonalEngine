@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d20/a00534">
+<title>Engine::Managers::Screen::Fader class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Transition trans<para><emphasis>&lt;summary&gt;
+DECLARE: Transition for moving out of a screen
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Texture2D t<para><emphasis>&lt;summary&gt;
+DECLARE: the texture and Rectangle for the dimensions
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rectangle draw</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float alpha<para><emphasis>&lt;summary&gt;
+DECLARE: The transparency (alpha) and the speed of the transition
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float Speed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int timer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool ready<para><emphasis>&lt;summary&gt;
+DECLARE: bool for when the screen is ready to transition
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d20/a00534_1a6dd5b212e90e0c0db26e280c723dcd4f">Fader</link> (
+Vector2 Size)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties of the fader transition
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d20/a00534_1ac33d2bf58aea98d5739f2bb94540be63">Fader</link> (
+Vector2 Size, Vector2 p)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties of the fader transition
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d20/a00534_1ad75a8b6e54b0557b7b463051858524bc">Fader</link> (
+Vector2 Size, Vector2 p, float speed)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties of the fader transition
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/a00534_1a8a40165cf8a910849e01fb35b9567ee2">Draw</link> (
+SpriteBatch sb)<para><emphasis>&lt;summary&gt;
+METHOD: Draw the transition
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/a00534_1a25631a1ada84786c23242b896dc62692">Update</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: The update of the transition which is called every frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>Transition Engine.Managers.Screen.Fader.trans</title>                
+                <para>Definition at line 20 of file Fader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Fader.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Texture2D Engine.Managers.Screen.Fader.t</title>                
+                <para>Definition at line 30 of file Fader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Fader.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>float Engine.Managers.Screen.Fader.alpha</title>                
+                <para>Definition at line 36 of file Fader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Fader.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>bool Engine.Managers.Screen.Fader.ready</title>                
+                <para>Definition at line 25 of file Fader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Fader.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="dc/d20/a00534_1a6dd5b212e90e0c0db26e280c723dcd4f">
+                <title>Engine.Managers.Screen.Fader.Fader (Vector2 Size)</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties of the fader transition
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Size</entry>
+                                <entry>
+<para>Size, the dimensions of the screen to be covered in the transition</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d20/a00534_1ac33d2bf58aea98d5739f2bb94540be63">
+                <title>Engine.Managers.Screen.Fader.Fader (Vector2 Size, Vector2 p)</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties of the fader transition
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Size</entry>
+                                <entry>
+<para>Size, the dimensions of the screen to be covered in the transition</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>p</entry>
+                                <entry>
+<para>p, the top left corner of the fade transition</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d20/a00534_1ad75a8b6e54b0557b7b463051858524bc">
+                <title>Engine.Managers.Screen.Fader.Fader (Vector2 Size, Vector2 p, float speed)</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR: Sets the basic properties of the fader transition
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Size</entry>
+                                <entry>
+<para>Size, the dimensions of the screen to be covered in the transition</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>p</entry>
+                                <entry>
+<para>p, the top left corner of the fade transition</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>speed</entry>
+                                <entry>
+<para>speed, how quickly the screen will fade to and from black</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d20/a00534_1a8a40165cf8a910849e01fb35b9567ee2">
+                <title>void Engine.Managers.Screen.Fader.Draw (SpriteBatch sb)</title> <emphasis>&lt;summary&gt;
+METHOD: Draw the transition
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sb</entry>
+                                <entry>
+<para>Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d20/a00534_1a25631a1ada84786c23242b896dc62692">
+                <title>void Engine.Managers.Screen.Fader.Update ()</title> <emphasis>&lt;summary&gt;
+METHOD: The update of the transition which is called every frame
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

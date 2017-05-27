@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d67/a00310">
+<title>Engine::Managers::AStar::AstarPath class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Grids aStarData<para><emphasis>DECLARE: The graph in which the Astar will.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AStarGridSearch currentDisp<para><emphasis>DECLARE A variable to hold out search.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d67/a00310_1a9912ab7f4be1ca36bc9b7e7081c5dd86">DebugPath</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Show the debug path
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="d4/dbc/a00414">Node</link> &gt; <link linkend="d1/d67/a00310_1aaa05e962c6e833ff7e22c4611ee492c7">CommitPathSearch</link> (
+<link linkend="d1/d8b/a00406">Grids</link> grid, <link linkend="d4/dbc/a00414">Node</link> Start, <link linkend="d4/dbc/a00414">Node</link> Goal)<para><emphasis>&lt;summary&gt;
+METHOD: Commit a search and if it is successful, RETURN a list of nodes in the path
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Queue&lt; <link linkend="d4/dbc/a00414">Node</link> &gt; <link linkend="d1/d67/a00310_1a1d55b6294c95c398017c25655bc4604f">CommitWayPointSearch</link> (
+<link linkend="d1/d8b/a00406">Grids</link> grid, <link linkend="d4/dbc/a00414">Node</link> Start, <link linkend="d4/dbc/a00414">Node</link> Goal)<para><emphasis>&lt;summary&gt;
+METHOD: Commit a search and if it is successful, RETURN a queue of nodes in the path
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d1/d67/a00310_1a9912ab7f4be1ca36bc9b7e7081c5dd86">
+                <title>void Engine.Managers.AStar.AstarPath.DebugPath ()</title> <emphasis>&lt;summary&gt;
+METHOD: Show the debug path
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d1/d67/a00310_1aaa05e962c6e833ff7e22c4611ee492c7">
+                <title>List&lt;Node&gt; Engine.Managers.AStar.AstarPath.CommitPathSearch (Grids grid, Node Start, Node Goal)</title> <emphasis>&lt;summary&gt;
+METHOD: Commit a search and if it is successful, RETURN a list of nodes in the path
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>grid</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>Start</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>Goal</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d67/a00310_1a1d55b6294c95c398017c25655bc4604f">
+                <title>Queue&lt;Node&gt; Engine.Managers.AStar.AstarPath.CommitWayPointSearch (Grids grid, Node Start, Node Goal)</title> <emphasis>&lt;summary&gt;
+METHOD: Commit a search and if it is successful, RETURN a queue of nodes in the path
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>grid</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>Start</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>Goal</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+</section>

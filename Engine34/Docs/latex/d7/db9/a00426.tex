@@ -1,0 +1,116 @@
+\hypertarget{a00426}{}\section{Engine.\+Interfaces.\+Collision.\+I\+Collidable Interface Reference}
+\label{a00426}\index{Engine.\+Interfaces.\+Collision.\+I\+Collidable@{Engine.\+Interfaces.\+Collision.\+I\+Collidable}}
+
+
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface used for objects that will need collision calculation during the game loop  
+
+
+Inheritance diagram for Engine.\+Interfaces.\+Collision.\+I\+Collidable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.393162cm]{d7/db9/a00426}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00426_a000ca0336b06e3f2d658d442a83dbbbb}{Apply\+Impulse} (Vector2 c\+Velocity)
+\begin{DoxyCompactList}\small\item\em Apply\+Impulse is the response from collision. After the object has been moved by the minimum translation vector It will have a reactionary force applied to it in order to simulate physics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \hyperlink{a00426_aa4cbc57adf743bacff53f85bb4a2fcf3}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: The axis aligned bounds of the object. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{a00426_a4e17a9b41927fab6d2973c4feb0a993a}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: The position of the object. \end{DoxyCompactList}\item 
+bool \hyperlink{a00426_a833b30a82fe2f6ae78ea7b84fe742b35}{is\+Collidable}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+TE\+: S\+ET\+: A boolean to tell whether an object is to be tested for collision or not. \end{DoxyCompactList}\item 
+bool \hyperlink{a00426_a04dfebf647bfd0967be3dd4ba76706e5}{is\+Colliding}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: A boolean to tell whether an object is currently colliding or not. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{a00434}{I\+Hitbox} $>$ \hyperlink{a00426_a0a723609d175ef0f7eca7002572a76bb}{Hits}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A list of hitboxes used for calculating collision. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+N\+T\+E\+R\+F\+A\+CE\+: An interface used for objects that will need collision calculation during the game loop 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00426_a000ca0336b06e3f2d658d442a83dbbbb}\label{a00426_a000ca0336b06e3f2d658d442a83dbbbb}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}!Apply\+Impulse@{Apply\+Impulse}}
+\index{Apply\+Impulse@{Apply\+Impulse}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}}
+\subsubsection{\texorpdfstring{Apply\+Impulse()}{ApplyImpulse()}}
+{\footnotesize\ttfamily void Engine.\+Interfaces.\+Collision.\+I\+Collidable.\+Apply\+Impulse (\begin{DoxyParamCaption}\item[{Vector2}]{c\+Velocity }\end{DoxyParamCaption})}
+
+
+
+Apply\+Impulse is the response from collision. After the object has been moved by the minimum translation vector It will have a reactionary force applied to it in order to simulate physics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+Velocity} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00318_a378218df0a8c27a981e98167197d9c16}{Engine.\+Entities.\+Mind}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00426_aa4cbc57adf743bacff53f85bb4a2fcf3}\label{a00426_aa4cbc57adf743bacff53f85bb4a2fcf3}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}}
+\subsubsection{\texorpdfstring{Bounds}{Bounds}}
+{\footnotesize\ttfamily Rectangle Engine.\+Interfaces.\+Collision.\+I\+Collidable.\+Bounds\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+G\+ET\+: The axis aligned bounds of the object. 
+
+\mbox{\Hypertarget{a00426_a0a723609d175ef0f7eca7002572a76bb}\label{a00426_a0a723609d175ef0f7eca7002572a76bb}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}!Hits@{Hits}}
+\index{Hits@{Hits}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}}
+\subsubsection{\texorpdfstring{Hits}{Hits}}
+{\footnotesize\ttfamily List$<$\hyperlink{a00434}{I\+Hitbox}$>$ Engine.\+Interfaces.\+Collision.\+I\+Collidable.\+Hits\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A list of hitboxes used for calculating collision. 
+
+\mbox{\Hypertarget{a00426_a833b30a82fe2f6ae78ea7b84fe742b35}\label{a00426_a833b30a82fe2f6ae78ea7b84fe742b35}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}!is\+Collidable@{is\+Collidable}}
+\index{is\+Collidable@{is\+Collidable}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}}
+\subsubsection{\texorpdfstring{is\+Collidable}{isCollidable}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Collision.\+I\+Collidable.\+is\+Collidable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+TE\+: S\+ET\+: A boolean to tell whether an object is to be tested for collision or not. 
+
+\mbox{\Hypertarget{a00426_a04dfebf647bfd0967be3dd4ba76706e5}\label{a00426_a04dfebf647bfd0967be3dd4ba76706e5}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}!is\+Colliding@{is\+Colliding}}
+\index{is\+Colliding@{is\+Colliding}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}}
+\subsubsection{\texorpdfstring{is\+Colliding}{isColliding}}
+{\footnotesize\ttfamily bool Engine.\+Interfaces.\+Collision.\+I\+Collidable.\+is\+Colliding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: A boolean to tell whether an object is currently colliding or not. 
+
+\mbox{\Hypertarget{a00426_a4e17a9b41927fab6d2973c4feb0a993a}\label{a00426_a4e17a9b41927fab6d2973c4feb0a993a}} 
+\index{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}!Position@{Position}}
+\index{Position@{Position}!Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable@{Engine\+::\+Interfaces\+::\+Collision\+::\+I\+Collidable}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Vector2 Engine.\+Interfaces.\+Collision.\+I\+Collidable.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: The position of the object. 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00101}{I\+Collidable.\+cs}\end{DoxyCompactItemize}

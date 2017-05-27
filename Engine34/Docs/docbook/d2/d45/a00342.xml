@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d45/a00342">
+<title>Engine::Entities::Steering::SteeringEntity class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d2/d45/a00342_1a7b1e3df5320c999d2cf1cc3b97994401">Initialize</link> (
+Vector2 Pos)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of this entity, such as the mind
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d2/d45/a00342_1a7b1e3df5320c999d2cf1cc3b97994401">
+                <title>override void Engine.Entities.Steering.SteeringEntity.Initialize (Vector2 Pos)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the basic properties of this entity, such as the mind
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Pos</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

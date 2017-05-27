@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d35/a00526">
+<title>Engine::Managers::Render::RenderManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Queue&lt; string &gt; LinesToBeDrawn<para><emphasis>&lt;summary&gt;
+DECLARE: A queue of things to be drawn
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Queue&lt; GameText &gt; TextToBeDrawn</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Queue&lt; IDrawableComponent &gt; Shapes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IEntity &gt; entities<para><emphasis>&lt;summary&gt;
+DECLARE: A list of entities to be drawn
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteBatch SpriteB<para><emphasis>DECLARE :Reference to the kernels spritebatch in which all entities will be drawn.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IDrawableComponent &gt; Drawables<para><emphasis>DECCLARE: List containing items/entities that arent drawn within the cameras perams.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IDrawableComponent &gt; CamDrawables<para><emphasis>DECLARE: List containing items/entities which will be drawn with cam perams.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; IEntity &gt; CamDrawEntities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d35/a00526_1a0ecca32f070bd247added2b680fe390d">RenderManager</link> (
+)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1abd794ae4c12392323e9afda73e459bef">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+ METHOD: An initialize method that is called every time a new
+screen is ready to be drawn
+ &lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1aeb436300e604d81ff837227e5dd11710">getEntityList</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: gets the entity list from the Entity Manager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a79fb84c735ca8b863eed41f51566f554">getCamEntityList</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: gets the entity list from the Entity Manager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a6f4d9756fcf88b78263f0bc5538b1912">addDrawable</link> (
+<link linkend="d7/d9f/a00454">IDrawableComponent</link> d)<para><emphasis>&lt;summary&gt;
+METHOD: For items which dont wish to be drawn in regards to the cameras matrix translations (such as GUI)
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1abe4458f6b030cffba170149d1ee63bba">addCamDrawable</link> (
+<link linkend="d7/d9f/a00454">IDrawableComponent</link> d)<para><emphasis>&lt;summary&gt;
+METHOD: For Scenery/Entities which wish to be drawn in regards to the cameras matrix translations
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a9b6bcc0390e87b334c36c1083e0af5f6">addCamDrawEntity</link> (
+<link linkend="d7/d9f/a00454">IDrawableComponent</link> d)<para><emphasis>&lt;summary&gt;
+METHOD: For Entities which wish to be drawn in regards to the cameras matrix translations
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a93c2cea1133bb38a01336b3d4c6b0321">DrawCameraRelatedArtefacts</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Draws everything in the camera view
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1af77caeb94739b508306100cdedfcbd9b">clearTempEntity</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Clears the entities to be drawn in relation to the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a0dfca7db5472741f87837e7f87e90129">DrawNonCameraRelatedArtefacts</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Draws everything not related to the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a9ce9959462da544f283ab3e531bd1edb">addString</link> (
+<link linkend="d7/dd2/a00598">GameText</link> gameText)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a9d572b8cd8ba3c6cac622dee8d14f2a1">addShape</link> (
+<link linkend="d7/d9f/a00454">IDrawableComponent</link> shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a7b63b947d986ab05b66c4c9f78ee3c20">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop cycled through on each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1ae9fd08da224435b71540e67f718eb7c4">Draw</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Draws items
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a5e7f7ef9bf468db27267ee1e50a34af3">Draw</link> (
+Texture2D texture, Rectangle rect, Color col)<para><emphasis>&lt;summary&gt;
+METHOD: Draws items
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a9eb548f058744b031b639810a16ba40d">DrawEntities</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a0df839a3a677b7595e4535716e823809">DrawComponents</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1af81e4faf42327afbf604c3bb4d09499a">DrawShapes</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1aa957794d6537025fb2535517bcc691cc">DrawDrawables</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Draws every Drawable object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1adc520b6c317ed9e0d4e51fd34c22c511">DrawCamDrawables</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: DRaws everything in relation to the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d35/a00526_1a96510018c93924e8d5456891b28b51bb">DrawCamDrawEntities</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: draws entities in relation to the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The <link linkend="dd/d86/a00271">Render</link> manager is responsible for the drawing of content loaded by the various other managers </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 21 of file RenderManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RenderManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>Queue&lt;string&gt; Engine.Managers.Render.RenderManager.LinesToBeDrawn</title>                
+                <para>Definition at line 25 of file RenderManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RenderManager.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>List&lt;IEntity&gt; Engine.Managers.Render.RenderManager.entities</title>                
+                <para>Definition at line 34 of file RenderManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RenderManager.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d0/d35/a00526_1a0ecca32f070bd247added2b680fe390d">
+                <title>Engine.Managers.Render.RenderManager.RenderManager ()</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1abd794ae4c12392323e9afda73e459bef">
+                <title>void Engine.Managers.Render.RenderManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+ METHOD: An initialize method that is called every time a new
+screen is ready to be drawn
+ &lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1aeb436300e604d81ff837227e5dd11710">
+                <title>void Engine.Managers.Render.RenderManager.getEntityList ()</title> <emphasis>&lt;summary&gt;
+METHOD: gets the entity list from the Entity Manager
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a79fb84c735ca8b863eed41f51566f554">
+                <title>void Engine.Managers.Render.RenderManager.getCamEntityList ()</title> <emphasis>&lt;summary&gt;
+METHOD: gets the entity list from the Entity Manager
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a6f4d9756fcf88b78263f0bc5538b1912">
+                <title>void Engine.Managers.Render.RenderManager.addDrawable (IDrawableComponent d)</title> <emphasis>&lt;summary&gt;
+METHOD: For items which dont wish to be drawn in regards to the cameras matrix translations (such as GUI)
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>d</entry>
+                                <entry>
+<para>The object to be drawn</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d35/a00526_1abe4458f6b030cffba170149d1ee63bba">
+                <title>void Engine.Managers.Render.RenderManager.addCamDrawable (IDrawableComponent d)</title> <emphasis>&lt;summary&gt;
+METHOD: For Scenery/Entities which wish to be drawn in regards to the cameras matrix translations
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>d</entry>
+                                <entry>
+<para>the object to be drawn</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d35/a00526_1a9b6bcc0390e87b334c36c1083e0af5f6">
+                <title>void Engine.Managers.Render.RenderManager.addCamDrawEntity (IDrawableComponent d)</title> <emphasis>&lt;summary&gt;
+METHOD: For Entities which wish to be drawn in regards to the cameras matrix translations
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>d</entry>
+                                <entry>
+<para>The object to be drawn</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d35/a00526_1a93c2cea1133bb38a01336b3d4c6b0321">
+                <title>void Engine.Managers.Render.RenderManager.DrawCameraRelatedArtefacts ()</title> <emphasis>&lt;summary&gt;
+METHOD: Draws everything in the camera view
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1af77caeb94739b508306100cdedfcbd9b">
+                <title>void Engine.Managers.Render.RenderManager.clearTempEntity ()</title> <emphasis>&lt;summary&gt;
+METHOD: Clears the entities to be drawn in relation to the camera
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a0dfca7db5472741f87837e7f87e90129">
+                <title>void Engine.Managers.Render.RenderManager.DrawNonCameraRelatedArtefacts ()</title> <emphasis>&lt;summary&gt;
+METHOD: Draws everything not related to the camera
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a9ce9959462da544f283ab3e531bd1edb">
+                <title>void Engine.Managers.Render.RenderManager.addString (GameText gameText)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a9d572b8cd8ba3c6cac622dee8d14f2a1">
+                <title>void Engine.Managers.Render.RenderManager.addShape (IDrawableComponent shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a7b63b947d986ab05b66c4c9f78ee3c20">
+                <title>void Engine.Managers.Render.RenderManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop cycled through on each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d35/a00526_1ae9fd08da224435b71540e67f718eb7c4">
+                <title>void Engine.Managers.Render.RenderManager.Draw ()</title> <emphasis>&lt;summary&gt;
+METHOD: Draws items
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a5e7f7ef9bf468db27267ee1e50a34af3">
+                <title>void Engine.Managers.Render.RenderManager.Draw (Texture2D texture, Rectangle rect, Color col)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws items
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a9eb548f058744b031b639810a16ba40d">
+                <title>void Engine.Managers.Render.RenderManager.DrawEntities ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a0df839a3a677b7595e4535716e823809">
+                <title>void Engine.Managers.Render.RenderManager.DrawComponents ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1af81e4faf42327afbf604c3bb4d09499a">
+                <title>void Engine.Managers.Render.RenderManager.DrawShapes ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1aa957794d6537025fb2535517bcc691cc">
+                <title>void Engine.Managers.Render.RenderManager.DrawDrawables ()</title> <emphasis>&lt;summary&gt;
+METHOD: Draws every Drawable object
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1adc520b6c317ed9e0d4e51fd34c22c511">
+                <title>void Engine.Managers.Render.RenderManager.DrawCamDrawables ()</title> <emphasis>&lt;summary&gt;
+METHOD: DRaws everything in relation to the camera
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d0/d35/a00526_1a96510018c93924e8d5456891b28b51bb">
+                <title>void Engine.Managers.Render.RenderManager.DrawCamDrawEntities ()</title> <emphasis>&lt;summary&gt;
+METHOD: draws entities in relation to the camera
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

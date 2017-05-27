@@ -1,0 +1,170 @@
+\hypertarget{a00550}{}\section{Engine.\+States.\+Engine.\+Base\+Screen Class Reference}
+\label{a00550}\index{Engine.\+States.\+Engine.\+Base\+Screen@{Engine.\+States.\+Engine.\+Base\+Screen}}
+Inheritance diagram for Engine.\+States.\+Engine.\+Base\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.098039cm]{de/de7/a00550}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00550_af66e62ec831d9ac03c231265b808417f}{Base\+Screen} ()
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00550_af8fd6890abf865641e190578ef2e054c}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises the logic of the screen \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00550_abd2118fc928f9057ddacbe758b80fe68}{Unload\+Content} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Unload the screen \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00550_a098ece7d1e112475f6e880c3a672af64}{Update} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: The update loop which is cycled through each frame \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00550_a200c31954effe5fc060118607155fb16}{Draw} (Sprite\+Batch sprite\+Batch)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Draws the content of the screen \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00550_a861ab6364e68e3e3b6b9718e34ba18a2}{Unload} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: When the screen is to be unloaded, clear any entities from the screen, remove the entities from the detection manager as well \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00550_ac5d310a291bb741ffd071372bc1ba496}{Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: bool for if screen is active screen \end{DoxyCompactList}\item 
+string \hyperlink{a00550_af942c6eeee717dee53a460530f4efb3d}{Sound\+Track}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em G\+ET\+: S\+ET\+: Does the screen have a soundtrack \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00550_af66e62ec831d9ac03c231265b808417f}\label{a00550_af66e62ec831d9ac03c231265b808417f}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Base\+Screen@{Base\+Screen}}
+\index{Base\+Screen@{Base\+Screen}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Base\+Screen()}{BaseScreen()}}
+{\footnotesize\ttfamily Engine.\+States.\+Engine.\+Base\+Screen.\+Base\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR\+: 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00550_a200c31954effe5fc060118607155fb16}\label{a00550_a200c31954effe5fc060118607155fb16}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void Engine.\+States.\+Engine.\+Base\+Screen.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sprite\+Batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Draws the content of the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Batch} & the Monogame Sprite\+Batch\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00466_a0c61f739fb252fcc90b91b1358511d05}{Engine.\+Interfaces.\+Screen.\+I\+Screen}.
+
+
+
+Reimplemented in \hyperlink{a00562_ad5b2061652982cb94e7c01c39f59a984}{Engine.\+States.\+Levels.\+A\+Star\+Demo}, \hyperlink{a00574_a193970cc59914f538ae0bcd39fe1ef48}{Engine.\+States.\+Menu.\+Main\+Menu}, \hyperlink{a00570_a32c772a646fe78f26a4e9f83ae327156}{Engine.\+States.\+Levels.\+Steering\+Demo}, and \hyperlink{a00554_ae50fb213e5c1efc8d3908340b236e927}{Engine.\+States.\+Engine.\+Splash\+Screen}.
+
+\mbox{\Hypertarget{a00550_af8fd6890abf865641e190578ef2e054c}\label{a00550_af8fd6890abf865641e190578ef2e054c}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily virtual void Engine.\+States.\+Engine.\+Base\+Screen.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises the logic of the screen 
+
+
+
+Implements \hyperlink{a00466_ad251ad712685a0f329ad2b29bde78981}{Engine.\+Interfaces.\+Screen.\+I\+Screen}.
+
+
+
+Reimplemented in \hyperlink{a00558_a1547a699546baa41aa39a2e2b4412787}{Engine.\+States.\+Game\+Options.\+Game\+Options}, \hyperlink{a00574_a43b83f0941e721234fdceeb0b5587f1b}{Engine.\+States.\+Menu.\+Main\+Menu}, \hyperlink{a00554_a321c34cdc158a49cf76f31e3cdd0863e}{Engine.\+States.\+Engine.\+Splash\+Screen}, \hyperlink{a00562_a143dfe5c81e8cd31fe6439aad1de00c6}{Engine.\+States.\+Levels.\+A\+Star\+Demo}, \hyperlink{a00570_a3ae8b73b4618e8c2635d3b8c24d70bcb}{Engine.\+States.\+Levels.\+Steering\+Demo}, and \hyperlink{a00566_a051d8aea070a4c7a93f0cf494e4fac6a}{Engine.\+S\+A\+T\+Demo}.
+
+\mbox{\Hypertarget{a00550_a861ab6364e68e3e3b6b9718e34ba18a2}\label{a00550_a861ab6364e68e3e3b6b9718e34ba18a2}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Unload@{Unload}}
+\index{Unload@{Unload}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily virtual void Engine.\+States.\+Engine.\+Base\+Screen.\+Unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: When the screen is to be unloaded, clear any entities from the screen, remove the entities from the detection manager as well 
+
+
+
+Implements \hyperlink{a00466_a67f1b5deb3604a417d7452fc8873de37}{Engine.\+Interfaces.\+Screen.\+I\+Screen}.
+
+
+
+Reimplemented in \hyperlink{a00558_aedf1c1415b77bf7c8ce37d754039de7b}{Engine.\+States.\+Game\+Options.\+Game\+Options}, and \hyperlink{a00562_a25e822fbb0f806e84f05a26852c05593}{Engine.\+States.\+Levels.\+A\+Star\+Demo}.
+
+\mbox{\Hypertarget{a00550_abd2118fc928f9057ddacbe758b80fe68}\label{a00550_abd2118fc928f9057ddacbe758b80fe68}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Unload\+Content@{Unload\+Content}}
+\index{Unload\+Content@{Unload\+Content}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Unload\+Content()}{UnloadContent()}}
+{\footnotesize\ttfamily virtual void Engine.\+States.\+Engine.\+Base\+Screen.\+Unload\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: Unload the screen 
+
+
+
+Implements \hyperlink{a00466_aeba867b4e4bd2f0a918b837d93a4e45a}{Engine.\+Interfaces.\+Screen.\+I\+Screen}.
+
+\mbox{\Hypertarget{a00550_a098ece7d1e112475f6e880c3a672af64}\label{a00550_a098ece7d1e112475f6e880c3a672af64}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Update@{Update}}
+\index{Update@{Update}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Engine.\+States.\+Engine.\+Base\+Screen.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+M\+E\+T\+H\+OD\+: The update loop which is cycled through each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & the Monogame Game\+Time property\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00466_a5f59b9b12c1bf29b1db612ed52d1cfd6}{Engine.\+Interfaces.\+Screen.\+I\+Screen}.
+
+
+
+Reimplemented in \hyperlink{a00558_a629d2a00abd6bfcc21524911e74fee3a}{Engine.\+States.\+Game\+Options.\+Game\+Options}, \hyperlink{a00574_ad667a7ff9dea79bee26a4205418c7a61}{Engine.\+States.\+Menu.\+Main\+Menu}, \hyperlink{a00562_aaa91f362f279bd5d226f49fb150f98e3}{Engine.\+States.\+Levels.\+A\+Star\+Demo}, \hyperlink{a00554_af245506899484c6784a44550b1364b6c}{Engine.\+States.\+Engine.\+Splash\+Screen}, and \hyperlink{a00570_a4210cc45e9038a007132fbafde08fa71}{Engine.\+States.\+Levels.\+Steering\+Demo}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00550_ac5d310a291bb741ffd071372bc1ba496}\label{a00550_ac5d310a291bb741ffd071372bc1ba496}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Active@{Active}}
+\index{Active@{Active}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Active}{Active}}
+{\footnotesize\ttfamily bool Engine.\+States.\+Engine.\+Base\+Screen.\+Active\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: bool for if screen is active screen 
+
+\mbox{\Hypertarget{a00550_af942c6eeee717dee53a460530f4efb3d}\label{a00550_af942c6eeee717dee53a460530f4efb3d}} 
+\index{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}!Sound\+Track@{Sound\+Track}}
+\index{Sound\+Track@{Sound\+Track}!Engine\+::\+States\+::\+Engine\+::\+Base\+Screen@{Engine\+::\+States\+::\+Engine\+::\+Base\+Screen}}
+\subsubsection{\texorpdfstring{Sound\+Track}{SoundTrack}}
+{\footnotesize\ttfamily string Engine.\+States.\+Engine.\+Base\+Screen.\+Sound\+Track\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+G\+ET\+: S\+ET\+: Does the screen have a soundtrack 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00194}{Base\+Screen.\+cs}\end{DoxyCompactItemize}

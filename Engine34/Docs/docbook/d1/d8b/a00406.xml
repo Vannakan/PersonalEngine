@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d8b/a00406">
+<title>Engine::Grid::Grids class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Texture2D tex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Node [,] grid</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int gridX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int gridY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int xVar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int yVar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Node &gt; path</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d8b/a00406_1a93c6400681153abcf5bf341f72e77277">Grids</link> (
+Texture2D tex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d8b/a00406_1a42a73fb81510d705071435c621d12c72">create</link> (
+int X, int Y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d8b/a00406_1abaa6e136966cf7c17141a042c5ac1d71">doStuff</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d8b/a00406_1aec9a6ddb83a21aa1e3ef16dc8cae4808">setupVisual</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d8b/a00406_1a036d69651829420e4494004d9cf73b71">resetVisual</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d8b/a00406_1ab0cc24116dc6df9c8d0acdc6b0d51b0d">setNodePositions</link> (
+int width, int height)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d8b/a00406_1ab8bebc68904ff66b2a10832f2540e188">Draw</link> (
+SpriteBatch sb)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="d4/dbc/a00414">Node</link> &gt; <link linkend="d1/d8b/a00406_1a3380ff062497543fe12b24a0e3ddfc46">getNeighbours</link> (
+<link linkend="d4/dbc/a00414">Node</link> check)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d1/d8b/a00406_1a0f0825c55c7d8a17b163f74fc8baa9de">checkMap</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d1/d8b/a00406_1a93c6400681153abcf5bf341f72e77277">
+                <title>Engine.Grid.Grids.Grids (Texture2D tex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1a42a73fb81510d705071435c621d12c72">
+                <title>void Engine.Grid.Grids.create (int X, int Y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1abaa6e136966cf7c17141a042c5ac1d71">
+                <title>void Engine.Grid.Grids.doStuff ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1aec9a6ddb83a21aa1e3ef16dc8cae4808">
+                <title>void Engine.Grid.Grids.setupVisual ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1a036d69651829420e4494004d9cf73b71">
+                <title>void Engine.Grid.Grids.resetVisual ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1ab0cc24116dc6df9c8d0acdc6b0d51b0d">
+                <title>void Engine.Grid.Grids.setNodePositions (int width, int height)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1ab8bebc68904ff66b2a10832f2540e188">
+                <title>void Engine.Grid.Grids.Draw (SpriteBatch sb)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1a3380ff062497543fe12b24a0e3ddfc46">
+                <title>List&lt;Node&gt; Engine.Grid.Grids.getNeighbours (Node check)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d8b/a00406_1a0f0825c55c7d8a17b163f74fc8baa9de">
+                <title>bool Engine.Grid.Grids.checkMap (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

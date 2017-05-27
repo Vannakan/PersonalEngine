@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dcd/a00280">
+<title>Engine::States::Menu</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/dbe/a00574">Engine::States::Menu::MainMenu</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: MainMenu, this is the class that is loaded straight after the splash screen is used to access the majority
+of other screens in the program
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d2f/a00582">Engine::States::Menu::MenuOption</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: MenuOption contains the data and logic for creating new options to be highlighted on a menu
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

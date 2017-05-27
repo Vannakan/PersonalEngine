@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d2c/a00466">
+<title>Engine::Interfaces::Screen::IScreen interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d2c/a00466_1aeba867b4e4bd2f0a918b837d93a4e45a">UnloadContent</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unloads the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d2c/a00466_1ad251ad712685a0f329ad2b29bde78981">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d2c/a00466_1a5f59b9b12c1bf29b1db612ed52d1cfd6">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d2c/a00466_1a0c61f739fb252fcc90b91b1358511d05">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d2c/a00466_1a67f1b5deb3604a417d7452fc8873de37">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unloads the screen
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: all screens subscribe to this interface which contains the implementation for what each screen needs To do </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 15 of file IScreen.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IScreen.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="db/d2c/a00466_1aeba867b4e4bd2f0a918b837d93a4e45a">
+                <title>void Engine.Interfaces.Screen.IScreen.UnloadContent ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unloads the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d2c/a00466_1ad251ad712685a0f329ad2b29bde78981">
+                <title>void Engine.Interfaces.Screen.IScreen.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Initialises the logic of the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d2c/a00466_1a5f59b9b12c1bf29b1db612ed52d1cfd6">
+                <title>void Engine.Interfaces.Screen.IScreen.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through each frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d2c/a00466_1a0c61f739fb252fcc90b91b1358511d05">
+                <title>void Engine.Interfaces.Screen.IScreen.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+METHOD: Draws the content of the screen
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry>
+<para>the Monogame SpriteBatch</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d2c/a00466_1a67f1b5deb3604a417d7452fc8873de37">
+                <title>void Engine.Interfaces.Screen.IScreen.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unloads the screen
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

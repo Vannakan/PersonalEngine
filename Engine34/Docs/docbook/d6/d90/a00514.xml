@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d90/a00514">
+<title>Engine::Managers::Collision::TranslationVector class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Vector2 <link linkend="d6/d90/a00514_1aca3753e9e1faed72cf3fb42586bdfcc7">GetMinimumTranslation</link> (
+<link linkend="d7/db9/a00426">ICollidable</link> A1, <link linkend="d7/db9/a00426">ICollidable</link> B1)<para><emphasis>&lt;summary&gt;
+METHOD: Calculate the minimum translation required for tan object to no longer be colliding with another
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The vector that an object will need to be moved along once it is colliding in order to no longer be colliding. This vector needs to be the smallest possible amount an object can be moved by. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file TranslationVector.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TranslationVector.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d6/d90/a00514_1aca3753e9e1faed72cf3fb42586bdfcc7">
+                <title>static Vector2 Engine.Managers.Collision.TranslationVector.GetMinimumTranslation (ICollidable A1, ICollidable B1)</title> <emphasis>&lt;summary&gt;
+METHOD: Calculate the minimum translation required for tan object to no longer be colliding with another
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>A1</entry>
+                                <entry>
+<para>The first object to be tested on</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>B1</entry>
+                                <entry>
+<para>The second object to be tested on</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Vector2</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

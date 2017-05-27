@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d76/a00134">
+    <title>IScreenManager.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d29/a00470">Engine::Interfaces::Screen::IScreenManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: This interface holds the implementation for the ScreenManager which is responsible for loading the content
+in each screen and displaying each screen. The ScreenManager contains a stack of screens which allows for multiple 
+screens to be prepared for loading whilst only one is an active screen
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/da9/a00263">Engine::Interfaces::Screen</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file IScreenManager.cs</para>
+    </simplesect>
+</section>

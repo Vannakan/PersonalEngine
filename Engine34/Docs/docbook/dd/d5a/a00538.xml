@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d5a/a00538">
+<title>Engine::ScreenManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Stack&lt; BaseScreen &gt; screenStack</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; BaseScreen &gt; trashScreens</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="dd/d5a/a00538_1ad442d9999cb6f335509f21ddb533bd76">sManagerEvent</link> (
+<link linkend="de/de7/a00550">BaseScreen</link> screen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1aaa2b6fe0b50cf126bbb0a9b39fac1b83">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+Initialize the screenmanager and add the menu to the stack to start the game off.
+Soon this will be replaced with a splashscreen which will transition to the menu
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1a1e85d6cc74fdb929f4729d1170886fb4">UnloEnginecreens</link> (
+)<para><emphasis>&lt;summary&gt;
+Unload any screens which need to be unloaded
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1a9abaa968b161ebb2b84c7a47ada52f90">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update the manager
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1a1177fbd3eb0a300167e4fa99930025e1">Draw</link> (
+SpriteBatch spriteBatch)<para><emphasis>&lt;summary&gt;
+Currently draws the topmost screen, needs to be improved to support things such as pop ups
+It&apos;ll be a simple fix to check to see which screens are requesting to be drawn
+and draw them in the order of the stack.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1ae459e146f1e05789c4d5828cca4dead7">Add</link> (
+string screenName)<para><emphasis>&lt;summary&gt;
+This method is self explanitory, it asks for the class name you wish to add to the screenstack and pushes 
+it onto the top. 
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1a28af5b838f4345834dc2351e06c3d654">ReplaceScreen</link> (
+string screenName)<para><emphasis>&lt;summary&gt;
+This method is similar to the add method, but rather than just removing the screen to go back to the 
+previous screen, this method replaces a screen (If you wanted to replace level1 with level2
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1abe1bf121b368a6d205706da54d949ace">CheckScreens</link> (
+)<para><emphasis>&lt;summary&gt;
+Checks each of the screens in the screenstack and checks if its the same screen as the current screen
+if so then declare the screen active, ready for drawing and updating.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1aa8e3ecdc7ae78094b07af944c31f90a9">CheckScreenManagerInput</link> (
+)<para><emphasis>&lt;summary&gt;
+Checks for input, more specifically if the ESCAPE key has been pressed and if the screen count
+is more than 1, go back a screen. Otherwise there will be no screens present and the screenmanager
+will be broken.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1ab553bead481adc65547a323af9dab2d5">RemoveTopScreen</link> (
+)<para><emphasis>&lt;summary&gt;
+Removes the top screen from the stack. Should be used in situations such as if
+the 
+er has lost all of his lives and the state should be reverted back to the menu screen
+this will be your god. It basically goes back one screen :)
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5a/a00538_1a59b04e135a3b2a75a608752e2bfabc77">UpdateTopScreen</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+This is probably the worst way of going about it but this method checks the top screen and updates it
+Although this will not be relevant soon since screen updates will be decided through ENUMS.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dd/d5a/a00538_1a973c15b5fff9fb873ed988ea69ccbfd1">onScreenChange</link> (
+<link linkend="de/de7/a00550">BaseScreen</link> screen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="dd/d5a/a00538_1ad442d9999cb6f335509f21ddb533bd76">
+                <title>delegate void Engine.ScreenManager.sManagerEvent (BaseScreen screen)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d5a/a00538_1aaa2b6fe0b50cf126bbb0a9b39fac1b83">
+                <title>void Engine.ScreenManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+Initialize the screenmanager and add the menu to the stack to start the game off.
+Soon this will be replaced with a splashscreen which will transition to the menu
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dd/d5a/a00538_1a1e85d6cc74fdb929f4729d1170886fb4">
+                <title>void Engine.ScreenManager.UnloEnginecreens ()</title> <emphasis>&lt;summary&gt;
+Unload any screens which need to be unloaded
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dd/d5a/a00538_1a9abaa968b161ebb2b84c7a47ada52f90">
+                <title>void Engine.ScreenManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update the manager
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d5a/a00538_1a1177fbd3eb0a300167e4fa99930025e1">
+                <title>void Engine.ScreenManager.Draw (SpriteBatch spriteBatch)</title> <emphasis>&lt;summary&gt;
+Currently draws the topmost screen, needs to be improved to support things such as pop ups
+It&apos;ll be a simple fix to check to see which screens are requesting to be drawn
+and draw them in the order of the stack.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>spriteBatch</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d5a/a00538_1ae459e146f1e05789c4d5828cca4dead7">
+                <title>void Engine.ScreenManager.Add (string screenName)</title> <emphasis>&lt;summary&gt;
+This method is self explanitory, it asks for the class name you wish to add to the screenstack and pushes 
+it onto the top. 
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>screenName</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d5a/a00538_1a28af5b838f4345834dc2351e06c3d654">
+                <title>void Engine.ScreenManager.ReplaceScreen (string screenName)</title> <emphasis>&lt;summary&gt;
+This method is similar to the add method, but rather than just removing the screen to go back to the 
+previous screen, this method replaces a screen (If you wanted to replace level1 with level2
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>screenName</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d5a/a00538_1abe1bf121b368a6d205706da54d949ace">
+                <title>void Engine.ScreenManager.CheckScreens ()</title> <emphasis>&lt;summary&gt;
+Checks each of the screens in the screenstack and checks if its the same screen as the current screen
+if so then declare the screen active, ready for drawing and updating.</emphasis>
+                
+<para>TO DO</para>
+
+<para>Give screens individual IDs just like entities. </para>
+
+            </section>
+            <section xml:id="dd/d5a/a00538_1aa8e3ecdc7ae78094b07af944c31f90a9">
+                <title>void Engine.ScreenManager.CheckScreenManagerInput ()</title> <emphasis>&lt;summary&gt;
+Checks for input, more specifically if the ESCAPE key has been pressed and if the screen count
+is more than 1, go back a screen. Otherwise there will be no screens present and the screenmanager
+will be broken.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dd/d5a/a00538_1ab553bead481adc65547a323af9dab2d5">
+                <title>void Engine.ScreenManager.RemoveTopScreen ()</title> <emphasis>&lt;summary&gt;
+Removes the top screen from the stack. Should be used in situations such as if
+the 
+er has lost all of his lives and the state should be reverted back to the menu screen
+this will be your god. It basically goes back one screen :)
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="dd/d5a/a00538_1a59b04e135a3b2a75a608752e2bfabc77">
+                <title>void Engine.ScreenManager.UpdateTopScreen (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+This is probably the worst way of going about it but this method checks the top screen and updates it
+Although this will not be relevant soon since screen updates will be decided through ENUMS.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d5a/a00538_1a973c15b5fff9fb873ed988ea69ccbfd1">
+                <title>virtual void Engine.ScreenManager.onScreenChange (BaseScreen screen)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

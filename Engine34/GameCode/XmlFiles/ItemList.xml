@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ItemList>
+  <Item name ="SterileBeer">
+    <texture>Beer</texture>
+    <aspd>-3</aspd>
+    <mspd>-2</mspd>
+    <hp>5</hp>
+    <dmg>5</dmg>
+    <description>Better than drinking infected water!</description>
+    <rarity>Common</rarity>
+  </Item>
+  <Item name ="RosaryBeads"> 
+  <texture>RosaryBeads</texture>
+  <aspd>1</aspd>
+  <mspd>3</mspd>
+  <hp>3</hp>
+  <dmg>7</dmg>
+  <description>Pray for hope, just like the rest of us in this time</description>
+  <rarity>>Uncommon</rarity>
+  </Item>
+  <Item name ="Key">
+    <texture>Key</texture>
+    <aspd>5</aspd>
+    <mspd>3</mspd>
+    <hp>3</hp>
+    <dmg>7</dmg>
+    <description>It's shape looks awfully unique..</description>
+    <rarity>Rare</rarity>
+  </Item>
+
+  <Item name ="SurgeonSaw">
+    <texture>SurgeonSaw</texture>
+    <aspd>2</aspd>
+    <mspd>0</mspd>
+    <hp>0</hp>
+    <dmg>2</dmg>
+    <description>Used for procedures such as amputations!</description>
+    <rarity>Common</rarity>
+  </Item>
+
+  <Item name ="Chloroform">
+    <texture>Chloroform</texture>
+    <aspd>-2</aspd>
+    <mspd>-3</mspd>
+    <hp>5</hp>
+    <dmg>3</dmg>
+    <description> Used for??</description>
+    <rarity>UnCommon</rarity>
+  </Item>
+
+  <Item name ="Syringe">
+    <texture>Needle</texture>
+    <aspd>2</aspd>
+    <mspd>0</mspd>
+    <hp>5</hp>
+    <dmg>5</dmg>
+    <description>Allows for treatment through direction injection to the bloodstream!</description>
+    <rarity>Common</rarity>
+  </Item>
+</ItemList>

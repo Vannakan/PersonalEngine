@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dcc/a00264">
+<title>Engine::Interfaces::ServiceLocator</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d26/a00474">Engine::Interfaces::ServiceLocator::IServiceLocator</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: An Interface holding the implementation for the Service Locator which removes the need for singletons
+throughout the engine
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dea/a00478">Engine::Interfaces::ServiceLocator::IUpdService</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE: All Managers that need to be updated every frame subscribe to this interface
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

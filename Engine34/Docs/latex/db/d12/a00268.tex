@@ -1,0 +1,62 @@
+\hypertarget{a00268}{}\section{Engine.\+Managers.\+Collision Namespace Reference}
+\label{a00268}\index{Engine.\+Managers.\+Collision@{Engine.\+Managers.\+Collision}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries A\+A\+BB}
+\item 
+class \hyperlink{a00506}{Hitbox}
+\begin{DoxyCompactList}\small\item\em C\+L\+A\+SS\+: Hitboxes that make up the boundaries for each entity to allow for S\+AT collision to work. Each hitbox covers a portion of the texture of an entity and is stored in a List of Hitboxes inside the entity class. \end{DoxyCompactList}\item 
+class \hyperlink{a00502}{I\+Detection\+Manger}
+\begin{DoxyCompactList}\small\item\em C\+L\+A\+SS\+: The Detection Manager is used for all collision calculations. Once two objects are colliding a \hyperlink{a00268}{Collision} event is fired with the necessary information for two objects to react properly. \end{DoxyCompactList}\item 
+class \hyperlink{a00510}{S\+A\+Tcheck}
+\begin{DoxyCompactList}\small\item\em C\+L\+A\+SS\+: This class runs all of the Separating Axis Theorem collision code. It calculates whether two shapes are currently intersecting or going to intersect by projecting shadows of both shapes onto an arbitrary axis perpendicular to the edges of the shape. \end{DoxyCompactList}\item 
+class {\bfseries Translation\+Vector}
+\begin{DoxyCompactList}\small\item\em C\+L\+A\+SS\+: The vector that an object will need to be moved along once it is colliding in order to no longer be colliding. This vector needs to be the smallest possible amount an object can be moved by. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{a00268_addb954cde1b34937cfd0a187a154c8af}{Collision\+Side} \{ \newline
+\hyperlink{a00268_addb954cde1b34937cfd0a187a154c8afa811882fecd5c7618d7099ebbd39ea254}{Collision\+Side.\+left}, 
+\hyperlink{a00268_addb954cde1b34937cfd0a187a154c8afa7c4f29407893c334a6cb7a87bf045c0d}{Collision\+Side.\+right}, 
+\hyperlink{a00268_addb954cde1b34937cfd0a187a154c8afab28354b543375bfa94dabaeda722927f}{Collision\+Side.\+top}, 
+\hyperlink{a00268_addb954cde1b34937cfd0a187a154c8afa71f262d796bed1ab30e8a2d5a8ddee6f}{Collision\+Side.\+bottom}, 
+\newline
+\hyperlink{a00268_addb954cde1b34937cfd0a187a154c8afa334c4a4c42fdb79d7ebc3e73b517e6f8}{Collision\+Side.\+none}
+ \}\begin{DoxyCompactList}\small\item\em C\+L\+A\+SS\+: A collision class used to calculate whether two axis aligned bounding boxes are intersecting or not. If they are intersecting this class can return true and state which side is intersecting and by how much. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{a00268_addb954cde1b34937cfd0a187a154c8af}\label{a00268_addb954cde1b34937cfd0a187a154c8af}} 
+\index{Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}!Collision\+Side@{Collision\+Side}}
+\index{Collision\+Side@{Collision\+Side}!Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}}
+\subsubsection{\texorpdfstring{Collision\+Side}{CollisionSide}}
+{\footnotesize\ttfamily enum \hyperlink{a00268_addb954cde1b34937cfd0a187a154c8af}{Engine.\+Managers.\+Collision.\+Collision\+Side}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+C\+L\+A\+SS\+: A collision class used to calculate whether two axis aligned bounding boxes are intersecting or not. If they are intersecting this class can return true and state which side is intersecting and by how much. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{left@{left}!Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}}\index{Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}!left@{left}}}\mbox{\Hypertarget{a00268_addb954cde1b34937cfd0a187a154c8afa811882fecd5c7618d7099ebbd39ea254}\label{a00268_addb954cde1b34937cfd0a187a154c8afa811882fecd5c7618d7099ebbd39ea254}} 
+left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{right@{right}!Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}}\index{Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}!right@{right}}}\mbox{\Hypertarget{a00268_addb954cde1b34937cfd0a187a154c8afa7c4f29407893c334a6cb7a87bf045c0d}\label{a00268_addb954cde1b34937cfd0a187a154c8afa7c4f29407893c334a6cb7a87bf045c0d}} 
+right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{top@{top}!Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}}\index{Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}!top@{top}}}\mbox{\Hypertarget{a00268_addb954cde1b34937cfd0a187a154c8afab28354b543375bfa94dabaeda722927f}\label{a00268_addb954cde1b34937cfd0a187a154c8afab28354b543375bfa94dabaeda722927f}} 
+top&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bottom@{bottom}!Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}}\index{Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}!bottom@{bottom}}}\mbox{\Hypertarget{a00268_addb954cde1b34937cfd0a187a154c8afa71f262d796bed1ab30e8a2d5a8ddee6f}\label{a00268_addb954cde1b34937cfd0a187a154c8afa71f262d796bed1ab30e8a2d5a8ddee6f}} 
+bottom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{none@{none}!Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}}\index{Engine\+::\+Managers\+::\+Collision@{Engine\+::\+Managers\+::\+Collision}!none@{none}}}\mbox{\Hypertarget{a00268_addb954cde1b34937cfd0a187a154c8afa334c4a4c42fdb79d7ebc3e73b517e6f8}\label{a00268_addb954cde1b34937cfd0a187a154c8afa334c4a4c42fdb79d7ebc3e73b517e6f8}} 
+none&\\
+\hline
+
+\end{DoxyEnumFields}

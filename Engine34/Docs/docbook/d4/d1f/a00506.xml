@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d1f/a00506">
+<title>Engine::Managers::Collision::Hitbox class Reference</title>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Vector2 &gt; points</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Vector2 &gt; edges</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 velocity<para><emphasis>&lt;summary&gt;
+RETURN: A Vector2 co-ordinate of the Velocity of the shape and set the local variable to this property.
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IMind _mind<para><emphasis>DECLARE: A reference to the mind.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float width<para><emphasis>&lt;summary&gt;
+DECLARE: the local variables width height and rotation used for the creation of the shape
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float height</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float rotation</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 centre<para><emphasis>DECLARE: A vector2 co-ordinate for the centre of the shape.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d1f/a00506_1a0dd1189ee2d37a3401501ca1f10b9cfa">Hitbox</link> (
+Vector2 _pos, float pWidth, float pHeight, float pRot, <link linkend="d2/d41/a00318">Mind</link> parent)<para><emphasis>&lt;summary&gt;
+CONSTRUCTOR: Takes 5 parameters used to create the List of points and edges and then a rotation used for 
+rotating the shape as necessary to allow for advanced SAT Collision
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d1f/a00506_1ab91473c67469cf0be5069c1ca9a2d6fb">createMatrix</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: A method used to rotate the 4 corners of the shape so that our SAT is not just limited to two axes.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d4/d1f/a00506_1ae78ae27deafc11bf87c1396c504ce621">createRotation</link> (
+Vector2 _point)<para><emphasis>&lt;summary&gt;
+METHOD: Rotates a Vector2 around a centre point. The parameter is the point being rotated. In order to rotate
+the co-ordinates around the centre of the shape we must subtract the origin of the rotation from the co-ordinate
+and then add it back on, essentially &quot;moving the object and moving it back&quot;.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d1f/a00506_1a6bc6facadaf82a8c49979e35f0c8b132">CreateEdges</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Creates edges of the shape by subtracting the previous point if one were to trace the outline of the shape
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d1f/a00506_1ab5cba73c16189f63616a91cf19f00562">UpdatePoint</link> (
+Vector2 velocity)<para><emphasis>&lt;summary&gt;
+METHOD:  This is used to move the hitboxes with their parent entities. If this is not done then the collision will not work
+ because the hitbox hasn&apos;t moved.
+ &lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d4/d1f/a00506_1ad129f58518e4fedffc47433af729b3bf">centrePoint</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: The centre point of the shape. Used for the rotation and for calculating the Minimum Translation Vector
+When colliding with another Hitbox.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d4/d1f/a00506_1a987b7fd544e03a9e43e38cc2df785d1d">Update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: Hitboxes that make up the boundaries for each entity to allow for SAT collision to work. Each hitbox covers a portion of the texture of an entity and is stored in a List of Hitboxes inside the entity class. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 16 of file Hitbox.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Hitbox.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>List&lt;Vector2&gt; Engine.Managers.Collision.Hitbox.points</title>                
+<para>DECLARE: A List of each corner and edge of the shape </para>
+
+<para>points are not the same as the Monogame object Point. This was just the name given to them</para>
+
+                <para>Definition at line 19 of file Hitbox.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Hitbox.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Vector2 Engine.Managers.Collision.Hitbox.velocity</title>                
+                <para>Definition at line 55 of file Hitbox.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Hitbox.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>float Engine.Managers.Collision.Hitbox.width</title>                
+                <para>Definition at line 71 of file Hitbox.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Hitbox.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d4/d1f/a00506_1a0dd1189ee2d37a3401501ca1f10b9cfa">
+                <title>Engine.Managers.Collision.Hitbox.Hitbox (Vector2 _pos, float pWidth, float pHeight, float pRot, Mind parent)</title> <emphasis>&lt;summary&gt;
+CONSTRUCTOR: Takes 5 parameters used to create the List of points and edges and then a rotation used for 
+rotating the shape as necessary to allow for advanced SAT Collision
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_pos</entry>
+                                <entry>
+<para>The position of the first point</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pWidth</entry>
+                                <entry>
+<para>The width of the shape</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pHeight</entry>
+                                <entry>
+<para>The height of the shape</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pRot</entry>
+                                <entry>
+<para>The rotation in degrees of the shape</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>parent</entry>
+                                <entry>
+<para>The mind that this hitox is linked to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d1f/a00506_1ab91473c67469cf0be5069c1ca9a2d6fb">
+                <title>void Engine.Managers.Collision.Hitbox.createMatrix ()</title> <emphasis>&lt;summary&gt;
+METHOD: A method used to rotate the 4 corners of the shape so that our SAT is not just limited to two axes.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d4/d1f/a00506_1ae78ae27deafc11bf87c1396c504ce621">
+                <title>Vector2 Engine.Managers.Collision.Hitbox.createRotation (Vector2 _point)</title> <emphasis>&lt;summary&gt;
+METHOD: Rotates a Vector2 around a centre point. The parameter is the point being rotated. In order to rotate
+the co-ordinates around the centre of the shape we must subtract the origin of the rotation from the co-ordinate
+and then add it back on, essentially &quot;moving the object and moving it back&quot;.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_point</entry>
+                                <entry>
+<para>The point to be rotated</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Vector2 of the new location of the co-ordinate</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d1f/a00506_1a6bc6facadaf82a8c49979e35f0c8b132">
+                <title>void Engine.Managers.Collision.Hitbox.CreateEdges ()</title> <emphasis>&lt;summary&gt;
+METHOD: Creates edges of the shape by subtracting the previous point if one were to trace the outline of the shape
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d4/d1f/a00506_1ab5cba73c16189f63616a91cf19f00562">
+                <title>void Engine.Managers.Collision.Hitbox.UpdatePoint (Vector2 velocity)</title> <emphasis>&lt;summary&gt;
+METHOD:  This is used to move the hitboxes with their parent entities. If this is not done then the collision will not work
+ because the hitbox hasn&apos;t moved.
+ &lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>velocity</entry>
+                                <entry>
+<para>The velocity to move the point by</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d1f/a00506_1ad129f58518e4fedffc47433af729b3bf">
+                <title>Vector2 Engine.Managers.Collision.Hitbox.centrePoint ()</title> <emphasis>&lt;summary&gt;
+METHOD: The centre point of the shape. Used for the rotation and for calculating the Minimum Translation Vector
+When colliding with another Hitbox.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>A Vector2 of the Central co-ordinate between all of the points.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d1f/a00506_1a987b7fd544e03a9e43e38cc2df785d1d">
+                <title>virtual void Engine.Managers.Collision.Hitbox.Update ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

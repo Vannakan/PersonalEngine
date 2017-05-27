@@ -1,0 +1,150 @@
+\hypertarget{a00414}{}\section{Engine.\+Grid.\+Node Class Reference}
+\label{a00414}\index{Engine.\+Grid.\+Node@{Engine.\+Grid.\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00414_a85d060475bb7bbbe867139515056deab}{Node} (int el, Texture2D t)
+\item 
+\hyperlink{a00414_a80bf502a107001b9137f9ef9a1b2d6ca}{Node} (Texture2D t)
+\item 
+\hyperlink{a00414_a4f7ab4c1d61c23b8043d91cca3ca2179}{Node} (int x, int y, int el, Texture2D t)
+\item 
+\hyperlink{a00414_a001aadc1245a6c9f3506ffb96d6639ab}{Node} (bool blocked, Vector2 pos)
+\item 
+void \hyperlink{a00414_a2a8403b6a860db08260ee9a40f2f3e6e}{Draw} (Sprite\+Batch sb)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{a00414_a4fad50301ead7dd2a04ded04459a0fb6}{get\+Grid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{a00414}{Node} \hyperlink{a00414_a9f55e14749cc4220874bbbb7670dbe84}{Parent}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{a00414_acae4b5cf086837d76ab855e7188b4e5f}{Blocked}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \hyperlink{a00414_a2ced19151b34c37e2e32dc7f0f6cf22a}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{a00414_a29a8561f5543e48666881c04d7db8037}{Element}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Texture2D \hyperlink{a00414_a192207495540bfe40471c4721dbe2d01}{Tex}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Rectangle \hyperlink{a00414_a52019f573633d4c98abafaaffc87cd8b}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{a00414_ac67790333f8cdfc65a5885d4eeccf840}{G}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{a00414_a7b571cde021a2a5e86d7de7e5f12e23c}{H}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{a00414_ac6234d62dfcee282dc2868952c5665c7}{F}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Color \hyperlink{a00414_a17c9556ca0972750f93131245fe4fa7a}{Color}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00414_a85d060475bb7bbbe867139515056deab}\label{a00414_a85d060475bb7bbbe867139515056deab}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Engine.\+Grid.\+Node.\+Node (\begin{DoxyParamCaption}\item[{int}]{el,  }\item[{Texture2D}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00414_a80bf502a107001b9137f9ef9a1b2d6ca}\label{a00414_a80bf502a107001b9137f9ef9a1b2d6ca}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Engine.\+Grid.\+Node.\+Node (\begin{DoxyParamCaption}\item[{Texture2D}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00414_a4f7ab4c1d61c23b8043d91cca3ca2179}\label{a00414_a4f7ab4c1d61c23b8043d91cca3ca2179}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Engine.\+Grid.\+Node.\+Node (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{el,  }\item[{Texture2D}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{a00414_a001aadc1245a6c9f3506ffb96d6639ab}\label{a00414_a001aadc1245a6c9f3506ffb96d6639ab}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Engine.\+Grid.\+Node.\+Node (\begin{DoxyParamCaption}\item[{bool}]{blocked,  }\item[{Vector2}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00414_a2a8403b6a860db08260ee9a40f2f3e6e}\label{a00414_a2a8403b6a860db08260ee9a40f2f3e6e}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Draw@{Draw}}
+\index{Draw@{Draw}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Engine.\+Grid.\+Node.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00414_acae4b5cf086837d76ab855e7188b4e5f}\label{a00414_acae4b5cf086837d76ab855e7188b4e5f}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Blocked@{Blocked}}
+\index{Blocked@{Blocked}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Blocked}{Blocked}}
+{\footnotesize\ttfamily bool Engine.\+Grid.\+Node.\+Blocked\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_a52019f573633d4c98abafaaffc87cd8b}\label{a00414_a52019f573633d4c98abafaaffc87cd8b}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Bounds}{Bounds}}
+{\footnotesize\ttfamily Rectangle Engine.\+Grid.\+Node.\+Bounds\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{a00414_a17c9556ca0972750f93131245fe4fa7a}\label{a00414_a17c9556ca0972750f93131245fe4fa7a}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Color@{Color}}
+\index{Color@{Color}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily Color Engine.\+Grid.\+Node.\+Color\hspace{0.3cm}{\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_a29a8561f5543e48666881c04d7db8037}\label{a00414_a29a8561f5543e48666881c04d7db8037}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Element@{Element}}
+\index{Element@{Element}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Element}{Element}}
+{\footnotesize\ttfamily int Engine.\+Grid.\+Node.\+Element\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_ac6234d62dfcee282dc2868952c5665c7}\label{a00414_ac6234d62dfcee282dc2868952c5665c7}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!F@{F}}
+\index{F@{F}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily int Engine.\+Grid.\+Node.\+F\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{a00414_ac67790333f8cdfc65a5885d4eeccf840}\label{a00414_ac67790333f8cdfc65a5885d4eeccf840}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!G@{G}}
+\index{G@{G}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily int Engine.\+Grid.\+Node.\+G\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_a4fad50301ead7dd2a04ded04459a0fb6}\label{a00414_a4fad50301ead7dd2a04ded04459a0fb6}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!get\+Grid@{get\+Grid}}
+\index{get\+Grid@{get\+Grid}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{get\+Grid}{getGrid}}
+{\footnotesize\ttfamily Vector2 Engine.\+Grid.\+Node.\+get\+Grid\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{a00414_a7b571cde021a2a5e86d7de7e5f12e23c}\label{a00414_a7b571cde021a2a5e86d7de7e5f12e23c}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!H@{H}}
+\index{H@{H}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily int Engine.\+Grid.\+Node.\+H\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_a9f55e14749cc4220874bbbb7670dbe84}\label{a00414_a9f55e14749cc4220874bbbb7670dbe84}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Parent@{Parent}}
+\index{Parent@{Parent}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Parent}{Parent}}
+{\footnotesize\ttfamily \hyperlink{a00414}{Node} Engine.\+Grid.\+Node.\+Parent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_a2ced19151b34c37e2e32dc7f0f6cf22a}\label{a00414_a2ced19151b34c37e2e32dc7f0f6cf22a}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Position@{Position}}
+\index{Position@{Position}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Vector2 Engine.\+Grid.\+Node.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{a00414_a192207495540bfe40471c4721dbe2d01}\label{a00414_a192207495540bfe40471c4721dbe2d01}} 
+\index{Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}!Tex@{Tex}}
+\index{Tex@{Tex}!Engine\+::\+Grid\+::\+Node@{Engine\+::\+Grid\+::\+Node}}
+\subsubsection{\texorpdfstring{Tex}{Tex}}
+{\footnotesize\ttfamily Texture2D Engine.\+Grid.\+Node.\+Tex\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00092}{Node.\+cs}\end{DoxyCompactItemize}

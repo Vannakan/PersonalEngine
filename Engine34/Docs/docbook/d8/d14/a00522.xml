@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d14/a00522">
+<title>Engine::Managers::Input::InputManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>KeyboardState currentKeyState<para><emphasis>DECLARE: The current keys pressed on the Keyboard.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>KeyboardState previousKeyState<para><emphasis>DECLARE: The previous state of keys which will be used when checking for if a key has been released.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d14/a00522_1a7b0666f02640f9234e290938c4474e26">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update loop which is cycled through every frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d14/a00522_1a40428e54a6265c8e18c51489321b1d4c">CheckHeldDown</link> (
+Keys k)<para><emphasis>&lt;summary&gt;
+METHOD:Check if the left key is down and return true if this is the case
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d14/a00522_1aeb5c9f3f44ec0f9468cf3ec6801b9b24">CheckKeyPressed</link> (
+Keys k)<para><emphasis>&lt;summary&gt;
+METHOD: check if a key has been pressed when it wasn&apos;t in the last loop
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: The manager for input. This manager is responsbile for storing an array of keys pressed down and also held down on a keyboard. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file InputManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>InputManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d8/d14/a00522_1a7b0666f02640f9234e290938c4474e26">
+                <title>void Engine.Managers.Input.InputManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update loop which is cycled through every frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d14/a00522_1a40428e54a6265c8e18c51489321b1d4c">
+                <title>bool Engine.Managers.Input.InputManager.CheckHeldDown (Keys k)</title> <emphasis>&lt;summary&gt;
+METHOD:Check if the left key is down and return true if this is the case
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>k</entry>
+                                <entry>
+<para>The key to be checked</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a bool of whether the key is held down or not</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d8/d14/a00522_1aeb5c9f3f44ec0f9468cf3ec6801b9b24">
+                <title>bool Engine.Managers.Input.InputManager.CheckKeyPressed (Keys k)</title> <emphasis>&lt;summary&gt;
+METHOD: check if a key has been pressed when it wasn&apos;t in the last loop
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>k</entry>
+                                <entry>
+<para>The key to be checked</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a bool of whether the key is pressed or not</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

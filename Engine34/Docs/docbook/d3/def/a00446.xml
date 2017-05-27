@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/def/a00446">
+<title>Engine::Interfaces::Entities::IMind interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/def/a00446_1a21a0486019d7c7b665fdf483626323f3">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Update, is run every frame and is the main loop for any mind.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/def/a00446_1a6f51a819769ba43f5f1702563293aacd">Initialize</link> (
+Vector2 Position, string t)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise the position and texture
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/def/a00446_1a421d8eb0a0accda3320144fbfe33ea8c">Initialize</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: Initialise just the position in case a texture has already been set.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/def/a00446_1a142493645e36a3e14c7d3c59793c4d3c">Unload</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Unload the mind and send it to the garbage collector.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/dfd/a00438">IEntity</link> <link linkend="d3/def/a00446_1af7c7cac5148930a12a85ec64412ac6f2">getEntity</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Get the entity which a mind controls.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/db9/a00426">ICollidable</link> <link linkend="d3/def/a00446_1a3cbff0e85b710a4c8737254ed9ca7b30">getCollidable</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Return an object that will be calculated for collision
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/def/a00446_1a9d8370ad6e1b2a07760d3554b1e179fd">Link</link> (
+<link linkend="dd/dfd/a00438">IEntity</link> e)<para><emphasis>&lt;summary&gt;
+METHOD: Link the mind to an entity.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: An interface that provides Implementation for any object that is a mind which controls the behaviour of an entity. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file IMind.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IMind.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d3/def/a00446_1a21a0486019d7c7b665fdf483626323f3">
+                <title>void Engine.Interfaces.Entities.IMind.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Update, is run every frame and is the main loop for any mind.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>the Monogame GameTime Property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/def/a00446_1a6f51a819769ba43f5f1702563293aacd">
+                <title>void Engine.Interfaces.Entities.IMind.Initialize (Vector2 Position, string t)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise the position and texture
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>The position the mind will be initialised at</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>t</entry>
+                                <entry>
+<para>The string that the texture will be created from</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/def/a00446_1a421d8eb0a0accda3320144fbfe33ea8c">
+                <title>void Engine.Interfaces.Entities.IMind.Initialize (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: Initialise just the position in case a texture has already been set.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>The position the mind will be iniitalised at</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/def/a00446_1a142493645e36a3e14c7d3c59793c4d3c">
+                <title>void Engine.Interfaces.Entities.IMind.Unload ()</title> <emphasis>&lt;summary&gt;
+METHOD: Unload the mind and send it to the garbage collector.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d3/def/a00446_1af7c7cac5148930a12a85ec64412ac6f2">
+                <title>IEntity Engine.Interfaces.Entities.IMind.getEntity ()</title> <emphasis>&lt;summary&gt;
+METHOD: Get the entity which a mind controls.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The IENtity this mind controls</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/def/a00446_1a3cbff0e85b710a4c8737254ed9ca7b30">
+                <title>ICollidable Engine.Interfaces.Entities.IMind.getCollidable ()</title> <emphasis>&lt;summary&gt;
+METHOD: Return an object that will be calculated for collision
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>An ICollidable of the current object</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/def/a00446_1a9d8370ad6e1b2a07760d3554b1e179fd">
+                <title>void Engine.Interfaces.Entities.IMind.Link (IEntity e)</title> <emphasis>&lt;summary&gt;
+METHOD: Link the mind to an entity.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>The entity to be linked to this mind</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

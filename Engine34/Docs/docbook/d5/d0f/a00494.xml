@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d0f/a00494">
+<title>Engine::Managers::Cam::CameraManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Camera camera<para><emphasis>DECLARE: reference to the camera.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d0f/a00494_1a6244a0582982e64f49df0a6862768a21">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Creates a new camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/daa/a00490">Camera</link> <link linkend="d5/d0f/a00494_1a949b09e5c57971945c3ccb638f73765d">getCam</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Returns the current Camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d0f/a00494_1a43e367859b47354445da2a304eff7ec4">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: Calls the update method of the Camera that is being managed
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d5/d0f/a00494_1a538af3b5745f1f51e3da217d5c971791">getWorldPosition</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: returns the current world position in relation to the Vector2 provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>CLASS: A Manager for the camera, this is responsible for the creation of a <link linkend="d7/daa/a00490">Camera</link> object and updating it in relation to the world position </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file CameraManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>CameraManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d5/d0f/a00494_1a6244a0582982e64f49df0a6862768a21">
+                <title>void Engine.Managers.Cam.CameraManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Creates a new camera
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d5/d0f/a00494_1a949b09e5c57971945c3ccb638f73765d">
+                <title>Camera Engine.Managers.Cam.CameraManager.getCam ()</title> <emphasis>&lt;summary&gt;
+METHOD: Returns the current Camera
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The current <link linkend="d7/daa/a00490">Camera</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d5/d0f/a00494_1a43e367859b47354445da2a304eff7ec4">
+                <title>void Engine.Managers.Cam.CameraManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: Calls the update method of the Camera that is being managed
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>Monogame GameTime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d0f/a00494_1a538af3b5745f1f51e3da217d5c971791">
+                <title>Vector2 Engine.Managers.Cam.CameraManager.getWorldPosition (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: returns the current world position in relation to the Vector2 provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>The position to be compared to the world position</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>The world position in relation to the Vector2 provided</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

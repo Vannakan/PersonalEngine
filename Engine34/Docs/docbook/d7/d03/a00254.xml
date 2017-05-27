@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d03/a00254">
+<title>Engine::Interfaces::Cam</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d43/a00422">Engine::Interfaces::Cam::ICameraManager</link></para>
+<para><emphasis>&lt;summary&gt;
+INTERFACE:The interface for the Camera manager. This controls the implementation for the manager of the camera.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

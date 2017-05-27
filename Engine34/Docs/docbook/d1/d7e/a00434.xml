@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d7e/a00434">
+<title>Engine34::Interfaces::Collision::IHitbox interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d7e/a00434_1acd7cc791467a53026ad0657a13265f1e">createMatrix</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d1/d7e/a00434_1a88740a6f4bc38fab5c8a58ca80f70aa7">createRotation</link> (
+Vector2 _point)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d7e/a00434_1a94297321cbc20a7cb6a98cf38b735a5b">CreateEdges</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d7e/a00434_1ae50d408a05951b1e4db24bb468860103">UpdatePoint</link> (
+Vector2 velocity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="d1/d7e/a00434_1a5028f79a4e2537e578c528c932dee948">centrePoint</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d7e/a00434_1a50eba986052aa1f6ac4b49426ab31042">Update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE: The interface for all hitboxes used for SAT <link linkend="d0/def/a00256">Collision</link> </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file IHitbox.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IHitbox.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d1/d7e/a00434_1acd7cc791467a53026ad0657a13265f1e">
+                <title>void Engine34.Interfaces.Collision.IHitbox.createMatrix ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d7e/a00434_1a88740a6f4bc38fab5c8a58ca80f70aa7">
+                <title>Vector2 Engine34.Interfaces.Collision.IHitbox.createRotation (Vector2 _point)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d7e/a00434_1a94297321cbc20a7cb6a98cf38b735a5b">
+                <title>void Engine34.Interfaces.Collision.IHitbox.CreateEdges ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d7e/a00434_1ae50d408a05951b1e4db24bb468860103">
+                <title>void Engine34.Interfaces.Collision.IHitbox.UpdatePoint (Vector2 velocity)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d7e/a00434_1a5028f79a4e2537e578c528c932dee948">
+                <title>Vector2 Engine34.Interfaces.Collision.IHitbox.centrePoint ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d7e/a00434_1a50eba986052aa1f6ac4b49426ab31042">
+                <title>void Engine34.Interfaces.Collision.IHitbox.Update ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

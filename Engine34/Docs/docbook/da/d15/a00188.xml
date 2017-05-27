@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d15/a00188">
+    <title>Locator.cs File Reference</title>
+        <section>
+            <title> Data Structures </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/ddb/a00542">Engine::Managers::ServiceLocator::Locator</link></para>
+<para><emphasis>&lt;summary&gt;
+CLASS: A service locator that removes the need for each manager to be a singleton. This is now the only
+Singleton required in the whole program. It allows us to access each manager and call the method from each
+Manager as we require it
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d56/a00274">Engine::Managers::ServiceLocator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file Locator.cs</para>
+    </simplesect>
+</section>

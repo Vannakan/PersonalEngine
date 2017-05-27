@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d43/a00422">
+<title>Engine::Interfaces::Cam::ICameraManager interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d43/a00422_1a21e0ce6b0ada068546161ecf02559912">Initialize</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Contains initialisation logic
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/daa/a00490">Camera</link> <link linkend="db/d43/a00422_1a91fc1dab51b36fd8955451ac00fd2819">getCam</link> (
+)<para><emphasis>&lt;summary&gt;
+METHOD: Returns the camera
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d43/a00422_1a78a46559249e70181100daff38ef5d6a">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through every frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 <link linkend="db/d43/a00422_1a7d9fc1d792ddc3495bff23daac2a8d2a">getWorldPosition</link> (
+Vector2 Position)<para><emphasis>&lt;summary&gt;
+METHOD: returns the current world position in relation to the Vector2 provided
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>INTERFACE:The interface for the Camera manager. This controls the implementation for the manager of the camera. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file ICameraManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ICameraManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="db/d43/a00422_1a21e0ce6b0ada068546161ecf02559912">
+                <title>void Engine.Interfaces.Cam.ICameraManager.Initialize ()</title> <emphasis>&lt;summary&gt;
+METHOD: Contains initialisation logic
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="db/d43/a00422_1a91fc1dab51b36fd8955451ac00fd2819">
+                <title>Camera Engine.Interfaces.Cam.ICameraManager.getCam ()</title> <emphasis>&lt;summary&gt;
+METHOD: Returns the camera
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>the current Camera</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="db/d43/a00422_1a78a46559249e70181100daff38ef5d6a">
+                <title>void Engine.Interfaces.Cam.ICameraManager.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through every frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d43/a00422_1a7d9fc1d792ddc3495bff23daac2a8d2a">
+                <title>Vector2 Engine.Interfaces.Cam.ICameraManager.getWorldPosition (Vector2 Position)</title> <emphasis>&lt;summary&gt;
+METHOD: returns the current world position in relation to the Vector2 provided
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Position</entry>
+                                <entry>
+<para>The position to be compared to the world position</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>The world position in relation to the Vector2 provided</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

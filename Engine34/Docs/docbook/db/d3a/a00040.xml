@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d3a/a00040">
+<title>Engine::Game1 class Reference</title>
+        <section>
+            <title>Data Fields</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GraphicsDeviceManager graphics</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpriteBatch spriteBatch</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Game1 Instance</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d3a/a00040_1a321d836485b0e6ba049e1200dee17c3b">Game1</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="db/d3a/a00040_1a640e4df5dfc3ea2b4dab155f3dc3152c">Initialize</link> (
+)<para><emphasis>Initialize;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="db/d3a/a00040_1a0c121f8c93986e79a1c402689f53d78e">LoadContent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="db/d3a/a00040_1a514f0c28029716a22b7e580a06fef9a0">UnloadContent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="db/d3a/a00040_1a5ec7bcee1272c1a62a77292cd95d043f">Update</link> (
+GameTime gameTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="db/d3a/a00040_1a0d4254c27d581ec3a459cfc439a1a071">Draw</link> (
+GameTime gameTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+            <simplesect>
+                <title>GraphicsDeviceManager Engine.Game1.graphics</title>                
+<para>List of Update Components List of Draw Components </para>
+
+                <para>Definition at line 22 of file Game1.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Game1.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="db/d3a/a00040_1a321d836485b0e6ba049e1200dee17c3b">
+                <title>Engine.Game1.Game1 ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d3a/a00040_1a640e4df5dfc3ea2b4dab155f3dc3152c">
+                <title>override void Engine.Game1.Initialize ()</title> <emphasis>Initialize;.</emphasis>
+                
+            </section>
+            <section xml:id="db/d3a/a00040_1a0c121f8c93986e79a1c402689f53d78e">
+                <title>override void Engine.Game1.LoadContent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d3a/a00040_1a514f0c28029716a22b7e580a06fef9a0">
+                <title>override void Engine.Game1.UnloadContent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d3a/a00040_1a5ec7bcee1272c1a62a77292cd95d043f">
+                <title>override void Engine.Game1.Update (GameTime gameTime)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d3a/a00040_1a0d4254c27d581ec3a459cfc439a1a071">
+                <title>override void Engine.Game1.Draw (GameTime gameTime)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

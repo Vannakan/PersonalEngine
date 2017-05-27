@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d3e/a00366">
+<title>Engine::Events::KeyboardEvent::KeyHandler class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static KeyHandler instance</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Keys [] keys</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>KeyboardState prev</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>KeyboardState current</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Keys [] heldKeys</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="d2/d3e/a00366_1a0052951197567196fd40ae4d5e7784e1">KeyEventHandler</link> (
+object sender, <link linkend="de/dd7/a00362">KeyEventArgs</link> e)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d3e/a00366_1a9eb55c55451fa39922f71469f18683ab">Update</link> (
+GameTime gameTime)<para><emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d3e/a00366_1ae48bbad49979b54cfceebbad82dc48c6">OnKeyPressed</link> (
+KeyboardState m, Keys k)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d3e/a00366_1a8c5bdbe22012f4f6e7febca2c29ec880">OnKeyHeld</link> (
+KeyboardState m, Keys k)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Field Documentation</title>
+        </section>
+            <section xml:id="d2/d3e/a00366_1a0052951197567196fd40ae4d5e7784e1">
+                <title>delegate void Engine.Events.KeyboardEvent.KeyHandler.KeyEventHandler (object sender, KeyEventArgs e)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d3e/a00366_1a9eb55c55451fa39922f71469f18683ab">
+                <title>void Engine.Events.KeyboardEvent.KeyHandler.Update (GameTime gameTime)</title> <emphasis>&lt;summary&gt;
+METHOD: The update loop which is cycled through ever frame
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gameTime</entry>
+                                <entry>
+<para>The MonoGame Gametime property</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d3e/a00366_1ae48bbad49979b54cfceebbad82dc48c6">
+                <title>virtual void Engine.Events.KeyboardEvent.KeyHandler.OnKeyPressed (KeyboardState m, Keys k)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d3e/a00366_1a8c5bdbe22012f4f6e7febca2c29ec880">
+                <title>virtual void Engine.Events.KeyboardEvent.KeyHandler.OnKeyHeld (KeyboardState m, Keys k)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

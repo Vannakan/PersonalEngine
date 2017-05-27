@@ -1,0 +1,187 @@
+\hypertarget{a00542}{}\section{Engine.\+Managers.\+Service\+Locator.\+Locator Class Reference}
+\label{a00542}\index{Engine.\+Managers.\+Service\+Locator.\+Locator@{Engine.\+Managers.\+Service\+Locator.\+Locator}}
+
+
+C\+L\+A\+SS\+: A service locator that removes the need for each manager to be a singleton. This is now the only Singleton required in the whole program. It allows us to access each manager and call the method from each Manager as we require it  
+
+
+Inheritance diagram for Engine.\+Managers.\+Service\+Locator.\+Locator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d0/ddb/a00542}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00542_a34bc6f5d735512bae556d2ec65a7bda7}{Initialize\+Services} (Content\+Manager c, Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Initialises each service for the program to run \end{DoxyCompactList}\item 
+T \hyperlink{a00542_a2bb3c0174bd67904d148bc789c9faaba}{get\+Service$<$ T $>$} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Gets and returns a service of the generic type input in the parameter \end{DoxyCompactList}\item 
+void \hyperlink{a00542_a2a2ead2e1ed9a2d63b59ab34621b0812}{register\+Service$<$ T $>$} (T val)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Register the service and check whether it needs to be updated \end{DoxyCompactList}\item 
+void \hyperlink{a00542_af5c3ce0526940dffc81919b2ef35d652}{register\+U\+P\+D\+Service$<$ T $>$} (T val)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Register Update service \end{DoxyCompactList}\item 
+void \hyperlink{a00542_ab66a423db26d79e6fc655df699a64f0c}{Update\+Services} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+OD\+: Update all services that require it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{a00542}{Locator} \hyperlink{a00542_ab1da0b54c482b49d1654f9763b161883}{Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em S\+I\+N\+G\+L\+E\+T\+ON \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+SS\+: A service locator that removes the need for each manager to be a singleton. This is now the only Singleton required in the whole program. It allows us to access each manager and call the method from each Manager as we require it 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00542_a2bb3c0174bd67904d148bc789c9faaba}\label{a00542_a2bb3c0174bd67904d148bc789c9faaba}} 
+\index{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}!get\+Service$<$ T $>$@{get\+Service$<$ T $>$}}
+\index{get\+Service$<$ T $>$@{get\+Service$<$ T $>$}!Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}}
+\subsubsection{\texorpdfstring{get\+Service$<$ T $>$()}{getService< T >()}}
+{\footnotesize\ttfamily T Engine.\+Managers.\+Service\+Locator.\+Locator.\+get\+Service$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Gets and returns a service of the generic type input in the parameter 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic type T of the service to be requested\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Service of Type T
+\end{DoxyReturn}
+T\+RY\+: to return the service from the hashmap
+
+T\+RY\+: to catch a null reference exception 
+
+Implements \hyperlink{a00474_a39ce84b8fb97655fd7039be3c4fa5f1c}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator}.
+
+\mbox{\Hypertarget{a00542_a34bc6f5d735512bae556d2ec65a7bda7}\label{a00542_a34bc6f5d735512bae556d2ec65a7bda7}} 
+\index{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}!Initialize\+Services@{Initialize\+Services}}
+\index{Initialize\+Services@{Initialize\+Services}!Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}}
+\subsubsection{\texorpdfstring{Initialize\+Services()}{InitializeServices()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Service\+Locator.\+Locator.\+Initialize\+Services (\begin{DoxyParamCaption}\item[{Content\+Manager}]{c,  }\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Initialises each service for the program to run 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the monogame Content\+Manager to be used\\
+\hline
+{\em sb} & the monogame sprite\+Batch to be used\\
+\hline
+\end{DoxyParams}
+Mouse and Keyboard Handlers
+
+\hyperlink{a00266}{Behaviour} Manager
+
+Camera Manager
+
+sound Manager
+
+\hyperlink{a00272}{Resource} Loader
+
+Entity Manager
+
+\hyperlink{a00266}{Behaviour} Manager
+
+\hyperlink{a00268}{Collision} Manager
+
+\hyperlink{a00271}{Render} Manager
+
+\hyperlink{a00273}{Screen} Manager 
+
+Implements \hyperlink{a00474_a4bf9f6979adf99eda26320a420262991}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator}.
+
+\mbox{\Hypertarget{a00542_a2a2ead2e1ed9a2d63b59ab34621b0812}\label{a00542_a2a2ead2e1ed9a2d63b59ab34621b0812}} 
+\index{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}!register\+Service$<$ T $>$@{register\+Service$<$ T $>$}}
+\index{register\+Service$<$ T $>$@{register\+Service$<$ T $>$}!Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}}
+\subsubsection{\texorpdfstring{register\+Service$<$ T $>$()}{registerService< T >()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Service\+Locator.\+Locator.\+register\+Service$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Register the service and check whether it needs to be updated 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic service\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Service of Type T\\
+\hline
+\end{DoxyParams}
+T\+RY\+:
+
+IF\+: val parameter is not null and is in the \+\_\+services Dictionary
+
+A\+DD\+: Service to the dictionary
+
+C\+A\+T\+CH\+: Exception
+
+T\+H\+R\+OW\+: Argument exception \mbox{\Hypertarget{a00542_af5c3ce0526940dffc81919b2ef35d652}\label{a00542_af5c3ce0526940dffc81919b2ef35d652}} 
+\index{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}!register\+U\+P\+D\+Service$<$ T $>$@{register\+U\+P\+D\+Service$<$ T $>$}}
+\index{register\+U\+P\+D\+Service$<$ T $>$@{register\+U\+P\+D\+Service$<$ T $>$}!Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}}
+\subsubsection{\texorpdfstring{register\+U\+P\+D\+Service$<$ T $>$()}{registerUPDService< T >()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Service\+Locator.\+Locator.\+register\+U\+P\+D\+Service$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Register Update service 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00542_ab66a423db26d79e6fc655df699a64f0c}\label{a00542_ab66a423db26d79e6fc655df699a64f0c}} 
+\index{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}!Update\+Services@{Update\+Services}}
+\index{Update\+Services@{Update\+Services}!Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}}
+\subsubsection{\texorpdfstring{Update\+Services()}{UpdateServices()}}
+{\footnotesize\ttfamily void Engine.\+Managers.\+Service\+Locator.\+Locator.\+Update\+Services (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+M\+E\+T\+H\+OD\+: Update all services that require it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00474_a5bf3aab2adcf14c813a348325003ddcc}{Engine.\+Interfaces.\+Service\+Locator.\+I\+Service\+Locator}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{a00542_ab1da0b54c482b49d1654f9763b161883}\label{a00542_ab1da0b54c482b49d1654f9763b161883}} 
+\index{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}!Instance@{Instance}}
+\index{Instance@{Instance}!Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator@{Engine\+::\+Managers\+::\+Service\+Locator\+::\+Locator}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \hyperlink{a00542}{Locator} Engine.\+Managers.\+Service\+Locator.\+Locator.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+S\+I\+N\+G\+L\+E\+T\+ON 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00188}{Locator.\+cs}\end{DoxyCompactItemize}
