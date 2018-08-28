@@ -25,6 +25,3 @@ Rework of SAT Collision implementation
 
 Rework of Steering Behaviours, wired up to the FSM machine
 
-Various cleaning up of the engine
-
-The possibility of 3D
